@@ -22,7 +22,7 @@ private ModuloFunction function = null;
 	private class ModuloFunction implements Function {
 
 		public String getURI() {
-			return "modulo";
+			return "mod";
 		}
 		
 		public List<String> execute(List<List<String>> arguments, String hint) {

@@ -1,10 +1,13 @@
 package de.fuberlin.wiwiss.r2r;
 
 import de.fuberlin.wiwiss.r2r.functions.*;
-import java.util.*;
+
 import java.net.MalformedURLException;
-import java.net.URLClassLoader;
-import java.net.URL;
+import java.util.*;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 
 /**
  * An implementation of FunctionManager that has all built-in functions registered.
@@ -12,13 +15,18 @@ import java.net.URL;
  *
  */
 public class BasicFunctionManager implements FunctionManager {
+	private static Log log = LogFactory.getLog(BasicFunctionManager.class);
 	private Map<String, FunctionFactory> functions = new HashMap<String, FunctionFactory>();
+	private FunctionFactoryLoader ffLoader = null;
 	
+	/**
+	 * Only register built-in functions, not able to load external functions
+	 */
 	public BasicFunctionManager() {
-		functions.put("infixConcat", new InfixConcatFunctionFactory());
+		functions.put("join", new JoinFunctionFactory());
 		functions.put("concat", new ConcatFunctionFactory());
 		functions.put("split", new SplitFunctionFactory());
-		functions.put("infixListConcat", new InfixListConcatFunctionFactory());
+		functions.put("listJoin", new ListJoinFunctionFactory());
 		functions.put("list", new ListFunctionFactory());
 		functions.put("subListByIndex", new SubListByIndexFunctionFactory());
 		functions.put("regexToList", new RegExToListFunctionFactory());
@@ -31,8 +39,12 @@ public class BasicFunctionManager implements FunctionManager {
 		functions.put("listConcat", new ListConcatFunctionFactory());
 		functions.put("subList", new SubListFunctionFactory());
 		functions.put("getByIndex", new GetByIndexFunctionFactory());
-		functions.put("modulo", new ModuloFunctionFactory());
+		functions.put("mod", new ModuloFunctionFactory());
 		functions.put("integer", new IntegerFunctionFactory());
+		
+		// deprecated
+		functions.put("infixConcat", new JoinFunctionFactory());
+		functions.put("infixListConcat", new ListJoinFunctionFactory());
 	}
 	
 	public synchronized boolean containsFunctionByUri(String URI) {
@@ -46,35 +58,13 @@ public class BasicFunctionManager implements FunctionManager {
 
 	public synchronized Function getFunctionByUri(String URI) {
 		if(!functions.containsKey(URI))
-			throw new IllegalArgumentException("No function found with URI/ID: " + URI);
+			return null;
 		return functions.get(URI).getInstance();
 	}
 
-	public synchronized boolean registerFunctionFactory(String uri, FunctionFactory functionFactory) {
-		if(functions.containsKey(uri))
-			return false;
-		functions.put(uri, functionFactory);
-		return true;
+	public boolean registerFunctionFactory(String uri, FunctionFactory functionFactory) {
+		// Cannot register new functions in this FunctionManager
+		return false;
 	}
-	
-//	private FunctionFactory getFunctionFactory(String URI) throws MalformedURLException {
-//		Catch 
-//		URLClassLoader cl = new URLClassLoader(new URL[] {new URL(URI)} );
-//		cl
-//	}TODO
-	
-	private FunctionFactory loadFunctionFactory(String functionFactoryClass) throws IllegalAccessException, InstantiationException {
-		try {
-			return (FunctionFactory)Class.forName(functionFactoryClass).newInstance();
-		} catch (InstantiationException e) {
-			// No problem we can recover from => rethrow
-			throw e;
-		} catch (IllegalAccessException e) {
-			// Class found, but can't be accessed => rethrow
-			throw e;
-		} catch (ClassNotFoundException e) {
-			//Not found on class path, return null to signalize that FunctionFactory must be loaded from elsewhere
-			return null;
-		}
-	}
+
 }
