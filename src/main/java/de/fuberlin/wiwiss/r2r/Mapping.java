@@ -51,8 +51,6 @@ public class Mapping {
 		return uri;
 	}
 	
-	public static final FunctionManager functionManager = new BasicFunctionManager();
-	
 	private Mapping() {}
 	
 	private Mapping(String uri) {
@@ -80,18 +78,21 @@ public class Mapping {
 	 * @param isClassMapping true if the created mapping is a class mapping
 	 * @return the mapping object created from the arguments
 	 */
-	public static Mapping createMapping(String uri, String parentUri, List<String> prefixDefinitions, List<String> targetPatterns, List<String> transformations, String sourcePattern, boolean isClassMapping) {
+	public static Mapping createMapping(String uri, String parentUri, List<String> prefixDefinitions, List<String> targetPatterns, List<String> transformations, String sourcePattern, boolean isClassMapping, List<String> functionImports, FunctionManager functionManager) {
 		Mapping mapping = new Mapping(uri);
 		mapping.parentMapping = parentUri;
 		try {
 			for(String prefixDef: prefixDefinitions)
 				mapping.addPrefixDefinitions(prefixDef);
 			
+			for(String functionImport: functionImports)
+				mapping.addFunctionMapping(functionImport);
+			
 			for(String targetPattern: targetPatterns)
 				mapping.addTargetPattern(targetPattern);
 			
 			for(String transformation: transformations)
-				mapping.addTransformation(transformation);
+				mapping.addTransformation(transformation, functionManager);
 			
 			mapping.addSourcePattern(sourcePattern);
 			
@@ -128,8 +129,8 @@ public class Mapping {
 	 * @param isClassMapping true if this mapping is a class mapping
 	 * @return The mapping object.
 	 */
-	public static Mapping createMapping(String uri, String parentUri, List<String> prefixDefinitions, List<String> targetPatterns, List<String> transformations, List<String> sourcePatterns, boolean isClassMapping) {
-		return createMapping(uri, parentUri, prefixDefinitions, targetPatterns, transformations, conjunctiveCombineSourcePatterns(sourcePatterns), isClassMapping);
+	public static Mapping createMapping(String uri, String parentUri, List<String> prefixDefinitions, List<String> targetPatterns, List<String> transformations, List<String> sourcePatterns, boolean isClassMapping, List<String> functionImports, FunctionManager functionManager) {
+		return createMapping(uri, parentUri, prefixDefinitions, targetPatterns, transformations, conjunctiveCombineSourcePatterns(sourcePatterns), isClassMapping, functionImports, functionManager);
 	}
 	
 	private static String conjunctiveCombineSourcePatterns(List<String> sourcePatterns) {
@@ -142,11 +143,17 @@ public class Mapping {
 		return sb.toString();
 	}
 	
-	private void addTransformation(String transformation) {
+	private void addTransformation(String transformation, FunctionManager functionManager) {
 		FunctionExecution funcExec = FunctionExecution.parseTransformation(transformation, functionManager, functionMapper);
 		variableDependenciesOfTransformations.addAll(funcExec.getVariableDependencies());
 		transformationGeneratedVariables.add(funcExec.getVariableName());
 		functions.add(funcExec);
+	}
+	
+	private void addFunctionMapping(String importString) {
+		String[] mapping = importString.split("=", 2);
+		if(mapping.length>1)
+		functionMapper.setMapping(mapping[0].trim(), mapping[1].trim());
 	}
 	
 	private void addPrefixDefinitions(String prefixDefs) {

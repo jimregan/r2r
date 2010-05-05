@@ -6,17 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class InfixConcatFunctionFactory implements FunctionFactory {
-	private InfixConcatFunction function = null;
+public class JoinFunctionFactory implements FunctionFactory {
+	private JoinFunction function = null;
 	
 	public Function getInstance() {
 		if(function==null)
-			function = new InfixConcatFunction();
+			function = new JoinFunction();
 		
 		return function;
 	}
 
-	private class InfixConcatFunction implements Function {
+	private class JoinFunction implements Function {
 
 		public String getURI() {
 			return "infixConcat";

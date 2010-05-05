@@ -6,17 +6,17 @@ import java.util.List;
 import de.fuberlin.wiwiss.r2r.Function;
 import de.fuberlin.wiwiss.r2r.FunctionFactory;
 
-public class InfixListConcatFunctionFactory implements FunctionFactory {
-	private InfixListConcatFunction function = null;
+public class ListJoinFunctionFactory implements FunctionFactory {
+	private ListJoinFunction function = null;
 	
 	public Function getInstance() {
 		if(function==null)
-			function = new InfixListConcatFunction();
+			function = new ListJoinFunction();
 		
 		return function;
 	}
 
-	private class InfixListConcatFunction implements Function {
+	private class ListJoinFunction implements Function {
 
 		public String getURI() {
 			return "infixListConcat";

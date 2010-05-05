@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g 2010-04-12 15:22:20
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g 2010-05-04 15:05:13
 
   package de.fuberlin.wiwiss.r2r.parser;
   
@@ -63,7 +63,7 @@ public class TransformationParser extends Parser {
     public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g"; }
 
 
-      FunctionManager funcManager=new BasicFunctionManager();
+      FunctionManager funcManager;
       FunctionMapper funcMapper=new FunctionMapper();
       Set<String> variables = new HashSet<String>();
       boolean targetVariableParsed = false;
@@ -96,6 +96,8 @@ public class TransformationParser extends Parser {
           arguments.add(arg);
         String uri = funcMapper.getFunctionUri(functionName);
         Function function = funcManager.getFunctionByUri(uri);
+        if(function==null)
+          throw new ParseException("Function Manager could not find/load Function <" + uri + ">");
         return new FunctionExecution(function, Collections.unmodifiableList(arguments));
       }
 
@@ -107,7 +109,7 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "transform"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:76:1: transform returns [String variable, FunctionExecution funcExec, Set<String> variableDependencies] : v= variable '=' expression EOF ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:78:1: transform returns [String variable, FunctionExecution funcExec, Set<String> variableDependencies] : v= variable '=' expression EOF ;
     public final TransformationParser.transform_return transform() throws RecognitionException {
         TransformationParser.transform_return retval = new TransformationParser.transform_return();
         retval.start = input.LT(1);
@@ -118,8 +120,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:77:3: (v= variable '=' expression EOF )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:77:5: v= variable '=' expression EOF
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:79:3: (v= variable '=' expression EOF )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:79:5: v= variable '=' expression EOF
             {
             pushFollow(FOLLOW_variable_in_transform62);
             v=variable();
@@ -162,7 +164,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "expression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:92:1: expression returns [Argument value] : m= mult ( ( PLUS | MINUS ) m= mult )* ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:94:1: expression returns [Argument value] : m= mult ( ( PLUS | MINUS ) m= mult )* ;
     public final Argument expression() throws RecognitionException {
         Argument value = null;
 
@@ -170,8 +172,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:93:3: (m= mult ( ( PLUS | MINUS ) m= mult )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:93:5: m= mult ( ( PLUS | MINUS ) m= mult )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:95:3: (m= mult ( ( PLUS | MINUS ) m= mult )* )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:95:5: m= mult ( ( PLUS | MINUS ) m= mult )*
             {
             pushFollow(FOLLOW_mult_in_expression94);
             m=mult();
@@ -179,7 +181,7 @@ public class TransformationParser extends Parser {
             state._fsp--;
 
              value = m; String operation = null;
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:94:4: ( ( PLUS | MINUS ) m= mult )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:96:4: ( ( PLUS | MINUS ) m= mult )*
             loop2:
             do {
                 int alt2=2;
@@ -192,9 +194,9 @@ public class TransformationParser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:94:5: ( PLUS | MINUS ) m= mult
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:96:5: ( PLUS | MINUS ) m= mult
             	    {
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:94:5: ( PLUS | MINUS )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:96:5: ( PLUS | MINUS )
             	    int alt1=2;
             	    int LA1_0 = input.LA(1);
 
@@ -212,7 +214,7 @@ public class TransformationParser extends Parser {
             	    }
             	    switch (alt1) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:94:7: PLUS
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:96:7: PLUS
             	            {
             	            match(input,PLUS,FOLLOW_PLUS_in_expression104); 
             	            operation = "add"; 
@@ -220,7 +222,7 @@ public class TransformationParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:95:7: MINUS
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:97:7: MINUS
             	            {
             	            match(input,MINUS,FOLLOW_MINUS_in_expression114); 
             	            operation = "subtract"; 
@@ -263,7 +265,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "mult"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:102:1: mult returns [Argument value] : u= unary ( ( MULT | DIV ) u= unary )* ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:104:1: mult returns [Argument value] : u= unary ( ( MULT | DIV ) u= unary )* ;
     public final Argument mult() throws RecognitionException {
         Argument value = null;
 
@@ -271,8 +273,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:103:3: (u= unary ( ( MULT | DIV ) u= unary )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:103:5: u= unary ( ( MULT | DIV ) u= unary )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:105:3: (u= unary ( ( MULT | DIV ) u= unary )* )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:105:5: u= unary ( ( MULT | DIV ) u= unary )*
             {
             pushFollow(FOLLOW_unary_in_mult159);
             u=unary();
@@ -280,7 +282,7 @@ public class TransformationParser extends Parser {
             state._fsp--;
 
              value = u; String operation = null;
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:104:4: ( ( MULT | DIV ) u= unary )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:106:4: ( ( MULT | DIV ) u= unary )*
             loop4:
             do {
                 int alt4=2;
@@ -293,9 +295,9 @@ public class TransformationParser extends Parser {
 
                 switch (alt4) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:104:5: ( MULT | DIV ) u= unary
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:106:5: ( MULT | DIV ) u= unary
             	    {
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:104:5: ( MULT | DIV )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:106:5: ( MULT | DIV )
             	    int alt3=2;
             	    int LA3_0 = input.LA(1);
 
@@ -313,7 +315,7 @@ public class TransformationParser extends Parser {
             	    }
             	    switch (alt3) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:104:7: MULT
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:106:7: MULT
             	            {
             	            match(input,MULT,FOLLOW_MULT_in_mult169); 
             	             operation = "multiply"; 
@@ -321,7 +323,7 @@ public class TransformationParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:105:7: DIV
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:107:7: DIV
             	            {
             	            match(input,DIV,FOLLOW_DIV_in_mult181); 
             	             operation = "divide"; 
@@ -364,7 +366,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "unary"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:112:1: unary returns [Argument value] : ( ( MINUS | PLUS ) )* term ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:114:1: unary returns [Argument value] : ( ( MINUS | PLUS ) )* term ;
     public final Argument unary() throws RecognitionException {
         Argument value = null;
 
@@ -372,11 +374,11 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:113:3: ( ( ( MINUS | PLUS ) )* term )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:113:5: ( ( MINUS | PLUS ) )* term
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:115:3: ( ( ( MINUS | PLUS ) )* term )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:115:5: ( ( MINUS | PLUS ) )* term
             {
             boolean negative = false;
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:114:3: ( ( MINUS | PLUS ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:116:3: ( ( MINUS | PLUS ) )*
             loop6:
             do {
                 int alt6=2;
@@ -389,9 +391,9 @@ public class TransformationParser extends Parser {
 
                 switch (alt6) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:114:5: ( MINUS | PLUS )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:116:5: ( MINUS | PLUS )
             	    {
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:114:5: ( MINUS | PLUS )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:116:5: ( MINUS | PLUS )
             	    int alt5=2;
             	    int LA5_0 = input.LA(1);
 
@@ -409,7 +411,7 @@ public class TransformationParser extends Parser {
             	    }
             	    switch (alt5) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:114:6: MINUS
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:116:6: MINUS
             	            {
             	            match(input,MINUS,FOLLOW_MINUS_in_unary228); 
             	             negative = !negative; 
@@ -417,7 +419,7 @@ public class TransformationParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:115:5: PLUS
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:117:5: PLUS
             	            {
             	            match(input,PLUS,FOLLOW_PLUS_in_unary236); 
 
@@ -461,7 +463,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "term"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:123:1: term returns [Argument value] : ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' );
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:125:1: term returns [Argument value] : ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' );
     public final Argument term() throws RecognitionException {
         Argument value = null;
 
@@ -481,7 +483,7 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:124:3: ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:126:3: ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' )
             int alt7=7;
             switch ( input.LA(1) ) {
             case FUNCTIONNAME:
@@ -530,7 +532,7 @@ public class TransformationParser extends Parser {
 
             switch (alt7) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:124:5: function
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:126:5: function
                     {
                     pushFollow(FOLLOW_function_in_term265);
                     function3=function();
@@ -542,7 +544,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:125:5: variable
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:127:5: variable
                     {
                     pushFollow(FOLLOW_variable_in_term273);
                     variable4=variable();
@@ -557,7 +559,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:130:5: integer
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:132:5: integer
                     {
                     pushFollow(FOLLOW_integer_in_term285);
                     integer5=integer();
@@ -569,7 +571,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:131:5: decimal
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:133:5: decimal
                     {
                     pushFollow(FOLLOW_decimal_in_term293);
                     decimal6=decimal();
@@ -581,7 +583,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:132:5: doubleVal
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:134:5: doubleVal
                     {
                     pushFollow(FOLLOW_doubleVal_in_term301);
                     doubleVal7=doubleVal();
@@ -593,7 +595,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:133:5: string
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:135:5: string
                     {
                     pushFollow(FOLLOW_string_in_term309);
                     string8=string();
@@ -608,7 +610,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:138:5: '(' expression ')'
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:140:5: '(' expression ')'
                     {
                     match(input,26,FOLLOW_26_in_term321); 
                     pushFollow(FOLLOW_expression_in_term323);
@@ -638,7 +640,7 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "variable"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:142:1: variable : (v= VAR1 | v= VAR2 );
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:144:1: variable : (v= VAR1 | v= VAR2 );
     public final TransformationParser.variable_return variable() throws RecognitionException {
         TransformationParser.variable_return retval = new TransformationParser.variable_return();
         retval.start = input.LT(1);
@@ -646,7 +648,7 @@ public class TransformationParser extends Parser {
         Token v=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:143:3: (v= VAR1 | v= VAR2 )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:145:3: (v= VAR1 | v= VAR2 )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -664,7 +666,7 @@ public class TransformationParser extends Parser {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:143:5: v= VAR1
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:145:5: v= VAR1
                     {
                     v=(Token)match(input,VAR1,FOLLOW_VAR1_in_variable347); 
 
@@ -679,7 +681,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:152:5: v= VAR2
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:154:5: v= VAR2
                     {
                     v=(Token)match(input,VAR2,FOLLOW_VAR2_in_variable361); 
 
@@ -710,7 +712,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "function"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:163:1: function returns [FunctionExecution funcExec] : FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:165:1: function returns [FunctionExecution funcExec] : FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' ;
     public final FunctionExecution function() throws RecognitionException {
         FunctionExecution funcExec = null;
 
@@ -719,8 +721,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:164:3: ( FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:164:5: FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:166:3: ( FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:166:5: FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')'
             {
             FUNCTIONNAME10=(Token)match(input,FUNCTIONNAME,FOLLOW_FUNCTIONNAME_in_function386); 
              
@@ -728,9 +730,11 @@ public class TransformationParser extends Parser {
                   String fname = (FUNCTIONNAME10!=null?FUNCTIONNAME10.getText():null);
                   String uri = funcMapper.getFunctionUri(fname);
                   Function function = funcManager.getFunctionByUri(uri);
+                  if(function==null)
+                    throw new ParseException("Function Manager could not find/load Function <" + uri + ">");
                 
             match(input,26,FOLLOW_26_in_function398); 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:172:8: (a= expression ( ',' a= expression )* )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:176:8: (a= expression ( ',' a= expression )* )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -739,7 +743,7 @@ public class TransformationParser extends Parser {
             }
             switch (alt10) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:172:9: a= expression ( ',' a= expression )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:176:9: a= expression ( ',' a= expression )*
                     {
                     pushFollow(FOLLOW_expression_in_function411);
                     a=expression();
@@ -747,7 +751,7 @@ public class TransformationParser extends Parser {
                     state._fsp--;
 
                      arguments.add(a); 
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:173:11: ( ',' a= expression )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:177:11: ( ',' a= expression )*
                     loop9:
                     do {
                         int alt9=2;
@@ -760,7 +764,7 @@ public class TransformationParser extends Parser {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:173:12: ',' a= expression
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:177:12: ',' a= expression
                     	    {
                     	    match(input,28,FOLLOW_28_in_function426); 
                     	    pushFollow(FOLLOW_expression_in_function430);
@@ -804,14 +808,14 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "integer"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:190:1: integer : INTEGER ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:194:1: integer : INTEGER ;
     public final TransformationParser.integer_return integer() throws RecognitionException {
         TransformationParser.integer_return retval = new TransformationParser.integer_return();
         retval.start = input.LT(1);
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:191:3: ( INTEGER )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:191:5: INTEGER
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:195:3: ( INTEGER )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:195:5: INTEGER
             {
             match(input,INTEGER,FOLLOW_INTEGER_in_integer479); 
 
@@ -834,14 +838,14 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "decimal"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:194:1: decimal : DECIMAL ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:198:1: decimal : DECIMAL ;
     public final TransformationParser.decimal_return decimal() throws RecognitionException {
         TransformationParser.decimal_return retval = new TransformationParser.decimal_return();
         retval.start = input.LT(1);
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:195:3: ( DECIMAL )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:195:5: DECIMAL
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:199:3: ( DECIMAL )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:199:5: DECIMAL
             {
             match(input,DECIMAL,FOLLOW_DECIMAL_in_decimal493); 
 
@@ -864,14 +868,14 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "doubleVal"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:198:1: doubleVal : DOUBLE ;
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:202:1: doubleVal : DOUBLE ;
     public final TransformationParser.doubleVal_return doubleVal() throws RecognitionException {
         TransformationParser.doubleVal_return retval = new TransformationParser.doubleVal_return();
         retval.start = input.LT(1);
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:199:3: ( DOUBLE )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:199:5: DOUBLE
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:203:3: ( DOUBLE )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:203:5: DOUBLE
             {
             match(input,DOUBLE,FOLLOW_DOUBLE_in_doubleVal508); 
 
@@ -894,13 +898,13 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "string"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:202:1: string : ( STRING_LITERAL1 | STRING_LITERAL_LONG1 );
+    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:206:1: string : ( STRING_LITERAL1 | STRING_LITERAL_LONG1 );
     public final TransformationParser.string_return string() throws RecognitionException {
         TransformationParser.string_return retval = new TransformationParser.string_return();
         retval.start = input.LT(1);
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:203:3: ( STRING_LITERAL1 | STRING_LITERAL_LONG1 )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:207:3: ( STRING_LITERAL1 | STRING_LITERAL_LONG1 )
             // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
             {
             if ( (input.LA(1)>=STRING_LITERAL1 && input.LA(1)<=STRING_LITERAL_LONG1) ) {

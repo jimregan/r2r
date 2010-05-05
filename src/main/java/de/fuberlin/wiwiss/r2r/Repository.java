@@ -1,5 +1,7 @@
 package de.fuberlin.wiwiss.r2r;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -24,13 +26,55 @@ import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
 /**
- * A Repository offers access to R2R mappings and functions to import non-R2R mappings. 
+ * Repository that offers access to R2R mappings and functions to import non-R2R mappings.
+ * It implements both Mapping Repository and Metadata Repository capabilities 
  * @author andreas
  *
  */
 public class Repository implements MappingRepository, MetadataRepository, Source {
 	private Source source;
+	private FunctionManager functionManager;
 	private static Log log = LogFactory.getLog(Repository.class);
+	
+	// load FunctionManager as defined in r2r.properties
+	private FunctionManager loadFunctionManager(Source source) {
+		String fm = Config.getProperty("r2r.FunctionManager", "de.fuberlin.wiwiss.r2r.BasicFunctionManager");
+		try {
+			Class fmclass = Class.forName(fm);
+			boolean constructorWithSource = false;
+			Constructor c = null;
+			for(Constructor constructor: fmclass.getConstructors()) {
+				Class[] pTypes = constructor.getParameterTypes();
+				if(c==null && pTypes.length==0)
+					c=constructor;
+				if(pTypes.length==1 && pTypes[0]==Source.class) {
+					c=constructor;
+					constructorWithSource = true;
+				}
+			}
+			
+			if(constructorWithSource)
+				return (FunctionManager)c.newInstance(source);
+			else
+				return (FunctionManager)c.newInstance();
+		} catch (InstantiationException e) {
+			if(log.isDebugEnabled())
+				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+		} catch (IllegalAccessException e) {
+			if(log.isDebugEnabled())
+				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+		} catch (ClassNotFoundException e) {
+			if(log.isDebugEnabled())
+				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+		} catch (IllegalArgumentException e) {
+			if(log.isDebugEnabled())
+				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+		} catch (InvocationTargetException e) {
+			if(log.isDebugEnabled())
+				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+		}
+		return null;
+	}
 	
 	/**
 	 * Create a Repository from a Source object
@@ -38,6 +82,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	 */
 	public Repository(Source source) {
 		this.source = source;
+		functionManager = loadFunctionManager(source);
 	};
 	
 	//Factory methods:
@@ -120,7 +165,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			if(mapping!=null)
 				resModel.add(mapping.getJenaModelWithMappingMetaData());
 		}
-		Repository repository = new Repository(new JenaModelSource(resModel));
+		MetadataRepository repository = new Repository(new JenaModelSource(resModel));
 		return repository;
 	}
 
@@ -175,11 +220,12 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		List<String> targetPatterns = getPropertyValuesForResource(mappingURI, R2R.targetPattern);
 		List<String> transformations = getPropertyValuesForResource(mappingURI, R2R.transformation);
 		List<String> prefixDefinitions = getPropertyValuesForResource(mappingURI, R2R.prefixDefinitions);
+		List<String> functionImports = getPropertyValuesForResource(mappingURI, R2R.importFunction);
 		
 		String classRef = getReferencedClassMappingUri(mappingURI);
 		
 		if(classRef==null)
-			return Mapping.createMapping(mappingURI, null, prefixDefinitions, targetPatterns, transformations, sourcePattern, isClassMapping);
+			return Mapping.createMapping(mappingURI, null, prefixDefinitions, targetPatterns, transformations, sourcePattern, isClassMapping, functionImports, functionManager);
 		
 		String parentMapping = classRef;
 		List<String> sourcePatterns = new ArrayList<String>();
@@ -189,10 +235,10 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			if(mapData==null)
 				return null;
 			sourcePatterns.add(mapData.sourcePattern);
-			prefixDefinitions. addAll(mapData.prefixDefinitions);
+			prefixDefinitions.addAll(mapData.prefixDefinitions);
 			classRef = getReferencedClassMappingUri(classRef);
 		}
-		return Mapping.createMapping(mappingURI, parentMapping, prefixDefinitions, targetPatterns, transformations, sourcePatterns, isClassMapping);
+		return Mapping.createMapping(mappingURI, parentMapping, prefixDefinitions, targetPatterns, transformations, sourcePatterns, isClassMapping, functionImports, functionManager);
 	}
 	
 	private MappingData getMappingDataOfUri(String mappingURI) {
