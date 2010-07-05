@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePatternRewriter.g 2010-04-18 18:51:51
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePatternRewriter.g 2010-05-21 23:47:04
 
   package de.fuberlin.wiwiss.r2r.parser;
 

@@ -18,7 +18,6 @@ import com.hp.hpl.jena.query.*;
 
 import com.hp.hpl.jena.util.PrintUtil;
 
-import de.fuberlin.wiwiss.r2r.functions.HelperFunctions;
 import de.fuberlin.wiwiss.r2r.parser.MiniParsers;
 import de.fuberlin.wiwiss.r2r.parser.ParseException;
 
@@ -39,6 +38,10 @@ public class Mapping {
 	private Map<String, String> datatypeHints;
 	private SourcePattern sourcePattern;
 	private String uri;
+	public SourcePattern getSourcePattern() {
+		return sourcePattern;
+	}
+
 	private String parentMapping;
 	private boolean classMapping;
 	private static Log log = LogFactory.getLog(Mapping.class);
@@ -99,7 +102,7 @@ public class Mapping {
 			mapping.classMapping = isClassMapping;
 			
 			String error = hasCorrectVariableDependencies(mapping);
-			if(error!=null) {
+			if(error.length()>0) {
 				if(log.isDebugEnabled())
 					log.debug("Errors found in Mapping <" + mapping.getUri() + ">: " + error);
 				return null;
@@ -158,9 +161,9 @@ public class Mapping {
 	
 	private void addPrefixDefinitions(String prefixDefs) {
 		Map<String, String> prefixes = MiniParsers.parsePrefixDefinitions(prefixDefs);
-		for(String prefix: prefixes.keySet()) {
-			prefixMapper.registerPrefix(prefix, prefixes.get(prefix));
-			this.prefixes.add(prefix);
+		for(Map.Entry<String, String> prefix: prefixes.entrySet()) {
+			prefixMapper.registerPrefix(prefix.getKey(), prefix.getValue());
+			this.prefixes.add(prefix.getKey());
 		}
 	}
 	
@@ -350,9 +353,9 @@ terns of this mapping containing one of these URIs are executed.
 		return sb.toString();
 	}
 	
-	// Returns null if everything is OK, else it returns an error message
+	// Returns empty String if everything is OK, else it returns an error message
 	private static String hasCorrectVariableDependencies(Mapping mapping) {
-		String error = null;
+		StringBuilder error = new StringBuilder();
 		Set<String> variablesForTargetPattern = new HashSet<String>();
 		Set<String> targetPatternVariablesDep = mapping.variableDependenciesOfTargetPatterns;
 		Set<String> transformationVariablesDep = mapping.variableDependenciesOfTransformations;
@@ -364,15 +367,21 @@ terns of this mapping containing one of these URIs are executed.
 		
 		// Transformations depend on source pattern variables
 		for(String var: transformationVariablesDep)
-			if(!sourcePatternVariables.contains(var))
-				error = ((error==null) ? "" : error) + "Transformation definition depends on non existing variable: ?" + var +" of the source pattern. ";
+			if(!sourcePatternVariables.contains(var)) {
+				error.append("Transformation definition depends on non existing variable: ?");
+				error.append(var);
+				error.append(" of the source pattern. ");
+			}
 		
 		// Target Pattern depend on source pattern AND transformation variables
 		for(String var: targetPatternVariablesDep)
-			if(!variablesForTargetPattern.contains(var))
-				error = ((error==null) ? "" : error) + "Target Pattern definition depends on non existing variable: ?" + var +". ";
+			if(!variablesForTargetPattern.contains(var)) {
+				error.append("Target Pattern definition depends on non existing variable: ?");
+				error.append(var);
+				error.append(". ");
+			}
 		
-		return error;
+		return error.toString();
 	}
 	
 	/*
@@ -396,11 +405,12 @@ terns of this mapping containing one of these URIs are executed.
 				if(contextMappings==null)
 					throw new RuntimeException("No prefix definition for prefix " + prefix + " in mapping <" + uri + "> found!");
 				else {
-					String errorString = "No prefix definition for prefix " + prefix + " in mapping <" + uri + ">";
+					StringBuilder errorString = new StringBuilder(); 
+					errorString.append("No prefix definition for prefix ").append(prefix).append(" in mapping <" + uri + ">");
 					for(Mapping contextMapping: contextMappings)
-						errorString += " or <" + contextMapping.uri + ">";
-					errorString += " found!";
-					throw new RuntimeException(errorString);
+						errorString.append(" or <").append(contextMapping.uri).append(">");
+					errorString.append(" found!");
+					throw new RuntimeException(errorString.toString());
 				}
 			}
 			sb.append("prefix " + prefix + ": <" + ns + ">\n");
@@ -473,7 +483,14 @@ terns of this mapping containing one of these URIs are executed.
 			mapping.addProperty(classMappingRef, parentMap);
 		}
 		
-		//Create target meta data
+		createMapsToMetaData(model, mapping, mapsToClass, mapsToProperty);
+		
+		createDependsOnMetaData(model, mapping, dependsOnClass,
+				dependsOnProperty);
+	}
+
+	private void createMapsToMetaData(Model model, Resource mapping,
+			Property mapsToClass, Property mapsToProperty) {
 		for(TargetPattern tp: targetPatterns) {
 			for(String cl: tp.getClasses()) {
 				Resource classResource = model.createResource(cl); 
@@ -484,8 +501,10 @@ terns of this mapping containing one of these URIs are executed.
 				mapping.addProperty(mapsToProperty, propResource);
 			}
 		}
-		
-		//Create source meta data
+	}
+
+	private void createDependsOnMetaData(Model model, Resource mapping,
+			Property dependsOnClass, Property dependsOnProperty) {
 		for(String cl: sourcePattern.getClasses()) {
 			Resource classResource = model.createResource(cl); 
 			mapping.addProperty(dependsOnClass, classResource);
@@ -501,4 +520,28 @@ terns of this mapping containing one of these URIs are executed.
 		insertMappingMetaDataIntoJenaModel(model);
 		return model;
 	}
+	
+	public Model getJenaModelWithExtendedMappingMetaData() {
+		Model model = getJenaModelWithMappingMetaData();
+		Resource mapping = model.createResource(uri);
+		for(TargetPattern tp: targetPatterns)
+			createTransformationInvolvedForMetaData(model, mapping, tp);
+
+		return model;
+	}
+
+	private void createTransformationInvolvedForMetaData(Model model,
+			Resource mapping, TargetPattern tp) {
+		Set<String> tpDeps = tp.getVariableDependencies();
+		boolean dependend = false;
+		for(String dep: tpDeps)
+			if(transformationGeneratedVariables.contains(dep))
+				dependend = true;
+		if(dependend) {
+			for(String prop: tp.getProperties()) {
+				mapping.addProperty(model.createProperty(R2R.transformationInvolvedFor), model.createResource(prop));
+			}
+		}
+	}
+
 }

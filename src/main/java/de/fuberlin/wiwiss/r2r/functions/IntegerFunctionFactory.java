@@ -19,7 +19,7 @@ private IntegerFunction function = null;
 		return function;
 	}
 
-	private class IntegerFunction implements Function {
+	private static class IntegerFunction implements Function {
 
 		public String getURI() {
 			return "integer";

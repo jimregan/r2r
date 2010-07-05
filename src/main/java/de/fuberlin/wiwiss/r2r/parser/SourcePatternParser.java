@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g 2010-04-28 20:06:06
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g 2010-06-06 01:46:35
 
   package de.fuberlin.wiwiss.r2r.parser;
   
@@ -136,7 +136,7 @@ public class SourcePatternParser extends Parser {
         
 
     public String[] getTokenNames() { return SourcePatternParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g"; }
+    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g"; }
 
 
       Set<String> variables = new HashSet<String>();
@@ -175,16 +175,16 @@ public class SourcePatternParser extends Parser {
     };
 
     // $ANTLR start "sourcePattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:67:1: sourcePattern returns [Set<String> usedPrefixes, Set<String> classes, Set<String> properties, int maxVarLength, Set<String> vars] : ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* EOF ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:67:1: sourcePattern returns [Set<String> usedPrefixes, Set<String> classes, Set<String> properties, int maxVarLength, Set<String> vars] : ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* EOF ;
     public final SourcePatternParser.sourcePattern_return sourcePattern() throws RecognitionException {
         SourcePatternParser.sourcePattern_return retval = new SourcePatternParser.sourcePattern_return();
         retval.start = input.LT(1);
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:3: ( ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* EOF )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:5: ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* EOF
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:3: ( ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* EOF )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:5: ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* EOF
             {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:5: ( triplesBlock )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:5: ( triplesBlock )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -193,7 +193,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:5: triplesBlock
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:5: triplesBlock
                     {
                     pushFollow(FOLLOW_triplesBlock_in_sourcePattern60);
                     triplesBlock();
@@ -206,7 +206,7 @@ public class SourcePatternParser extends Parser {
 
             }
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:19: ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:19: ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )*
             loop5:
             do {
                 int alt5=2;
@@ -219,9 +219,9 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:20: ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:20: ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )?
             	    {
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:20: ( graphPatternNotTriples | filter )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:20: ( graphPatternNotTriples | filter )
             	    int alt2=2;
             	    int LA2_0 = input.LA(1);
 
@@ -239,7 +239,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt2) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:21: graphPatternNotTriples
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:21: graphPatternNotTriples
             	            {
             	            pushFollow(FOLLOW_graphPatternNotTriples_in_sourcePattern65);
             	            graphPatternNotTriples();
@@ -250,7 +250,7 @@ public class SourcePatternParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:46: filter
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:46: filter
             	            {
             	            pushFollow(FOLLOW_filter_in_sourcePattern69);
             	            filter();
@@ -263,7 +263,7 @@ public class SourcePatternParser extends Parser {
 
             	    }
 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:54: ( '.' )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:54: ( '.' )?
             	    int alt3=2;
             	    int LA3_0 = input.LA(1);
 
@@ -272,7 +272,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt3) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:54: '.'
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:54: '.'
             	            {
             	            match(input,80,FOLLOW_80_in_sourcePattern72); 
 
@@ -281,7 +281,7 @@ public class SourcePatternParser extends Parser {
 
             	    }
 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:59: ( triplesBlock )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:59: ( triplesBlock )?
             	    int alt4=2;
             	    int LA4_0 = input.LA(1);
 
@@ -290,7 +290,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt4) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:68:59: triplesBlock
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:68:59: triplesBlock
             	            {
             	            pushFollow(FOLLOW_triplesBlock_in_sourcePattern75);
             	            triplesBlock();
@@ -343,14 +343,14 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "wherePattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:83:1: wherePattern : '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:83:1: wherePattern : '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' ;
     public final void wherePattern() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:3: ( '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:5: '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:3: ( '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:5: '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}'
             {
             match(input,81,FOLLOW_81_in_wherePattern100); 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:9: ( triplesBlock )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:9: ( triplesBlock )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -359,7 +359,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:9: triplesBlock
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:9: triplesBlock
                     {
                     pushFollow(FOLLOW_triplesBlock_in_wherePattern102);
                     triplesBlock();
@@ -372,7 +372,7 @@ public class SourcePatternParser extends Parser {
 
             }
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:23: ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:23: ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )*
             loop10:
             do {
                 int alt10=2;
@@ -385,9 +385,9 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt10) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:24: ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:24: ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )?
             	    {
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:24: ( graphPatternNotTriples | filter )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:24: ( graphPatternNotTriples | filter )
             	    int alt7=2;
             	    int LA7_0 = input.LA(1);
 
@@ -405,7 +405,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt7) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:25: graphPatternNotTriples
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:25: graphPatternNotTriples
             	            {
             	            pushFollow(FOLLOW_graphPatternNotTriples_in_wherePattern107);
             	            graphPatternNotTriples();
@@ -416,7 +416,7 @@ public class SourcePatternParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:50: filter
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:50: filter
             	            {
             	            pushFollow(FOLLOW_filter_in_wherePattern111);
             	            filter();
@@ -429,7 +429,7 @@ public class SourcePatternParser extends Parser {
 
             	    }
 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:58: ( '.' )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:58: ( '.' )?
             	    int alt8=2;
             	    int LA8_0 = input.LA(1);
 
@@ -438,7 +438,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt8) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:58: '.'
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:58: '.'
             	            {
             	            match(input,80,FOLLOW_80_in_wherePattern114); 
 
@@ -447,7 +447,7 @@ public class SourcePatternParser extends Parser {
 
             	    }
 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:63: ( triplesBlock )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:63: ( triplesBlock )?
             	    int alt9=2;
             	    int LA9_0 = input.LA(1);
 
@@ -456,7 +456,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt9) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:84:63: triplesBlock
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:84:63: triplesBlock
             	            {
             	            pushFollow(FOLLOW_triplesBlock_in_wherePattern117);
             	            triplesBlock();
@@ -495,14 +495,14 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "groupGraphPattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:87:1: groupGraphPattern : '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:87:1: groupGraphPattern : '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' ;
     public final void groupGraphPattern() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:3: ( '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:5: '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:3: ( '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:5: '{' ( triplesBlock )? ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )* '}'
             {
             match(input,81,FOLLOW_81_in_groupGraphPattern136); 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:9: ( triplesBlock )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:9: ( triplesBlock )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -511,7 +511,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt11) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:9: triplesBlock
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:9: triplesBlock
                     {
                     pushFollow(FOLLOW_triplesBlock_in_groupGraphPattern138);
                     triplesBlock();
@@ -524,7 +524,7 @@ public class SourcePatternParser extends Parser {
 
             }
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:23: ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:23: ( ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )? )*
             loop15:
             do {
                 int alt15=2;
@@ -537,9 +537,9 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt15) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:24: ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:24: ( graphPatternNotTriples | filter ) ( '.' )? ( triplesBlock )?
             	    {
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:24: ( graphPatternNotTriples | filter )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:24: ( graphPatternNotTriples | filter )
             	    int alt12=2;
             	    int LA12_0 = input.LA(1);
 
@@ -557,7 +557,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt12) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:25: graphPatternNotTriples
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:25: graphPatternNotTriples
             	            {
             	            pushFollow(FOLLOW_graphPatternNotTriples_in_groupGraphPattern143);
             	            graphPatternNotTriples();
@@ -568,7 +568,7 @@ public class SourcePatternParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:50: filter
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:50: filter
             	            {
             	            pushFollow(FOLLOW_filter_in_groupGraphPattern147);
             	            filter();
@@ -581,7 +581,7 @@ public class SourcePatternParser extends Parser {
 
             	    }
 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:58: ( '.' )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:58: ( '.' )?
             	    int alt13=2;
             	    int LA13_0 = input.LA(1);
 
@@ -590,7 +590,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt13) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:58: '.'
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:58: '.'
             	            {
             	            match(input,80,FOLLOW_80_in_groupGraphPattern150); 
 
@@ -599,7 +599,7 @@ public class SourcePatternParser extends Parser {
 
             	    }
 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:63: ( triplesBlock )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:63: ( triplesBlock )?
             	    int alt14=2;
             	    int LA14_0 = input.LA(1);
 
@@ -608,7 +608,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt14) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:88:63: triplesBlock
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:88:63: triplesBlock
             	            {
             	            pushFollow(FOLLOW_triplesBlock_in_groupGraphPattern153);
             	            triplesBlock();
@@ -647,18 +647,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "triplesBlock"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:91:1: triplesBlock : triplesSameSubject ( '.' ( triplesBlock )? )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:91:1: triplesBlock : triplesSameSubject ( '.' ( triplesBlock )? )? ;
     public final void triplesBlock() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:92:3: ( triplesSameSubject ( '.' ( triplesBlock )? )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:92:5: triplesSameSubject ( '.' ( triplesBlock )? )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:92:3: ( triplesSameSubject ( '.' ( triplesBlock )? )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:92:5: triplesSameSubject ( '.' ( triplesBlock )? )?
             {
             pushFollow(FOLLOW_triplesSameSubject_in_triplesBlock174);
             triplesSameSubject();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:92:24: ( '.' ( triplesBlock )? )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:92:24: ( '.' ( triplesBlock )? )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -667,10 +667,10 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:92:26: '.' ( triplesBlock )?
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:92:26: '.' ( triplesBlock )?
                     {
                     match(input,80,FOLLOW_80_in_triplesBlock178); 
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:92:30: ( triplesBlock )?
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:92:30: ( triplesBlock )?
                     int alt16=2;
                     int LA16_0 = input.LA(1);
 
@@ -679,7 +679,7 @@ public class SourcePatternParser extends Parser {
                     }
                     switch (alt16) {
                         case 1 :
-                            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:92:30: triplesBlock
+                            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:92:30: triplesBlock
                             {
                             pushFollow(FOLLOW_triplesBlock_in_triplesBlock180);
                             triplesBlock();
@@ -714,10 +714,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "graphPatternNotTriples"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:95:1: graphPatternNotTriples : ( optionalGraphPattern | groupOrUnionGraphPattern | graphGraphPattern );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:95:1: graphPatternNotTriples : ( optionalGraphPattern | groupOrUnionGraphPattern | graphGraphPattern );
     public final void graphPatternNotTriples() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:96:3: ( optionalGraphPattern | groupOrUnionGraphPattern | graphGraphPattern )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:96:3: ( optionalGraphPattern | groupOrUnionGraphPattern | graphGraphPattern )
             int alt18=3;
             switch ( input.LA(1) ) {
             case OPTIONAL:
@@ -744,7 +744,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt18) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:96:5: optionalGraphPattern
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:96:5: optionalGraphPattern
                     {
                     pushFollow(FOLLOW_optionalGraphPattern_in_graphPatternNotTriples198);
                     optionalGraphPattern();
@@ -755,7 +755,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:96:28: groupOrUnionGraphPattern
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:96:28: groupOrUnionGraphPattern
                     {
                     pushFollow(FOLLOW_groupOrUnionGraphPattern_in_graphPatternNotTriples202);
                     groupOrUnionGraphPattern();
@@ -766,7 +766,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:96:55: graphGraphPattern
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:96:55: graphGraphPattern
                     {
                     pushFollow(FOLLOW_graphGraphPattern_in_graphPatternNotTriples206);
                     graphGraphPattern();
@@ -791,11 +791,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "optionalGraphPattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:99:1: optionalGraphPattern : OPTIONAL groupGraphPattern ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:99:1: optionalGraphPattern : OPTIONAL groupGraphPattern ;
     public final void optionalGraphPattern() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:100:3: ( OPTIONAL groupGraphPattern )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:100:5: OPTIONAL groupGraphPattern
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:100:3: ( OPTIONAL groupGraphPattern )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:100:5: OPTIONAL groupGraphPattern
             {
              inOptional++; 
             match(input,OPTIONAL,FOLLOW_OPTIONAL_in_optionalGraphPattern222); 
@@ -821,11 +821,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "graphGraphPattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:103:1: graphGraphPattern : GRAPH varOrIriRef groupGraphPattern ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:103:1: graphGraphPattern : GRAPH varOrIriRef groupGraphPattern ;
     public final void graphGraphPattern() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:104:3: ( GRAPH varOrIriRef groupGraphPattern )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:104:5: GRAPH varOrIriRef groupGraphPattern
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:104:3: ( GRAPH varOrIriRef groupGraphPattern )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:104:5: GRAPH varOrIriRef groupGraphPattern
             {
             match(input,GRAPH,FOLLOW_GRAPH_in_graphGraphPattern241); 
             pushFollow(FOLLOW_varOrIriRef_in_graphGraphPattern243);
@@ -854,18 +854,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "groupOrUnionGraphPattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:107:1: groupOrUnionGraphPattern : groupGraphPattern ( UNION groupGraphPattern )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:107:1: groupOrUnionGraphPattern : groupGraphPattern ( UNION groupGraphPattern )* ;
     public final void groupOrUnionGraphPattern() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:108:3: ( groupGraphPattern ( UNION groupGraphPattern )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:108:5: groupGraphPattern ( UNION groupGraphPattern )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:108:3: ( groupGraphPattern ( UNION groupGraphPattern )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:108:5: groupGraphPattern ( UNION groupGraphPattern )*
             {
             pushFollow(FOLLOW_groupGraphPattern_in_groupOrUnionGraphPattern260);
             groupGraphPattern();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:108:23: ( UNION groupGraphPattern )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:108:23: ( UNION groupGraphPattern )*
             loop19:
             do {
                 int alt19=2;
@@ -878,7 +878,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt19) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:108:25: UNION groupGraphPattern
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:108:25: UNION groupGraphPattern
             	    {
             	    match(input,UNION,FOLLOW_UNION_in_groupOrUnionGraphPattern264); 
             	    pushFollow(FOLLOW_groupGraphPattern_in_groupOrUnionGraphPattern266);
@@ -911,11 +911,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "filter"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:111:1: filter : FILTER constraint ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:111:1: filter : FILTER constraint ;
     public final void filter() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:112:3: ( FILTER constraint )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:112:5: FILTER constraint
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:112:3: ( FILTER constraint )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:112:5: FILTER constraint
             {
             match(input,FILTER,FOLLOW_FILTER_in_filter282); 
             pushFollow(FOLLOW_constraint_in_filter284);
@@ -939,10 +939,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "constraint"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:115:1: constraint : ( brackettedExpression | builtInCall | functionCall );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:115:1: constraint : ( brackettedExpression | builtInCall | functionCall );
     public final void constraint() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:116:3: ( brackettedExpression | builtInCall | functionCall )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:116:3: ( brackettedExpression | builtInCall | functionCall )
             int alt20=3;
             switch ( input.LA(1) ) {
             case 83:
@@ -980,7 +980,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt20) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:116:5: brackettedExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:116:5: brackettedExpression
                     {
                     pushFollow(FOLLOW_brackettedExpression_in_constraint299);
                     brackettedExpression();
@@ -991,7 +991,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:116:28: builtInCall
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:116:28: builtInCall
                     {
                     pushFollow(FOLLOW_builtInCall_in_constraint303);
                     builtInCall();
@@ -1002,7 +1002,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:116:42: functionCall
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:116:42: functionCall
                     {
                     pushFollow(FOLLOW_functionCall_in_constraint307);
                     functionCall();
@@ -1027,11 +1027,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "functionCall"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:119:1: functionCall : iriRef argList ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:119:1: functionCall : iriRef argList ;
     public final void functionCall() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:120:3: ( iriRef argList )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:120:5: iriRef argList
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:120:3: ( iriRef argList )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:120:5: iriRef argList
             {
             pushFollow(FOLLOW_iriRef_in_functionCall322);
             iriRef();
@@ -1059,10 +1059,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "argList"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:123:1: argList : ( NIL | '(' expression ( ',' expression )* ')' );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:123:1: argList : ( NIL | '(' expression ( ',' expression )* ')' );
     public final void argList() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:124:3: ( NIL | '(' expression ( ',' expression )* ')' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:124:3: ( NIL | '(' expression ( ',' expression )* ')' )
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -1080,14 +1080,14 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt22) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:124:5: NIL
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:124:5: NIL
                     {
                     match(input,NIL,FOLLOW_NIL_in_argList337); 
 
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:124:11: '(' expression ( ',' expression )* ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:124:11: '(' expression ( ',' expression )* ')'
                     {
                     match(input,83,FOLLOW_83_in_argList341); 
                     pushFollow(FOLLOW_expression_in_argList343);
@@ -1095,7 +1095,7 @@ public class SourcePatternParser extends Parser {
 
                     state._fsp--;
 
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:124:26: ( ',' expression )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:124:26: ( ',' expression )*
                     loop21:
                     do {
                         int alt21=2;
@@ -1108,7 +1108,7 @@ public class SourcePatternParser extends Parser {
 
                         switch (alt21) {
                     	case 1 :
-                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:124:28: ',' expression
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:124:28: ',' expression
                     	    {
                     	    match(input,84,FOLLOW_84_in_argList347); 
                     	    pushFollow(FOLLOW_expression_in_argList349);
@@ -1144,10 +1144,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "triplesSameSubject"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:127:1: triplesSameSubject : ( varOrTerm propertyListNotEmpty | triplesNode propertyList );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:127:1: triplesSameSubject : ( varOrTerm propertyListNotEmpty | triplesNode propertyList );
     public final void triplesSameSubject() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:128:3: ( varOrTerm propertyListNotEmpty | triplesNode propertyList )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:128:3: ( varOrTerm propertyListNotEmpty | triplesNode propertyList )
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -1165,7 +1165,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt23) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:128:5: varOrTerm propertyListNotEmpty
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:128:5: varOrTerm propertyListNotEmpty
                     {
                     pushFollow(FOLLOW_varOrTerm_in_triplesSameSubject369);
                     varOrTerm();
@@ -1181,7 +1181,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:128:38: triplesNode propertyList
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:128:38: triplesNode propertyList
                     {
                     pushFollow(FOLLOW_triplesNode_in_triplesSameSubject375);
                     triplesNode();
@@ -1211,7 +1211,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "propertyListNotEmpty"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:131:1: propertyListNotEmpty : v= verb oList= objectList ( ';' ( verb objectList )? )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:131:1: propertyListNotEmpty : v= verb oList= objectList ( ';' ( verb objectList )? )* ;
     public final void propertyListNotEmpty() throws RecognitionException {
         String v = null;
 
@@ -1219,8 +1219,8 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:132:3: (v= verb oList= objectList ( ';' ( verb objectList )? )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:132:5: v= verb oList= objectList ( ';' ( verb objectList )? )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:132:3: (v= verb oList= objectList ( ';' ( verb objectList )? )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:132:5: v= verb oList= objectList ( ';' ( verb objectList )? )*
             {
             pushFollow(FOLLOW_verb_in_propertyListNotEmpty394);
             v=verb();
@@ -1241,7 +1241,7 @@ public class SourcePatternParser extends Parser {
                     }
                   }
                 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:142:4: ( ';' ( verb objectList )? )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:142:4: ( ';' ( verb objectList )? )*
             loop25:
             do {
                 int alt25=2;
@@ -1254,10 +1254,10 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt25) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:142:6: ';' ( verb objectList )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:142:6: ';' ( verb objectList )?
             	    {
             	    match(input,86,FOLLOW_86_in_propertyListNotEmpty411); 
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:142:10: ( verb objectList )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:142:10: ( verb objectList )?
             	    int alt24=2;
             	    int LA24_0 = input.LA(1);
 
@@ -1266,7 +1266,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    switch (alt24) {
             	        case 1 :
-            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:142:11: verb objectList
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:142:11: verb objectList
             	            {
             	            pushFollow(FOLLOW_verb_in_propertyListNotEmpty414);
             	            verb();
@@ -1309,13 +1309,13 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "propertyList"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:145:1: propertyList : ( propertyListNotEmpty )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:145:1: propertyList : ( propertyListNotEmpty )? ;
     public final void propertyList() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:146:3: ( ( propertyListNotEmpty )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:146:5: ( propertyListNotEmpty )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:146:3: ( ( propertyListNotEmpty )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:146:5: ( propertyListNotEmpty )?
             {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:146:5: ( propertyListNotEmpty )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:146:5: ( propertyListNotEmpty )?
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -1324,7 +1324,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt26) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:146:5: propertyListNotEmpty
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:146:5: propertyListNotEmpty
                     {
                     pushFollow(FOLLOW_propertyListNotEmpty_in_propertyList435);
                     propertyListNotEmpty();
@@ -1353,7 +1353,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "objectList"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:149:1: objectList returns [List<String> values] : o= object ( ',' o= object )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:149:1: objectList returns [List<String> values] : o= object ( ',' o= object )* ;
     public final List<String> objectList() throws RecognitionException {
         List<String> values = null;
 
@@ -1361,8 +1361,8 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:150:3: (o= object ( ',' o= object )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:150:5: o= object ( ',' o= object )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:150:3: (o= object ( ',' o= object )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:150:5: o= object ( ',' o= object )*
             {
             pushFollow(FOLLOW_object_in_objectList457);
             o=object();
@@ -1370,7 +1370,7 @@ public class SourcePatternParser extends Parser {
             state._fsp--;
 
              values = new ArrayList<String>(); values.add(o);
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:151:5: ( ',' o= object )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:151:5: ( ',' o= object )*
             loop27:
             do {
                 int alt27=2;
@@ -1383,7 +1383,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt27) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:151:7: ',' o= object
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:151:7: ',' o= object
             	    {
             	    match(input,84,FOLLOW_84_in_objectList467); 
             	    pushFollow(FOLLOW_object_in_objectList471);
@@ -1417,7 +1417,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "object"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:155:1: object returns [String value] : graphNode ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:155:1: object returns [String value] : graphNode ;
     public final String object() throws RecognitionException {
         String value = null;
 
@@ -1425,8 +1425,8 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:156:3: ( graphNode )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:156:5: graphNode
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:156:3: ( graphNode )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:156:5: graphNode
             {
             pushFollow(FOLLOW_graphNode_in_object499);
             graphNode1=graphNode();
@@ -1450,7 +1450,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "verb"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:159:1: verb returns [String value] : ( iriRef | 'a' );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:159:1: verb returns [String value] : ( iriRef | 'a' );
     public final String verb() throws RecognitionException {
         String value = null;
 
@@ -1458,7 +1458,7 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:160:3: ( iriRef | 'a' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:160:3: ( iriRef | 'a' )
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -1476,7 +1476,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt28) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:160:5: iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:160:5: iriRef
                     {
                     pushFollow(FOLLOW_iriRef_in_verb520);
                     iriRef2=iriRef();
@@ -1494,7 +1494,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:168:5: 'a'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:168:5: 'a'
                     {
                     match(input,87,FOLLOW_87_in_verb533); 
 
@@ -1519,10 +1519,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "triplesNode"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:175:1: triplesNode : ( collection | blankNodePropertyList );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:175:1: triplesNode : ( collection | blankNodePropertyList );
     public final void triplesNode() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:176:3: ( collection | blankNodePropertyList )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:176:3: ( collection | blankNodePropertyList )
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -1540,7 +1540,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt29) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:176:5: collection
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:176:5: collection
                     {
                     pushFollow(FOLLOW_collection_in_triplesNode554);
                     collection();
@@ -1551,7 +1551,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:176:18: blankNodePropertyList
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:176:18: blankNodePropertyList
                     {
                     pushFollow(FOLLOW_blankNodePropertyList_in_triplesNode558);
                     blankNodePropertyList();
@@ -1576,11 +1576,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "blankNodePropertyList"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:179:1: blankNodePropertyList : '[' propertyListNotEmpty ']' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:179:1: blankNodePropertyList : '[' propertyListNotEmpty ']' ;
     public final void blankNodePropertyList() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:180:3: ( '[' propertyListNotEmpty ']' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:180:5: '[' propertyListNotEmpty ']'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:180:3: ( '[' propertyListNotEmpty ']' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:180:5: '[' propertyListNotEmpty ']'
             {
             match(input,88,FOLLOW_88_in_blankNodePropertyList571); 
             pushFollow(FOLLOW_propertyListNotEmpty_in_blankNodePropertyList573);
@@ -1605,14 +1605,14 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "collection"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:183:1: collection : '(' ( graphNode )+ ')' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:183:1: collection : '(' ( graphNode )+ ')' ;
     public final void collection() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:184:3: ( '(' ( graphNode )+ ')' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:184:5: '(' ( graphNode )+ ')'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:184:3: ( '(' ( graphNode )+ ')' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:184:5: '(' ( graphNode )+ ')'
             {
             match(input,83,FOLLOW_83_in_collection590); 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:184:9: ( graphNode )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:184:9: ( graphNode )+
             int cnt30=0;
             loop30:
             do {
@@ -1626,7 +1626,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt30) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:184:9: graphNode
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:184:9: graphNode
             	    {
             	    pushFollow(FOLLOW_graphNode_in_collection592);
             	    graphNode();
@@ -1663,7 +1663,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "graphNode"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:187:1: graphNode returns [String value] : ( varOrTerm | triplesNode );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:187:1: graphNode returns [String value] : ( varOrTerm | triplesNode );
     public final String graphNode() throws RecognitionException {
         String value = null;
 
@@ -1671,7 +1671,7 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:188:3: ( varOrTerm | triplesNode )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:188:3: ( varOrTerm | triplesNode )
             int alt31=2;
             int LA31_0 = input.LA(1);
 
@@ -1689,7 +1689,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt31) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:188:5: varOrTerm
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:188:5: varOrTerm
                     {
                     pushFollow(FOLLOW_varOrTerm_in_graphNode614);
                     varOrTerm3=varOrTerm();
@@ -1701,7 +1701,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:189:5: triplesNode
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:189:5: triplesNode
                     {
                     pushFollow(FOLLOW_triplesNode_in_graphNode622);
                     triplesNode();
@@ -1727,7 +1727,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "varOrTerm"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:192:1: varOrTerm returns [String value] : ( var | graphTerm );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:192:1: varOrTerm returns [String value] : ( var | graphTerm );
     public final String varOrTerm() throws RecognitionException {
         String value = null;
 
@@ -1735,7 +1735,7 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:193:3: ( var | graphTerm )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:193:3: ( var | graphTerm )
             int alt32=2;
             int LA32_0 = input.LA(1);
 
@@ -1753,7 +1753,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt32) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:193:5: var
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:193:5: var
                     {
                     pushFollow(FOLLOW_var_in_varOrTerm643);
                     var();
@@ -1765,7 +1765,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:194:5: graphTerm
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:194:5: graphTerm
                     {
                     pushFollow(FOLLOW_graphTerm_in_varOrTerm651);
                     graphTerm4=graphTerm();
@@ -1791,7 +1791,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "varOrIriRef"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:197:1: varOrIriRef returns [String value] : ( var | iriRef );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:197:1: varOrIriRef returns [String value] : ( var | iriRef );
     public final String varOrIriRef() throws RecognitionException {
         String value = null;
 
@@ -1799,7 +1799,7 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:198:3: ( var | iriRef )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:198:3: ( var | iriRef )
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -1817,7 +1817,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt33) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:198:5: var
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:198:5: var
                     {
                     pushFollow(FOLLOW_var_in_varOrIriRef672);
                     var();
@@ -1829,7 +1829,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:199:5: iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:199:5: iriRef
                     {
                     pushFollow(FOLLOW_iriRef_in_varOrIriRef683);
                     iriRef5=iriRef();
@@ -1855,13 +1855,13 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "var"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:202:1: var : ( VAR1 | VAR2 );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:202:1: var : ( VAR1 | VAR2 );
     public final void var() throws RecognitionException {
         Token VAR16=null;
         Token VAR27=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:203:3: ( VAR1 | VAR2 )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:203:3: ( VAR1 | VAR2 )
             int alt34=2;
             int LA34_0 = input.LA(1);
 
@@ -1879,7 +1879,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt34) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:203:5: VAR1
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:203:5: VAR1
                     {
                     VAR16=(Token)match(input,VAR1,FOLLOW_VAR1_in_var700); 
                      variables.add((VAR16!=null?VAR16.getText():null).substring(1));
@@ -1887,7 +1887,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:203:55: VAR2
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:203:55: VAR2
                     {
                     VAR27=(Token)match(input,VAR2,FOLLOW_VAR2_in_var706); 
                      variables.add((VAR27!=null?VAR27.getText():null).substring(1));
@@ -1909,7 +1909,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "graphTerm"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:206:1: graphTerm returns [String value] : ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode | NIL );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:206:1: graphTerm returns [String value] : ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode | NIL );
     public final String graphTerm() throws RecognitionException {
         String value = null;
 
@@ -1917,7 +1917,7 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:207:3: ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode | NIL )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:207:3: ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode | NIL )
             int alt35=6;
             switch ( input.LA(1) ) {
             case IRI_REF:
@@ -1973,7 +1973,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt35) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:207:5: iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:207:5: iriRef
                     {
                      value = null; 
                     pushFollow(FOLLOW_iriRef_in_graphTerm732);
@@ -1986,7 +1986,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:209:7: rdfLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:209:7: rdfLiteral
                     {
                     pushFollow(FOLLOW_rdfLiteral_in_graphTerm742);
                     rdfLiteral();
@@ -1997,7 +1997,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:209:20: numericLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:209:20: numericLiteral
                     {
                     pushFollow(FOLLOW_numericLiteral_in_graphTerm746);
                     numericLiteral();
@@ -2008,7 +2008,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:209:37: booleanLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:209:37: booleanLiteral
                     {
                     pushFollow(FOLLOW_booleanLiteral_in_graphTerm750);
                     booleanLiteral();
@@ -2019,7 +2019,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:209:54: blankNode
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:209:54: blankNode
                     {
                     pushFollow(FOLLOW_blankNode_in_graphTerm754);
                     blankNode();
@@ -2030,7 +2030,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:209:66: NIL
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:209:66: NIL
                     {
                     match(input,NIL,FOLLOW_NIL_in_graphTerm758); 
 
@@ -2051,11 +2051,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "expression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:212:1: expression : conditionalOrExpression ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:212:1: expression : conditionalOrExpression ;
     public final void expression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:213:3: ( conditionalOrExpression )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:213:5: conditionalOrExpression
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:213:3: ( conditionalOrExpression )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:213:5: conditionalOrExpression
             {
             pushFollow(FOLLOW_conditionalOrExpression_in_expression773);
             conditionalOrExpression();
@@ -2078,18 +2078,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "conditionalOrExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:216:1: conditionalOrExpression : conditionalAndExpression ( '||' conditionalAndExpression )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:216:1: conditionalOrExpression : conditionalAndExpression ( '||' conditionalAndExpression )* ;
     public final void conditionalOrExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:217:3: ( conditionalAndExpression ( '||' conditionalAndExpression )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:217:5: conditionalAndExpression ( '||' conditionalAndExpression )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:217:3: ( conditionalAndExpression ( '||' conditionalAndExpression )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:217:5: conditionalAndExpression ( '||' conditionalAndExpression )*
             {
             pushFollow(FOLLOW_conditionalAndExpression_in_conditionalOrExpression788);
             conditionalAndExpression();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:217:30: ( '||' conditionalAndExpression )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:217:30: ( '||' conditionalAndExpression )*
             loop36:
             do {
                 int alt36=2;
@@ -2102,7 +2102,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt36) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:217:31: '||' conditionalAndExpression
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:217:31: '||' conditionalAndExpression
             	    {
             	    match(input,90,FOLLOW_90_in_conditionalOrExpression791); 
             	    pushFollow(FOLLOW_conditionalAndExpression_in_conditionalOrExpression793);
@@ -2135,18 +2135,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "conditionalAndExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:220:1: conditionalAndExpression : valueLogical ( '&&' valueLogical )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:220:1: conditionalAndExpression : valueLogical ( '&&' valueLogical )* ;
     public final void conditionalAndExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:221:3: ( valueLogical ( '&&' valueLogical )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:221:5: valueLogical ( '&&' valueLogical )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:221:3: ( valueLogical ( '&&' valueLogical )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:221:5: valueLogical ( '&&' valueLogical )*
             {
             pushFollow(FOLLOW_valueLogical_in_conditionalAndExpression810);
             valueLogical();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:221:18: ( '&&' valueLogical )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:221:18: ( '&&' valueLogical )*
             loop37:
             do {
                 int alt37=2;
@@ -2159,7 +2159,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt37) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:221:20: '&&' valueLogical
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:221:20: '&&' valueLogical
             	    {
             	    match(input,91,FOLLOW_91_in_conditionalAndExpression814); 
             	    pushFollow(FOLLOW_valueLogical_in_conditionalAndExpression816);
@@ -2192,11 +2192,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "valueLogical"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:224:1: valueLogical : relationalExpression ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:224:1: valueLogical : relationalExpression ;
     public final void valueLogical() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:225:3: ( relationalExpression )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:225:5: relationalExpression
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:225:3: ( relationalExpression )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:225:5: relationalExpression
             {
             pushFollow(FOLLOW_relationalExpression_in_valueLogical834);
             relationalExpression();
@@ -2219,18 +2219,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "relationalExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:228:1: relationalExpression : numericExpression ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:228:1: relationalExpression : numericExpression ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )? ;
     public final void relationalExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:229:3: ( numericExpression ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:229:5: numericExpression ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:229:3: ( numericExpression ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:229:5: numericExpression ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )?
             {
             pushFollow(FOLLOW_numericExpression_in_relationalExpression849);
             numericExpression();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:229:23: ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:229:23: ( '=' numericExpression | '!=' numericExpression | '<' numericExpression | '>' numericExpression | '<=' numericExpression | '>=' numericExpression )?
             int alt38=7;
             switch ( input.LA(1) ) {
                 case 92:
@@ -2267,7 +2267,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt38) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:230:25: '=' numericExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:230:25: '=' numericExpression
                     {
                     match(input,92,FOLLOW_92_in_relationalExpression877); 
                     pushFollow(FOLLOW_numericExpression_in_relationalExpression879);
@@ -2279,7 +2279,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:231:25: '!=' numericExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:231:25: '!=' numericExpression
                     {
                     match(input,93,FOLLOW_93_in_relationalExpression906); 
                     pushFollow(FOLLOW_numericExpression_in_relationalExpression908);
@@ -2291,7 +2291,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:232:25: '<' numericExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:232:25: '<' numericExpression
                     {
                     match(input,94,FOLLOW_94_in_relationalExpression935); 
                     pushFollow(FOLLOW_numericExpression_in_relationalExpression937);
@@ -2303,7 +2303,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:233:25: '>' numericExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:233:25: '>' numericExpression
                     {
                     match(input,95,FOLLOW_95_in_relationalExpression964); 
                     pushFollow(FOLLOW_numericExpression_in_relationalExpression966);
@@ -2315,7 +2315,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:234:25: '<=' numericExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:234:25: '<=' numericExpression
                     {
                     match(input,96,FOLLOW_96_in_relationalExpression993); 
                     pushFollow(FOLLOW_numericExpression_in_relationalExpression995);
@@ -2327,7 +2327,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:235:25: '>=' numericExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:235:25: '>=' numericExpression
                     {
                     match(input,97,FOLLOW_97_in_relationalExpression1021); 
                     pushFollow(FOLLOW_numericExpression_in_relationalExpression1023);
@@ -2357,11 +2357,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "numericExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:239:2: numericExpression : additiveExpression ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:239:2: numericExpression : additiveExpression ;
     public final void numericExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:240:4: ( additiveExpression )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:240:6: additiveExpression
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:240:4: ( additiveExpression )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:240:6: additiveExpression
             {
             pushFollow(FOLLOW_additiveExpression_in_numericExpression1065);
             additiveExpression();
@@ -2384,18 +2384,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "additiveExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:243:2: additiveExpression : multiplicativeExpression ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:243:2: additiveExpression : multiplicativeExpression ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )* ;
     public final void additiveExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:244:4: ( multiplicativeExpression ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:244:6: multiplicativeExpression ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:244:4: ( multiplicativeExpression ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:244:6: multiplicativeExpression ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )*
             {
             pushFollow(FOLLOW_multiplicativeExpression_in_additiveExpression1084);
             multiplicativeExpression();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:244:31: ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:244:31: ( '+' multiplicativeExpression | '-' multiplicativeExpression | numericLiteralPositive | numericLiteralNegative )*
             loop39:
             do {
                 int alt39=5;
@@ -2429,7 +2429,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt39) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:244:33: '+' multiplicativeExpression
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:244:33: '+' multiplicativeExpression
             	    {
             	    match(input,98,FOLLOW_98_in_additiveExpression1088); 
             	    pushFollow(FOLLOW_multiplicativeExpression_in_additiveExpression1090);
@@ -2441,7 +2441,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:245:33: '-' multiplicativeExpression
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:245:33: '-' multiplicativeExpression
             	    {
             	    match(input,99,FOLLOW_99_in_additiveExpression1124); 
             	    pushFollow(FOLLOW_multiplicativeExpression_in_additiveExpression1126);
@@ -2453,7 +2453,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    break;
             	case 3 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:246:33: numericLiteralPositive
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:246:33: numericLiteralPositive
             	    {
             	    pushFollow(FOLLOW_numericLiteralPositive_in_additiveExpression1160);
             	    numericLiteralPositive();
@@ -2464,7 +2464,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    break;
             	case 4 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:247:33: numericLiteralNegative
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:247:33: numericLiteralNegative
             	    {
             	    pushFollow(FOLLOW_numericLiteralNegative_in_additiveExpression1194);
             	    numericLiteralNegative();
@@ -2496,18 +2496,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "multiplicativeExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:251:2: multiplicativeExpression : unaryExpression ( '*' unaryExpression | '/' unaryExpression )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:251:2: multiplicativeExpression : unaryExpression ( '*' unaryExpression | '/' unaryExpression )* ;
     public final void multiplicativeExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:252:4: ( unaryExpression ( '*' unaryExpression | '/' unaryExpression )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:252:6: unaryExpression ( '*' unaryExpression | '/' unaryExpression )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:252:4: ( unaryExpression ( '*' unaryExpression | '/' unaryExpression )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:252:6: unaryExpression ( '*' unaryExpression | '/' unaryExpression )*
             {
             pushFollow(FOLLOW_unaryExpression_in_multiplicativeExpression1246);
             unaryExpression();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:252:22: ( '*' unaryExpression | '/' unaryExpression )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:252:22: ( '*' unaryExpression | '/' unaryExpression )*
             loop40:
             do {
                 int alt40=3;
@@ -2523,7 +2523,7 @@ public class SourcePatternParser extends Parser {
 
                 switch (alt40) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:252:24: '*' unaryExpression
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:252:24: '*' unaryExpression
             	    {
             	    match(input,100,FOLLOW_100_in_multiplicativeExpression1250); 
             	    pushFollow(FOLLOW_unaryExpression_in_multiplicativeExpression1252);
@@ -2535,7 +2535,7 @@ public class SourcePatternParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:252:46: '/' unaryExpression
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:252:46: '/' unaryExpression
             	    {
             	    match(input,101,FOLLOW_101_in_multiplicativeExpression1256); 
             	    pushFollow(FOLLOW_unaryExpression_in_multiplicativeExpression1259);
@@ -2568,10 +2568,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "unaryExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:255:2: unaryExpression : ( '!' primaryExpression | '+' primaryExpression | '-' primaryExpression | primaryExpression );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:255:2: unaryExpression : ( '!' primaryExpression | '+' primaryExpression | '-' primaryExpression | primaryExpression );
     public final void unaryExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:256:4: ( '!' primaryExpression | '+' primaryExpression | '-' primaryExpression | primaryExpression )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:256:4: ( '!' primaryExpression | '+' primaryExpression | '-' primaryExpression | primaryExpression )
             int alt41=4;
             switch ( input.LA(1) ) {
             case 102:
@@ -2633,7 +2633,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt41) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:256:6: '!' primaryExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:256:6: '!' primaryExpression
                     {
                     match(input,102,FOLLOW_102_in_unaryExpression1280); 
                     pushFollow(FOLLOW_primaryExpression_in_unaryExpression1282);
@@ -2645,7 +2645,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:257:6: '+' primaryExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:257:6: '+' primaryExpression
                     {
                     match(input,98,FOLLOW_98_in_unaryExpression1289); 
                     pushFollow(FOLLOW_primaryExpression_in_unaryExpression1291);
@@ -2657,7 +2657,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:258:6: '-' primaryExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:258:6: '-' primaryExpression
                     {
                     match(input,99,FOLLOW_99_in_unaryExpression1298); 
                     pushFollow(FOLLOW_primaryExpression_in_unaryExpression1300);
@@ -2669,7 +2669,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:259:6: primaryExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:259:6: primaryExpression
                     {
                     pushFollow(FOLLOW_primaryExpression_in_unaryExpression1307);
                     primaryExpression();
@@ -2694,10 +2694,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "primaryExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:262:2: primaryExpression : ( brackettedExpression | builtInCall | iriRefOrFunction | rdfLiteral | numericLiteral | booleanLiteral | var );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:262:2: primaryExpression : ( brackettedExpression | builtInCall | iriRefOrFunction | rdfLiteral | numericLiteral | booleanLiteral | var );
     public final void primaryExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:263:4: ( brackettedExpression | builtInCall | iriRefOrFunction | rdfLiteral | numericLiteral | booleanLiteral | var )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:263:4: ( brackettedExpression | builtInCall | iriRefOrFunction | rdfLiteral | numericLiteral | booleanLiteral | var )
             int alt42=7;
             switch ( input.LA(1) ) {
             case 83:
@@ -2768,7 +2768,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt42) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:263:6: brackettedExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:263:6: brackettedExpression
                     {
                     pushFollow(FOLLOW_brackettedExpression_in_primaryExpression1324);
                     brackettedExpression();
@@ -2779,7 +2779,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:264:6: builtInCall
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:264:6: builtInCall
                     {
                     pushFollow(FOLLOW_builtInCall_in_primaryExpression1331);
                     builtInCall();
@@ -2790,7 +2790,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:265:6: iriRefOrFunction
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:265:6: iriRefOrFunction
                     {
                     pushFollow(FOLLOW_iriRefOrFunction_in_primaryExpression1338);
                     iriRefOrFunction();
@@ -2801,7 +2801,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:266:6: rdfLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:266:6: rdfLiteral
                     {
                     pushFollow(FOLLOW_rdfLiteral_in_primaryExpression1345);
                     rdfLiteral();
@@ -2812,7 +2812,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:267:6: numericLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:267:6: numericLiteral
                     {
                     pushFollow(FOLLOW_numericLiteral_in_primaryExpression1352);
                     numericLiteral();
@@ -2823,7 +2823,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:268:6: booleanLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:268:6: booleanLiteral
                     {
                     pushFollow(FOLLOW_booleanLiteral_in_primaryExpression1359);
                     booleanLiteral();
@@ -2834,7 +2834,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:269:6: var
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:269:6: var
                     {
                     pushFollow(FOLLOW_var_in_primaryExpression1366);
                     var();
@@ -2859,11 +2859,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "brackettedExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:272:2: brackettedExpression : '(' expression ')' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:272:2: brackettedExpression : '(' expression ')' ;
     public final void brackettedExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:273:4: ( '(' expression ')' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:273:6: '(' expression ')'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:273:4: ( '(' expression ')' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:273:6: '(' expression ')'
             {
             match(input,83,FOLLOW_83_in_brackettedExpression1385); 
             pushFollow(FOLLOW_expression_in_brackettedExpression1387);
@@ -2888,10 +2888,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "builtInCall"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:276:2: builtInCall : ( STR '(' expression ')' | LANG '(' expression ')' | LANGMATCHES '(' expression ',' expression ')' | DATATYPE '(' expression ')' | BOUND '(' var ')' | SAMETERM '(' expression ',' expression ')' | ISIRI '(' expression ')' | ISURI '(' expression ')' | ISBLANK '(' expression ')' | ISLITERAL '(' expression ')' | regexExpression );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:276:2: builtInCall : ( STR '(' expression ')' | LANG '(' expression ')' | LANGMATCHES '(' expression ',' expression ')' | DATATYPE '(' expression ')' | BOUND '(' var ')' | SAMETERM '(' expression ',' expression ')' | ISIRI '(' expression ')' | ISURI '(' expression ')' | ISBLANK '(' expression ')' | ISLITERAL '(' expression ')' | regexExpression );
     public final void builtInCall() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:277:4: ( STR '(' expression ')' | LANG '(' expression ')' | LANGMATCHES '(' expression ',' expression ')' | DATATYPE '(' expression ')' | BOUND '(' var ')' | SAMETERM '(' expression ',' expression ')' | ISIRI '(' expression ')' | ISURI '(' expression ')' | ISBLANK '(' expression ')' | ISLITERAL '(' expression ')' | regexExpression )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:277:4: ( STR '(' expression ')' | LANG '(' expression ')' | LANGMATCHES '(' expression ',' expression ')' | DATATYPE '(' expression ')' | BOUND '(' var ')' | SAMETERM '(' expression ',' expression ')' | ISIRI '(' expression ')' | ISURI '(' expression ')' | ISBLANK '(' expression ')' | ISLITERAL '(' expression ')' | regexExpression )
             int alt43=11;
             switch ( input.LA(1) ) {
             case STR:
@@ -2958,7 +2958,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt43) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:277:6: STR '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:277:6: STR '(' expression ')'
                     {
                     match(input,STR,FOLLOW_STR_in_builtInCall1408); 
                     match(input,83,FOLLOW_83_in_builtInCall1410); 
@@ -2972,7 +2972,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:278:6: LANG '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:278:6: LANG '(' expression ')'
                     {
                     match(input,LANG,FOLLOW_LANG_in_builtInCall1421); 
                     match(input,83,FOLLOW_83_in_builtInCall1423); 
@@ -2986,7 +2986,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:279:6: LANGMATCHES '(' expression ',' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:279:6: LANGMATCHES '(' expression ',' expression ')'
                     {
                     match(input,LANGMATCHES,FOLLOW_LANGMATCHES_in_builtInCall1434); 
                     match(input,83,FOLLOW_83_in_builtInCall1436); 
@@ -3006,7 +3006,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:280:6: DATATYPE '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:280:6: DATATYPE '(' expression ')'
                     {
                     match(input,DATATYPE,FOLLOW_DATATYPE_in_builtInCall1451); 
                     match(input,83,FOLLOW_83_in_builtInCall1453); 
@@ -3020,7 +3020,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:281:6: BOUND '(' var ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:281:6: BOUND '(' var ')'
                     {
                     match(input,BOUND,FOLLOW_BOUND_in_builtInCall1464); 
                     match(input,83,FOLLOW_83_in_builtInCall1466); 
@@ -3034,7 +3034,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:282:6: SAMETERM '(' expression ',' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:282:6: SAMETERM '(' expression ',' expression ')'
                     {
                     match(input,SAMETERM,FOLLOW_SAMETERM_in_builtInCall1477); 
                     match(input,83,FOLLOW_83_in_builtInCall1479); 
@@ -3054,7 +3054,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:283:6: ISIRI '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:283:6: ISIRI '(' expression ')'
                     {
                     match(input,ISIRI,FOLLOW_ISIRI_in_builtInCall1494); 
                     match(input,83,FOLLOW_83_in_builtInCall1496); 
@@ -3068,7 +3068,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:284:6: ISURI '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:284:6: ISURI '(' expression ')'
                     {
                     match(input,ISURI,FOLLOW_ISURI_in_builtInCall1507); 
                     match(input,83,FOLLOW_83_in_builtInCall1509); 
@@ -3082,7 +3082,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:285:6: ISBLANK '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:285:6: ISBLANK '(' expression ')'
                     {
                     match(input,ISBLANK,FOLLOW_ISBLANK_in_builtInCall1521); 
                     match(input,83,FOLLOW_83_in_builtInCall1523); 
@@ -3096,7 +3096,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:286:6: ISLITERAL '(' expression ')'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:286:6: ISLITERAL '(' expression ')'
                     {
                     match(input,ISLITERAL,FOLLOW_ISLITERAL_in_builtInCall1534); 
                     match(input,83,FOLLOW_83_in_builtInCall1536); 
@@ -3110,7 +3110,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:287:6: regexExpression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:287:6: regexExpression
                     {
                     pushFollow(FOLLOW_regexExpression_in_builtInCall1547);
                     regexExpression();
@@ -3135,11 +3135,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "regexExpression"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:290:2: regexExpression : REGEX '(' expression ',' expression ( ',' expression )? ')' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:290:2: regexExpression : REGEX '(' expression ',' expression ( ',' expression )? ')' ;
     public final void regexExpression() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:291:4: ( REGEX '(' expression ',' expression ( ',' expression )? ')' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:291:6: REGEX '(' expression ',' expression ( ',' expression )? ')'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:291:4: ( REGEX '(' expression ',' expression ( ',' expression )? ')' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:291:6: REGEX '(' expression ',' expression ( ',' expression )? ')'
             {
             match(input,REGEX,FOLLOW_REGEX_in_regexExpression1567); 
             match(input,83,FOLLOW_83_in_regexExpression1569); 
@@ -3154,7 +3154,7 @@ public class SourcePatternParser extends Parser {
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:291:42: ( ',' expression )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:291:42: ( ',' expression )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -3163,7 +3163,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt44) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:291:43: ',' expression
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:291:43: ',' expression
                     {
                     match(input,84,FOLLOW_84_in_regexExpression1578); 
                     pushFollow(FOLLOW_expression_in_regexExpression1580);
@@ -3194,18 +3194,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "iriRefOrFunction"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:294:2: iriRefOrFunction : iriRef ( argList )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:294:2: iriRefOrFunction : iriRef ( argList )? ;
     public final void iriRefOrFunction() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:295:4: ( iriRef ( argList )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:295:6: iriRef ( argList )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:295:4: ( iriRef ( argList )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:295:6: iriRef ( argList )?
             {
             pushFollow(FOLLOW_iriRef_in_iriRefOrFunction1603);
             iriRef();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:295:13: ( argList )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:295:13: ( argList )?
             int alt45=2;
             int LA45_0 = input.LA(1);
 
@@ -3214,7 +3214,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt45) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:295:13: argList
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:295:13: argList
                     {
                     pushFollow(FOLLOW_argList_in_iriRefOrFunction1605);
                     argList();
@@ -3243,18 +3243,18 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "rdfLiteral"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:298:2: rdfLiteral : string ( LANGTAG | ( '^^' iriRef ) )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:298:2: rdfLiteral : string ( LANGTAG | ( '^^' iriRef ) )? ;
     public final void rdfLiteral() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:4: ( string ( LANGTAG | ( '^^' iriRef ) )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:6: string ( LANGTAG | ( '^^' iriRef ) )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:4: ( string ( LANGTAG | ( '^^' iriRef ) )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:6: string ( LANGTAG | ( '^^' iriRef ) )?
             {
             pushFollow(FOLLOW_string_in_rdfLiteral1625);
             string();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:13: ( LANGTAG | ( '^^' iriRef ) )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:13: ( LANGTAG | ( '^^' iriRef ) )?
             int alt46=3;
             int LA46_0 = input.LA(1);
 
@@ -3266,17 +3266,17 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt46) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:14: LANGTAG
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:14: LANGTAG
                     {
                     match(input,LANGTAG,FOLLOW_LANGTAG_in_rdfLiteral1628); 
 
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:24: ( '^^' iriRef )
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:24: ( '^^' iriRef )
                     {
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:24: ( '^^' iriRef )
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:299:25: '^^' iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:24: ( '^^' iriRef )
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:299:25: '^^' iriRef
                     {
                     match(input,103,FOLLOW_103_in_rdfLiteral1633); 
                     pushFollow(FOLLOW_iriRef_in_rdfLiteral1635);
@@ -3309,10 +3309,10 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteral"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:302:2: numericLiteral : ( numericLiteralUnsigned | numericLiteralPositive | numericLiteralNegative );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:302:2: numericLiteral : ( numericLiteralUnsigned | numericLiteralPositive | numericLiteralNegative );
     public final void numericLiteral() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:303:4: ( numericLiteralUnsigned | numericLiteralPositive | numericLiteralNegative )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:303:4: ( numericLiteralUnsigned | numericLiteralPositive | numericLiteralNegative )
             int alt47=3;
             switch ( input.LA(1) ) {
             case INTEGER:
@@ -3345,7 +3345,7 @@ public class SourcePatternParser extends Parser {
 
             switch (alt47) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:303:6: numericLiteralUnsigned
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:303:6: numericLiteralUnsigned
                     {
                     pushFollow(FOLLOW_numericLiteralUnsigned_in_numericLiteral1658);
                     numericLiteralUnsigned();
@@ -3356,7 +3356,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:303:31: numericLiteralPositive
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:303:31: numericLiteralPositive
                     {
                     pushFollow(FOLLOW_numericLiteralPositive_in_numericLiteral1662);
                     numericLiteralPositive();
@@ -3367,7 +3367,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:303:56: numericLiteralNegative
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:303:56: numericLiteralNegative
                     {
                     pushFollow(FOLLOW_numericLiteralNegative_in_numericLiteral1666);
                     numericLiteralNegative();
@@ -3392,11 +3392,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteralUnsigned"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:306:2: numericLiteralUnsigned : ( INTEGER | DECIMAL | DOUBLE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:306:2: numericLiteralUnsigned : ( INTEGER | DECIMAL | DOUBLE );
     public final void numericLiteralUnsigned() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:307:4: ( INTEGER | DECIMAL | DOUBLE )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:307:4: ( INTEGER | DECIMAL | DOUBLE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
             {
             if ( (input.LA(1)>=INTEGER && input.LA(1)<=DOUBLE) ) {
                 input.consume();
@@ -3423,11 +3423,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteralPositive"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:310:2: numericLiteralPositive : ( INTEGER_POSITIVE | DECIMAL_POSITIVE | DOUBLE_POSITIVE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:310:2: numericLiteralPositive : ( INTEGER_POSITIVE | DECIMAL_POSITIVE | DOUBLE_POSITIVE );
     public final void numericLiteralPositive() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:311:4: ( INTEGER_POSITIVE | DECIMAL_POSITIVE | DOUBLE_POSITIVE )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:311:4: ( INTEGER_POSITIVE | DECIMAL_POSITIVE | DOUBLE_POSITIVE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
             {
             if ( (input.LA(1)>=INTEGER_POSITIVE && input.LA(1)<=DOUBLE_POSITIVE) ) {
                 input.consume();
@@ -3454,11 +3454,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteralNegative"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:314:2: numericLiteralNegative : ( INTEGER_NEGATIVE | DECIMAL_NEGATIVE | DOUBLE_NEGATIVE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:314:2: numericLiteralNegative : ( INTEGER_NEGATIVE | DECIMAL_NEGATIVE | DOUBLE_NEGATIVE );
     public final void numericLiteralNegative() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:315:4: ( INTEGER_NEGATIVE | DECIMAL_NEGATIVE | DOUBLE_NEGATIVE )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:315:4: ( INTEGER_NEGATIVE | DECIMAL_NEGATIVE | DOUBLE_NEGATIVE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
             {
             if ( (input.LA(1)>=INTEGER_NEGATIVE && input.LA(1)<=DOUBLE_NEGATIVE) ) {
                 input.consume();
@@ -3485,11 +3485,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "booleanLiteral"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:318:2: booleanLiteral : ( TRUE | FALSE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:318:2: booleanLiteral : ( TRUE | FALSE );
     public final void booleanLiteral() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:319:4: ( TRUE | FALSE )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:319:4: ( TRUE | FALSE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
             {
             if ( (input.LA(1)>=TRUE && input.LA(1)<=FALSE) ) {
                 input.consume();
@@ -3516,11 +3516,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "string"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:321:2: string : ( STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:321:2: string : ( STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 );
     public final void string() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:322:4: ( STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:322:4: ( STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
             {
             if ( (input.LA(1)>=STRING_LITERAL1 && input.LA(1)<=STRING_LITERAL_LONG2) ) {
                 input.consume();
@@ -3547,7 +3547,7 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "iriRef"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:325:2: iriRef returns [String value] : ( IRI_REF | prefixedName );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:325:2: iriRef returns [String value] : ( IRI_REF | prefixedName );
     public final String iriRef() throws RecognitionException {
         String value = null;
 
@@ -3556,7 +3556,7 @@ public class SourcePatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:326:4: ( IRI_REF | prefixedName )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:326:4: ( IRI_REF | prefixedName )
             int alt48=2;
             int LA48_0 = input.LA(1);
 
@@ -3574,7 +3574,7 @@ public class SourcePatternParser extends Parser {
             }
             switch (alt48) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:326:6: IRI_REF
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:326:6: IRI_REF
                     {
                     IRI_REF9=(Token)match(input,IRI_REF,FOLLOW_IRI_REF_in_iriRef1819); 
                      
@@ -3585,7 +3585,7 @@ public class SourcePatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:331:6: prefixedName
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:331:6: prefixedName
                     {
                     pushFollow(FOLLOW_prefixedName_in_iriRef1834);
                     prefixedName10=prefixedName();
@@ -3632,7 +3632,7 @@ public class SourcePatternParser extends Parser {
     };
 
     // $ANTLR start "prefixedName"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:354:2: prefixedName : p= PNAME_LN ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:354:2: prefixedName : p= PNAME_LN ;
     public final SourcePatternParser.prefixedName_return prefixedName() throws RecognitionException {
         SourcePatternParser.prefixedName_return retval = new SourcePatternParser.prefixedName_return();
         retval.start = input.LT(1);
@@ -3640,8 +3640,8 @@ public class SourcePatternParser extends Parser {
         Token p=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:355:4: (p= PNAME_LN )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:355:6: p= PNAME_LN
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:355:4: (p= PNAME_LN )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:355:6: p= PNAME_LN
             {
             p=(Token)match(input,PNAME_LN,FOLLOW_PNAME_LN_in_prefixedName1860); 
 
@@ -3667,11 +3667,11 @@ public class SourcePatternParser extends Parser {
 
 
     // $ANTLR start "blankNode"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:364:2: blankNode : ( BLANK_NODE_LABEL | ANON );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:364:2: blankNode : ( BLANK_NODE_LABEL | ANON );
     public final void blankNode() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:365:4: ( BLANK_NODE_LABEL | ANON )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:365:4: ( BLANK_NODE_LABEL | ANON )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
             {
             if ( (input.LA(1)>=BLANK_NODE_LABEL && input.LA(1)<=ANON) ) {
                 input.consume();

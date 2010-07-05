@@ -24,6 +24,7 @@ import com.hp.hpl.jena.shared.NotFoundException;
 import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
+import com.hp.hpl.jena.rdf.model.Property;
 
 /**
  * Repository that offers access to R2R mappings and functions to import non-R2R mappings.
@@ -40,11 +41,11 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	private FunctionManager loadFunctionManager(Source source) {
 		String fm = Config.getProperty("r2r.FunctionManager", "de.fuberlin.wiwiss.r2r.BasicFunctionManager");
 		try {
-			Class fmclass = Class.forName(fm);
+			Class<?> fmclass = Class.forName(fm);
 			boolean constructorWithSource = false;
-			Constructor c = null;
-			for(Constructor constructor: fmclass.getConstructors()) {
-				Class[] pTypes = constructor.getParameterTypes();
+			Constructor<?> c = null;
+			for(Constructor<?> constructor: fmclass.getConstructors()) {
+				Class<?>[] pTypes = constructor.getParameterTypes();
 				if(c==null && pTypes.length==0)
 					c=constructor;
 				if(pTypes.length==1 && pTypes[0]==Source.class) {
@@ -249,16 +250,10 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			return null;
 		}
 		String sourcePattern = sp.get(0);
-		List<String> targetPatterns = getPropertyValuesForResource(mappingURI, R2R.targetPattern);
-		if(targetPatterns.size()==0) {
-			if(log.isDebugEnabled())
-				log.debug("Mapping <" + mappingURI + "> has no target pattern");
-			return null;
-		}
-		List<String> transformations = getPropertyValuesForResource(mappingURI, R2R.transformation);
+
 		List<String> prefixDefinitions = getPropertyValuesForResource(mappingURI, R2R.prefixDefinitions);
 
-		return new MappingData(sourcePattern, targetPatterns, transformations, prefixDefinitions);
+		return new MappingData(sourcePattern, prefixDefinitions);
 	}
 	
 	private List<String> getPropertyValuesForResource(String resourceURI, String property) {
@@ -286,18 +281,13 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		return "Select ?classref where { <" + mappingUri + "> <" + R2R.classMappingRef + "> ?classref }"; 
 	}
 	
-	private class MappingData {
+	private static class MappingData {
 		String sourcePattern;
-		List<String> targetPatterns;
-		List<String> transformations;
 		List<String> prefixDefinitions;
 		
-		public MappingData(String sourcePattern, List<String> targetPatterns,
-				List<String> transformations, List<String> prefixDefinitions) {
+		public MappingData(String sourcePattern, List<String> prefixDefinitions) {
 			super();
 			this.sourcePattern = sourcePattern;
-			this.targetPatterns = targetPatterns;
-			this.transformations = transformations;
 			this.prefixDefinitions = prefixDefinitions;
 		}
 	}
@@ -324,7 +314,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		
 		Set<String> classmappings = null;
 		if(contextEntityUri!=null) 
-			classmappings = findMappingsForTargetEntity(contextEntityUri);
+			classmappings = getMappingsOfTargetElement(contextEntityUri);
 		else {
 			classmappings = new HashSet<String>();
 			classmappings.add("");
@@ -357,7 +347,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		
 		//Add Property/Other Mappings
 		for(String propertyUri: propertiesUris) {
-			Set<String> potentialPropertyMappings = findMappingsForTargetEntity(propertyUri);
+			Collection<String> potentialPropertyMappings = getMappingsOfTargetElement(propertyUri);
 			
 			if(contextEntityUri!=null) {
 				//Add all property mappings that are associated with class mapping and its parent classes
@@ -466,8 +456,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	/*
 	 * Fetches all class mappings from the repository where classUri is the target class
 	 */
-	private Set<String> findMappingsForTargetEntity(String entityUri) {
-		String query = "Select ?mapping where { ?mapping <" + R2R.mapsTo + "> <" + entityUri + "> }";
+	public Set<String> getMappingsOfTargetElement(String uri) {
+		String query = "Select ?mapping where { ?mapping <" + R2R.mapsTo + "> <" + uri + "> }";
 		ResultSet resultset = source.executeSelectQuery(query);
 		Set<String> mappings = new HashSet<String>();
 		while(resultset.hasNext()) {
@@ -500,7 +490,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	/*
 	 * Returns the property mappings that are defined in one of the given class mappings
 	 */
-	private List<String> findMappingsForTargetPropertyInClassContext(Set<String> potentialMappings, Set<String> classMappings) {
+	private List<String> findMappingsForTargetPropertyInClassContext(Collection<String> potentialMappings, Set<String> classMappings) {
 		List<String> propertyMappings = new ArrayList<String>();
 		for(String potMap: potentialMappings) {
 			if(checkForMappingContainment(potMap, classMappings))
@@ -651,9 +641,9 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				String uri = uriGenerator.nextString();
 				String e1Pattern = "?SUBJ <" + e1.toString() + "> ?o";
 				String e2Pattern = "?SUBJ <" + e2.toString() + "> ?o";
-				addR2RMapping(uri, e1Pattern, e2Pattern, R2R.PropertyMapping, outputModel);
+				addR2RMapping(uri, e1Pattern, e2Pattern, R2R.PropertyMapping, outputModel, true);
 				uri = uriGenerator.nextString();
-				addR2RMapping(uri, e2Pattern, e1Pattern, R2R.PropertyMapping, outputModel);
+				addR2RMapping(uri, e2Pattern, e1Pattern, R2R.PropertyMapping, outputModel, true);
 			}
 		}
 	}
@@ -671,9 +661,9 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				String uri = uriGenerator.nextString();
 				String e1Pattern = "?SUBJ a <" + e1.toString() + ">";
 				String e2Pattern = "?SUBJ a <" + e2.toString() + ">";
-				addR2RMapping(uri, e1Pattern, e2Pattern, R2R.ClassMapping, outputModel);
+				addR2RMapping(uri, e1Pattern, e2Pattern, R2R.ClassMapping, outputModel, true);
 				uri = uriGenerator.nextString();
-				addR2RMapping(uri, e2Pattern, e1Pattern, R2R.ClassMapping, outputModel);
+				addR2RMapping(uri, e2Pattern, e1Pattern, R2R.ClassMapping, outputModel, true);
 			}
 		}
 	}
@@ -691,7 +681,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				String uri = uriGenerator.nextString();
 				String sourcePattern = "?SUBJ a <" + from.toString() + ">";
 				String targetPattern = "?SUBJ a <" + to.toString() + ">";
-				addR2RMapping(uri, sourcePattern, targetPattern, R2R.ClassMapping, outputModel);
+				addR2RMapping(uri, sourcePattern, targetPattern, R2R.ClassMapping, outputModel, false);
 			}
 		}
 	}
@@ -709,19 +699,47 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				String uri = uriGenerator.nextString();
 				String sourcePattern = "?SUBJ <" + from.toString() + "> ?o";
 				String targetPattern = "?SUBJ <" + to.toString() + "> ?o";
-				addR2RMapping(uri, sourcePattern, targetPattern, R2R.PropertyMapping, outputModel);
+				addR2RMapping(uri, sourcePattern, targetPattern, R2R.PropertyMapping, outputModel, false);
 			}
 		}
 	}
 	
-	private static void addR2RMapping(String uri, String sourcePattern, String targetPattern, String mappingClass, Model outputModel) {
+	private static void addR2RMapping(String uri, String sourcePattern, String targetPattern, String mappingClass, Model outputModel, boolean equivalenceMapping) {
 		Resource res = outputModel.getResource(uri);
 		res.addProperty(RDF.type, outputModel.createResource(mappingClass));
 		res.addProperty(outputModel.createProperty(R2R.sourcePattern), sourcePattern);
 		res.addProperty(outputModel.createProperty(R2R.targetPattern), targetPattern);
+		res.addLiteral(outputModel.createProperty(R2R.equivalenceMapping), equivalenceMapping);
 	}
 
 	public Model executeConstructQuery(String query) {
 		return source.executeConstructQuery(query);
+	}
+
+	public Map<String, Set<String>> getMappingMetaData(String mappingURI) {
+		Map<String, Set<String>> metadata = new HashMap<String, Set<String>>();
+		StringBuilder query = new StringBuilder();
+		query.append("SELECT ?property ?value WHERE { <").append(mappingURI).append("> ?property ?value }");
+		ResultSet rs = source.executeSelectQuery(query.toString());
+		while(rs.hasNext()) {
+			QuerySolution qs = rs.next();
+			RDFNode valueNode = qs.get("value");
+			String value = null;
+			if(valueNode.isURIResource())
+				value = valueNode.toString();
+			else if(valueNode.isLiteral())
+				value = ((Literal)valueNode).getLexicalForm();
+			if(value!=null)
+				insertMetaData(metadata, qs.getResource("property").getURI(), value);
+		}
+		return metadata;
+	}
+
+	private void insertMetaData(Map<String, Set<String>> metaData, String property, String value) {
+		Set<String> values = metaData.get(property);
+		if(values==null)
+			values = new HashSet<String>();
+		values.add(value);
+		metaData.put(property, values);
 	}
 }

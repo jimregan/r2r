@@ -1,7 +1,10 @@
 package de.fuberlin.wiwiss.r2r;
 
+import java.util.Set;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 public interface MetadataRepository {
 	/**
@@ -20,4 +23,13 @@ public interface MetadataRepository {
 	 * @return MappingsInfo objects that contain information about which mappings and how they should be executed.
 	 */
 	public List<MappingsInfo> getMappingURIsForVocabularyDefinition(String contextEntityUri, Collection<String> propertyUris, boolean addClassRestrictionMappings);
+	
+	/**
+	 * Gets the mapping URIs for all mappings that map to the specified target element (mapping r2r:mapsTo targetElement)
+	 * @param elementURI 
+	 * @return
+	 */
+	public Set<String> getMappingsOfTargetElement(String elementURI);
+	
+	public Map<String, Set<String>> getMappingMetaData(String mappingURI) ;
 }

@@ -12,9 +12,6 @@ public class R2R {
 	//r2r class URIs
 	public final static String ClassMapping = R2R + "ClassMapping";
 	public final static String PropertyMapping = R2R + "PropertyMapping";
-	public final static String EquivalenceClassMapping = R2R + "EquivalenceClassMapping";
-	public final static String EquivalencePropertyMapping = R2R + "EquivalencePropertyMapping";
-//	public final static String TransitiveMapping = R2R + "TransitiveMapping";
 	public final static String ExternalFunction = R2R + "ExternalFunction";
 	//Composed Function TODO
 	
@@ -29,6 +26,12 @@ public class R2R {
 	public final static String classRestriction = R2R + "classRestriction";
 	public final static String classRestrictionAndTarget = R2R + "classRestrictionAndTargetEntity";
 	
+	// Other Meta Data
+	public final static String transformationInvolvedFor = R2R + "transformationInvolvedFor";
+	public final static String equivalenceMapping = R2R + "equivalenceMapping";
+	public final static String byVocabularyPublisher = R2R + "byVocabularyPublisher";
+	public final static String sourceDataset = R2R + "sourceDataset";
+	public final static String targetDataset = R2R + "targetDataset";
 	//Non-public properties, used internally
 //	protected final static String mapsToClass = R2R + "mapsToClass";
 //	protected final static String mapsToProperty = R2R + "mapsToProperty";

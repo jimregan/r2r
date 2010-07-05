@@ -16,7 +16,7 @@ public class JoinFunctionFactory implements FunctionFactory {
 		return function;
 	}
 
-	private class JoinFunction implements Function {
+	private static class JoinFunction implements Function {
 
 		public String getURI() {
 			return "infixConcat";

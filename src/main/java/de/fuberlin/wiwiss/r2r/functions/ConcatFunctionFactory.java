@@ -16,7 +16,7 @@ public class ConcatFunctionFactory implements FunctionFactory {
 		return function;
 	}
 	
-	private class ConcatFunction implements Function {
+	private static class ConcatFunction implements Function {
 		
 		public String getURI() {
 			return "concat";

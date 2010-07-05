@@ -15,7 +15,7 @@ public class SubListFunctionFactory implements FunctionFactory {
 		return function;
 	}
 
-	private class SubListFunction implements Function {
+	private static class SubListFunction implements Function {
 
 		public String getURI() {
 			return "subList";

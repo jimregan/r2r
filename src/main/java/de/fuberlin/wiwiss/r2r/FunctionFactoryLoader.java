@@ -4,7 +4,9 @@ import java.net.MalformedURLException;
 import java.net.URLClassLoader;
 import java.net.URL;
 
+import java.security.AccessController;
 import org.apache.commons.logging.Log;
+import java.security.PrivilegedAction;
 import org.apache.commons.logging.LogFactory;
 
 import com.hp.hpl.jena.rdf.model.*;
@@ -67,7 +69,18 @@ public class FunctionFactoryLoader {
 				return null;
 			}
 			
-			URLClassLoader loader = new URLClassLoader(new URL[] { new URL(codeLocation) });
+			final String cl = codeLocation;
+			URLClassLoader loader = AccessController.doPrivileged(new PrivilegedAction<URLClassLoader>() {
+				public URLClassLoader run() {
+					try {
+						return new URLClassLoader(new URL[] { new URL(cl) });
+					} catch (MalformedURLException e) {
+						if(log.isDebugEnabled())
+							log.debug("Malformed URL for code location: " + cl);
+						return null;
+					}
+				}
+			});
 			functionFactory = loadFunctionFactory(qualifiedClassName, loader);
 			if(functionFactory!=null)
 				return functionFactory;

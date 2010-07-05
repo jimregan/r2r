@@ -20,7 +20,7 @@ private SubtractFunction function = null;
 		return function;
 	}
 
-	private class SubtractFunction implements Function {
+	private static class SubtractFunction implements Function {
 
 		public String getURI() {
 			return "subtract";

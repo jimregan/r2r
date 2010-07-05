@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g 2010-04-21 16:00:13
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g 2010-05-21 23:47:14
 
   package de.fuberlin.wiwiss.r2r.parser;
   
@@ -51,7 +51,7 @@ public class TargetVocabularyParser extends Parser {
         
 
     public String[] getTokenNames() { return TargetVocabularyParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g"; }
+    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g"; }
 
 
       Map<String, String> prefixMap = new HashMap<String, String>();
@@ -73,7 +73,7 @@ public class TargetVocabularyParser extends Parser {
 
 
     // $ANTLR start "targetVocabulary"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:57:1: targetVocabulary returns [Collection<TargetVocabulary> targetVocabularies] : ( prefixDefs )? v= vocabularyDefs ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:57:1: targetVocabulary returns [Collection<TargetVocabulary> targetVocabularies] : ( prefixDefs )? v= vocabularyDefs ;
     public final Collection<TargetVocabulary> targetVocabulary() throws RecognitionException {
         Collection<TargetVocabulary> targetVocabularies = null;
 
@@ -81,10 +81,10 @@ public class TargetVocabularyParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:58:3: ( ( prefixDefs )? v= vocabularyDefs )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:58:5: ( prefixDefs )? v= vocabularyDefs
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:58:3: ( ( prefixDefs )? v= vocabularyDefs )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:58:5: ( prefixDefs )? v= vocabularyDefs
             {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:58:5: ( prefixDefs )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:58:5: ( prefixDefs )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -93,7 +93,7 @@ public class TargetVocabularyParser extends Parser {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:58:5: prefixDefs
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:58:5: prefixDefs
                     {
                     pushFollow(FOLLOW_prefixDefs_in_targetVocabulary60);
                     prefixDefs();
@@ -128,7 +128,7 @@ public class TargetVocabularyParser extends Parser {
 
 
     // $ANTLR start "vocabularyDefs"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:62:1: vocabularyDefs returns [Collection<TargetVocabulary> value] : ( vocabularyDef )* ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:62:1: vocabularyDefs returns [Collection<TargetVocabulary> value] : ( vocabularyDef )* ;
     public final Collection<TargetVocabulary> vocabularyDefs() throws RecognitionException {
         Collection<TargetVocabulary> value = null;
 
@@ -136,11 +136,11 @@ public class TargetVocabularyParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:63:3: ( ( vocabularyDef )* )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:64:4: ( vocabularyDef )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:63:3: ( ( vocabularyDef )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:64:4: ( vocabularyDef )*
             {
              value = new ArrayList<TargetVocabulary>(); 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:65:4: ( vocabularyDef )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:65:4: ( vocabularyDef )*
             loop2:
             do {
                 int alt2=2;
@@ -153,7 +153,7 @@ public class TargetVocabularyParser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:65:5: vocabularyDef
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:65:5: vocabularyDef
             	    {
             	    pushFollow(FOLLOW_vocabularyDef_in_vocabularyDefs97);
             	    vocabularyDef1=vocabularyDef();
@@ -188,7 +188,7 @@ public class TargetVocabularyParser extends Parser {
 
 
     // $ANTLR start "vocabularyDef"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:72:1: vocabularyDef returns [List<TargetVocabulary> value] : (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )? '(' (entity= iriRef ( ',' entity= iriRef )* )? ')' ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:72:1: vocabularyDef returns [List<TargetVocabulary> value] : (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )? '(' (entity= iriRef ( ',' entity= iriRef )* )? ')' ;
     public final List<TargetVocabulary> vocabularyDef() throws RecognitionException {
         List<TargetVocabulary> value = null;
 
@@ -198,15 +198,15 @@ public class TargetVocabularyParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:73:3: ( (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )? '(' (entity= iriRef ( ',' entity= iriRef )* )? ')' )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:74:3: (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )? '(' (entity= iriRef ( ',' entity= iriRef )* )? ')'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:73:3: ( (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )? '(' (entity= iriRef ( ',' entity= iriRef )* )? ')' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:74:3: (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )? '(' (entity= iriRef ( ',' entity= iriRef )* )? ')'
             {
              Set<String> collectedEntities = new HashSet<String>();
                 Set<String> classRestrictions = new HashSet<String>();
                 Set<String> classRestrictionsToMap = new HashSet<String>();
                 value = new ArrayList<TargetVocabulary>();
               
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:79:3: (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:79:3: (res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )* )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -215,7 +215,7 @@ public class TargetVocabularyParser extends Parser {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:79:4: res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:79:4: res= iriRef ( '+' )? ( ',' res= iriRef ( '+' )? )*
                     {
                     pushFollow(FOLLOW_iriRef_in_vocabularyDef140);
                     res=iriRef();
@@ -223,7 +223,7 @@ public class TargetVocabularyParser extends Parser {
                     state._fsp--;
 
                      classRestrictions.add(res); 
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:81:7: ( '+' )?
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:81:7: ( '+' )?
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -232,7 +232,7 @@ public class TargetVocabularyParser extends Parser {
                     }
                     switch (alt3) {
                         case 1 :
-                            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:81:8: '+'
+                            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:81:8: '+'
                             {
                             match(input,13,FOLLOW_13_in_vocabularyDef155); 
                              classRestrictionsToMap.add(res); 
@@ -242,7 +242,7 @@ public class TargetVocabularyParser extends Parser {
 
                     }
 
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:83:5: ( ',' res= iriRef ( '+' )? )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:83:5: ( ',' res= iriRef ( '+' )? )*
                     loop5:
                     do {
                         int alt5=2;
@@ -255,7 +255,7 @@ public class TargetVocabularyParser extends Parser {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:83:7: ',' res= iriRef ( '+' )?
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:83:7: ',' res= iriRef ( '+' )?
                     	    {
                     	    match(input,14,FOLLOW_14_in_vocabularyDef174); 
                     	    pushFollow(FOLLOW_iriRef_in_vocabularyDef178);
@@ -264,7 +264,7 @@ public class TargetVocabularyParser extends Parser {
                     	    state._fsp--;
 
                     	    classRestrictions.add(res);
-                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:84:7: ( '+' )?
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:84:7: ( '+' )?
                     	    int alt4=2;
                     	    int LA4_0 = input.LA(1);
 
@@ -273,7 +273,7 @@ public class TargetVocabularyParser extends Parser {
                     	    }
                     	    switch (alt4) {
                     	        case 1 :
-                    	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:84:8: '+'
+                    	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:84:8: '+'
                     	            {
                     	            match(input,13,FOLLOW_13_in_vocabularyDef189); 
                     	             classRestrictionsToMap.add(res); 
@@ -299,7 +299,7 @@ public class TargetVocabularyParser extends Parser {
             }
 
             match(input,15,FOLLOW_15_in_vocabularyDef215); 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:88:8: (entity= iriRef ( ',' entity= iriRef )* )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:88:8: (entity= iriRef ( ',' entity= iriRef )* )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -308,7 +308,7 @@ public class TargetVocabularyParser extends Parser {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:88:9: entity= iriRef ( ',' entity= iriRef )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:88:9: entity= iriRef ( ',' entity= iriRef )*
                     {
                     pushFollow(FOLLOW_iriRef_in_vocabularyDef222);
                     entity=iriRef();
@@ -316,7 +316,7 @@ public class TargetVocabularyParser extends Parser {
                     state._fsp--;
 
                      collectedEntities.add(entity);
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:89:5: ( ',' entity= iriRef )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:89:5: ( ',' entity= iriRef )*
                     loop7:
                     do {
                         int alt7=2;
@@ -329,7 +329,7 @@ public class TargetVocabularyParser extends Parser {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:89:6: ',' entity= iriRef
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:89:6: ',' entity= iriRef
                     	    {
                     	    match(input,14,FOLLOW_14_in_vocabularyDef231); 
                     	    pushFollow(FOLLOW_iriRef_in_vocabularyDef235);
@@ -381,18 +381,18 @@ public class TargetVocabularyParser extends Parser {
 
 
     // $ANTLR start "prefixDefs"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:1: prefixDefs : prefixDef ( '.' prefixDef )* ( '.' )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:1: prefixDefs : prefixDef ( '.' prefixDef )* ( '.' )? ;
     public final void prefixDefs() throws RecognitionException {
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:11: ( prefixDef ( '.' prefixDef )* ( '.' )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:13: prefixDef ( '.' prefixDef )* ( '.' )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:11: ( prefixDef ( '.' prefixDef )* ( '.' )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:13: prefixDef ( '.' prefixDef )* ( '.' )?
             {
             pushFollow(FOLLOW_prefixDef_in_prefixDefs258);
             prefixDef();
 
             state._fsp--;
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:23: ( '.' prefixDef )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:23: ( '.' prefixDef )*
             loop9:
             do {
                 int alt9=2;
@@ -411,7 +411,7 @@ public class TargetVocabularyParser extends Parser {
 
                 switch (alt9) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:24: '.' prefixDef
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:24: '.' prefixDef
             	    {
             	    match(input,17,FOLLOW_17_in_prefixDefs261); 
             	    pushFollow(FOLLOW_prefixDef_in_prefixDefs263);
@@ -428,7 +428,7 @@ public class TargetVocabularyParser extends Parser {
                 }
             } while (true);
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:40: ( '.' )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:40: ( '.' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -437,7 +437,7 @@ public class TargetVocabularyParser extends Parser {
             }
             switch (alt10) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:103:40: '.'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:103:40: '.'
                     {
                     match(input,17,FOLLOW_17_in_prefixDefs267); 
 
@@ -462,14 +462,14 @@ public class TargetVocabularyParser extends Parser {
 
 
     // $ANTLR start "prefixDef"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:105:1: prefixDef : '@prefix' prefix= PNAME_NS IRI_REF ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:105:1: prefixDef : '@prefix' prefix= PNAME_NS IRI_REF ;
     public final void prefixDef() throws RecognitionException {
         Token prefix=null;
         Token IRI_REF2=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:106:3: ( '@prefix' prefix= PNAME_NS IRI_REF )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:106:5: '@prefix' prefix= PNAME_NS IRI_REF
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:106:3: ( '@prefix' prefix= PNAME_NS IRI_REF )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:106:5: '@prefix' prefix= PNAME_NS IRI_REF
             {
             match(input,18,FOLLOW_18_in_prefixDef278); 
             prefix=(Token)match(input,PNAME_NS,FOLLOW_PNAME_NS_in_prefixDef282); 
@@ -494,7 +494,7 @@ public class TargetVocabularyParser extends Parser {
 
 
     // $ANTLR start "iriRef"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:112:1: iriRef returns [String value] : ( IRI_REF | prefixedName );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:112:1: iriRef returns [String value] : ( IRI_REF | prefixedName );
     public final String iriRef() throws RecognitionException {
         String value = null;
 
@@ -503,7 +503,7 @@ public class TargetVocabularyParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:113:4: ( IRI_REF | prefixedName )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:113:4: ( IRI_REF | prefixedName )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -521,7 +521,7 @@ public class TargetVocabularyParser extends Parser {
             }
             switch (alt11) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:113:6: IRI_REF
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:113:6: IRI_REF
                     {
                     IRI_REF3=(Token)match(input,IRI_REF,FOLLOW_IRI_REF_in_iriRef305); 
                      
@@ -532,7 +532,7 @@ public class TargetVocabularyParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:118:6: prefixedName
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:118:6: prefixedName
                     {
                     pushFollow(FOLLOW_prefixedName_in_iriRef320);
                     prefixedName4=prefixedName();
@@ -579,7 +579,7 @@ public class TargetVocabularyParser extends Parser {
     };
 
     // $ANTLR start "prefixedName"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:141:3: prefixedName : p= PNAME_LN ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:141:3: prefixedName : p= PNAME_LN ;
     public final TargetVocabularyParser.prefixedName_return prefixedName() throws RecognitionException {
         TargetVocabularyParser.prefixedName_return retval = new TargetVocabularyParser.prefixedName_return();
         retval.start = input.LT(1);
@@ -587,8 +587,8 @@ public class TargetVocabularyParser extends Parser {
         Token p=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:142:4: (p= PNAME_LN )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:142:6: p= PNAME_LN
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:142:4: (p= PNAME_LN )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:142:6: p= PNAME_LN
             {
             p=(Token)match(input,PNAME_LN,FOLLOW_PNAME_LN_in_prefixedName347); 
 
