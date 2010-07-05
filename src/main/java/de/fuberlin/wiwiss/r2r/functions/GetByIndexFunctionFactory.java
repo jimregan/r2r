@@ -16,7 +16,7 @@ private GetByIndexFunction function = null;
 		return function;
 	}
 
-	private class GetByIndexFunction implements Function {
+	private static class GetByIndexFunction implements Function {
 
 		public String getURI() {
 			return "getByIndex";

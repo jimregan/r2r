@@ -21,7 +21,7 @@ private DivideFunction function = null;
 		return function;
 	}
 
-	private class DivideFunction implements Function {
+	private static class DivideFunction implements Function {
 
 		public String getURI() {
 			return "divide";

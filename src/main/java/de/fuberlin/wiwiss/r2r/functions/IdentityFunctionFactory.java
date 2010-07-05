@@ -16,7 +16,7 @@ public class IdentityFunctionFactory implements FunctionFactory {
 		return function;
 	}
 
-	private class IdentityFunction implements Function {
+	private static class IdentityFunction implements Function {
 		
 		public String getURI() {
 			return "identityFunction";

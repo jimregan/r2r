@@ -20,7 +20,7 @@ public class AddFunctionFactory implements FunctionFactory {
 		return function;
 	}
 
-	private class AddFunction implements Function {
+	private static class AddFunction implements Function {
 
 		public String getURI() {
 			return "add";
