@@ -29,7 +29,7 @@ public class BasicFunctionManager implements FunctionManager {
 		functions.put("listJoin", new ListJoinFunctionFactory());
 		functions.put("list", new ListFunctionFactory());
 		functions.put("subListByIndex", new SubListByIndexFunctionFactory());
-		functions.put("regexToList", new RegExToListFunctionFactory());
+//		functions.put("regexToList", new RegExToListFunctionFactory());
 		functions.put("identityFunction", new IdentityFunctionFactory());
 		functions.put("add", new AddFunctionFactory());
 		functions.put("subtract", new SubtractFunctionFactory());
