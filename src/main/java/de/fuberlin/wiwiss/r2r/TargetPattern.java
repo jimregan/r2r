@@ -53,17 +53,25 @@ public class TargetPattern {
 
 	/*
 	 * Generate all triples given the variable results of the query and transformations
+	 * @param model
+	 * @param results
+	 * @param group		A group identifier to use when generating blank nodes (in order to separate identifiers across result sets) 
 	 */
-	public void addTargetTriplesToModel(Model model, VariableResults results) {
+	public void addTargetTriplesToModel(Model model, VariableResults results, int blankNodeGroup) {
 		for(Triple triple: path) {
 			List<String> subjectVals = getSubjectValues(triple.subject, results);
 			List<String> verbVals = getVerbValues(triple.verb);
 
 			for(String subjectVal: subjectVals) {
-				Resource subject = model.createResource(subjectVal);
+				Resource subject;
+				if (subjectVal.startsWith("_:")) {
+					subject = model.createResource(new AnonId(blankNodeGroup + "_" + subjectVal.substring(2)));
+				} else {
+					subject = model.createResource(subjectVal);
+				}
 				for(String verb: verbVals) {
 					Property property = model.createProperty(verb);
-					addObjectsToStatement(subject, property, triple.object, results, model);
+					addObjectsToStatement(subject, property, triple.object, results, model, blankNodeGroup);
 				}
 			}
 		}
@@ -72,14 +80,19 @@ public class TargetPattern {
 	/*
 	 * TODO: could be nicer :)
 	 */
-	private void addObjectsToStatement(Resource subject, Property property, TripleElement object, VariableResults results, Model model) {
+	private void addObjectsToStatement(Resource subject, Property property, TripleElement object, VariableResults results, Model model, int blankNodeGroup) {
 		TypeMapper typeMapper = TypeMapper.getInstance();
 		//Handle IRI result types
 		Type type = object.getType();
 		if(type==Type.IRI || type==Type.IRIVARIABLE) {
 			List<String> iris = getIriValuesOfTripleElement(object, results);
 			for(String iri: iris) {
-				Resource iriResource = model.createResource(iri);
+				Resource iriResource;
+				if (iri.startsWith("_:")) {
+					iriResource = model.createResource(new AnonId(blankNodeGroup + "_" + iri.substring(2)));
+				} else {
+					iriResource = model.createResource(iri);					
+				}
 				subject.addProperty(property, iriResource);
 			}
 		}

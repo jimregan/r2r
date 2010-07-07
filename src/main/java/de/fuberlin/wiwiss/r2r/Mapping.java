@@ -444,9 +444,18 @@ terns of this mapping containing one of these URIs are executed.
 		return ns;
 	}
 	
+	private static int blankNodeGroups = 0;
+
+	private int getBlankNodeGroup() {
+        synchronized (Mapping.class) {
+            return blankNodeGroups++;
+        }
+	}
+	
 	private void executeTargetPatterns(VariableResults varResults, Model out) {
+		int group = getBlankNodeGroup();
 		for(TargetPattern targetPattern: targetPatterns) {
-			targetPattern.addTargetTriplesToModel(out, varResults);
+			targetPattern.addTargetTriplesToModel(out, varResults, group);
 		}
 	}
 	
@@ -454,16 +463,17 @@ terns of this mapping containing one of these URIs are executed.
 	 * Only execute Target Patterns that contain the given Property
 	 */
 	private void executeTargetPatterns(VariableResults varResults, Model out, Collection<String> entityURIs) {
+		int group = getBlankNodeGroup();
 		for(TargetPattern targetPattern: targetPatterns)
 			for(String entityURI: entityURIs)
 				if(isClassMapping()) {
 					if(targetPattern.getClasses().contains(entityURI) || targetPattern.getProperties().contains(entityURI)) {
-						targetPattern.addTargetTriplesToModel(out, varResults);
+						targetPattern.addTargetTriplesToModel(out, varResults, group);
 						break;
 					}
 				} else
 					if(targetPattern.getProperties().contains(entityURI)) {
-						targetPattern.addTargetTriplesToModel(out, varResults);
+						targetPattern.addTargetTriplesToModel(out, varResults, group);
 						break;
 					}
 	}
