@@ -27,16 +27,12 @@ public class R2R {
 	public final static String classRestrictionAndTarget = R2R + "classRestrictionAndTargetEntity";
 	
 	// Other Meta Data
-	public final static String transformationInvolvedFor = R2R + "transformationInvolvedFor";
 	public final static String equivalenceMapping = R2R + "equivalenceMapping";
 	public final static String byVocabularyPublisher = R2R + "byVocabularyPublisher";
+	public final static String publishedWithDataset = R2R + "publishedWithDataset";
 	public final static String sourceDataset = R2R + "sourceDataset";
 	public final static String targetDataset = R2R + "targetDataset";
-	//Non-public properties, used internally
-//	protected final static String mapsToClass = R2R + "mapsToClass";
-//	protected final static String mapsToProperty = R2R + "mapsToProperty";
-//	protected final static String dependsOnClass = R2R + "dependsOnClass";
-//	protected final static String dependsOnProperty = R2R + "dependsOnProperty";
+
 	//Function Properties:
 	public final static String TransformationFunction = R2R + "TransformationFunction";
 	public final static String codeLocation = R2R + "codeLocation";
