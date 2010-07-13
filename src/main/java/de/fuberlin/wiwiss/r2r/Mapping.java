@@ -238,15 +238,15 @@ public class Mapping {
 		}
 	}
 
-	public int executeMapping(Source in, Output out) {
+	public long executeMapping(Source in, Output out) {
 		return executeMappingInOtherMappingContext(in, out, null, null);
 	}
 	
-	public int executeMapping(Source in, Output out, Collection<String> propertyUris) {
+	public long executeMapping(Source in, Output out, Collection<String> propertyUris) {
 		return executeMappingInOtherMappingContext(in, out, null, propertyUris);
 	}
 	
-	public int executeMappingInOtherMappingContext(Source in, Output out, Collection<Mapping> mappingContext) {
+	public long executeMappingInOtherMappingContext(Source in, Output out, Collection<Mapping> mappingContext) {
 		return executeMappingInOtherMappingContext(in, out, mappingContext, null);
 	}
 	
@@ -259,7 +259,7 @@ public class Mapping {
 terns of this mapping containing one of these URIs are executed.
 	 * @return Number of triples generated
 	 */
-	public int executeMappingInOtherMappingContext(Source in, Output out, Collection<Mapping> mappingRestrictions, Collection<String> entityURIs) {
+	public long executeMappingInOtherMappingContext(Source in, Output out, Collection<Mapping> mappingRestrictions, Collection<String> entityURIs) {
 		int results = 0;//TODO: return number of triples
 		Model outputModel = out.getOutputModel();
 		ResultSet resultSet = null;
@@ -531,27 +531,27 @@ terns of this mapping containing one of these URIs are executed.
 		return model;
 	}
 	
-	public Model getJenaModelWithExtendedMappingMetaData() {
-		Model model = getJenaModelWithMappingMetaData();
-		Resource mapping = model.createResource(uri);
-		for(TargetPattern tp: targetPatterns)
-			createTransformationInvolvedForMetaData(model, mapping, tp);
+//	public Model getJenaModelWithExtendedMappingMetaData() {
+//		Model model = getJenaModelWithMappingMetaData();
+//		Resource mapping = model.createResource(uri);
+//		for(TargetPattern tp: targetPatterns)
+//			createTransformationInvolvedForMetaData(model, mapping, tp);
+//
+//		return model;
+//	}
 
-		return model;
-	}
-
-	private void createTransformationInvolvedForMetaData(Model model,
-			Resource mapping, TargetPattern tp) {
-		Set<String> tpDeps = tp.getVariableDependencies();
-		boolean dependend = false;
-		for(String dep: tpDeps)
-			if(transformationGeneratedVariables.contains(dep))
-				dependend = true;
-		if(dependend) {
-			for(String prop: tp.getProperties()) {
-				mapping.addProperty(model.createProperty(R2R.transformationInvolvedFor), model.createResource(prop));
-			}
-		}
-	}
+//	private void createTransformationInvolvedForMetaData(Model model,
+//			Resource mapping, TargetPattern tp) {
+//		Set<String> tpDeps = tp.getVariableDependencies();
+//		boolean dependend = false;
+//		for(String dep: tpDeps)
+//			if(transformationGeneratedVariables.contains(dep))
+//				dependend = true;
+//		if(dependend) {
+//			for(String prop: tp.getProperties()) {
+//				mapping.addProperty(model.createProperty(R2R.transformationInvolvedFor), model.createResource(prop));
+//			}
+//		}
+//	}
 
 }
