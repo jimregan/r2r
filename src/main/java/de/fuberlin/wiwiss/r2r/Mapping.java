@@ -455,27 +455,21 @@ terns of this mapping containing one of these URIs are executed.
 	private void executeTargetPatterns(VariableResults varResults, Model out) {
 		int group = getBlankNodeGroup();
 		for(TargetPattern targetPattern: targetPatterns) {
-			targetPattern.addTargetTriplesToModel(out, varResults, group);
+			targetPattern.addTargetTriplesToModel(out, varResults, group, null);
 		}
 	}
 	
 	/*
 	 * Only execute Target Patterns that contain the given Property
 	 */
-	private void executeTargetPatterns(VariableResults varResults, Model out, Collection<String> entityURIs) {
+	private void executeTargetPatterns(VariableResults varResults, Model out, Collection<String> termURIs) {
 		int group = getBlankNodeGroup();
 		for(TargetPattern targetPattern: targetPatterns)
-			for(String entityURI: entityURIs)
-				if(isClassMapping()) {
-					if(targetPattern.getClasses().contains(entityURI) || targetPattern.getProperties().contains(entityURI)) {
-						targetPattern.addTargetTriplesToModel(out, varResults, group);
-						break;
-					}
-				} else
-					if(targetPattern.getProperties().contains(entityURI)) {
-						targetPattern.addTargetTriplesToModel(out, varResults, group);
-						break;
-					}
+			for(String termURI: termURIs)
+				if(targetPattern.getClasses().contains(termURI) || targetPattern.getProperties().contains(termURI)) {
+					targetPattern.addTargetTriplesToModel(out, varResults, group, termURI);
+					break;
+				}
 	}
 	
 	public void insertMappingMetaDataIntoJenaModel(Model model) {
