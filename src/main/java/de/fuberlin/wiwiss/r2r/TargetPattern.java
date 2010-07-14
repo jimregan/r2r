@@ -53,25 +53,27 @@ public class TargetPattern {
 
 	/*
 	 * Generate all triples given the variable results of the query and transformations
-	 * @param model
-	 * @param results
+	 * @param model		The model to add the triples to
+	 * @param results	A variable binding of the source pattern and the transformation results
 	 * @param group		A group identifier to use when generating blank nodes (in order to separate identifiers across result sets) 
 	 */
-	public void addTargetTriplesToModel(Model model, VariableResults results, int blankNodeGroup) {
+	public void addTargetTriplesToModel(Model model, VariableResults results, int blankNodeGroup, String termURI) {
 		for(Triple triple: path) {
-			List<String> subjectVals = getSubjectValues(triple.subject, results);
-			List<String> verbVals = getVerbValues(triple.verb);
-
-			for(String subjectVal: subjectVals) {
-				Resource subject;
-				if (subjectVal.startsWith("_:")) {
-					subject = model.createResource(new AnonId(blankNodeGroup + "_" + subjectVal.substring(2)));
-				} else {
-					subject = model.createResource(subjectVal);
-				}
-				for(String verb: verbVals) {
-					Property property = model.createProperty(verb);
-					addObjectsToStatement(subject, property, triple.object, results, model, blankNodeGroup);
+			if(triple.getPropertyURI().equals(termURI) || (triple.getClassURI()!=null && triple.getClassURI().equals(termURI))) {
+				List<String> subjectVals = getSubjectValues(triple.getSubject(), results);
+				List<String> verbVals = getVerbValues(triple.getVerb());
+	
+				for(String subjectVal: subjectVals) {
+					Resource subject;
+					if(subjectVal.startsWith("_:")) {
+						subject = model.createResource(new AnonId(blankNodeGroup + "_" + subjectVal.substring(2)));
+					} else {
+						subject = model.createResource(subjectVal);
+					}
+					for(String verb: verbVals) {
+						Property property = model.createProperty(verb);
+						addObjectsToStatement(subject, property, triple.getObject(), results, model, blankNodeGroup);
+					}
 				}
 			}
 		}
@@ -98,27 +100,9 @@ public class TargetPattern {
 		}
 		else if(type==Type.DATATYPESTRING || type==Type.DATATYPEVARIABLE) {
 			List<String> values = null;
-			if(type==Type.DATATYPEVARIABLE) {
-				String var = object.getValue(0);
-				values = results.getResults(var);
-				String hint = hints.get(var);
-				// If data type hint is a known type, apply conversion
-				if(HelperFunctions.getWorkingDataTypeOfDataTypeString(hint)!=null) {
-					List<String> tempList = values;
-					values = new ArrayList<String>();
-					for(String value: tempList) {
-						String convertedValue = null;
-						try {
-							convertedValue = HelperFunctions.convertValueToDataType(value, hint);
-						} catch(NumberFormatException e) {
-							if(log.isDebugEnabled())
-								log.debug("NumberFormatException: In mapping <" + mapping.getUri() + "> of variable ?" + var + " for value: " +value);
-							continue;
-						}
-						values.add(convertedValue);
-					}
-				}
-			} else {
+			if(type==Type.DATATYPEVARIABLE) 
+				values = getDataTypeVariableValues(object, results);
+			else {
 				values = new ArrayList<String>();
 				values.add(object.getValue(0));
 			}
@@ -176,6 +160,31 @@ public class TargetPattern {
 			}
 			subject.addProperty(property, object.getValue(0), datatype);
 		}
+	}
+
+	private List<String> getDataTypeVariableValues(TripleElement object,
+			VariableResults results) {
+		List<String> values;
+		String var = object.getValue(0);
+		values = results.getResults(var);
+		String hint = hints.get(var);
+		// If data type hint is a known type, apply conversion
+		if(HelperFunctions.getWorkingDataTypeOfDataTypeString(hint)!=null) {
+			List<String> tempList = values;
+			values = new ArrayList<String>();
+			for(String value: tempList) {
+				String convertedValue = null;
+				try {
+					convertedValue = HelperFunctions.convertValueToDataType(value, hint);
+				} catch(NumberFormatException e) {
+					if(log.isDebugEnabled())
+						log.debug("NumberFormatException: In mapping <" + mapping.getUri() + "> of variable ?" + var + " for value: " +value);
+					continue;
+				}
+				values.add(convertedValue);
+			}
+		}
+		return values;
 	}
 	
 	private List<String> getIriValuesOfTripleElement(TripleElement element, VariableResults results) {
