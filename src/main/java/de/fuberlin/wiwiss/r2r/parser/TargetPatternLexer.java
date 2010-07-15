@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g 2010-05-21 23:47:13
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g 2010-07-14 20:55:40
 
   package de.fuberlin.wiwiss.r2r.parser;
 
@@ -150,8 +150,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:265:6: ( T R U E )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:265:8: T R U E
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:6: ( T R U E )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:8: T R U E
             {
             mT(); 
             mR(); 
@@ -173,8 +173,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:266:7: ( F A L S E )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:266:9: F A L S E
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:275:7: ( F A L S E )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:275:9: F A L S E
             {
             mF(); 
             mA(); 
@@ -195,8 +195,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "A"
     public final void mA() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:268:11: ( ( 'a' | 'A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:268:13: ( 'a' | 'A' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:277:11: ( ( 'a' | 'A' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:277:13: ( 'a' | 'A' )
             {
             if ( input.LA(1)=='A'||input.LA(1)=='a' ) {
                 input.consume();
@@ -219,8 +219,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "E"
     public final void mE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:269:11: ( ( 'e' | 'E' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:269:13: ( 'e' | 'E' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:278:11: ( ( 'e' | 'E' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:278:13: ( 'e' | 'E' )
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -243,8 +243,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "F"
     public final void mF() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:270:11: ( ( 'f' | 'F' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:270:13: ( 'f' | 'F' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:279:11: ( ( 'f' | 'F' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:279:13: ( 'f' | 'F' )
             {
             if ( input.LA(1)=='F'||input.LA(1)=='f' ) {
                 input.consume();
@@ -267,8 +267,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "L"
     public final void mL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:271:11: ( ( 'l' | 'L' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:271:13: ( 'l' | 'L' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:280:11: ( ( 'l' | 'L' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:280:13: ( 'l' | 'L' )
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
@@ -291,8 +291,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "R"
     public final void mR() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:272:11: ( ( 'r' | 'R' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:272:13: ( 'r' | 'R' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:281:11: ( ( 'r' | 'R' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:281:13: ( 'r' | 'R' )
             {
             if ( input.LA(1)=='R'||input.LA(1)=='r' ) {
                 input.consume();
@@ -315,8 +315,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "S"
     public final void mS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:273:11: ( ( 's' | 'S' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:273:13: ( 's' | 'S' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:282:11: ( ( 's' | 'S' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:282:13: ( 's' | 'S' )
             {
             if ( input.LA(1)=='S'||input.LA(1)=='s' ) {
                 input.consume();
@@ -339,8 +339,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "T"
     public final void mT() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:11: ( ( 't' | 'T' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:13: ( 't' | 'T' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:283:11: ( ( 't' | 'T' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:283:13: ( 't' | 'T' )
             {
             if ( input.LA(1)=='T'||input.LA(1)=='t' ) {
                 input.consume();
@@ -363,8 +363,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "U"
     public final void mU() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:275:11: ( ( 'u' | 'U' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:275:13: ( 'u' | 'U' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:284:11: ( ( 'u' | 'U' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:284:13: ( 'u' | 'U' )
             {
             if ( input.LA(1)=='U'||input.LA(1)=='u' ) {
                 input.consume();
@@ -389,8 +389,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:280:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:280:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:289:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:289:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -418,11 +418,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = IRI_REF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:284:3: ( '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:284:5: '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:293:3: ( '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:293:5: '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>'
             {
             match('<'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:284:9: (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:293:9: (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )*
             loop1:
             do {
                 int alt1=2;
@@ -435,7 +435,7 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:284:10: ~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:293:10: ~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' )
             	    {
             	    if ( input.LA(1)=='!'||(input.LA(1)>='#' && input.LA(1)<=';')||input.LA(1)=='='||(input.LA(1)>='?' && input.LA(1)<='[')||input.LA(1)==']'||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='~' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -472,10 +472,10 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = PNAME_NS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:288:3: ( ( PN_PREFIX )? ':' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:288:5: ( PN_PREFIX )? ':'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:297:3: ( ( PN_PREFIX )? ':' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:297:5: ( PN_PREFIX )? ':'
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:288:5: ( PN_PREFIX )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:297:5: ( PN_PREFIX )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -484,7 +484,7 @@ public class TargetPatternLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:288:5: PN_PREFIX
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:297:5: PN_PREFIX
                     {
                     mPN_PREFIX(); 
 
@@ -510,8 +510,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = PNAME_LN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:292:3: ( PNAME_NS PN_LOCAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:292:5: PNAME_NS PN_LOCAL
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:301:3: ( PNAME_NS PN_LOCAL )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:301:5: PNAME_NS PN_LOCAL
             {
             mPNAME_NS(); 
             mPN_LOCAL(); 
@@ -531,8 +531,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = BLANK_NODE_LABEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:296:3: ( '_:' PN_LOCAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:296:5: '_:' PN_LOCAL
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:305:3: ( '_:' PN_LOCAL )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:305:5: '_:' PN_LOCAL
             {
             match("_:"); 
 
@@ -553,8 +553,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = VAR1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:300:3: ( '?' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:300:5: '?' VARNAME
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:309:3: ( '?' VARNAME )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:309:5: '?' VARNAME
             {
             match('?'); 
             mVARNAME(); 
@@ -574,8 +574,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = VAR2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:304:3: ( '$' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:304:5: '$' VARNAME
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:313:3: ( '$' VARNAME )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:313:5: '$' VARNAME
             {
             match('$'); 
             mVARNAME(); 
@@ -595,8 +595,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = VARIABLETERM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:308:4: ( '?\\'' VARNAME '\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:308:6: '?\\'' VARNAME '\\''
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:317:4: ( '?\\'' VARNAME '\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:317:6: '?\\'' VARNAME '\\''
             {
             match("?'"); 
 
@@ -618,8 +618,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = VARIABLEURI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:312:4: ( '?<' VARNAME '>' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:312:6: '?<' VARNAME '>'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:321:4: ( '?<' VARNAME '>' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:321:6: '?<' VARNAME '>'
             {
             match("?<"); 
 
@@ -641,11 +641,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = LANGTAG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:316:3: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:316:5: '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:325:3: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:325:5: '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
             {
             match('@'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:316:9: ( 'a' .. 'z' | 'A' .. 'Z' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:325:9: ( 'a' .. 'z' | 'A' .. 'Z' )+
             int cnt3=0;
             loop3:
             do {
@@ -683,7 +683,7 @@ public class TargetPatternLexer extends Lexer {
                 cnt3++;
             } while (true);
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:316:32: ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:325:32: ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
             loop5:
             do {
                 int alt5=2;
@@ -696,10 +696,10 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt5) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:316:33: '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:325:33: '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
             	    {
             	    match('-'); 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:316:37: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:325:37: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
             	    int cnt4=0;
             	    loop4:
             	    do {
@@ -762,10 +762,10 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:320:3: ( ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:320:5: ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:3: ( ( '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:5: ( '0' .. '9' )+
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:320:5: ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:5: ( '0' .. '9' )+
             int cnt6=0;
             loop6:
             do {
@@ -779,7 +779,7 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:320:6: '0' .. '9'
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:6: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -811,7 +811,7 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -829,9 +829,9 @@ public class TargetPatternLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:5: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:5: ( '0' .. '9' )+
                     int cnt7=0;
                     loop7:
                     do {
@@ -845,7 +845,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:6: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -862,7 +862,7 @@ public class TargetPatternLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:21: ( '0' .. '9' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:21: ( '0' .. '9' )*
                     loop8:
                     do {
                         int alt8=2;
@@ -875,7 +875,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:22: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -891,10 +891,10 @@ public class TargetPatternLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:35: '.' ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:35: '.' ( '0' .. '9' )+
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:39: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:39: ( '0' .. '9' )+
                     int cnt9=0;
                     loop9:
                     do {
@@ -908,7 +908,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:324:40: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:333:40: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -942,14 +942,14 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:328:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:337:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
             int alt15=3;
             alt15 = dfa15.predict(input);
             switch (alt15) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:328:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:337:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:328:5: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:337:5: ( '0' .. '9' )+
                     int cnt11=0;
                     loop11:
                     do {
@@ -963,7 +963,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:328:6: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:337:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -980,7 +980,7 @@ public class TargetPatternLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:328:21: ( '0' .. '9' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:337:21: ( '0' .. '9' )*
                     loop12:
                     do {
                         int alt12=2;
@@ -993,7 +993,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:328:22: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:337:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -1010,10 +1010,10 @@ public class TargetPatternLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:5: '.' ( '0' .. '9' )+ EXPONENT
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:338:5: '.' ( '0' .. '9' )+ EXPONENT
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:9: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:338:9: ( '0' .. '9' )+
                     int cnt13=0;
                     loop13:
                     do {
@@ -1027,7 +1027,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt13) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:329:10: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:338:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -1048,9 +1048,9 @@ public class TargetPatternLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:330:5: ( '0' .. '9' )+ EXPONENT
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:339:5: ( '0' .. '9' )+ EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:330:5: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:339:5: ( '0' .. '9' )+
                     int cnt14=0;
                     loop14:
                     do {
@@ -1064,7 +1064,7 @@ public class TargetPatternLexer extends Lexer {
 
                         switch (alt14) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:330:6: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:339:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -1099,8 +1099,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = INTEGER_POSITIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:334:3: ( '+' INTEGER )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:334:5: '+' INTEGER
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:343:3: ( '+' INTEGER )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:343:5: '+' INTEGER
             {
             match('+'); 
             mINTEGER(); 
@@ -1120,8 +1120,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = DECIMAL_POSITIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:338:3: ( '+' DECIMAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:338:5: '+' DECIMAL
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:347:3: ( '+' DECIMAL )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:347:5: '+' DECIMAL
             {
             match('+'); 
             mDECIMAL(); 
@@ -1141,8 +1141,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = DOUBLE_POSITIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:342:3: ( '+' DOUBLE )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:342:5: '+' DOUBLE
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:351:3: ( '+' DOUBLE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:351:5: '+' DOUBLE
             {
             match('+'); 
             mDOUBLE(); 
@@ -1162,8 +1162,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = INTEGER_NEGATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:346:3: ( '-' INTEGER )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:346:5: '-' INTEGER
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:355:3: ( '-' INTEGER )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:355:5: '-' INTEGER
             {
             match('-'); 
             mINTEGER(); 
@@ -1183,8 +1183,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = DECIMAL_NEGATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:350:3: ( '-' DECIMAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:350:5: '-' DECIMAL
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:359:3: ( '-' DECIMAL )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:359:5: '-' DECIMAL
             {
             match('-'); 
             mDECIMAL(); 
@@ -1204,8 +1204,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = DOUBLE_NEGATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:354:3: ( '-' DOUBLE )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:354:5: '-' DOUBLE
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:363:3: ( '-' DOUBLE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:363:5: '-' DOUBLE
             {
             match('-'); 
             mDOUBLE(); 
@@ -1225,11 +1225,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = EXPONENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:358:3: ( E ( '+' | '-' )? ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:358:5: E ( '+' | '-' )? ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:367:3: ( E ( '+' | '-' )? ( '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:367:5: E ( '+' | '-' )? ( '0' .. '9' )+
             {
             mE(); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:358:7: ( '+' | '-' )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:367:7: ( '+' | '-' )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -1255,7 +1255,7 @@ public class TargetPatternLexer extends Lexer {
 
             }
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:358:20: ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:367:20: ( '0' .. '9' )+
             int cnt17=0;
             loop17:
             do {
@@ -1269,7 +1269,7 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:358:21: '0' .. '9'
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:367:21: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1301,11 +1301,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = STRING_LITERAL1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:362:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:362:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:371:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:371:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
             {
             match('\''); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:362:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:371:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
             loop18:
             do {
                 int alt18=3;
@@ -1321,7 +1321,7 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:362:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:371:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1336,7 +1336,7 @@ public class TargetPatternLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:362:58: ECHAR
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:371:58: ECHAR
             	    {
             	    mECHAR(); 
 
@@ -1365,12 +1365,12 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = STRING_LITERAL_LONG1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
             {
             match("'''"); 
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
             loop21:
             do {
                 int alt21=2;
@@ -1401,9 +1401,9 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt21) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:15: ( '\\'' | '\\'\\'' )?
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:15: ( '\\'' | '\\'\\'' )?
             	    int alt19=3;
             	    int LA19_0 = input.LA(1);
 
@@ -1419,14 +1419,14 @@ public class TargetPatternLexer extends Lexer {
             	    }
             	    switch (alt19) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:17: '\\''
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:17: '\\''
             	            {
             	            match('\''); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:24: '\\'\\''
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:24: '\\'\\''
             	            {
             	            match("''"); 
 
@@ -1436,7 +1436,7 @@ public class TargetPatternLexer extends Lexer {
 
             	    }
 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    int alt20=2;
             	    int LA20_0 = input.LA(1);
 
@@ -1454,7 +1454,7 @@ public class TargetPatternLexer extends Lexer {
             	    }
             	    switch (alt20) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:34: ~ ( '\\'' | '\\\\' )
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:34: ~ ( '\\'' | '\\\\' )
             	            {
             	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	                input.consume();
@@ -1469,7 +1469,7 @@ public class TargetPatternLexer extends Lexer {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:366:51: ECHAR
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:375:51: ECHAR
             	            {
             	            mECHAR(); 
 
@@ -1505,8 +1505,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = ECHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:370:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:370:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:379:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:379:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
             {
             match('\\'); 
             if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1534,11 +1534,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = ANON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:376:3: ( '[' ( WS )* ']' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:376:5: '[' ( WS )* ']'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:385:3: ( '[' ( WS )* ']' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:385:5: '[' ( WS )* ']'
             {
             match('['); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:376:9: ( WS )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:385:9: ( WS )*
             loop22:
             do {
                 int alt22=2;
@@ -1551,7 +1551,7 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt22) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:376:9: WS
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:385:9: WS
             	    {
             	    mWS(); 
 
@@ -1580,8 +1580,8 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = VARNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:380:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:380:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:389:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:389:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1592,7 +1592,7 @@ public class TargetPatternLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:380:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:389:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             loop23:
             do {
                 int alt23=2;
@@ -1639,7 +1639,7 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "PN_CHARS_BASE"
     public final void mPN_CHARS_BASE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:384:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:393:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
@@ -1663,7 +1663,7 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "PN_CHARS_U"
     public final void mPN_CHARS_U() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:400:3: ( PN_CHARS_BASE | '_' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:409:3: ( PN_CHARS_BASE | '_' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
@@ -1689,11 +1689,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = PN_PREFIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:404:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:404:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:413:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:413:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             mPN_CHARS_BASE(); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:404:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:413:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -1702,9 +1702,9 @@ public class TargetPatternLexer extends Lexer {
             }
             switch (alt25) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:404:20: ( PN_CHARS | '.' )* PN_CHARS
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:413:20: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:404:20: ( PN_CHARS | '.' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:413:20: ( PN_CHARS | '.' )*
                     loop24:
                     do {
                         int alt24=2;
@@ -1767,7 +1767,7 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "PN_CHARS"
     public final void mPN_CHARS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:408:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:417:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:
             {
             if ( input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
@@ -1791,8 +1791,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "PN_LOCAL"
     public final void mPN_LOCAL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:417:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:417:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:426:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:426:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1803,7 +1803,7 @@ public class TargetPatternLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:417:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:426:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -1812,9 +1812,9 @@ public class TargetPatternLexer extends Lexer {
             }
             switch (alt27) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:417:30: ( PN_CHARS | '.' )* PN_CHARS
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:426:30: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:417:30: ( PN_CHARS | '.' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:426:30: ( PN_CHARS | '.' )*
                     loop26:
                     do {
                         int alt26=2;
@@ -1875,8 +1875,8 @@ public class TargetPatternLexer extends Lexer {
     // $ANTLR start "HEX"
     public final void mHEX() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:420:14: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:420:16: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:429:14: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:429:16: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -1901,11 +1901,11 @@ public class TargetPatternLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:421:9: ( '#' ( . )* ( '\\n' | '\\r' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:421:11: '#' ( . )* ( '\\n' | '\\r' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:430:9: ( '#' ( . )* ( '\\n' | '\\r' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:430:11: '#' ( . )* ( '\\n' | '\\r' )
             {
             match('#'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:421:15: ( . )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:430:15: ( . )*
             loop28:
             do {
                 int alt28=2;
@@ -1921,7 +1921,7 @@ public class TargetPatternLexer extends Lexer {
 
                 switch (alt28) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:421:15: .
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:430:15: .
             	    {
             	    matchAny(); 
 
@@ -2241,7 +2241,7 @@ public class TargetPatternLexer extends Lexer {
             this.transition = DFA15_transition;
         }
         public String getDescription() {
-            return "327:1: DOUBLE : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT );";
+            return "336:1: DOUBLE : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT );";
         }
     }
     static final String DFA29_eotS =

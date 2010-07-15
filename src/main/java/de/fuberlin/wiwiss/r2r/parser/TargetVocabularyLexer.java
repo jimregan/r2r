@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g 2010-05-21 23:47:15
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g 2010-07-02 13:41:05
 
   package de.fuberlin.wiwiss.r2r.parser;
 
@@ -52,15 +52,15 @@ public class TargetVocabularyLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g"; }
+    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g"; }
 
     // $ANTLR start "T__13"
     public final void mT__13() throws RecognitionException {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:26:7: ( '+' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:26:9: '+'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:26:7: ( '+' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:26:9: '+'
             {
             match('+'); 
 
@@ -79,8 +79,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:27:7: ( ',' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:27:9: ','
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:27:7: ( ',' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:27:9: ','
             {
             match(','); 
 
@@ -99,8 +99,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:28:7: ( '(' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:28:9: '('
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:28:7: ( '(' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:28:9: '('
             {
             match('('); 
 
@@ -119,8 +119,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:29:7: ( ')' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:29:9: ')'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:29:7: ( ')' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:29:9: ')'
             {
             match(')'); 
 
@@ -139,8 +139,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:30:7: ( '.' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:30:9: '.'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:30:7: ( '.' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:30:9: '.'
             {
             match('.'); 
 
@@ -159,8 +159,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:31:7: ( '@prefix' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:31:9: '@prefix'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:31:7: ( '@prefix' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:31:9: '@prefix'
             {
             match("@prefix"); 
 
@@ -180,8 +180,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:147:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:147:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:147:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:147:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -209,11 +209,11 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = IRI_REF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:151:3: ( '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:151:5: '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:151:3: ( '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:151:5: '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>'
             {
             match('<'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:151:9: (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:151:9: (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )*
             loop1:
             do {
                 int alt1=2;
@@ -226,7 +226,7 @@ public class TargetVocabularyLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:151:10: ~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:151:10: ~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' )
             	    {
             	    if ( input.LA(1)=='!'||(input.LA(1)>='#' && input.LA(1)<=';')||input.LA(1)=='='||(input.LA(1)>='?' && input.LA(1)<='[')||input.LA(1)==']'||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='~' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -263,8 +263,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = PNAME_LN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:155:3: ( PNAME_NS PN_LOCAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:155:5: PNAME_NS PN_LOCAL
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:155:3: ( PNAME_NS PN_LOCAL )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:155:5: PNAME_NS PN_LOCAL
             {
             mPNAME_NS(); 
             mPN_LOCAL(); 
@@ -284,8 +284,8 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = PNAME_NS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:159:3: ( PN_PREFIX ':' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:159:5: PN_PREFIX ':'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:159:3: ( PN_PREFIX ':' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:159:5: PN_PREFIX ':'
             {
             mPN_PREFIX(); 
             match(':'); 
@@ -303,8 +303,8 @@ public class TargetVocabularyLexer extends Lexer {
     // $ANTLR start "PN_CHARS_BASE"
     public final void mPN_CHARS_BASE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:163:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:163:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -327,8 +327,8 @@ public class TargetVocabularyLexer extends Lexer {
     // $ANTLR start "PN_CHARS_U"
     public final void mPN_CHARS_U() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:179:3: ( PN_CHARS_BASE | '_' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:179:3: ( PN_CHARS_BASE | '_' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -351,8 +351,8 @@ public class TargetVocabularyLexer extends Lexer {
     // $ANTLR start "PN_LOCAL"
     public final void mPN_LOCAL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:183:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:183:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:183:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:183:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -363,7 +363,7 @@ public class TargetVocabularyLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:183:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:183:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -372,9 +372,9 @@ public class TargetVocabularyLexer extends Lexer {
             }
             switch (alt3) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:183:30: ( PN_CHARS | '.' )* PN_CHARS
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:183:30: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:183:30: ( PN_CHARS | '.' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:183:30: ( PN_CHARS | '.' )*
                     loop2:
                     do {
                         int alt2=2;
@@ -396,7 +396,7 @@ public class TargetVocabularyLexer extends Lexer {
 
                         switch (alt2) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:
                     	    {
                     	    if ( (input.LA(1)>='-' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                     	        input.consume();
@@ -437,11 +437,11 @@ public class TargetVocabularyLexer extends Lexer {
         try {
             int _type = PN_PREFIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:187:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:187:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:187:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:187:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             mPN_CHARS_BASE(); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:187:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:187:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -450,9 +450,9 @@ public class TargetVocabularyLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:187:20: ( PN_CHARS | '.' )* PN_CHARS
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:187:20: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:187:20: ( PN_CHARS | '.' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:187:20: ( PN_CHARS | '.' )*
                     loop4:
                     do {
                         int alt4=2;
@@ -474,7 +474,7 @@ public class TargetVocabularyLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:
                     	    {
                     	    if ( (input.LA(1)>='-' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                     	        input.consume();
@@ -515,8 +515,8 @@ public class TargetVocabularyLexer extends Lexer {
     // $ANTLR start "PN_CHARS"
     public final void mPN_CHARS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:191:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:191:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:
             {
             if ( input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -537,82 +537,82 @@ public class TargetVocabularyLexer extends Lexer {
     // $ANTLR end "PN_CHARS"
 
     public void mTokens() throws RecognitionException {
-        // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:8: ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | WS | IRI_REF | PNAME_LN | PNAME_NS | PN_PREFIX )
+        // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:8: ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | WS | IRI_REF | PNAME_LN | PNAME_NS | PN_PREFIX )
         int alt6=11;
         alt6 = dfa6.predict(input);
         switch (alt6) {
             case 1 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:10: T__13
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:10: T__13
                 {
                 mT__13(); 
 
                 }
                 break;
             case 2 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:16: T__14
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:16: T__14
                 {
                 mT__14(); 
 
                 }
                 break;
             case 3 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:22: T__15
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:22: T__15
                 {
                 mT__15(); 
 
                 }
                 break;
             case 4 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:28: T__16
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:28: T__16
                 {
                 mT__16(); 
 
                 }
                 break;
             case 5 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:34: T__17
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:34: T__17
                 {
                 mT__17(); 
 
                 }
                 break;
             case 6 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:40: T__18
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:40: T__18
                 {
                 mT__18(); 
 
                 }
                 break;
             case 7 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:46: WS
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:46: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 8 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:49: IRI_REF
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:49: IRI_REF
                 {
                 mIRI_REF(); 
 
                 }
                 break;
             case 9 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:57: PNAME_LN
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:57: PNAME_LN
                 {
                 mPNAME_LN(); 
 
                 }
                 break;
             case 10 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:66: PNAME_NS
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:66: PNAME_NS
                 {
                 mPNAME_NS(); 
 
                 }
                 break;
             case 11 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetVocabulary.g:1:75: PN_PREFIX
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetVocabulary.g:1:75: PN_PREFIX
                 {
                 mPN_PREFIX(); 
 
@@ -634,8 +634,8 @@ public class TargetVocabularyLexer extends Lexer {
     static final String DFA6_maxS =
         "\1\ufffd\10\uffff\1\ufffd\1\uffff\3\ufffd\2\uffff";
     static final String DFA6_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\uffff\1\13\3\uffff"+
-        "\1\12\1\11";
+        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\uffff\1\13\3\uffff\1"+
+        "\12\1\11";
     static final String DFA6_specialS =
         "\20\uffff}>";
     static final String[] DFA6_transitionS = {
@@ -669,10 +669,10 @@ public class TargetVocabularyLexer extends Lexer {
             "\13\1\uffff\u1c81\13\14\uffff\2\13\61\uffff\2\13\57\uffff\u0120"+
             "\13\u0a70\uffff\u03f0\13\21\uffff\ua7ff\13\u2100\uffff\u04d0"+
             "\13\40\uffff\u020e\13",
-            "\12\17\7\uffff\32\17\4\uffff\1\17\1\uffff\32\17\105\uffff"+
-            "\27\17\1\uffff\37\17\1\uffff\u0208\17\160\uffff\16\17\1\uffff"+
-            "\u1c81\17\14\uffff\2\17\142\uffff\u0120\17\u0a70\uffff\u03f0"+
-            "\17\21\uffff\ua7ff\17\u2100\uffff\u04d0\17\40\uffff\u020e\17",
+            "\12\17\7\uffff\32\17\4\uffff\1\17\1\uffff\32\17\105\uffff\27"+
+            "\17\1\uffff\37\17\1\uffff\u0208\17\160\uffff\16\17\1\uffff\u1c81"+
+            "\17\14\uffff\2\17\142\uffff\u0120\17\u0a70\uffff\u03f0\17\21"+
+            "\uffff\ua7ff\17\u2100\uffff\u04d0\17\40\uffff\u020e\17",
             "",
             ""
     };
