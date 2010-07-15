@@ -59,7 +59,7 @@ public class TargetPattern {
 	 */
 	public void addTargetTriplesToModel(Model model, VariableResults results, int blankNodeGroup, String termURI) {
 		for(Triple triple: path) {
-			if(triple.getPropertyURI().equals(termURI) || (triple.getClassURI()!=null && triple.getClassURI().equals(termURI))) {
+			if(termURI==null || triple.getPropertyURI().equals(termURI) || (triple.getClassURI()!=null && triple.getClassURI().equals(termURI))) {
 				List<String> subjectVals = getSubjectValues(triple.getSubject(), results);
 				List<String> verbVals = getVerbValues(triple.getVerb());
 	

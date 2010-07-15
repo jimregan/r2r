@@ -1,111 +1,87 @@
 package de.fuberlin.wiwiss.r2r.discovery;
 
-import java.util.Map;
-import java.util.HashMap;
 import de.fuberlin.wiwiss.r2r.*;
-import com.hp.hpl.jena.rdf.model.*;
 
 public class MappingChain {
-	private Map<String, MappingChain> mappingDependencies;
-	// The boolean for sourceDependency stores if the dependency is a property
-	private Map<String, Boolean> sourceDependencies;
-	private String mappingURI;
-	private int depth;
+	private MappingChainNode root;
+	private String sourceDataset;
+	private String targetDataset;
+	private String targetVocabularyTerm;
 	private double score;
 
-	private String targetVocabularyTerm;
-	public MappingChain(String mapping, String targetVocabularyTerm, int depth, double score) {
+	public MappingChain(MappingChainNode root, String sourceDataset,
+			String targetDataset, String targetVocabularyTerm, 
+			double score) {
 		super();
-		this.mappingURI = mapping;
+		this.root = root;
+		this.sourceDataset = sourceDataset;
+		this.targetDataset = targetDataset;
 		this.targetVocabularyTerm = targetVocabularyTerm;
-		this.mappingDependencies = new HashMap<String, MappingChain>();
-		this.sourceDependencies = new HashMap<String, Boolean>();
-		this.depth = depth;
 		this.score = score;
 	}
-	public Map<String, MappingChain> getMappingDependencies() {
-		return mappingDependencies;
+
+	public MappingChainNode getRoot() {
+		return root;
 	}
-	public String getMappingURI() {
-		return mappingURI;
+
+	public String getSourceDataset() {
+		return sourceDataset;
 	}
-	
-	public int getDepth() {
-		return depth;
-	}
-	public double getScore() {
-		return score;
+
+	public String getTargetDataset() {
+		return targetDataset;
 	}
 
 	public String getTargetVocabularyTerm() {
 		return targetVocabularyTerm;
 	}
-	
-	public void setMappingDependency(String targetVocabularyElement, MappingChain mappingChain) {
-		mappingDependencies.put(targetVocabularyElement, mappingChain);
+
+	public double getScore() {
+		return score;
 	}
-	
-	public void setSourceDependency(String targetVocabularyElement, boolean isClass) {
-		sourceDependencies.put(targetVocabularyElement, isClass);
-	}
-	
+
+	/**
+	 * executes the mapping chain against a dataset, however, if the discovery couldn't find an appropriate mapping chain
+	 * then nothing will happen.
+	 * @param in Source object representing the source dataset
+	 * @param out Output object where the triples are written to
+	 * @param repository the mapping repository
+	 * @return Numbers of triples generated in the whole process
+	 */
 	public long execute(Source in, Output out, MappingRepository repository) {
-		long count = executeMappingRecursively(in, out, repository);
-		return count;
-	}
-	
-	private long executeMappingRecursively(Source in, Output outputModel, MappingRepository repository) {
-		// If only source dependencies exist, execute mapping directly
-		Mapping mapping = repository.getMappingOfUri(this.mappingURI);
-		if(mappingDependencies.size()==0)
-			return mapping.executeMapping(in, outputModel);
-		
-		Model inputModel = ModelFactory.createDefaultModel();
-		for(Map.Entry<String, Boolean> sourceDep: sourceDependencies.entrySet()) {
-			if(sourceDep.getValue())
-				getPropertyStatements(sourceDep.getKey(), in, inputModel);
-			else
-				getClassStatements(sourceDep.getKey(), in, inputModel);
-		}
-		
-		long count = inputModel.size();
-		
-		Output inputOutput = new JenaModelOutput(inputModel);
-		for(Map.Entry<String, MappingChain> mappingDep: mappingDependencies.entrySet()) {
-			count += mappingDep.getValue().executeMappingRecursively(in, inputOutput, repository);
-		}
-		
-		Source inputModelSource = new JenaModelSource(inputModel);
-		count += mapping.executeMapping(inputModelSource, outputModel);
-		
-		return count;
-	}
-	
-	private void getPropertyStatements(String property, Source in, Model out) {
-		StringBuilder sb = new StringBuilder();
-		sb.append("CONSTRUCT { ?s <").append(property).append("> ?o } WHERE { ?s <");
-		sb.append(property).append("> ?o }");
-		out.add(in.executeConstructQuery(sb.toString()));
-	}
-	
-	private void getClassStatements(String classURI, Source in, Model out) {
-		StringBuilder sb = new StringBuilder();
-		sb.append("CONSTRUCT { ?s a <").append(classURI).append("> } WHERE { ?s a <");
-		sb.append(classURI).append("> }");
-		out.add(in.executeConstructQuery(sb.toString()));
+		if(root!=null)
+			return root.execute(in, out, repository);
+		else
+			return 0;
 	}
 	
 	public String toString() {
 		StringBuilder output = new StringBuilder();
-		String indent = "";
-		for(int i=0;i<depth;i++)
-			indent+="  ";
-		output.append(indent).append("-").append(targetVocabularyTerm).append("\n");
-		for(String sd: sourceDependencies.keySet())
-			output.append(indent).append(" * ").append(sd).append("\n");
-		for(MappingChain md: mappingDependencies.values()) {
-			output.append(md);
-		}
+		output.append("  MappingChain\n");
+		output.append("target vocabulary term:\t ").append(targetVocabularyTerm).append("\n");
+		if(targetDataset!=null)
+			output.append("target dataset:\t\t").append(targetDataset).append("\n");
+		else
+			output.append("target dataset:\t\tnone \n");
+		if(sourceDataset!=null)
+			output.append("source dataset:\t\t").append(sourceDataset).append("\n");
+		else
+			output.append("source dataset:\t\tnone \n");
+		output.append("score:\t\t\t").append(score).append("\n");
+		output.append("  Nodes:\n");
+		if(root!=null)
+			output.append(root.toString());
+		else
+			output.append("This mapping chain is empty and not executable!");
+		
 		return output.toString();
+	}
+	
+	/**
+	 * checks if an executable mapping chain was found 
+	 * @return 
+	 */
+	public boolean isExecutable() {
+		return root!=null;
 	}
 }

@@ -23,13 +23,14 @@ public class DependencyGraph {
 	private String sourceDataset;
 	private Set<VocabularyNode> sourceNodes;
 	private Map<String, VocabularyNode> nodes;
+	private String targetVocabularyTerm;
 	Map<TargetMappingCluster, TargetMappingCluster> targetClusters;
 	// The clusters a mapping is member of (generates the target element & dataset combination)
 	Map<String, Set<TargetMappingCluster>> clustersOfMapping;  
 	Set<String> sourceSatisfiableMappings = null;
 	MetaDataCatcher mappingMetadataCatcher; //TODO: remove from this class
 	
-	public DependencyGraph(VocabularyNode root, String sourceDataset, String targetDataset, Map<String, VocabularyNode> allNodes, Set<VocabularyNode> sourceNodes, MetaDataCatcher mdc) {
+	public DependencyGraph(VocabularyNode root, String targetVocabularyTerm, String sourceDataset, String targetDataset, Map<String, VocabularyNode> allNodes, Set<VocabularyNode> sourceNodes, MetaDataCatcher mdc) {
 		super();
 		this.root = root;
 		this.sourceNodes = sourceNodes;
@@ -37,8 +38,13 @@ public class DependencyGraph {
 		this.nodes = allNodes;
 		this.mappingMetadataCatcher = mdc;
 		this.targetDataset = targetDataset;
+		this.targetVocabularyTerm = targetVocabularyTerm;
 	}
 	
+	public String getTargetVocabularyTerm() {
+		return targetVocabularyTerm;
+	}
+
 	public VocabularyNode getRoot() {
 		return root;
 	}
@@ -126,6 +132,8 @@ public class DependencyGraph {
 	/**
 	 * builds the best mapping composition(s) with a maximum depth
 	 * @param depth the maximum depth of the mapping composition
+	 * @param datasetChecker for checking for source vocabulary terms
+	 * @return
 	 */
 	public MappingChain buildBestMappingComposition(int depth, DatasetChecker datasetChecker) {
 		Set<TargetMappingCluster> openQueue = getSourceClusters();
@@ -146,7 +154,13 @@ public class DependencyGraph {
 			openQueue = nextOpenQueue;
 		}
 		
-		return getBestMappingChain(datasetChecker);
+		MappingChainNode root = getBestMappingChain(datasetChecker);
+		double score = 0.0;
+		if(root!=null)
+			score = root.getScore();
+		MappingChain mapChain = new MappingChain(root, sourceDataset, targetDataset, targetVocabularyTerm, score);
+		
+		return mapChain;
 	}
 	
 	private Set<String> getAllMappingsOfClusters(Set<TargetMappingCluster> clusters) {
@@ -158,7 +172,7 @@ public class DependencyGraph {
 		return mappings;
 	}
 	
-	private MappingChain getBestMappingChain(DatasetChecker datasetChecker) {
+	private MappingChainNode getBestMappingChain(DatasetChecker datasetChecker) {
 		TargetMappingCluster rootCluster = getCluster(root.getTargetElement(), targetDataset);
 		if(rootCluster==null)
 			return null;
@@ -170,7 +184,7 @@ public class DependencyGraph {
 			return buildMappingChain(rootCluster, root.getTargetElement(), datasetChecker, 0);
 	}
 	
-	private MappingChain buildMappingChain(TargetMappingCluster cluster, String targetVocabularyTerm, DatasetChecker datasetChecker, int depth) {
+	private MappingChainNode buildMappingChain(TargetMappingCluster cluster, String targetVocabularyTerm, DatasetChecker datasetChecker, int depth) {
 		String mapping = cluster.currentBestMapping;
 		MappingMetaData mappingMetedata = mappingMetadataCatcher.getMetaDataForMapping(mapping);
 		Set<String> dependencies = mappingMetedata.getValuesForProperty(R2R.dependsOn);
@@ -179,7 +193,7 @@ public class DependencyGraph {
 		if(!(mappingMetedata.getValuesForProperty(R2R.sourceDataset)==null))
 			sourceDataset = mappingMetedata.getValuesForProperty(R2R.sourceDataset).iterator().next();
 		
-		MappingChain mChain = new MappingChain(mapping, targetVocabularyTerm, depth, cluster.currentBestScore);
+		MappingChainNode mChain = new MappingChainNode(mapping, targetVocabularyTerm, depth, cluster.currentBestScore);
 		
 		for(String termDep: dependencies) {
 			TargetMappingCluster clusterDep = getCluster(termDep, sourceDataset);
