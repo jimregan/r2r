@@ -3,11 +3,14 @@ package de.fuberlin.wiwiss.r2r.discovery;
 import de.fuberlin.wiwiss.r2r.MetadataRepository;
 import de.fuberlin.wiwiss.r2r.R2R;
 
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collection;
+import java.util.List;
 
 public class MappingDiscovery {
 	private DatasetChecker datasetCheck;
@@ -22,7 +25,7 @@ public class MappingDiscovery {
 		metaDataCatcher = new MetaDataCatcher(repository);
 	}
 	
-	public DependencyGraph buildDependencyGraph(String targetVocabularyElement, String sourceDataset, String targetDataset, int maxDepth) {
+	public DependencyGraph buildDependencyGraph(String targetVocabularyTerm, String sourceDataset, String targetDataset, int maxDepth) {
 		Set<VocabularyNode> sourceNodes = new HashSet<VocabularyNode>();
 		
 		// use as FIFO queue
@@ -31,9 +34,9 @@ public class MappingDiscovery {
 		// Keeps track on which nodes have been added so far and stores their data
 		Map<String, VocabularyNode> nodes = new HashMap<String, VocabularyNode>();
 		
-		VocabularyNode root = initRootNode(targetVocabularyElement);
+		VocabularyNode root = initRootNode(targetVocabularyTerm);
 
-		nodes.put(targetVocabularyElement, root);
+		nodes.put(targetVocabularyTerm, root);
 		openNodes.add(root);
 		
 		while(!openNodes.isEmpty()) {
@@ -43,10 +46,10 @@ public class MappingDiscovery {
 			if(depth > maxDepth)
 				break;
 			
-			expand(targetVocabularyElement, node, sourceNodes, nodes, openNodes, depth);
+			expand(targetVocabularyTerm, node, sourceNodes, nodes, openNodes, depth);
 		}
 		
-		return new DependencyGraph(root, sourceDataset, targetDataset, nodes, sourceNodes, metaDataCatcher);
+		return new DependencyGraph(root, targetVocabularyTerm, sourceDataset, targetDataset, nodes, sourceNodes, metaDataCatcher);
 	}
 	
 	public MappingChain getMappingChain(String targetVocabularyElement, String sourceDataset, String targetDataset, int maxDepth) {
@@ -56,6 +59,23 @@ public class MappingDiscovery {
 		dGraph.removeIrrelevantNodes();
 		dGraph.createMappingClustersAndDependencies();
 		return dGraph.buildBestMappingComposition(maxDepth, datasetCheck);
+	}
+	
+	/**
+	 * Get all the mapping chains for the given target vocabulary definition
+	 * @param targetVocabDefinition The (discovery) target vocabulary definition string
+	 * @param sourceDataset The source dataset URI or null if unknown
+	 * @param maxDepth the maximum depth of the search graph from the target term node
+	 * @return a collection of mapping chains that can be executed against the/a source dataset
+	 */
+	public Collection<MappingChain> getMappingChains(String targetVocabDefinition, String sourceDataset, int maxDepth) {
+		Collection<DiscoveryTargetVocabulary> vocabDefs = DiscoveryTargetVocabulary.parse(targetVocabDefinition);
+		List<MappingChain> mappingChains = new ArrayList<MappingChain>();
+		for(DiscoveryTargetVocabulary dtv: vocabDefs)
+			for(Map.Entry<String, String> termDataset: dtv.getTermDatasetPairs().entrySet())
+				mappingChains.add(getMappingChain(termDataset.getKey(), sourceDataset, termDataset.getValue(), maxDepth));
+		
+		return mappingChains;
 	}
 	
 	private void expand(String vocabularyElement, VocabularyNode node, Set<VocabularyNode> sourceNodes,

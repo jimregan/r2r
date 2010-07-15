@@ -255,11 +255,10 @@ public class Mapping {
 	 * @param in Input Source object
 	 * @param out Output object
 	 * @param mappingRestrictions the mapped instances have to conform to these restrictions
-	 * @param entityURIs the target entities. Only target pat(Mapping.java:264)
-terns of this mapping containing one of these URIs are executed.
+	 * @param termURIs the target terms. Only triples of target patterns of this mapping containing one of these URIs are generated.
 	 * @return Number of triples generated
 	 */
-	public long executeMappingInOtherMappingContext(Source in, Output out, Collection<Mapping> mappingRestrictions, Collection<String> entityURIs) {
+	public long executeMappingInOtherMappingContext(Source in, Output out, Collection<Mapping> mappingRestrictions, Collection<String> termURIs) {
 		int results = 0;//TODO: return number of triples
 		Model outputModel = out.getOutputModel();
 		ResultSet resultSet = null;
@@ -289,10 +288,10 @@ terns of this mapping containing one of these URIs are executed.
 				varResults.addVariableResult(var, resList);
 			}
 			executeAllFunctions(varResults);
-			if(entityURIs==null)
+			if(termURIs==null)
 				executeTargetPatterns(varResults, outputModel);
 			else
-				executeTargetPatterns(varResults, outputModel, entityURIs);
+				executeTargetPatterns(varResults, outputModel, termURIs);
 		}
 		out.write(outputModel);
 		
@@ -464,12 +463,15 @@ terns of this mapping containing one of these URIs are executed.
 	 */
 	private void executeTargetPatterns(VariableResults varResults, Model out, Collection<String> termURIs) {
 		int group = getBlankNodeGroup();
-		for(TargetPattern targetPattern: targetPatterns)
+		for(TargetPattern targetPattern: targetPatterns) {
+			if(termURIs==null)
+				targetPattern.addTargetTriplesToModel(out, varResults, group, null);
 			for(String termURI: termURIs)
 				if(targetPattern.getClasses().contains(termURI) || targetPattern.getProperties().contains(termURI)) {
 					targetPattern.addTargetTriplesToModel(out, varResults, group, termURI);
 					break;
 				}
+		}
 	}
 	
 	public void insertMappingMetaDataIntoJenaModel(Model model) {
