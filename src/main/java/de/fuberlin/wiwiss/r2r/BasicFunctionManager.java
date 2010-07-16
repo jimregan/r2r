@@ -42,6 +42,7 @@ public class BasicFunctionManager implements FunctionManager {
 		functions.put("mod", new ModuloFunctionFactory());
 		functions.put("integer", new IntegerFunctionFactory());
 		functions.put("length", new LengthFunctionFactory());
+		functions.put("replaceAll", new ReplaceAllFunctionFactory());
 		
 		// deprecated
 		functions.put("infixConcat", new JoinFunctionFactory());
