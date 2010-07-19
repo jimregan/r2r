@@ -303,21 +303,21 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	/**
 	 * Get all the mapping URIs from the meta data repository that generate one or more of the given entities.
 	 * All the mappings are being put into a specific context defined by the first argument.
-	 * @param contextEntityUri
+	 * @param classRestrictionTermUri
 	 * @param propertiesUris
 	 * @param addClassRestrictionMappings
 	 * @return MappingsInfo objects that contain information about which and how mappings should be executed.
 	 */
-	public List<MappingsInfo> getMappingURIsForVocabularyDefinition(String contextEntityUri, Collection<String> propertiesUris, boolean addClassRestrictionMappings) {
+	public List<MappingsInfo> getMappingURIsForVocabularyDefinition(String classRestrictionTermUri, Collection<String> propertiesUris, boolean addClassRestrictionMappings) {
 		List<MappingsInfo> mappingInfos = new ArrayList<MappingsInfo>();
 		boolean forwardChaining = Config.getProperty("de.fuberlin.wiwiss.r2r.ForwardChaining","false").equals("true"); 
 		
-		Set<String> classmappings = null;
-		if(contextEntityUri!=null) 
-			classmappings = getMappingsOfTargetElement(contextEntityUri);
+		Set<String> classRestrictions = null;
+		if(classRestrictionTermUri!=null) 
+			classRestrictions = getMappingsOfTargetElement(classRestrictionTermUri);
 		else {
-			classmappings = new HashSet<String>();
-			classmappings.add("");
+			classRestrictions = new HashSet<String>();
+			classRestrictions.add("");
 		}
 		
 		Map<String, Set<String>> mappingsPerClassMapping = new HashMap<String, Set<String>>();
@@ -325,17 +325,17 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		
 		// This will only be executed if the class restriction mappings should be added 
 		Set<String> classMappingsPlusParents = null;
-		if(contextEntityUri!=null) {
+		if(classRestrictionTermUri!=null) {
 			//All class/context mappings, property mappings on this level can be associated with
 			classMappingsPlusParents = new HashSet<String>();
-			classMappingsPlusParents.addAll(classmappings);
+			classMappingsPlusParents.addAll(classRestrictions);
 			
-			for(String c: classmappings) {
+			for(String c: classRestrictions) {
 				Set<String> parents = findAllParentMappingsOfMapping(c);
 				classMappingsPlusParents.addAll(parents);
 				if(addClassRestrictionMappings) {
 					addMappingsToClassMappingContext(c, c, mappingsPerClassMapping);
-					addRestrictionToClassMappingContext(c, contextEntityUri, c, restrictionsPerClassMapping);
+					addRestrictionToClassMappingContext(c, classRestrictionTermUri, c, restrictionsPerClassMapping);
 				}
 				// Add parent mappings of class/property mapping if forward chaining is active, by default it's not
 				// Also these are only added if mappings of the class restriction entity are wanted
@@ -349,11 +349,11 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		for(String propertyUri: propertiesUris) {
 			Collection<String> potentialPropertyMappings = getMappingsOfTargetElement(propertyUri);
 			
-			if(contextEntityUri!=null) {
+			if(classRestrictionTermUri!=null) {
 				//Add all property mappings that are associated with class mapping and its parent classes
 				List<String> propertyMappings = findMappingsForTargetPropertyInClassContext(potentialPropertyMappings, classMappingsPlusParents);
 				for(String p: propertyMappings) {
-					for(String c: classmappings) {
+					for(String c: classRestrictions) {
 						addRestrictionToClassMappingContext(p, propertyUri, c, restrictionsPerClassMapping);
 						addMappingsToClassMappingContext(p, c, mappingsPerClassMapping);
 					}
@@ -365,8 +365,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			for(String potMapping: potentialPropertyMappings) {
 				//Check if there is a property mapping associated with a descendant of the class mapping
 				List<String> cl = null;
-				if(contextEntityUri!=null) {
-					cl = getClassMappingChainForPropertyMapping(potMapping, classmappings);
+				if(classRestrictionTermUri!=null) {
+					cl = getClassMappingChainForPropertyMapping(potMapping, classRestrictions);
 				}
 				
 				if(cl!=null) {//Then the property mapping should be executed as it is				
@@ -377,8 +377,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				else {//Else execute the property mapping and its class mappings in the context of the prop mapping and every mapping of "classUri"
 //					Set<String> clm = findAllParentMappingsOfClassMapping(potMapping);
 //					if(clm.size()>0) {
-						if(contextEntityUri!=null)
-							for(String c: classmappings) {
+						if(classRestrictionTermUri!=null)
+							for(String c: classRestrictions) {
 //								Collection<String> contextcl = new ArrayList<String>();
 //								contextcl.add(c);
 //								contextcl.add(potMapping);
@@ -397,12 +397,12 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			}
 		}
 		
-		if(contextEntityUri!=null)
-			for(String c: classmappings) {
+		if(classRestrictionTermUri!=null)
+			for(String c: classRestrictions) {
 				Set<String> m = mappingsPerClassMapping.get(c);
 				if(m==null)
 					continue;
-				if(contextEntityUri==null)
+				if(classRestrictionTermUri==null)
 					break;
 				Map<String, Collection<String>> r = restrictionsPerClassMapping.get(c);
 				Collection<String> context = new ArrayList<String>();

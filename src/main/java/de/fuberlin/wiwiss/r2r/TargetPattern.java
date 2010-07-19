@@ -60,16 +60,10 @@ public class TargetPattern {
 	public void addTargetTriplesToModel(Model model, VariableResults results, int blankNodeGroup, String termURI) {
 		for(Triple triple: path) {
 			if(termURI==null || triple.getPropertyURI().equals(termURI) || (triple.getClassURI()!=null && triple.getClassURI().equals(termURI))) {
-				List<String> subjectVals = getSubjectValues(triple.getSubject(), results);
+				List<Resource> subjectVals = getSubjectValues(triple.getSubject(), results, model, blankNodeGroup);
 				List<String> verbVals = getVerbValues(triple.getVerb());
 	
-				for(String subjectVal: subjectVals) {
-					Resource subject;
-					if(subjectVal.startsWith("_:")) {
-						subject = model.createResource(new AnonId(blankNodeGroup + "_" + subjectVal.substring(2)));
-					} else {
-						subject = model.createResource(subjectVal);
-					}
+				for(Resource subject: subjectVals) {
 					for(String verb: verbVals) {
 						Property property = model.createProperty(verb);
 						addObjectsToStatement(subject, property, triple.getObject(), results, model, blankNodeGroup);
@@ -146,8 +140,9 @@ public class TargetPattern {
 					subject.addProperty(property, value);
 				}
 			}
-		}
-		else {
+		} else if(type==Type.BLANKNODE) {
+			subject.addProperty(property, results.getBlankNodeResource(object.getValue(0), model));
+		} else {
 			RDFDatatype datatype = null;
 			if(type==Type.BOOLEAN) {
 				datatype = typeMapper.getTypeByName(PrintUtil.expandQname("xsd:boolean"));
@@ -199,12 +194,18 @@ public class TargetPattern {
 		return iris;
 	}
 	
-	private List<String> getSubjectValues(TripleElement element, VariableResults results) {
-		List<String> subjects = null;
+	private List<Resource> getSubjectValues(TripleElement element, VariableResults results, Model model, int blankNodeGroup) {
+		List<Resource> subjects = new ArrayList<Resource>();
 		Type type = element.getType();
-		subjects = new ArrayList<String>();
+		
 		if(type==Type.IRI) {
-			subjects.add(element.getValue(0));
+			String subjectVal = element.getValue(0);
+			if(subjectVal.startsWith("_:"))
+				subjects.add(model.createResource(new AnonId(blankNodeGroup + "_" + subjectVal.substring(2))));
+			else
+				subjects.add(model.createResource(subjectVal));
+		} else if (type==Type.BLANKNODE) {
+			subjects.add(results.getBlankNodeResource(element.getValue(0), model));
 		} else {
 			String varName = element.getValue(0);
 			//only IRIVARIABLE and VARIABLE possible
@@ -214,12 +215,19 @@ public class TargetPattern {
 					//Node is no resource thus cannot be in the subject position => do not add => do nothing!
 				}
 				else
-					subjects= results.getResults(varName);
+					subjects= convertIRIStringsToResources(results.getResults(varName), model);
 			}
 			else
-				subjects = results.getResults(varName);
+				subjects = convertIRIStringsToResources(results.getResults(varName), model);
 		}
 		return subjects;
+	}
+	
+	private List<Resource> convertIRIStringsToResources(List<String> iriStrings, Model model) {
+		List<Resource> resources = new ArrayList<Resource>();
+		for(String iri: iriStrings)
+			resources.add(model.createResource(iri));
+		return resources;
 	}
 	
 	private List<String> getVerbValues(TripleElement element) {
