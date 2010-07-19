@@ -11,14 +11,18 @@ public class TripleElement {
 	private List<String> values;
 	
 	public enum Type {
-		IRI, VARIABLE, IRIVARIABLE, BOOLEAN, STRING, STRINGVARIABLE, LANGTAGSTRING, LANGTAGVARIABLE, DATATYPESTRING, DATATYPEVARIABLE, INTEGER, DOUBLE, DECIMAL
+		IRI, VARIABLE, IRIVARIABLE, BOOLEAN, STRING, STRINGVARIABLE, LANGTAGSTRING, LANGTAGVARIABLE, DATATYPESTRING, DATATYPEVARIABLE, INTEGER, DOUBLE, DECIMAL, BLANKNODE
 	}
 	
 	public TripleElement(Type type, String... values) {
 		this.type = type;
 		this.values = new ArrayList<String>();
-		for(String value: values)
-			this.values.add(value);
+		if(values!=null) {
+			for(String value: values)
+				this.values.add(value);
+		}
+		else
+			this.values.add(null);
 	}
 
 	public Type getType() {

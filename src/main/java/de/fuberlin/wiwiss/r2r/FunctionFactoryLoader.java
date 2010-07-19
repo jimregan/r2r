@@ -32,6 +32,7 @@ public class FunctionFactoryLoader {
 	 * @throws MalformedURLException
 	 */
 	public FunctionFactory getFunctionFactory(String URI) throws MalformedURLException {
+		boolean loadFromURLs = Config.getProperty("r2r.FunctionManager.loadFromURLs", "false").equalsIgnoreCase("true");
 		FunctionFactory functionFactory = null;
 		String codeLocation = null;
 		String qualifiedClassName = null;
@@ -58,6 +59,12 @@ public class FunctionFactoryLoader {
 			// If FunctionFactory has been loaded, return it
 			if(functionFactory!=null)
 				return functionFactory;
+			
+			if(!loadFromURLs) {
+				if(log.isDebugEnabled())
+					log.debug("External Function <" + URI +"> could not be loaded from class path and loading by URL is disabled!");
+				return null;
+			}
 			
 			// Now try the original code location
 			it = funcRes.listProperties(model.getProperty(R2R.codeLocation));
