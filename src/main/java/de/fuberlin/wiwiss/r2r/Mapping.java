@@ -162,8 +162,10 @@ public class Mapping {
 	private void addPrefixDefinitions(String prefixDefs) {
 		Map<String, String> prefixes = MiniParsers.parsePrefixDefinitions(prefixDefs);
 		for(Map.Entry<String, String> prefix: prefixes.entrySet()) {
-			prefixMapper.registerPrefix(prefix.getKey(), prefix.getValue());
-			this.prefixes.add(prefix.getKey());
+			if(!this.prefixes.contains(prefix.getKey())) {
+				prefixMapper.registerPrefix(prefix.getKey(), prefix.getValue());
+				this.prefixes.add(prefix.getKey());
+			}
 		}
 	}
 	
@@ -469,7 +471,6 @@ public class Mapping {
 			for(String termURI: termURIs)
 				if(targetPattern.getClasses().contains(termURI) || targetPattern.getProperties().contains(termURI)) {
 					targetPattern.addTargetTriplesToModel(out, varResults, group, termURI);
-					break;
 				}
 		}
 	}

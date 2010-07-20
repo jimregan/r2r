@@ -44,6 +44,11 @@ public class VariableResults {
 		if(blankNodes==null)
 			blankNodes = new HashMap<String, Resource>();
 		
+		// If no identifier is given, always create a new blank node
+		if(identifier==null)
+			return model.createResource();
+		
+		// For equivalent identifiers return equivalent blank nodes
 		if(blankNodes.containsKey(identifier))
 			return blankNodes.get(identifier);
 		else {

@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g 2010-07-19 13:26:45
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g 2010-07-20 11:23:12
 
   package de.fuberlin.wiwiss.r2r.parser;
   
@@ -82,7 +82,7 @@ public class TargetPatternParser extends Parser {
         
 
     public String[] getTokenNames() { return TargetPatternParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g"; }
+    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g"; }
 
 
       PrefixMapper prefixMapper;
@@ -119,7 +119,7 @@ public class TargetPatternParser extends Parser {
     };
 
     // $ANTLR start "targetPattern"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:68:1: targetPattern returns [Set<String> variableDependencies, TargetPattern pattern, Set<String> classes, Set<String> properties, Map<String, String> hints] : first= tripleOrPath ( '.' more= tripleOrPath )* EOF ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:68:1: targetPattern returns [Set<String> variableDependencies, TargetPattern pattern, Set<String> classes, Set<String> properties, Map<String, String> hints] : first= tripleOrPath ( '.' more= tripleOrPath )* EOF ;
     public final TargetPatternParser.targetPattern_return targetPattern() throws RecognitionException {
         TargetPatternParser.targetPattern_return retval = new TargetPatternParser.targetPattern_return();
         retval.start = input.LT(1);
@@ -130,8 +130,8 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:69:3: (first= tripleOrPath ( '.' more= tripleOrPath )* EOF )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:69:5: first= tripleOrPath ( '.' more= tripleOrPath )* EOF
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:69:3: (first= tripleOrPath ( '.' more= tripleOrPath )* EOF )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:69:5: first= tripleOrPath ( '.' more= tripleOrPath )* EOF
             {
             pushFollow(FOLLOW_tripleOrPath_in_targetPattern64);
             first=tripleOrPath();
@@ -139,7 +139,7 @@ public class TargetPatternParser extends Parser {
             state._fsp--;
 
              List<Triple> triples = first; 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:70:5: ( '.' more= tripleOrPath )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:70:5: ( '.' more= tripleOrPath )*
             loop1:
             do {
                 int alt1=2;
@@ -152,7 +152,7 @@ public class TargetPatternParser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:71:7: '.' more= tripleOrPath
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:71:7: '.' more= tripleOrPath
             	    {
             	    match(input,46,FOLLOW_46_in_targetPattern81); 
             	    pushFollow(FOLLOW_tripleOrPath_in_targetPattern85);
@@ -195,7 +195,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "tripleOrPath"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:83:1: tripleOrPath returns [List<Triple> value] : ( | s= subject v= verb (s= subject v= verb )* o= object );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:83:1: tripleOrPath returns [List<Triple> value] : ( | s= subject v= verb (s= subject v= verb )* o= object );
     public final List<Triple> tripleOrPath() throws RecognitionException {
         List<Triple> value = null;
 
@@ -207,7 +207,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:84:3: ( | s= subject v= verb (s= subject v= verb )* o= object )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:84:3: ( | s= subject v= verb (s= subject v= verb )* o= object )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -225,12 +225,12 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt3) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:85:5: 
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:85:5: 
                     {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:85:7: s= subject v= verb (s= subject v= verb )* o= object
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:85:7: s= subject v= verb (s= subject v= verb )* o= object
                     {
                      List<Triple> triples = null;
                     pushFollow(FOLLOW_subject_in_tripleOrPath153);
@@ -248,14 +248,14 @@ public class TargetPatternParser extends Parser {
                                               TripleElement vElement = v;
                                               props.add(vElement.getValue(0));
                                            
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:91:7: (s= subject v= verb )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:91:7: (s= subject v= verb )*
                     loop2:
                     do {
                         int alt2=2;
                         alt2 = dfa2.predict(input);
                         switch (alt2) {
                     	case 1 :
-                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:91:8: s= subject v= verb
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:91:8: s= subject v= verb
                     	    {
                     	    pushFollow(FOLLOW_subject_in_tripleOrPath170);
                     	    s=subject();
@@ -317,7 +317,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "subject"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:124:1: subject returns [TripleElement value] : ( varOrIriRefOrBlankNode | VARIABLEURI );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:124:1: subject returns [TripleElement value] : ( varOrIriRefOrBlankNode | VARIABLEURI );
     public final TripleElement subject() throws RecognitionException {
         TripleElement value = null;
 
@@ -326,7 +326,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:125:3: ( varOrIriRefOrBlankNode | VARIABLEURI )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:125:3: ( varOrIriRefOrBlankNode | VARIABLEURI )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -344,7 +344,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:125:5: varOrIriRefOrBlankNode
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:125:5: varOrIriRefOrBlankNode
                     {
                     pushFollow(FOLLOW_varOrIriRefOrBlankNode_in_subject231);
                     varOrIriRefOrBlankNode1=varOrIriRefOrBlankNode();
@@ -356,7 +356,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:126:5: VARIABLEURI
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:126:5: VARIABLEURI
                     {
                     VARIABLEURI2=(Token)match(input,VARIABLEURI,FOLLOW_VARIABLEURI_in_subject239); 
 
@@ -383,7 +383,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "verb"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:135:1: verb returns [TripleElement value] : ( iriRef | 'a' );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:135:1: verb returns [TripleElement value] : ( iriRef | 'a' );
     public final TripleElement verb() throws RecognitionException {
         TripleElement value = null;
 
@@ -391,7 +391,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:136:3: ( iriRef | 'a' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:136:3: ( iriRef | 'a' )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -409,7 +409,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:136:5: iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:136:5: iriRef
                     {
                     pushFollow(FOLLOW_iriRef_in_verb264);
                     iriRef3=iriRef();
@@ -421,7 +421,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:137:5: 'a'
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:137:5: 'a'
                     {
                     match(input,47,FOLLOW_47_in_verb272); 
                      value = new TripleElement(TripleElement.Type.IRI, PrintUtil.expandQname("rdf:type")); 
@@ -443,7 +443,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "object"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:140:1: object returns [TripleElement value] : ( varOrTerm | VARIABLEURI );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:140:1: object returns [TripleElement value] : ( varOrTerm | VARIABLEURI );
     public final TripleElement object() throws RecognitionException {
         TripleElement value = null;
 
@@ -452,7 +452,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:141:3: ( varOrTerm | VARIABLEURI )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:141:3: ( varOrTerm | VARIABLEURI )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -470,7 +470,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:141:5: varOrTerm
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:141:5: varOrTerm
                     {
                     pushFollow(FOLLOW_varOrTerm_in_object293);
                     varOrTerm4=varOrTerm();
@@ -482,7 +482,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:142:5: VARIABLEURI
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:142:5: VARIABLEURI
                     {
                     VARIABLEURI5=(Token)match(input,VARIABLEURI,FOLLOW_VARIABLEURI_in_object301); 
                      String v = (VARIABLEURI5!=null?VARIABLEURI5.getText():null);
@@ -508,7 +508,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "varOrTerm"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:150:1: varOrTerm returns [TripleElement value] : ( var | graphTerm );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:150:1: varOrTerm returns [TripleElement value] : ( var | graphTerm );
     public final TripleElement varOrTerm() throws RecognitionException {
         TripleElement value = null;
 
@@ -518,7 +518,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:151:3: ( var | graphTerm )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:151:3: ( var | graphTerm )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -536,7 +536,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:151:5: var
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:151:5: var
                     {
                     pushFollow(FOLLOW_var_in_varOrTerm326);
                     var6=var();
@@ -548,7 +548,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:152:5: graphTerm
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:152:5: graphTerm
                     {
                     pushFollow(FOLLOW_graphTerm_in_varOrTerm334);
                     graphTerm7=graphTerm();
@@ -574,7 +574,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "varOrIriRefOrBlankNode"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:155:1: varOrIriRefOrBlankNode returns [TripleElement value] : ( var | iriRef | blankNode );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:155:1: varOrIriRefOrBlankNode returns [TripleElement value] : ( var | iriRef | blankNode );
     public final TripleElement varOrIriRefOrBlankNode() throws RecognitionException {
         TripleElement value = null;
 
@@ -586,7 +586,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:156:3: ( var | iriRef | blankNode )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:156:3: ( var | iriRef | blankNode )
             int alt8=3;
             switch ( input.LA(1) ) {
             case VAR1:
@@ -616,7 +616,7 @@ public class TargetPatternParser extends Parser {
 
             switch (alt8) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:156:5: var
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:156:5: var
                     {
                     pushFollow(FOLLOW_var_in_varOrIriRefOrBlankNode355);
                     var8=var();
@@ -628,7 +628,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:157:5: iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:157:5: iriRef
                     {
                     pushFollow(FOLLOW_iriRef_in_varOrIriRefOrBlankNode363);
                     iriRef9=iriRef();
@@ -640,7 +640,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:158:5: blankNode
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:158:5: blankNode
                     {
                     pushFollow(FOLLOW_blankNode_in_varOrIriRefOrBlankNode371);
                     blankNode10=blankNode();
@@ -666,7 +666,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "var"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:161:1: var returns [TripleElement value] : ( VAR1 | VAR2 );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:161:1: var returns [TripleElement value] : ( VAR1 | VAR2 );
     public final TripleElement var() throws RecognitionException {
         TripleElement value = null;
 
@@ -674,7 +674,7 @@ public class TargetPatternParser extends Parser {
         Token VAR212=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:162:3: ( VAR1 | VAR2 )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:162:3: ( VAR1 | VAR2 )
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -692,7 +692,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:162:5: VAR1
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:162:5: VAR1
                     {
                     VAR111=(Token)match(input,VAR1,FOLLOW_VAR1_in_var392); 
                      value = new TripleElement(TripleElement.Type.VARIABLE, (VAR111!=null?VAR111.getText():null).substring(1)); variables.add((VAR111!=null?VAR111.getText():null).substring(1));
@@ -700,7 +700,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:163:5: VAR2
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:163:5: VAR2
                     {
                     VAR212=(Token)match(input,VAR2,FOLLOW_VAR2_in_var400); 
                      value = new TripleElement(TripleElement.Type.VARIABLE, (VAR212!=null?VAR212.getText():null).substring(1)); variables.add((VAR212!=null?VAR212.getText():null).substring(1));
@@ -722,7 +722,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "graphTerm"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:166:1: graphTerm returns [TripleElement value] : ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:166:1: graphTerm returns [TripleElement value] : ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode );
     public final TripleElement graphTerm() throws RecognitionException {
         TripleElement value = null;
 
@@ -738,7 +738,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:167:3: ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:167:3: ( iriRef | rdfLiteral | numericLiteral | booleanLiteral | blankNode )
             int alt10=5;
             switch ( input.LA(1) ) {
             case IRI_REF:
@@ -788,7 +788,7 @@ public class TargetPatternParser extends Parser {
 
             switch (alt10) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:167:5: iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:167:5: iriRef
                     {
                     pushFollow(FOLLOW_iriRef_in_graphTerm420);
                     iriRef13=iriRef();
@@ -800,7 +800,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:168:5: rdfLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:168:5: rdfLiteral
                     {
                     pushFollow(FOLLOW_rdfLiteral_in_graphTerm428);
                     rdfLiteral14=rdfLiteral();
@@ -812,7 +812,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:169:5: numericLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:169:5: numericLiteral
                     {
                     pushFollow(FOLLOW_numericLiteral_in_graphTerm436);
                     numericLiteral15=numericLiteral();
@@ -824,7 +824,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:170:5: booleanLiteral
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:170:5: booleanLiteral
                     {
                     pushFollow(FOLLOW_booleanLiteral_in_graphTerm444);
                     booleanLiteral16=booleanLiteral();
@@ -836,7 +836,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:171:5: blankNode
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:171:5: blankNode
                     {
                     pushFollow(FOLLOW_blankNode_in_graphTerm452);
                     blankNode17=blankNode();
@@ -862,7 +862,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "rdfLiteral"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:174:2: rdfLiteral returns [TripleElement value] : (s= string | VARIABLETERM ) (l= LANGTAG | ( '^^' i= iriRef ) )? ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:174:2: rdfLiteral returns [TripleElement value] : (s= string | VARIABLETERM ) (l= LANGTAG | ( '^^' i= iriRef ) )? ;
     public final TripleElement rdfLiteral() throws RecognitionException {
         TripleElement value = null;
 
@@ -874,11 +874,11 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:175:4: ( (s= string | VARIABLETERM ) (l= LANGTAG | ( '^^' i= iriRef ) )? )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:175:6: (s= string | VARIABLETERM ) (l= LANGTAG | ( '^^' i= iriRef ) )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:175:4: ( (s= string | VARIABLETERM ) (l= LANGTAG | ( '^^' i= iriRef ) )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:175:6: (s= string | VARIABLETERM ) (l= LANGTAG | ( '^^' i= iriRef ) )?
             {
              String v=null; TripleElement.Type vType = null; 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:176:8: (s= string | VARIABLETERM )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:176:8: (s= string | VARIABLETERM )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -896,7 +896,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt11) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:176:9: s= string
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:176:9: s= string
                     {
                     pushFollow(FOLLOW_string_in_rdfLiteral488);
                     s=string();
@@ -908,7 +908,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:178:8: VARIABLETERM
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:178:8: VARIABLETERM
                     {
                     VARIABLETERM18=(Token)match(input,VARIABLETERM,FOLLOW_VARIABLETERM_in_rdfLiteral508); 
                      v = (VARIABLETERM18!=null?VARIABLETERM18.getText():null); v = v.substring(2, v.length()-1); variables.add(v); vType = TripleElement.Type.STRINGVARIABLE; 
@@ -918,7 +918,7 @@ public class TargetPatternParser extends Parser {
 
             }
 
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:181:6: (l= LANGTAG | ( '^^' i= iriRef ) )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:181:6: (l= LANGTAG | ( '^^' i= iriRef ) )?
             int alt12=3;
             int LA12_0 = input.LA(1);
 
@@ -930,7 +930,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt12) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:181:7: l= LANGTAG
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:181:7: l= LANGTAG
                     {
                     l=(Token)match(input,LANGTAG,FOLLOW_LANGTAG_in_rdfLiteral537); 
                      
@@ -943,10 +943,10 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:189:8: ( '^^' i= iriRef )
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:189:8: ( '^^' i= iriRef )
                     {
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:189:8: ( '^^' i= iriRef )
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:189:9: '^^' i= iriRef
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:189:8: ( '^^' i= iriRef )
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:189:9: '^^' i= iriRef
                     {
                     match(input,48,FOLLOW_48_in_rdfLiteral563); 
                     pushFollow(FOLLOW_iriRef_in_rdfLiteral567);
@@ -991,7 +991,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteral"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:205:2: numericLiteral returns [TripleElement value] : (v= numericLiteralUnsigned | v= numericLiteralPositive | v= numericLiteralNegative );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:205:2: numericLiteral returns [TripleElement value] : (v= numericLiteralUnsigned | v= numericLiteralPositive | v= numericLiteralNegative );
     public final TripleElement numericLiteral() throws RecognitionException {
         TripleElement value = null;
 
@@ -999,7 +999,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:206:4: (v= numericLiteralUnsigned | v= numericLiteralPositive | v= numericLiteralNegative )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:206:4: (v= numericLiteralUnsigned | v= numericLiteralPositive | v= numericLiteralNegative )
             int alt13=3;
             switch ( input.LA(1) ) {
             case INTEGER:
@@ -1032,7 +1032,7 @@ public class TargetPatternParser extends Parser {
 
             switch (alt13) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:206:6: v= numericLiteralUnsigned
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:206:6: v= numericLiteralUnsigned
                     {
                     pushFollow(FOLLOW_numericLiteralUnsigned_in_numericLiteral622);
                     v=numericLiteralUnsigned();
@@ -1044,7 +1044,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:207:6: v= numericLiteralPositive
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:207:6: v= numericLiteralPositive
                     {
                     pushFollow(FOLLOW_numericLiteralPositive_in_numericLiteral633);
                     v=numericLiteralPositive();
@@ -1056,7 +1056,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:208:6: v= numericLiteralNegative
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:208:6: v= numericLiteralNegative
                     {
                     pushFollow(FOLLOW_numericLiteralNegative_in_numericLiteral644);
                     v=numericLiteralNegative();
@@ -1082,14 +1082,14 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteralUnsigned"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:211:2: numericLiteralUnsigned returns [TripleElement value] : (v= INTEGER | v= DECIMAL | v= DOUBLE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:211:2: numericLiteralUnsigned returns [TripleElement value] : (v= INTEGER | v= DECIMAL | v= DOUBLE );
     public final TripleElement numericLiteralUnsigned() throws RecognitionException {
         TripleElement value = null;
 
         Token v=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:212:4: (v= INTEGER | v= DECIMAL | v= DOUBLE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:212:4: (v= INTEGER | v= DECIMAL | v= DOUBLE )
             int alt14=3;
             switch ( input.LA(1) ) {
             case INTEGER:
@@ -1116,7 +1116,7 @@ public class TargetPatternParser extends Parser {
 
             switch (alt14) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:212:6: v= INTEGER
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:212:6: v= INTEGER
                     {
                     v=(Token)match(input,INTEGER,FOLLOW_INTEGER_in_numericLiteralUnsigned671); 
                     value = new TripleElement(TripleElement.Type.INTEGER, (v!=null?v.getText():null)); 
@@ -1124,7 +1124,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:213:6: v= DECIMAL
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:213:6: v= DECIMAL
                     {
                     v=(Token)match(input,DECIMAL,FOLLOW_DECIMAL_in_numericLiteralUnsigned682); 
                     value = new TripleElement(TripleElement.Type.DECIMAL, (v!=null?v.getText():null)); 
@@ -1132,7 +1132,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:214:6: v= DOUBLE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:214:6: v= DOUBLE
                     {
                     v=(Token)match(input,DOUBLE,FOLLOW_DOUBLE_in_numericLiteralUnsigned693); 
                     value = new TripleElement(TripleElement.Type.DOUBLE, (v!=null?v.getText():null)); 
@@ -1154,14 +1154,14 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteralPositive"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:217:2: numericLiteralPositive returns [TripleElement value] : (v= INTEGER_POSITIVE | v= DECIMAL_POSITIVE | v= DOUBLE_POSITIVE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:217:2: numericLiteralPositive returns [TripleElement value] : (v= INTEGER_POSITIVE | v= DECIMAL_POSITIVE | v= DOUBLE_POSITIVE );
     public final TripleElement numericLiteralPositive() throws RecognitionException {
         TripleElement value = null;
 
         Token v=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:218:4: (v= INTEGER_POSITIVE | v= DECIMAL_POSITIVE | v= DOUBLE_POSITIVE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:218:4: (v= INTEGER_POSITIVE | v= DECIMAL_POSITIVE | v= DOUBLE_POSITIVE )
             int alt15=3;
             switch ( input.LA(1) ) {
             case INTEGER_POSITIVE:
@@ -1188,7 +1188,7 @@ public class TargetPatternParser extends Parser {
 
             switch (alt15) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:218:6: v= INTEGER_POSITIVE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:218:6: v= INTEGER_POSITIVE
                     {
                     v=(Token)match(input,INTEGER_POSITIVE,FOLLOW_INTEGER_POSITIVE_in_numericLiteralPositive720); 
                     value = new TripleElement(TripleElement.Type.INTEGER, (v!=null?v.getText():null)); 
@@ -1196,7 +1196,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:219:6: v= DECIMAL_POSITIVE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:219:6: v= DECIMAL_POSITIVE
                     {
                     v=(Token)match(input,DECIMAL_POSITIVE,FOLLOW_DECIMAL_POSITIVE_in_numericLiteralPositive731); 
                     value = new TripleElement(TripleElement.Type.DECIMAL, (v!=null?v.getText():null)); 
@@ -1204,7 +1204,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:220:6: v= DOUBLE_POSITIVE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:220:6: v= DOUBLE_POSITIVE
                     {
                     v=(Token)match(input,DOUBLE_POSITIVE,FOLLOW_DOUBLE_POSITIVE_in_numericLiteralPositive742); 
                     value = new TripleElement(TripleElement.Type.DOUBLE, (v!=null?v.getText():null)); 
@@ -1226,14 +1226,14 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "numericLiteralNegative"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:223:2: numericLiteralNegative returns [TripleElement value] : (v= INTEGER_NEGATIVE | v= DECIMAL_NEGATIVE | v= DOUBLE_NEGATIVE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:223:2: numericLiteralNegative returns [TripleElement value] : (v= INTEGER_NEGATIVE | v= DECIMAL_NEGATIVE | v= DOUBLE_NEGATIVE );
     public final TripleElement numericLiteralNegative() throws RecognitionException {
         TripleElement value = null;
 
         Token v=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:224:4: (v= INTEGER_NEGATIVE | v= DECIMAL_NEGATIVE | v= DOUBLE_NEGATIVE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:224:4: (v= INTEGER_NEGATIVE | v= DECIMAL_NEGATIVE | v= DOUBLE_NEGATIVE )
             int alt16=3;
             switch ( input.LA(1) ) {
             case INTEGER_NEGATIVE:
@@ -1260,7 +1260,7 @@ public class TargetPatternParser extends Parser {
 
             switch (alt16) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:224:6: v= INTEGER_NEGATIVE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:224:6: v= INTEGER_NEGATIVE
                     {
                     v=(Token)match(input,INTEGER_NEGATIVE,FOLLOW_INTEGER_NEGATIVE_in_numericLiteralNegative769); 
                     value = new TripleElement(TripleElement.Type.INTEGER, (v!=null?v.getText():null)); 
@@ -1268,7 +1268,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:225:6: v= DECIMAL_NEGATIVE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:225:6: v= DECIMAL_NEGATIVE
                     {
                     v=(Token)match(input,DECIMAL_NEGATIVE,FOLLOW_DECIMAL_NEGATIVE_in_numericLiteralNegative780); 
                     value = new TripleElement(TripleElement.Type.DECIMAL, (v!=null?v.getText():null)); 
@@ -1276,7 +1276,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:226:6: v= DOUBLE_NEGATIVE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:226:6: v= DOUBLE_NEGATIVE
                     {
                     v=(Token)match(input,DOUBLE_NEGATIVE,FOLLOW_DOUBLE_NEGATIVE_in_numericLiteralNegative791); 
                     value = new TripleElement(TripleElement.Type.DOUBLE, (v!=null?v.getText():null)); 
@@ -1298,12 +1298,12 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "booleanLiteral"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:229:2: booleanLiteral returns [TripleElement value] : ( TRUE | FALSE );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:229:2: booleanLiteral returns [TripleElement value] : ( TRUE | FALSE );
     public final TripleElement booleanLiteral() throws RecognitionException {
         TripleElement value = null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:230:4: ( TRUE | FALSE )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:230:4: ( TRUE | FALSE )
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -1321,7 +1321,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:230:6: TRUE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:230:6: TRUE
                     {
                     match(input,TRUE,FOLLOW_TRUE_in_booleanLiteral816); 
                     value = new TripleElement(TripleElement.Type.BOOLEAN, "true"); 
@@ -1329,7 +1329,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:231:6: FALSE
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:231:6: FALSE
                     {
                     match(input,FALSE,FOLLOW_FALSE_in_booleanLiteral825); 
                     value = new TripleElement(TripleElement.Type.BOOLEAN, "false"); 
@@ -1351,14 +1351,14 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "string"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:234:2: string returns [String value] : (s= STRING_LITERAL1 | s= STRING_LITERAL_LONG1 );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:234:2: string returns [String value] : (s= STRING_LITERAL1 | s= STRING_LITERAL_LONG1 );
     public final String string() throws RecognitionException {
         String value = null;
 
         Token s=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:235:4: (s= STRING_LITERAL1 | s= STRING_LITERAL_LONG1 )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:235:4: (s= STRING_LITERAL1 | s= STRING_LITERAL_LONG1 )
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -1376,7 +1376,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt18) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:235:6: s= STRING_LITERAL1
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:235:6: s= STRING_LITERAL1
                     {
                     s=(Token)match(input,STRING_LITERAL1,FOLLOW_STRING_LITERAL1_in_string852); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(1, temp.length() - 1); 
@@ -1384,7 +1384,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:236:6: s= STRING_LITERAL_LONG1
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:236:6: s= STRING_LITERAL_LONG1
                     {
                     s=(Token)match(input,STRING_LITERAL_LONG1,FOLLOW_STRING_LITERAL_LONG1_in_string863); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(3, temp.length() - 3); 
@@ -1406,7 +1406,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "iriRef"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:239:2: iriRef returns [String value] : ( IRI_REF | prefixedName );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:239:2: iriRef returns [String value] : ( IRI_REF | prefixedName );
     public final String iriRef() throws RecognitionException {
         String value = null;
 
@@ -1415,7 +1415,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:240:4: ( IRI_REF | prefixedName )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:240:4: ( IRI_REF | prefixedName )
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -1433,7 +1433,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt19) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:240:6: IRI_REF
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:240:6: IRI_REF
                     {
                     IRI_REF19=(Token)match(input,IRI_REF,FOLLOW_IRI_REF_in_iriRef886); 
                      
@@ -1444,7 +1444,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:245:6: prefixedName
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:245:6: prefixedName
                     {
                     pushFollow(FOLLOW_prefixedName_in_iriRef901);
                     prefixedName20=prefixedName();
@@ -1492,7 +1492,7 @@ public class TargetPatternParser extends Parser {
     };
 
     // $ANTLR start "prefixedName"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:268:2: prefixedName returns [String value] : PNAME_LN ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:268:2: prefixedName returns [String value] : PNAME_LN ;
     public final TargetPatternParser.prefixedName_return prefixedName() throws RecognitionException {
         TargetPatternParser.prefixedName_return retval = new TargetPatternParser.prefixedName_return();
         retval.start = input.LT(1);
@@ -1500,8 +1500,8 @@ public class TargetPatternParser extends Parser {
         Token PNAME_LN21=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:269:4: ( PNAME_LN )
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:269:6: PNAME_LN
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:269:4: ( PNAME_LN )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:269:6: PNAME_LN
             {
             PNAME_LN21=(Token)match(input,PNAME_LN,FOLLOW_PNAME_LN_in_prefixedName929); 
              retval.value = (PNAME_LN21!=null?PNAME_LN21.getText():null); 
@@ -1523,14 +1523,14 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "blankNode"
-    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:272:2: blankNode returns [TripleElement value] : ( BLANK_NODE_LABEL | ANON );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:272:2: blankNode returns [TripleElement value] : ( BLANK_NODE_LABEL | ANON );
     public final TripleElement blankNode() throws RecognitionException {
         TripleElement value = null;
 
         Token BLANK_NODE_LABEL22=null;
 
         try {
-            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:273:4: ( BLANK_NODE_LABEL | ANON )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:273:4: ( BLANK_NODE_LABEL | ANON )
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -1548,7 +1548,7 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt20) {
                 case 1 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:273:6: BLANK_NODE_LABEL
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:273:6: BLANK_NODE_LABEL
                     {
                     BLANK_NODE_LABEL22=(Token)match(input,BLANK_NODE_LABEL,FOLLOW_BLANK_NODE_LABEL_in_blankNode954); 
                      value = new TripleElement(TripleElement.Type.BLANKNODE, (BLANK_NODE_LABEL22!=null?BLANK_NODE_LABEL22.getText():null).substring(2)); 
@@ -1556,7 +1556,7 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/TargetPattern.g:274:6: ANON
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:6: ANON
                     {
                     match(input,ANON,FOLLOW_ANON_in_blankNode963); 
                      value = new TripleElement(TripleElement.Type.BLANKNODE, null); 

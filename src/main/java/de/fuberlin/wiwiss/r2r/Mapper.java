@@ -11,6 +11,8 @@ import com.hp.hpl.jena.rdf.model.Model;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.Level;
+import de.fuberlin.wiwiss.r2r.discovery.*;
+
 /**
  * The Mapper provides functions for dataset transformation..
  * @author Andreas
@@ -67,15 +69,19 @@ public class Mapper {
 		SimpleMappingCache mappingCache = new SimpleMappingCache(repository);
 		
 		for(MappingsInfo mappingsInfo: mappingsToExecute) {
-			List<Mapping> contextMappings = new ArrayList<Mapping>();
-			for(String contextMapping: mappingsInfo.classRestrictionMappings) {
-				Mapping mapping = mappingCache.getMapping(contextMapping);
-				if(mapping!=null)
-					contextMappings.add(mapping);
-				else
-					if(log.isDebugEnabled())
-						log.debug("Mapping <" + contextMapping + "> could not be retrieved from the repository!");
-			}
+			List<Mapping> contextMappings = null;
+			if(mappingsInfo.classRestrictionMappings!=null)
+				for(String contextMapping: mappingsInfo.classRestrictionMappings) {
+					Mapping mapping = mappingCache.getMapping(contextMapping);
+					if(mapping!=null) {
+						if(contextMappings==null)
+							contextMappings = new ArrayList<Mapping>();
+						contextMappings.add(mapping);
+					}
+					else
+						if(log.isDebugEnabled())
+							log.debug("Mapping <" + contextMapping + "> could not be retrieved from the repository!");
+				}
 
 			for(String mappingUri: mappingsInfo.allMappings) {
 					Mapping mapping = mappingCache.getMapping(mappingUri);
@@ -146,5 +152,26 @@ public class Mapper {
 	 */
 	public static void transform(Source source, Output output, MappingRepository repository, Collection<String> entities) {
 		transform(source,output,repository,null,entities, false);
+	}
+	
+	/**
+	 * applies mapping discovery to all sources of the SourceManager given the (discovery) vocabulary definition and
+	 * executes the discovered Mapping Chains 
+	 * @param sourceManager manages Source meta data and holds enough information to instantiate various Source objects
+	 * @param output Output object
+	 * @param discoveryVocabDefinition vocabulary definition for the mapping discovery
+	 * @param maxDepth how deep the mapping discovery searches for mapping chains
+	 */
+	public static void transform(SourceManager sourceManager, Output output, MappingPlusMetaDataRepository repository, String discoveryVocabDefinition, int maxDepth) {
+		List<SourceDescription> sourceDescriptions = sourceManager.getSourceDescriptions();
+		for(SourceDescription sourceDesc: sourceDescriptions) {
+			Source source = sourceManager.getSourceObjectForSourceDescription(sourceDesc);
+			DatasetChecker datasetCheck = new SourceDatasetChecker(source);
+			MappingDiscovery mappingDiscovery = new MappingDiscovery(datasetCheck, repository);
+			Collection<MappingChain> mappingChains = mappingDiscovery.getMappingChains(discoveryVocabDefinition, sourceDesc.getSourceDataset(), maxDepth);
+			
+			for(MappingChain mc: mappingChains)
+				mc.execute(source, output, repository);
+		}
 	}
 }
