@@ -12,9 +12,11 @@ public class R2R {
 	//r2r class URIs
 	public final static String ClassMapping = R2R + "ClassMapping";
 	public final static String PropertyMapping = R2R + "PropertyMapping";
+	public final static String Mapping = R2R + "Mapping";
 	public final static String ExternalFunction = R2R + "ExternalFunction";
-	//Composed Function TODO
+	public final static String MappingCollection = R2R + "MappingCollection";
 	
+	public final static String partOfMappingCollection = R2R + "partOfMappingCollection";
 	public final static String sourcePattern = R2R + "sourcePattern";
 	public final static String targetPattern = R2R + "targetPattern";
 	public final static String classMappingRef = R2R + "classMappingRef";

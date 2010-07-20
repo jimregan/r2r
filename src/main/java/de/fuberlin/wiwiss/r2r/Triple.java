@@ -25,7 +25,7 @@ public class Triple {
 	}
 
 	public String getClassURI() {
-		return classURI;
+		return this.classURI;
 	}
 
 	public TripleElement getSubject() {

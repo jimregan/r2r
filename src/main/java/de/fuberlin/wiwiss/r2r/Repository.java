@@ -225,21 +225,59 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		
 		String classRef = getReferencedClassMappingUri(mappingURI);
 		
-		if(classRef==null)
+		if(classRef==null) {
+			addPrefixesOfMappingCollection(mappingURI, prefixDefinitions);
 			return Mapping.createMapping(mappingURI, null, prefixDefinitions, targetPatterns, transformations, sourcePattern, isClassMapping, functionImports, functionManager);
+		}
 		
 		String parentMapping = classRef;
 		List<String> sourcePatterns = new ArrayList<String>();
 		sourcePatterns.add(sourcePattern);
-		while(classRef!=null) {//TODO: Add acyclic check
+		boolean successful = mergeWithReferencedMappings(mappingURI, prefixDefinitions, classRef, sourcePatterns);
+		if(!successful)
+			return null;
+		
+		addPrefixesOfMappingCollection(mappingURI, prefixDefinitions);
+		
+		return Mapping.createMapping(mappingURI, parentMapping, prefixDefinitions, targetPatterns, transformations, sourcePatterns, isClassMapping, functionImports, functionManager);
+	}
+
+	private List<String> addPrefixesOfMappingCollection(String mappingURI,
+			List<String> prefixDefinitions) {
+		List<String> mC = getPropertyValuesForResource(mappingURI, R2R.partOfMappingCollection);
+		List<String> prefixDefsOfCollection=null;
+		if(mC.size()>0) {
+			prefixDefsOfCollection = getPropertyValuesForResource(mC.get(0), R2R.prefixDefinitions);
+		}
+		if(prefixDefsOfCollection!=null)
+			prefixDefinitions.addAll(prefixDefsOfCollection);
+		return prefixDefsOfCollection;
+	}
+
+	private boolean mergeWithReferencedMappings(String mappingURI, List<String> prefixDefinitions,
+			String classRef, List<String> sourcePatterns) {
+		HashSet<String> mappingPath = new HashSet<String>();
+		while(classRef!=null) {
+			if(mappingPath.contains(classRef)) {
+				if(log.isDebugEnabled()) {
+					StringBuilder sb = new StringBuilder();
+					sb.append("Mapping <").append(mappingURI).append("> references other mappings that lead to a cycle. ");
+					sb.append("Cycle starts with mapping: <").append(classRef).append(">.");
+					log.debug(sb.toString());
+				}
+				return false;
+			}
+			else
+				mappingPath.add(classRef);
+			
 			MappingData mapData = getMappingDataOfUri(classRef);
 			if(mapData==null)
-				return null;
+				return false;
 			sourcePatterns.add(mapData.sourcePattern);
 			prefixDefinitions.addAll(mapData.prefixDefinitions);
 			classRef = getReferencedClassMappingUri(classRef);
 		}
-		return Mapping.createMapping(mappingURI, parentMapping, prefixDefinitions, targetPatterns, transformations, sourcePatterns, isClassMapping, functionImports, functionManager);
+		return true;
 	}
 	
 	private MappingData getMappingDataOfUri(String mappingURI) {
@@ -310,7 +348,6 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	 */
 	public List<MappingsInfo> getMappingURIsForVocabularyDefinition(String classRestrictionTermUri, Collection<String> propertiesUris, boolean addClassRestrictionMappings) {
 		List<MappingsInfo> mappingInfos = new ArrayList<MappingsInfo>();
-		boolean forwardChaining = Config.getProperty("de.fuberlin.wiwiss.r2r.ForwardChaining","false").equals("true"); 
 		
 		Set<String> classRestrictions = null;
 		if(classRestrictionTermUri!=null) 
@@ -324,24 +361,12 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		Map<String, Map<String, Collection<String>>> restrictionsPerClassMapping = new HashMap<String, Map<String, Collection<String>>>();
 		
 		// This will only be executed if the class restriction mappings should be added 
-		Set<String> classMappingsPlusParents = null;
 		if(classRestrictionTermUri!=null) {
-			//All class/context mappings, property mappings on this level can be associated with
-			classMappingsPlusParents = new HashSet<String>();
-			classMappingsPlusParents.addAll(classRestrictions);
-			
 			for(String c: classRestrictions) {
-				Set<String> parents = findAllParentMappingsOfMapping(c);
-				classMappingsPlusParents.addAll(parents);
 				if(addClassRestrictionMappings) {
 					addMappingsToClassMappingContext(c, c, mappingsPerClassMapping);
 					addRestrictionToClassMappingContext(c, classRestrictionTermUri, c, restrictionsPerClassMapping);
 				}
-				// Add parent mappings of class/property mapping if forward chaining is active, by default it's not
-				// Also these are only added if mappings of the class restriction entity are wanted
-				if(forwardChaining && addClassRestrictionMappings)
-					for(String parent: parents)
-						addMappingsToClassMappingContext(parent, c, mappingsPerClassMapping);
 			}
 		}
 		
@@ -349,66 +374,35 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		for(String propertyUri: propertiesUris) {
 			Collection<String> potentialPropertyMappings = getMappingsOfTargetElement(propertyUri);
 			
-			if(classRestrictionTermUri!=null) {
-				//Add all property mappings that are associated with class mapping and its parent classes
-				List<String> propertyMappings = findMappingsForTargetPropertyInClassContext(potentialPropertyMappings, classMappingsPlusParents);
-				for(String p: propertyMappings) {
-					for(String c: classRestrictions) {
-						addRestrictionToClassMappingContext(p, propertyUri, c, restrictionsPerClassMapping);
-						addMappingsToClassMappingContext(p, c, mappingsPerClassMapping);
-					}
-				}
-				potentialPropertyMappings.removeAll(propertyMappings);
-			}
-			
-			
 			for(String potMapping: potentialPropertyMappings) {
-				//Check if there is a property mapping associated with a descendant of the class mapping
-				List<String> cl = null;
-				if(classRestrictionTermUri!=null) {
-					cl = getClassMappingChainForPropertyMapping(potMapping, classRestrictions);
-				}
-				
-				if(cl!=null) {//Then the property mapping should be executed as it is				
-					Set<String> prop = new HashSet<String>();
-					prop.add(potMapping);
-					mappingInfos.add(new MappingsInfo(prop, prop, createRestriction(potMapping, propertyUri)));
-				}
-				else {//Else execute the property mapping and its class mappings in the context of the prop mapping and every mapping of "classUri"
-//					Set<String> clm = findAllParentMappingsOfClassMapping(potMapping);
-//					if(clm.size()>0) {
-						if(classRestrictionTermUri!=null)
-							for(String c: classRestrictions) {
-//								Collection<String> contextcl = new ArrayList<String>();
-//								contextcl.add(c);
-//								contextcl.add(potMapping);
-//								mappingInfos.add(new MappingsInfo(contextcl, clm));
-								addRestrictionToClassMappingContext(potMapping, propertyUri, c, restrictionsPerClassMapping);
-								addMappingsToClassMappingContext(potMapping, c, mappingsPerClassMapping);
-							}
-						else {
-							Collection<String> contextcl = new ArrayList<String>();
-							contextcl.add(potMapping);
-//							clm.add(potMapping);
-							mappingInfos.add(new MappingsInfo(contextcl, contextcl, createRestriction(potMapping, propertyUri)));
-						}
-//					}
+				if(classRestrictionTermUri!=null)
+					for(String c: classRestrictions) {
+						addRestrictionToClassMappingContext(potMapping, propertyUri, c, restrictionsPerClassMapping);
+						addMappingsToClassMappingContext(potMapping, c, mappingsPerClassMapping);
+					}
+				else {
+					addRestrictionToClassMappingContext(potMapping, propertyUri, "", restrictionsPerClassMapping);
+					addMappingsToClassMappingContext(potMapping, "", mappingsPerClassMapping);
 				}
 			}
 		}
 		
-		if(classRestrictionTermUri!=null)
-			for(String c: classRestrictions) {
-				Set<String> m = mappingsPerClassMapping.get(c);
-				if(m==null)
-					continue;
-				if(classRestrictionTermUri==null)
-					break;
-				Map<String, Collection<String>> r = restrictionsPerClassMapping.get(c);
-				Collection<String> context = new ArrayList<String>();
+		// Create Mappings Info objects
+		for(String c: classRestrictions) {
+			Set<String> m = mappingsPerClassMapping.get(c);
+			if(m==null)
+				continue;
+
+			Map<String, Collection<String>> r = restrictionsPerClassMapping.get(c);
+			
+			Collection<String> context = null;
+			if(classRestrictionTermUri!=null) {
+				context = new ArrayList<String>();
 				context.add(c);
-				mappingInfos.add(new MappingsInfo(context, m, r));
 			}
+			mappingInfos.add(new MappingsInfo(context, m, r));
+			
+		}
 		
 		return mappingInfos;
 	}
