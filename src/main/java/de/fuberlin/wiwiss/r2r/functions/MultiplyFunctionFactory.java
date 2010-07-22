@@ -20,7 +20,7 @@ private MultiplyFunction function = null;
 		return function;
 	}
 
-	private class MultiplyFunction implements Function {
+	private static class MultiplyFunction implements Function {
 
 		public String getURI() {
 			return "multiply";
@@ -44,7 +44,7 @@ private MultiplyFunction function = null;
 					intResult *= Integer.parseInt(argument.get(0));
 				result.add(intResult.toString());
 			} else if(type==DataType.Long) {
-				Long longResult = 0l;
+				Long longResult = 1l;
 				for(List<String> argument: arguments)
 					longResult *= Long.parseLong(argument.get(0));
 				result.add(longResult.toString());

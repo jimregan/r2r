@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g 2010-07-20 11:23:12
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g 2010-07-22 03:13:20
 
   package de.fuberlin.wiwiss.r2r.parser;
   
@@ -19,51 +19,53 @@ import java.util.ArrayList;
 
 public class TargetPatternParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "VARIABLEURI", "VAR1", "VAR2", "VARIABLETERM", "LANGTAG", "INTEGER", "DECIMAL", "DOUBLE", "INTEGER_POSITIVE", "DECIMAL_POSITIVE", "DOUBLE_POSITIVE", "INTEGER_NEGATIVE", "DECIMAL_NEGATIVE", "DOUBLE_NEGATIVE", "TRUE", "FALSE", "STRING_LITERAL1", "STRING_LITERAL_LONG1", "IRI_REF", "PNAME_LN", "BLANK_NODE_LABEL", "ANON", "T", "R", "U", "E", "F", "A", "L", "S", "WS", "PN_PREFIX", "PNAME_NS", "PN_LOCAL", "VARNAME", "EXPONENT", "ECHAR", "PN_CHARS_U", "PN_CHARS_BASE", "PN_CHARS", "HEX", "COMMENT", "'.'", "'a'", "'^^'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "VARIABLEURI", "VAR1", "VAR2", "VARIABLETERM", "LANGTAG", "INTEGER", "DECIMAL", "DOUBLE", "INTEGER_POSITIVE", "DECIMAL_POSITIVE", "DOUBLE_POSITIVE", "INTEGER_NEGATIVE", "DECIMAL_NEGATIVE", "DOUBLE_NEGATIVE", "TRUE", "FALSE", "STRING_LITERAL1", "STRING_LITERAL2", "STRING_LITERAL_LONG1", "STRING_LITERAL_LONG2", "IRI_REF", "PNAME_LN", "BLANK_NODE_LABEL", "ANON", "T", "R", "U", "E", "F", "A", "L", "S", "WS", "PN_PREFIX", "PNAME_NS", "PN_LOCAL", "VARNAME", "EXPONENT", "ECHAR", "PN_CHARS_U", "PN_CHARS_BASE", "PN_CHARS", "HEX", "COMMENT", "'.'", "'a'", "'^^'"
     };
     public static final int VARIABLEURI=4;
-    public static final int IRI_REF=22;
-    public static final int EXPONENT=39;
-    public static final int PNAME_LN=23;
+    public static final int IRI_REF=24;
+    public static final int EXPONENT=41;
+    public static final int PNAME_LN=25;
     public static final int EOF=-1;
-    public static final int VARNAME=38;
-    public static final int HEX=44;
+    public static final int VARNAME=40;
+    public static final int HEX=46;
     public static final int VARIABLETERM=7;
     public static final int DECIMAL_POSITIVE=13;
     public static final int DOUBLE=11;
-    public static final int PN_CHARS_U=41;
-    public static final int COMMENT=45;
+    public static final int PN_CHARS_U=43;
+    public static final int COMMENT=47;
+    public static final int T__50=50;
     public static final int DOUBLE_POSITIVE=14;
     public static final int INTEGER=9;
-    public static final int E=29;
-    public static final int F=30;
-    public static final int T__46=46;
-    public static final int T__47=47;
-    public static final int A=31;
-    public static final int L=32;
+    public static final int E=31;
+    public static final int F=32;
+    public static final int A=33;
+    public static final int L=34;
     public static final int T__48=48;
+    public static final int T__49=49;
     public static final int INTEGER_NEGATIVE=15;
-    public static final int BLANK_NODE_LABEL=24;
-    public static final int U=28;
-    public static final int PN_LOCAL=37;
-    public static final int T=26;
-    public static final int PNAME_NS=36;
-    public static final int S=33;
-    public static final int R=27;
+    public static final int BLANK_NODE_LABEL=26;
+    public static final int U=30;
+    public static final int PN_LOCAL=39;
+    public static final int T=28;
+    public static final int PNAME_NS=38;
+    public static final int S=35;
+    public static final int R=29;
     public static final int TRUE=18;
-    public static final int ECHAR=40;
-    public static final int ANON=25;
-    public static final int WS=34;
-    public static final int PN_CHARS_BASE=42;
+    public static final int ECHAR=42;
+    public static final int ANON=27;
+    public static final int WS=36;
+    public static final int PN_CHARS_BASE=44;
+    public static final int STRING_LITERAL_LONG2=23;
     public static final int DECIMAL=10;
     public static final int VAR1=5;
     public static final int VAR2=6;
-    public static final int STRING_LITERAL_LONG1=21;
+    public static final int STRING_LITERAL_LONG1=22;
     public static final int DECIMAL_NEGATIVE=16;
     public static final int INTEGER_POSITIVE=12;
-    public static final int PN_PREFIX=35;
+    public static final int PN_PREFIX=37;
+    public static final int STRING_LITERAL2=21;
     public static final int STRING_LITERAL1=20;
-    public static final int PN_CHARS=43;
+    public static final int PN_CHARS=45;
     public static final int DOUBLE_NEGATIVE=17;
     public static final int FALSE=19;
     public static final int LANGTAG=8;
@@ -145,7 +147,7 @@ public class TargetPatternParser extends Parser {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==46) ) {
+                if ( (LA1_0==48) ) {
                     alt1=1;
                 }
 
@@ -154,7 +156,7 @@ public class TargetPatternParser extends Parser {
             	case 1 :
             	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:71:7: '.' more= tripleOrPath
             	    {
-            	    match(input,46,FOLLOW_46_in_targetPattern81); 
+            	    match(input,48,FOLLOW_48_in_targetPattern81); 
             	    pushFollow(FOLLOW_tripleOrPath_in_targetPattern85);
             	    more=tripleOrPath();
 
@@ -211,7 +213,7 @@ public class TargetPatternParser extends Parser {
             int alt3=2;
             int LA3_0 = input.LA(1);
 
-            if ( (LA3_0==EOF||LA3_0==46) ) {
+            if ( (LA3_0==EOF||LA3_0==48) ) {
                 alt3=1;
             }
             else if ( ((LA3_0>=VARIABLEURI && LA3_0<=VAR2)||(LA3_0>=IRI_REF && LA3_0<=ANON)) ) {
@@ -398,7 +400,7 @@ public class TargetPatternParser extends Parser {
             if ( ((LA5_0>=IRI_REF && LA5_0<=PNAME_LN)) ) {
                 alt5=1;
             }
-            else if ( (LA5_0==47) ) {
+            else if ( (LA5_0==49) ) {
                 alt5=2;
             }
             else {
@@ -423,7 +425,7 @@ public class TargetPatternParser extends Parser {
                 case 2 :
                     // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:137:5: 'a'
                     {
-                    match(input,47,FOLLOW_47_in_verb272); 
+                    match(input,49,FOLLOW_49_in_verb272); 
                      value = new TripleElement(TripleElement.Type.IRI, PrintUtil.expandQname("rdf:type")); 
 
                     }
@@ -749,7 +751,9 @@ public class TargetPatternParser extends Parser {
                 break;
             case VARIABLETERM:
             case STRING_LITERAL1:
+            case STRING_LITERAL2:
             case STRING_LITERAL_LONG1:
+            case STRING_LITERAL_LONG2:
                 {
                 alt10=2;
                 }
@@ -882,7 +886,7 @@ public class TargetPatternParser extends Parser {
             int alt11=2;
             int LA11_0 = input.LA(1);
 
-            if ( ((LA11_0>=STRING_LITERAL1 && LA11_0<=STRING_LITERAL_LONG1)) ) {
+            if ( ((LA11_0>=STRING_LITERAL1 && LA11_0<=STRING_LITERAL_LONG2)) ) {
                 alt11=1;
             }
             else if ( (LA11_0==VARIABLETERM) ) {
@@ -925,7 +929,7 @@ public class TargetPatternParser extends Parser {
             if ( (LA12_0==LANGTAG) ) {
                 alt12=1;
             }
-            else if ( (LA12_0==48) ) {
+            else if ( (LA12_0==50) ) {
                 alt12=2;
             }
             switch (alt12) {
@@ -948,7 +952,7 @@ public class TargetPatternParser extends Parser {
                     // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:189:8: ( '^^' i= iriRef )
                     // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:189:9: '^^' i= iriRef
                     {
-                    match(input,48,FOLLOW_48_in_rdfLiteral563); 
+                    match(input,50,FOLLOW_50_in_rdfLiteral563); 
                     pushFollow(FOLLOW_iriRef_in_rdfLiteral567);
                     i=iriRef();
 
@@ -1351,29 +1355,43 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "string"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:234:2: string returns [String value] : (s= STRING_LITERAL1 | s= STRING_LITERAL_LONG1 );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:234:2: string returns [String value] : (s= STRING_LITERAL1 | s= STRING_LITERAL2 | s= STRING_LITERAL_LONG1 | s= STRING_LITERAL_LONG2 );
     public final String string() throws RecognitionException {
         String value = null;
 
         Token s=null;
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:235:4: (s= STRING_LITERAL1 | s= STRING_LITERAL_LONG1 )
-            int alt18=2;
-            int LA18_0 = input.LA(1);
-
-            if ( (LA18_0==STRING_LITERAL1) ) {
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:235:4: (s= STRING_LITERAL1 | s= STRING_LITERAL2 | s= STRING_LITERAL_LONG1 | s= STRING_LITERAL_LONG2 )
+            int alt18=4;
+            switch ( input.LA(1) ) {
+            case STRING_LITERAL1:
+                {
                 alt18=1;
-            }
-            else if ( (LA18_0==STRING_LITERAL_LONG1) ) {
+                }
+                break;
+            case STRING_LITERAL2:
+                {
                 alt18=2;
-            }
-            else {
+                }
+                break;
+            case STRING_LITERAL_LONG1:
+                {
+                alt18=3;
+                }
+                break;
+            case STRING_LITERAL_LONG2:
+                {
+                alt18=4;
+                }
+                break;
+            default:
                 NoViableAltException nvae =
                     new NoViableAltException("", 18, 0, input);
 
                 throw nvae;
             }
+
             switch (alt18) {
                 case 1 :
                     // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:235:6: s= STRING_LITERAL1
@@ -1384,9 +1402,25 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:236:6: s= STRING_LITERAL_LONG1
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:236:6: s= STRING_LITERAL2
                     {
-                    s=(Token)match(input,STRING_LITERAL_LONG1,FOLLOW_STRING_LITERAL_LONG1_in_string863); 
+                    s=(Token)match(input,STRING_LITERAL2,FOLLOW_STRING_LITERAL2_in_string863); 
+                     String temp = (s!=null?s.getText():null); value = temp.substring(1, temp.length() - 1); 
+
+                    }
+                    break;
+                case 3 :
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:237:6: s= STRING_LITERAL_LONG1
+                    {
+                    s=(Token)match(input,STRING_LITERAL_LONG1,FOLLOW_STRING_LITERAL_LONG1_in_string874); 
+                     String temp = (s!=null?s.getText():null); value = temp.substring(3, temp.length() - 3); 
+
+                    }
+                    break;
+                case 4 :
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:238:6: s= STRING_LITERAL_LONG2
+                    {
+                    s=(Token)match(input,STRING_LITERAL_LONG2,FOLLOW_STRING_LITERAL_LONG2_in_string885); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(3, temp.length() - 3); 
 
                     }
@@ -1406,7 +1440,7 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "iriRef"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:239:2: iriRef returns [String value] : ( IRI_REF | prefixedName );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:241:2: iriRef returns [String value] : ( IRI_REF | prefixedName );
     public final String iriRef() throws RecognitionException {
         String value = null;
 
@@ -1415,7 +1449,7 @@ public class TargetPatternParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:240:4: ( IRI_REF | prefixedName )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:242:4: ( IRI_REF | prefixedName )
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -1433,9 +1467,9 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt19) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:240:6: IRI_REF
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:242:6: IRI_REF
                     {
-                    IRI_REF19=(Token)match(input,IRI_REF,FOLLOW_IRI_REF_in_iriRef886); 
+                    IRI_REF19=(Token)match(input,IRI_REF,FOLLOW_IRI_REF_in_iriRef908); 
                      
                            String iri = (IRI_REF19!=null?IRI_REF19.getText():null);
                            value = iri.substring(1, iri.length()-1);
@@ -1444,9 +1478,9 @@ public class TargetPatternParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:245:6: prefixedName
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:247:6: prefixedName
                     {
-                    pushFollow(FOLLOW_prefixedName_in_iriRef901);
+                    pushFollow(FOLLOW_prefixedName_in_iriRef923);
                     prefixedName20=prefixedName();
 
                     state._fsp--;
@@ -1492,7 +1526,7 @@ public class TargetPatternParser extends Parser {
     };
 
     // $ANTLR start "prefixedName"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:268:2: prefixedName returns [String value] : PNAME_LN ;
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:270:2: prefixedName returns [String value] : PNAME_LN ;
     public final TargetPatternParser.prefixedName_return prefixedName() throws RecognitionException {
         TargetPatternParser.prefixedName_return retval = new TargetPatternParser.prefixedName_return();
         retval.start = input.LT(1);
@@ -1500,10 +1534,10 @@ public class TargetPatternParser extends Parser {
         Token PNAME_LN21=null;
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:269:4: ( PNAME_LN )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:269:6: PNAME_LN
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:271:4: ( PNAME_LN )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:271:6: PNAME_LN
             {
-            PNAME_LN21=(Token)match(input,PNAME_LN,FOLLOW_PNAME_LN_in_prefixedName929); 
+            PNAME_LN21=(Token)match(input,PNAME_LN,FOLLOW_PNAME_LN_in_prefixedName951); 
              retval.value = (PNAME_LN21!=null?PNAME_LN21.getText():null); 
 
             }
@@ -1523,14 +1557,14 @@ public class TargetPatternParser extends Parser {
 
 
     // $ANTLR start "blankNode"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:272:2: blankNode returns [TripleElement value] : ( BLANK_NODE_LABEL | ANON );
+    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:2: blankNode returns [TripleElement value] : ( BLANK_NODE_LABEL | ANON );
     public final TripleElement blankNode() throws RecognitionException {
         TripleElement value = null;
 
         Token BLANK_NODE_LABEL22=null;
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:273:4: ( BLANK_NODE_LABEL | ANON )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:275:4: ( BLANK_NODE_LABEL | ANON )
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -1548,17 +1582,17 @@ public class TargetPatternParser extends Parser {
             }
             switch (alt20) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:273:6: BLANK_NODE_LABEL
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:275:6: BLANK_NODE_LABEL
                     {
-                    BLANK_NODE_LABEL22=(Token)match(input,BLANK_NODE_LABEL,FOLLOW_BLANK_NODE_LABEL_in_blankNode954); 
+                    BLANK_NODE_LABEL22=(Token)match(input,BLANK_NODE_LABEL,FOLLOW_BLANK_NODE_LABEL_in_blankNode976); 
                      value = new TripleElement(TripleElement.Type.BLANKNODE, (BLANK_NODE_LABEL22!=null?BLANK_NODE_LABEL22.getText():null).substring(2)); 
 
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:274:6: ANON
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\TargetPattern.g:276:6: ANON
                     {
-                    match(input,ANON,FOLLOW_ANON_in_blankNode963); 
+                    match(input,ANON,FOLLOW_ANON_in_blankNode985); 
                      value = new TripleElement(TripleElement.Type.BLANKNODE, null); 
 
                     }
@@ -1585,15 +1619,15 @@ public class TargetPatternParser extends Parser {
     static final String DFA2_eofS =
         "\1\uffff\4\5\1\uffff\3\5\1\uffff";
     static final String DFA2_minS =
-        "\1\4\4\26\1\uffff\3\26\1\uffff";
+        "\1\4\4\30\1\uffff\3\30\1\uffff";
     static final String DFA2_maxS =
-        "\1\31\4\57\1\uffff\3\57\1\uffff";
+        "\1\33\4\61\1\uffff\3\61\1\uffff";
     static final String DFA2_acceptS =
         "\5\uffff\1\2\3\uffff\1\1";
     static final String DFA2_specialS =
         "\12\uffff}>";
     static final String[] DFA2_transitionS = {
-            "\1\10\1\1\1\2\1\5\1\uffff\15\5\1\3\1\4\1\6\1\7",
+            "\1\10\1\1\1\2\1\5\1\uffff\17\5\1\3\1\4\1\6\1\7",
             "\2\11\26\uffff\1\5\1\11",
             "\2\11\26\uffff\1\5\1\11",
             "\2\11\26\uffff\1\5\1\11",
@@ -1640,19 +1674,19 @@ public class TargetPatternParser extends Parser {
     }
  
 
-    public static final BitSet FOLLOW_tripleOrPath_in_targetPattern64 = new BitSet(new long[]{0x0000400000000000L});
-    public static final BitSet FOLLOW_46_in_targetPattern81 = new BitSet(new long[]{0x0000400003C00070L});
-    public static final BitSet FOLLOW_tripleOrPath_in_targetPattern85 = new BitSet(new long[]{0x0000400000000000L});
+    public static final BitSet FOLLOW_tripleOrPath_in_targetPattern64 = new BitSet(new long[]{0x0001000000000000L});
+    public static final BitSet FOLLOW_48_in_targetPattern81 = new BitSet(new long[]{0x000100000F000070L});
+    public static final BitSet FOLLOW_tripleOrPath_in_targetPattern85 = new BitSet(new long[]{0x0001000000000000L});
     public static final BitSet FOLLOW_EOF_in_targetPattern114 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_subject_in_tripleOrPath153 = new BitSet(new long[]{0x0000800000C00000L});
-    public static final BitSet FOLLOW_verb_in_tripleOrPath157 = new BitSet(new long[]{0x0000800003FFFEF0L});
-    public static final BitSet FOLLOW_subject_in_tripleOrPath170 = new BitSet(new long[]{0x0000800000C00000L});
-    public static final BitSet FOLLOW_verb_in_tripleOrPath174 = new BitSet(new long[]{0x0000800003FFFEF0L});
+    public static final BitSet FOLLOW_subject_in_tripleOrPath153 = new BitSet(new long[]{0x0002000003000000L});
+    public static final BitSet FOLLOW_verb_in_tripleOrPath157 = new BitSet(new long[]{0x000200000FFFFEF0L});
+    public static final BitSet FOLLOW_subject_in_tripleOrPath170 = new BitSet(new long[]{0x0002000003000000L});
+    public static final BitSet FOLLOW_verb_in_tripleOrPath174 = new BitSet(new long[]{0x000200000FFFFEF0L});
     public static final BitSet FOLLOW_object_in_tripleOrPath195 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_varOrIriRefOrBlankNode_in_subject231 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_VARIABLEURI_in_subject239 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_iriRef_in_verb264 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_verb272 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_49_in_verb272 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_varOrTerm_in_object293 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_VARIABLEURI_in_object301 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_var_in_varOrTerm326 = new BitSet(new long[]{0x0000000000000002L});
@@ -1667,10 +1701,10 @@ public class TargetPatternParser extends Parser {
     public static final BitSet FOLLOW_numericLiteral_in_graphTerm436 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_booleanLiteral_in_graphTerm444 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_blankNode_in_graphTerm452 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_string_in_rdfLiteral488 = new BitSet(new long[]{0x0001000000000102L});
-    public static final BitSet FOLLOW_VARIABLETERM_in_rdfLiteral508 = new BitSet(new long[]{0x0001000000000102L});
+    public static final BitSet FOLLOW_string_in_rdfLiteral488 = new BitSet(new long[]{0x0004000000000102L});
+    public static final BitSet FOLLOW_VARIABLETERM_in_rdfLiteral508 = new BitSet(new long[]{0x0004000000000102L});
     public static final BitSet FOLLOW_LANGTAG_in_rdfLiteral537 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_rdfLiteral563 = new BitSet(new long[]{0x0000000000C00000L});
+    public static final BitSet FOLLOW_50_in_rdfLiteral563 = new BitSet(new long[]{0x0000000003000000L});
     public static final BitSet FOLLOW_iriRef_in_rdfLiteral567 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_numericLiteralUnsigned_in_numericLiteral622 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_numericLiteralPositive_in_numericLiteral633 = new BitSet(new long[]{0x0000000000000002L});
@@ -1687,11 +1721,13 @@ public class TargetPatternParser extends Parser {
     public static final BitSet FOLLOW_TRUE_in_booleanLiteral816 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_FALSE_in_booleanLiteral825 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_STRING_LITERAL1_in_string852 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_LITERAL_LONG1_in_string863 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_IRI_REF_in_iriRef886 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_prefixedName_in_iriRef901 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_PNAME_LN_in_prefixedName929 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BLANK_NODE_LABEL_in_blankNode954 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ANON_in_blankNode963 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_LITERAL2_in_string863 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_LITERAL_LONG1_in_string874 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_LITERAL_LONG2_in_string885 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_IRI_REF_in_iriRef908 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_prefixedName_in_iriRef923 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_PNAME_LN_in_prefixedName951 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BLANK_NODE_LABEL_in_blankNode976 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ANON_in_blankNode985 = new BitSet(new long[]{0x0000000000000002L});
 
 }
