@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g 2010-05-21 23:47:16
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g 2010-07-22 03:15:26
 
   package de.fuberlin.wiwiss.r2r.parser;
 
@@ -10,29 +10,31 @@ import java.util.ArrayList;
 
 public class TransformationLexer extends Lexer {
     public static final int INTEGER=11;
-    public static final int EXPONENT=17;
+    public static final int EXPONENT=19;
+    public static final int T__29=29;
     public static final int T__28=28;
     public static final int T__27=27;
-    public static final int T__26=26;
-    public static final int T__25=25;
-    public static final int PN_LOCAL=24;
+    public static final int PN_LOCAL=26;
     public static final int MINUS=5;
     public static final int MULT=6;
     public static final int EOF=-1;
-    public static final int ECHAR=18;
+    public static final int ECHAR=20;
     public static final int FUNCTIONNAME=10;
-    public static final int VARNAME=16;
-    public static final int WS=20;
-    public static final int PN_CHARS_BASE=21;
+    public static final int VARNAME=18;
+    public static final int T__30=30;
+    public static final int WS=22;
+    public static final int PN_CHARS_BASE=23;
+    public static final int STRING_LITERAL_LONG2=17;
     public static final int DECIMAL=12;
     public static final int VAR1=8;
-    public static final int STRING_LITERAL_LONG1=15;
     public static final int VAR2=9;
-    public static final int PN_PREFIX=23;
+    public static final int STRING_LITERAL_LONG1=16;
+    public static final int PN_PREFIX=25;
+    public static final int STRING_LITERAL2=15;
     public static final int STRING_LITERAL1=14;
-    public static final int PN_CHARS=22;
+    public static final int PN_CHARS=24;
     public static final int DOUBLE=13;
-    public static final int PN_CHARS_U=19;
+    public static final int PN_CHARS_U=21;
     public static final int PLUS=4;
     public static final int DIV=7;
 
@@ -64,55 +66,15 @@ public class TransformationLexer extends Lexer {
     }
     public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g"; }
 
-    // $ANTLR start "T__25"
-    public final void mT__25() throws RecognitionException {
-        try {
-            int _type = T__25;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:26:7: ( '=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:26:9: '='
-            {
-            match('='); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__25"
-
-    // $ANTLR start "T__26"
-    public final void mT__26() throws RecognitionException {
-        try {
-            int _type = T__26;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:27:7: ( '(' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:27:9: '('
-            {
-            match('('); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__26"
-
     // $ANTLR start "T__27"
     public final void mT__27() throws RecognitionException {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:28:7: ( ')' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:28:9: ')'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:26:7: ( '=' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:26:9: '='
             {
-            match(')'); 
+            match('='); 
 
             }
 
@@ -129,6 +91,46 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:27:7: ( '(' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:27:9: '('
+            {
+            match('('); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__28"
+
+    // $ANTLR start "T__29"
+    public final void mT__29() throws RecognitionException {
+        try {
+            int _type = T__29;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:28:7: ( ')' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:28:9: ')'
+            {
+            match(')'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__29"
+
+    // $ANTLR start "T__30"
+    public final void mT__30() throws RecognitionException {
+        try {
+            int _type = T__30;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:29:7: ( ',' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:29:9: ','
             {
@@ -142,15 +144,15 @@ public class TransformationLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "T__28"
+    // $ANTLR end "T__30"
 
     // $ANTLR start "VAR1"
     public final void mVAR1() throws RecognitionException {
         try {
             int _type = VAR1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:215:3: ( '?' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:215:5: '?' VARNAME
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:217:3: ( '?' VARNAME )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:217:5: '?' VARNAME
             {
             match('?'); 
             mVARNAME(); 
@@ -170,8 +172,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = VAR2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:219:3: ( '$' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:219:5: '$' VARNAME
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:221:3: ( '$' VARNAME )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:221:5: '$' VARNAME
             {
             match('$'); 
             mVARNAME(); 
@@ -191,10 +193,10 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:223:3: ( ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:223:5: ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:3: ( ( '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:5: ( '0' .. '9' )+
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:223:5: ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:5: ( '0' .. '9' )+
             int cnt1=0;
             loop1:
             do {
@@ -208,7 +210,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:223:6: '0' .. '9'
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:6: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -240,10 +242,10 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = FUNCTIONNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:227:3: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:227:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:3: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:227:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -297,7 +299,7 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -315,9 +317,9 @@ public class TransformationLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:5: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:5: ( '0' .. '9' )+
                     int cnt3=0;
                     loop3:
                     do {
@@ -331,7 +333,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:6: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -348,7 +350,7 @@ public class TransformationLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:21: ( '0' .. '9' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:21: ( '0' .. '9' )*
                     loop4:
                     do {
                         int alt4=2;
@@ -361,7 +363,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:22: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -377,10 +379,10 @@ public class TransformationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:35: '.' ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:35: '.' ( '0' .. '9' )+
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:39: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:39: ( '0' .. '9' )+
                     int cnt5=0;
                     loop5:
                     do {
@@ -394,7 +396,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:231:40: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:40: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -428,14 +430,14 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:235:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
             int alt11=3;
             alt11 = dfa11.predict(input);
             switch (alt11) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:235:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:235:5: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:5: ( '0' .. '9' )+
                     int cnt7=0;
                     loop7:
                     do {
@@ -449,7 +451,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:235:6: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -466,7 +468,7 @@ public class TransformationLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:235:21: ( '0' .. '9' )*
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:21: ( '0' .. '9' )*
                     loop8:
                     do {
                         int alt8=2;
@@ -479,7 +481,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:235:22: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -496,10 +498,10 @@ public class TransformationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:236:5: '.' ( '0' .. '9' )+ EXPONENT
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:238:5: '.' ( '0' .. '9' )+ EXPONENT
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:236:9: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:238:9: ( '0' .. '9' )+
                     int cnt9=0;
                     loop9:
                     do {
@@ -513,7 +515,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:236:10: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:238:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -534,9 +536,9 @@ public class TransformationLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:5: ( '0' .. '9' )+ EXPONENT
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:239:5: ( '0' .. '9' )+ EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:5: ( '0' .. '9' )+
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:239:5: ( '0' .. '9' )+
                     int cnt10=0;
                     loop10:
                     do {
@@ -550,7 +552,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:6: '0' .. '9'
+                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:239:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -585,8 +587,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = MULT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:241:3: ( '*' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:241:5: '*'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:243:3: ( '*' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:243:5: '*'
             {
             match('*'); 
 
@@ -605,8 +607,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:245:3: ( '/' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:245:5: '/'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:247:3: ( '/' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:247:5: '/'
             {
             match('/'); 
 
@@ -625,8 +627,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = EXPONENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:273:3: ( ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:273:5: ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:3: ( ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+ )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:5: ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -637,7 +639,7 @@ public class TransformationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:273:17: ( PLUS | MINUS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:17: ( PLUS | MINUS )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -663,7 +665,7 @@ public class TransformationLexer extends Lexer {
 
             }
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:273:33: ( '0' .. '9' )+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:33: ( '0' .. '9' )+
             int cnt13=0;
             loop13:
             do {
@@ -677,7 +679,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt13) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:273:34: '0' .. '9'
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:34: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -709,11 +711,11 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = STRING_LITERAL1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:277:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:277:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
             {
             match('\''); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:277:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
             loop14:
             do {
                 int alt14=3;
@@ -729,7 +731,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:277:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -744,7 +746,7 @@ public class TransformationLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:277:58: ECHAR
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:58: ECHAR
             	    {
             	    mECHAR(); 
 
@@ -768,73 +770,137 @@ public class TransformationLexer extends Lexer {
     }
     // $ANTLR end "STRING_LITERAL1"
 
+    // $ANTLR start "STRING_LITERAL2"
+    public final void mSTRING_LITERAL2() throws RecognitionException {
+        try {
+            int _type = STRING_LITERAL2;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:3: ( '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:5: '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"'
+            {
+            match('\"'); 
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:9: (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            loop15:
+            do {
+                int alt15=3;
+                int LA15_0 = input.LA(1);
+
+                if ( ((LA15_0>='\u0000' && LA15_0<='\t')||(LA15_0>='\u000B' && LA15_0<='\f')||(LA15_0>='\u000E' && LA15_0<='!')||(LA15_0>='#' && LA15_0<='[')||(LA15_0>=']' && LA15_0<='\uFFFF')) ) {
+                    alt15=1;
+                }
+                else if ( (LA15_0=='\\') ) {
+                    alt15=2;
+                }
+
+
+                switch (alt15) {
+            	case 1 :
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:10: ~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
+            	        input.consume();
+
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
+
+
+            	    }
+            	    break;
+            	case 2 :
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:57: ECHAR
+            	    {
+            	    mECHAR(); 
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop15;
+                }
+            } while (true);
+
+            match('\"'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "STRING_LITERAL2"
+
     // $ANTLR start "STRING_LITERAL_LONG1"
     public final void mSTRING_LITERAL_LONG1() throws RecognitionException {
         try {
             int _type = STRING_LITERAL_LONG1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
             {
             match("'''"); 
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
-            loop17:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
+            loop18:
             do {
-                int alt17=2;
-                int LA17_0 = input.LA(1);
+                int alt18=2;
+                int LA18_0 = input.LA(1);
 
-                if ( (LA17_0=='\'') ) {
-                    int LA17_1 = input.LA(2);
+                if ( (LA18_0=='\'') ) {
+                    int LA18_1 = input.LA(2);
 
-                    if ( (LA17_1=='\'') ) {
-                        int LA17_3 = input.LA(3);
+                    if ( (LA18_1=='\'') ) {
+                        int LA18_3 = input.LA(3);
 
-                        if ( ((LA17_3>='\u0000' && LA17_3<='&')||(LA17_3>='(' && LA17_3<='\uFFFF')) ) {
-                            alt17=1;
+                        if ( ((LA18_3>='\u0000' && LA18_3<='&')||(LA18_3>='(' && LA18_3<='\uFFFF')) ) {
+                            alt18=1;
                         }
 
 
                     }
-                    else if ( ((LA17_1>='\u0000' && LA17_1<='&')||(LA17_1>='(' && LA17_1<='\uFFFF')) ) {
-                        alt17=1;
+                    else if ( ((LA18_1>='\u0000' && LA18_1<='&')||(LA18_1>='(' && LA18_1<='\uFFFF')) ) {
+                        alt18=1;
                     }
 
 
                 }
-                else if ( ((LA17_0>='\u0000' && LA17_0<='&')||(LA17_0>='(' && LA17_0<='\uFFFF')) ) {
-                    alt17=1;
+                else if ( ((LA18_0>='\u0000' && LA18_0<='&')||(LA18_0>='(' && LA18_0<='\uFFFF')) ) {
+                    alt18=1;
                 }
 
 
-                switch (alt17) {
+                switch (alt18) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:15: ( '\\'' | '\\'\\'' )?
-            	    int alt15=3;
-            	    int LA15_0 = input.LA(1);
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:15: ( '\\'' | '\\'\\'' )?
+            	    int alt16=3;
+            	    int LA16_0 = input.LA(1);
 
-            	    if ( (LA15_0=='\'') ) {
-            	        int LA15_1 = input.LA(2);
+            	    if ( (LA16_0=='\'') ) {
+            	        int LA16_1 = input.LA(2);
 
-            	        if ( (LA15_1=='\'') ) {
-            	            alt15=2;
+            	        if ( (LA16_1=='\'') ) {
+            	            alt16=2;
             	        }
-            	        else if ( ((LA15_1>='\u0000' && LA15_1<='&')||(LA15_1>='(' && LA15_1<='\uFFFF')) ) {
-            	            alt15=1;
+            	        else if ( ((LA16_1>='\u0000' && LA16_1<='&')||(LA16_1>='(' && LA16_1<='\uFFFF')) ) {
+            	            alt16=1;
             	        }
             	    }
-            	    switch (alt15) {
+            	    switch (alt16) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:17: '\\''
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:17: '\\''
             	            {
             	            match('\''); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:24: '\\'\\''
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:24: '\\'\\''
             	            {
             	            match("''"); 
 
@@ -844,25 +910,25 @@ public class TransformationLexer extends Lexer {
 
             	    }
 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
-            	    int alt16=2;
-            	    int LA16_0 = input.LA(1);
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    int alt17=2;
+            	    int LA17_0 = input.LA(1);
 
-            	    if ( ((LA16_0>='\u0000' && LA16_0<='&')||(LA16_0>='(' && LA16_0<='[')||(LA16_0>=']' && LA16_0<='\uFFFF')) ) {
-            	        alt16=1;
+            	    if ( ((LA17_0>='\u0000' && LA17_0<='&')||(LA17_0>='(' && LA17_0<='[')||(LA17_0>=']' && LA17_0<='\uFFFF')) ) {
+            	        alt17=1;
             	    }
-            	    else if ( (LA16_0=='\\') ) {
-            	        alt16=2;
+            	    else if ( (LA17_0=='\\') ) {
+            	        alt17=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 16, 0, input);
+            	            new NoViableAltException("", 17, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt16) {
+            	    switch (alt17) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:34: ~ ( '\\'' | '\\\\' )
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:34: ~ ( '\\'' | '\\\\' )
             	            {
             	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	                input.consume();
@@ -877,7 +943,7 @@ public class TransformationLexer extends Lexer {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:281:51: ECHAR
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:51: ECHAR
             	            {
             	            mECHAR(); 
 
@@ -891,7 +957,7 @@ public class TransformationLexer extends Lexer {
             	    break;
 
             	default :
-            	    break loop17;
+            	    break loop18;
                 }
             } while (true);
 
@@ -908,13 +974,153 @@ public class TransformationLexer extends Lexer {
     }
     // $ANTLR end "STRING_LITERAL_LONG1"
 
+    // $ANTLR start "STRING_LITERAL_LONG2"
+    public final void mSTRING_LITERAL_LONG2() throws RecognitionException {
+        try {
+            int _type = STRING_LITERAL_LONG2;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:3: ( '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:5: '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"'
+            {
+            match("\"\"\""); 
+
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:11: ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )*
+            loop21:
+            do {
+                int alt21=2;
+                int LA21_0 = input.LA(1);
+
+                if ( (LA21_0=='\"') ) {
+                    int LA21_1 = input.LA(2);
+
+                    if ( (LA21_1=='\"') ) {
+                        int LA21_3 = input.LA(3);
+
+                        if ( ((LA21_3>='\u0000' && LA21_3<='!')||(LA21_3>='#' && LA21_3<='\uFFFF')) ) {
+                            alt21=1;
+                        }
+
+
+                    }
+                    else if ( ((LA21_1>='\u0000' && LA21_1<='!')||(LA21_1>='#' && LA21_1<='\uFFFF')) ) {
+                        alt21=1;
+                    }
+
+
+                }
+                else if ( ((LA21_0>='\u0000' && LA21_0<='!')||(LA21_0>='#' && LA21_0<='\uFFFF')) ) {
+                    alt21=1;
+                }
+
+
+                switch (alt21) {
+            	case 1 :
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:12: ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR )
+            	    {
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:12: ( '\"' | '\"\"' )?
+            	    int alt19=3;
+            	    int LA19_0 = input.LA(1);
+
+            	    if ( (LA19_0=='\"') ) {
+            	        int LA19_1 = input.LA(2);
+
+            	        if ( (LA19_1=='\"') ) {
+            	            alt19=2;
+            	        }
+            	        else if ( ((LA19_1>='\u0000' && LA19_1<='!')||(LA19_1>='#' && LA19_1<='\uFFFF')) ) {
+            	            alt19=1;
+            	        }
+            	    }
+            	    switch (alt19) {
+            	        case 1 :
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:14: '\"'
+            	            {
+            	            match('\"'); 
+
+            	            }
+            	            break;
+            	        case 2 :
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:20: '\"\"'
+            	            {
+            	            match("\"\""); 
+
+
+            	            }
+            	            break;
+
+            	    }
+
+            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:27: (~ ( '\"' | '\\\\' ) | ECHAR )
+            	    int alt20=2;
+            	    int LA20_0 = input.LA(1);
+
+            	    if ( ((LA20_0>='\u0000' && LA20_0<='!')||(LA20_0>='#' && LA20_0<='[')||(LA20_0>=']' && LA20_0<='\uFFFF')) ) {
+            	        alt20=1;
+            	    }
+            	    else if ( (LA20_0=='\\') ) {
+            	        alt20=2;
+            	    }
+            	    else {
+            	        NoViableAltException nvae =
+            	            new NoViableAltException("", 20, 0, input);
+
+            	        throw nvae;
+            	    }
+            	    switch (alt20) {
+            	        case 1 :
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:28: ~ ( '\"' | '\\\\' )
+            	            {
+            	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
+            	                input.consume();
+
+            	            }
+            	            else {
+            	                MismatchedSetException mse = new MismatchedSetException(null,input);
+            	                recover(mse);
+            	                throw mse;}
+
+
+            	            }
+            	            break;
+            	        case 2 :
+            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:44: ECHAR
+            	            {
+            	            mECHAR(); 
+
+            	            }
+            	            break;
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop21;
+                }
+            } while (true);
+
+            match("\"\"\""); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "STRING_LITERAL_LONG2"
+
     // $ANTLR start "MINUS"
     public final void mMINUS() throws RecognitionException {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:285:3: ( '-' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:285:5: '-'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:295:3: ( '-' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:295:5: '-'
             {
             match('-'); 
 
@@ -933,8 +1139,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:289:3: ( '+' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:289:5: '+'
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:299:3: ( '+' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:299:5: '+'
             {
             match('+'); 
 
@@ -953,8 +1159,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = ECHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:293:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:293:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:303:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:303:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
             {
             match('\\'); 
             if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -982,8 +1188,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = VARNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:297:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:297:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:307:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:307:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -994,18 +1200,18 @@ public class TransformationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:297:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
-            loop18:
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:307:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            loop22:
             do {
-                int alt18=2;
-                int LA18_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( ((LA18_0>='0' && LA18_0<='9')||(LA18_0>='A' && LA18_0<='Z')||LA18_0=='_'||(LA18_0>='a' && LA18_0<='z')||LA18_0=='\u00B7'||(LA18_0>='\u00C0' && LA18_0<='\u00D6')||(LA18_0>='\u00D8' && LA18_0<='\u00F6')||(LA18_0>='\u00F8' && LA18_0<='\u037D')||(LA18_0>='\u037F' && LA18_0<='\u1FFF')||(LA18_0>='\u200C' && LA18_0<='\u200D')||(LA18_0>='\u203F' && LA18_0<='\u2040')||(LA18_0>='\u2070' && LA18_0<='\u218F')||(LA18_0>='\u2C00' && LA18_0<='\u2FEF')||(LA18_0>='\u3001' && LA18_0<='\uD7FF')||(LA18_0>='\uF900' && LA18_0<='\uFDCF')||(LA18_0>='\uFDF0' && LA18_0<='\uFFFD')) ) {
-                    alt18=1;
+                if ( ((LA22_0>='0' && LA22_0<='9')||(LA22_0>='A' && LA22_0<='Z')||LA22_0=='_'||(LA22_0>='a' && LA22_0<='z')||LA22_0=='\u00B7'||(LA22_0>='\u00C0' && LA22_0<='\u00D6')||(LA22_0>='\u00D8' && LA22_0<='\u00F6')||(LA22_0>='\u00F8' && LA22_0<='\u037D')||(LA22_0>='\u037F' && LA22_0<='\u1FFF')||(LA22_0>='\u200C' && LA22_0<='\u200D')||(LA22_0>='\u203F' && LA22_0<='\u2040')||(LA22_0>='\u2070' && LA22_0<='\u218F')||(LA22_0>='\u2C00' && LA22_0<='\u2FEF')||(LA22_0>='\u3001' && LA22_0<='\uD7FF')||(LA22_0>='\uF900' && LA22_0<='\uFDCF')||(LA22_0>='\uFDF0' && LA22_0<='\uFFFD')) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt18) {
+                switch (alt22) {
             	case 1 :
             	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
             	    {
@@ -1023,7 +1229,7 @@ public class TransformationLexer extends Lexer {
             	    break;
 
             	default :
-            	    break loop18;
+            	    break loop22;
                 }
             } while (true);
 
@@ -1043,8 +1249,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:301:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:301:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:311:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:311:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1072,42 +1278,42 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = PN_PREFIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:305:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:305:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             mPN_CHARS_BASE(); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:305:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
-            int alt20=2;
-            int LA20_0 = input.LA(1);
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( ((LA20_0>='-' && LA20_0<='.')||(LA20_0>='0' && LA20_0<='9')||(LA20_0>='A' && LA20_0<='Z')||LA20_0=='_'||(LA20_0>='a' && LA20_0<='z')||LA20_0=='\u00B7'||(LA20_0>='\u00C0' && LA20_0<='\u00D6')||(LA20_0>='\u00D8' && LA20_0<='\u00F6')||(LA20_0>='\u00F8' && LA20_0<='\u037D')||(LA20_0>='\u037F' && LA20_0<='\u1FFF')||(LA20_0>='\u200C' && LA20_0<='\u200D')||(LA20_0>='\u203F' && LA20_0<='\u2040')||(LA20_0>='\u2070' && LA20_0<='\u218F')||(LA20_0>='\u2C00' && LA20_0<='\u2FEF')||(LA20_0>='\u3001' && LA20_0<='\uD7FF')||(LA20_0>='\uF900' && LA20_0<='\uFDCF')||(LA20_0>='\uFDF0' && LA20_0<='\uFFFD')) ) {
-                alt20=1;
+            if ( ((LA24_0>='-' && LA24_0<='.')||(LA24_0>='0' && LA24_0<='9')||(LA24_0>='A' && LA24_0<='Z')||LA24_0=='_'||(LA24_0>='a' && LA24_0<='z')||LA24_0=='\u00B7'||(LA24_0>='\u00C0' && LA24_0<='\u00D6')||(LA24_0>='\u00D8' && LA24_0<='\u00F6')||(LA24_0>='\u00F8' && LA24_0<='\u037D')||(LA24_0>='\u037F' && LA24_0<='\u1FFF')||(LA24_0>='\u200C' && LA24_0<='\u200D')||(LA24_0>='\u203F' && LA24_0<='\u2040')||(LA24_0>='\u2070' && LA24_0<='\u218F')||(LA24_0>='\u2C00' && LA24_0<='\u2FEF')||(LA24_0>='\u3001' && LA24_0<='\uD7FF')||(LA24_0>='\uF900' && LA24_0<='\uFDCF')||(LA24_0>='\uFDF0' && LA24_0<='\uFFFD')) ) {
+                alt24=1;
             }
-            switch (alt20) {
+            switch (alt24) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:305:20: ( PN_CHARS | '.' )* PN_CHARS
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:20: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:305:20: ( PN_CHARS | '.' )*
-                    loop19:
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:20: ( PN_CHARS | '.' )*
+                    loop23:
                     do {
-                        int alt19=2;
-                        int LA19_0 = input.LA(1);
+                        int alt23=2;
+                        int LA23_0 = input.LA(1);
 
-                        if ( (LA19_0=='-'||(LA19_0>='0' && LA19_0<='9')||(LA19_0>='A' && LA19_0<='Z')||LA19_0=='_'||(LA19_0>='a' && LA19_0<='z')||LA19_0=='\u00B7'||(LA19_0>='\u00C0' && LA19_0<='\u00D6')||(LA19_0>='\u00D8' && LA19_0<='\u00F6')||(LA19_0>='\u00F8' && LA19_0<='\u037D')||(LA19_0>='\u037F' && LA19_0<='\u1FFF')||(LA19_0>='\u200C' && LA19_0<='\u200D')||(LA19_0>='\u203F' && LA19_0<='\u2040')||(LA19_0>='\u2070' && LA19_0<='\u218F')||(LA19_0>='\u2C00' && LA19_0<='\u2FEF')||(LA19_0>='\u3001' && LA19_0<='\uD7FF')||(LA19_0>='\uF900' && LA19_0<='\uFDCF')||(LA19_0>='\uFDF0' && LA19_0<='\uFFFD')) ) {
-                            int LA19_1 = input.LA(2);
+                        if ( (LA23_0=='-'||(LA23_0>='0' && LA23_0<='9')||(LA23_0>='A' && LA23_0<='Z')||LA23_0=='_'||(LA23_0>='a' && LA23_0<='z')||LA23_0=='\u00B7'||(LA23_0>='\u00C0' && LA23_0<='\u00D6')||(LA23_0>='\u00D8' && LA23_0<='\u00F6')||(LA23_0>='\u00F8' && LA23_0<='\u037D')||(LA23_0>='\u037F' && LA23_0<='\u1FFF')||(LA23_0>='\u200C' && LA23_0<='\u200D')||(LA23_0>='\u203F' && LA23_0<='\u2040')||(LA23_0>='\u2070' && LA23_0<='\u218F')||(LA23_0>='\u2C00' && LA23_0<='\u2FEF')||(LA23_0>='\u3001' && LA23_0<='\uD7FF')||(LA23_0>='\uF900' && LA23_0<='\uFDCF')||(LA23_0>='\uFDF0' && LA23_0<='\uFFFD')) ) {
+                            int LA23_1 = input.LA(2);
 
-                            if ( ((LA19_1>='-' && LA19_1<='.')||(LA19_1>='0' && LA19_1<='9')||(LA19_1>='A' && LA19_1<='Z')||LA19_1=='_'||(LA19_1>='a' && LA19_1<='z')||LA19_1=='\u00B7'||(LA19_1>='\u00C0' && LA19_1<='\u00D6')||(LA19_1>='\u00D8' && LA19_1<='\u00F6')||(LA19_1>='\u00F8' && LA19_1<='\u037D')||(LA19_1>='\u037F' && LA19_1<='\u1FFF')||(LA19_1>='\u200C' && LA19_1<='\u200D')||(LA19_1>='\u203F' && LA19_1<='\u2040')||(LA19_1>='\u2070' && LA19_1<='\u218F')||(LA19_1>='\u2C00' && LA19_1<='\u2FEF')||(LA19_1>='\u3001' && LA19_1<='\uD7FF')||(LA19_1>='\uF900' && LA19_1<='\uFDCF')||(LA19_1>='\uFDF0' && LA19_1<='\uFFFD')) ) {
-                                alt19=1;
+                            if ( ((LA23_1>='-' && LA23_1<='.')||(LA23_1>='0' && LA23_1<='9')||(LA23_1>='A' && LA23_1<='Z')||LA23_1=='_'||(LA23_1>='a' && LA23_1<='z')||LA23_1=='\u00B7'||(LA23_1>='\u00C0' && LA23_1<='\u00D6')||(LA23_1>='\u00D8' && LA23_1<='\u00F6')||(LA23_1>='\u00F8' && LA23_1<='\u037D')||(LA23_1>='\u037F' && LA23_1<='\u1FFF')||(LA23_1>='\u200C' && LA23_1<='\u200D')||(LA23_1>='\u203F' && LA23_1<='\u2040')||(LA23_1>='\u2070' && LA23_1<='\u218F')||(LA23_1>='\u2C00' && LA23_1<='\u2FEF')||(LA23_1>='\u3001' && LA23_1<='\uD7FF')||(LA23_1>='\uF900' && LA23_1<='\uFDCF')||(LA23_1>='\uFDF0' && LA23_1<='\uFFFD')) ) {
+                                alt23=1;
                             }
 
 
                         }
-                        else if ( (LA19_0=='.') ) {
-                            alt19=1;
+                        else if ( (LA23_0=='.') ) {
+                            alt23=1;
                         }
 
 
-                        switch (alt19) {
+                        switch (alt23) {
                     	case 1 :
                     	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
                     	    {
@@ -1125,7 +1331,7 @@ public class TransformationLexer extends Lexer {
                     	    break;
 
                     	default :
-                    	    break loop19;
+                    	    break loop23;
                         }
                     } while (true);
 
@@ -1150,7 +1356,7 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_CHARS_BASE"
     public final void mPN_CHARS_BASE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:309:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:319:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
@@ -1174,7 +1380,7 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_CHARS_U"
     public final void mPN_CHARS_U() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:325:3: ( PN_CHARS_BASE | '_' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:335:3: ( PN_CHARS_BASE | '_' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
@@ -1198,7 +1404,7 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_CHARS"
     public final void mPN_CHARS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:329:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:339:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
             // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
             {
             if ( input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
@@ -1222,8 +1428,8 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_LOCAL"
     public final void mPN_LOCAL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:338:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:338:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1234,38 +1440,38 @@ public class TransformationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:338:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( ((LA22_0>='-' && LA22_0<='.')||(LA22_0>='0' && LA22_0<='9')||(LA22_0>='A' && LA22_0<='Z')||LA22_0=='_'||(LA22_0>='a' && LA22_0<='z')||LA22_0=='\u00B7'||(LA22_0>='\u00C0' && LA22_0<='\u00D6')||(LA22_0>='\u00D8' && LA22_0<='\u00F6')||(LA22_0>='\u00F8' && LA22_0<='\u037D')||(LA22_0>='\u037F' && LA22_0<='\u1FFF')||(LA22_0>='\u200C' && LA22_0<='\u200D')||(LA22_0>='\u203F' && LA22_0<='\u2040')||(LA22_0>='\u2070' && LA22_0<='\u218F')||(LA22_0>='\u2C00' && LA22_0<='\u2FEF')||(LA22_0>='\u3001' && LA22_0<='\uD7FF')||(LA22_0>='\uF900' && LA22_0<='\uFDCF')||(LA22_0>='\uFDF0' && LA22_0<='\uFFFD')) ) {
-                alt22=1;
+            if ( ((LA26_0>='-' && LA26_0<='.')||(LA26_0>='0' && LA26_0<='9')||(LA26_0>='A' && LA26_0<='Z')||LA26_0=='_'||(LA26_0>='a' && LA26_0<='z')||LA26_0=='\u00B7'||(LA26_0>='\u00C0' && LA26_0<='\u00D6')||(LA26_0>='\u00D8' && LA26_0<='\u00F6')||(LA26_0>='\u00F8' && LA26_0<='\u037D')||(LA26_0>='\u037F' && LA26_0<='\u1FFF')||(LA26_0>='\u200C' && LA26_0<='\u200D')||(LA26_0>='\u203F' && LA26_0<='\u2040')||(LA26_0>='\u2070' && LA26_0<='\u218F')||(LA26_0>='\u2C00' && LA26_0<='\u2FEF')||(LA26_0>='\u3001' && LA26_0<='\uD7FF')||(LA26_0>='\uF900' && LA26_0<='\uFDCF')||(LA26_0>='\uFDF0' && LA26_0<='\uFFFD')) ) {
+                alt26=1;
             }
-            switch (alt22) {
+            switch (alt26) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:338:30: ( PN_CHARS | '.' )* PN_CHARS
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:30: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:338:30: ( PN_CHARS | '.' )*
-                    loop21:
+                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:30: ( PN_CHARS | '.' )*
+                    loop25:
                     do {
-                        int alt21=2;
-                        int LA21_0 = input.LA(1);
+                        int alt25=2;
+                        int LA25_0 = input.LA(1);
 
-                        if ( (LA21_0=='-'||(LA21_0>='0' && LA21_0<='9')||(LA21_0>='A' && LA21_0<='Z')||LA21_0=='_'||(LA21_0>='a' && LA21_0<='z')||LA21_0=='\u00B7'||(LA21_0>='\u00C0' && LA21_0<='\u00D6')||(LA21_0>='\u00D8' && LA21_0<='\u00F6')||(LA21_0>='\u00F8' && LA21_0<='\u037D')||(LA21_0>='\u037F' && LA21_0<='\u1FFF')||(LA21_0>='\u200C' && LA21_0<='\u200D')||(LA21_0>='\u203F' && LA21_0<='\u2040')||(LA21_0>='\u2070' && LA21_0<='\u218F')||(LA21_0>='\u2C00' && LA21_0<='\u2FEF')||(LA21_0>='\u3001' && LA21_0<='\uD7FF')||(LA21_0>='\uF900' && LA21_0<='\uFDCF')||(LA21_0>='\uFDF0' && LA21_0<='\uFFFD')) ) {
-                            int LA21_1 = input.LA(2);
+                        if ( (LA25_0=='-'||(LA25_0>='0' && LA25_0<='9')||(LA25_0>='A' && LA25_0<='Z')||LA25_0=='_'||(LA25_0>='a' && LA25_0<='z')||LA25_0=='\u00B7'||(LA25_0>='\u00C0' && LA25_0<='\u00D6')||(LA25_0>='\u00D8' && LA25_0<='\u00F6')||(LA25_0>='\u00F8' && LA25_0<='\u037D')||(LA25_0>='\u037F' && LA25_0<='\u1FFF')||(LA25_0>='\u200C' && LA25_0<='\u200D')||(LA25_0>='\u203F' && LA25_0<='\u2040')||(LA25_0>='\u2070' && LA25_0<='\u218F')||(LA25_0>='\u2C00' && LA25_0<='\u2FEF')||(LA25_0>='\u3001' && LA25_0<='\uD7FF')||(LA25_0>='\uF900' && LA25_0<='\uFDCF')||(LA25_0>='\uFDF0' && LA25_0<='\uFFFD')) ) {
+                            int LA25_1 = input.LA(2);
 
-                            if ( ((LA21_1>='-' && LA21_1<='.')||(LA21_1>='0' && LA21_1<='9')||(LA21_1>='A' && LA21_1<='Z')||LA21_1=='_'||(LA21_1>='a' && LA21_1<='z')||LA21_1=='\u00B7'||(LA21_1>='\u00C0' && LA21_1<='\u00D6')||(LA21_1>='\u00D8' && LA21_1<='\u00F6')||(LA21_1>='\u00F8' && LA21_1<='\u037D')||(LA21_1>='\u037F' && LA21_1<='\u1FFF')||(LA21_1>='\u200C' && LA21_1<='\u200D')||(LA21_1>='\u203F' && LA21_1<='\u2040')||(LA21_1>='\u2070' && LA21_1<='\u218F')||(LA21_1>='\u2C00' && LA21_1<='\u2FEF')||(LA21_1>='\u3001' && LA21_1<='\uD7FF')||(LA21_1>='\uF900' && LA21_1<='\uFDCF')||(LA21_1>='\uFDF0' && LA21_1<='\uFFFD')) ) {
-                                alt21=1;
+                            if ( ((LA25_1>='-' && LA25_1<='.')||(LA25_1>='0' && LA25_1<='9')||(LA25_1>='A' && LA25_1<='Z')||LA25_1=='_'||(LA25_1>='a' && LA25_1<='z')||LA25_1=='\u00B7'||(LA25_1>='\u00C0' && LA25_1<='\u00D6')||(LA25_1>='\u00D8' && LA25_1<='\u00F6')||(LA25_1>='\u00F8' && LA25_1<='\u037D')||(LA25_1>='\u037F' && LA25_1<='\u1FFF')||(LA25_1>='\u200C' && LA25_1<='\u200D')||(LA25_1>='\u203F' && LA25_1<='\u2040')||(LA25_1>='\u2070' && LA25_1<='\u218F')||(LA25_1>='\u2C00' && LA25_1<='\u2FEF')||(LA25_1>='\u3001' && LA25_1<='\uD7FF')||(LA25_1>='\uF900' && LA25_1<='\uFDCF')||(LA25_1>='\uFDF0' && LA25_1<='\uFFFD')) ) {
+                                alt25=1;
                             }
 
 
                         }
-                        else if ( (LA21_0=='.') ) {
-                            alt21=1;
+                        else if ( (LA25_0=='.') ) {
+                            alt25=1;
                         }
 
 
-                        switch (alt21) {
+                        switch (alt25) {
                     	case 1 :
                     	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
                     	    {
@@ -1283,7 +1489,7 @@ public class TransformationLexer extends Lexer {
                     	    break;
 
                     	default :
-                    	    break loop21;
+                    	    break loop25;
                         }
                     } while (true);
 
@@ -1304,35 +1510,35 @@ public class TransformationLexer extends Lexer {
     // $ANTLR end "PN_LOCAL"
 
     public void mTokens() throws RecognitionException {
-        // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:8: ( T__25 | T__26 | T__27 | T__28 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL_LONG1 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX )
-        int alt23=21;
-        alt23 = dfa23.predict(input);
-        switch (alt23) {
+        // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:8: ( T__27 | T__28 | T__29 | T__30 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX )
+        int alt27=23;
+        alt27 = dfa27.predict(input);
+        switch (alt27) {
             case 1 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:10: T__25
-                {
-                mT__25(); 
-
-                }
-                break;
-            case 2 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:16: T__26
-                {
-                mT__26(); 
-
-                }
-                break;
-            case 3 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:22: T__27
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:10: T__27
                 {
                 mT__27(); 
 
                 }
                 break;
-            case 4 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:28: T__28
+            case 2 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:16: T__28
                 {
                 mT__28(); 
+
+                }
+                break;
+            case 3 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:22: T__29
+                {
+                mT__29(); 
+
+                }
+                break;
+            case 4 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:28: T__30
+                {
+                mT__30(); 
 
                 }
                 break;
@@ -1407,49 +1613,63 @@ public class TransformationLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:114: STRING_LITERAL_LONG1
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:114: STRING_LITERAL2
+                {
+                mSTRING_LITERAL2(); 
+
+                }
+                break;
+            case 16 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:130: STRING_LITERAL_LONG1
                 {
                 mSTRING_LITERAL_LONG1(); 
 
                 }
                 break;
-            case 16 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:135: MINUS
+            case 17 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:151: STRING_LITERAL_LONG2
+                {
+                mSTRING_LITERAL_LONG2(); 
+
+                }
+                break;
+            case 18 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:172: MINUS
                 {
                 mMINUS(); 
 
                 }
                 break;
-            case 17 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:141: PLUS
+            case 19 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:178: PLUS
                 {
                 mPLUS(); 
 
                 }
                 break;
-            case 18 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:146: ECHAR
+            case 20 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:183: ECHAR
                 {
                 mECHAR(); 
 
                 }
                 break;
-            case 19 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:152: VARNAME
+            case 21 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:189: VARNAME
                 {
                 mVARNAME(); 
 
                 }
                 break;
-            case 20 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:160: WS
+            case 22 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:197: WS
                 {
                 mWS(); 
 
                 }
                 break;
-            case 21 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:163: PN_PREFIX
+            case 23 :
+                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:200: PN_PREFIX
                 {
                 mPN_PREFIX(); 
 
@@ -1462,7 +1682,7 @@ public class TransformationLexer extends Lexer {
 
 
     protected DFA11 dfa11 = new DFA11(this);
-    protected DFA23 dfa23 = new DFA23(this);
+    protected DFA27 dfa27 = new DFA27(this);
     static final String DFA11_eotS =
         "\5\uffff";
     static final String DFA11_eofS =
@@ -1513,182 +1733,197 @@ public class TransformationLexer extends Lexer {
             this.transition = DFA11_transition;
         }
         public String getDescription() {
-            return "234:1: DOUBLE : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT );";
+            return "236:1: DOUBLE : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT );";
         }
     }
-    static final String DFA23_eotS =
-        "\7\uffff\1\25\1\32\3\uffff\1\32\4\uffff\1\31\1\uffff\1\32\1\25"+
-        "\1\uffff\1\46\2\32\2\uffff\1\32\1\uffff\1\34\1\uffff\1\32\1\31\1"+
-        "\46\1\43\1\uffff\1\46\2\uffff\1\32\1\36\1\uffff";
-    static final String DFA23_eofS =
-        "\52\uffff";
-    static final String DFA23_minS =
-        "\1\11\6\uffff\1\56\1\53\1\60\2\uffff\1\55\1\0\3\uffff\1\55\1\uffff"+
-        "\1\60\1\56\1\uffff\1\60\1\53\1\60\2\uffff\1\55\1\uffff\1\60\1\uffff"+
-        "\2\55\1\60\1\47\1\uffff\1\60\2\uffff\1\60\1\55\1\uffff";
-    static final String DFA23_maxS =
-        "\1\ufffd\6\uffff\2\ufffd\1\71\2\uffff\1\ufffd\1\uffff\3\uffff\1"+
-        "\ufffd\1\uffff\2\ufffd\1\uffff\1\145\2\ufffd\2\uffff\1\ufffd\1\uffff"+
-        "\1\71\1\uffff\2\ufffd\1\145\1\47\1\uffff\1\145\2\uffff\2\ufffd\1"+
-        "\uffff";
-    static final String DFA23_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\3\uffff\1\13\1\14\2\uffff\1\20"+
-        "\1\21\1\22\1\uffff\1\24\2\uffff\1\7\3\uffff\1\23\1\10\1\uffff\1"+
-        "\25\1\uffff\1\15\4\uffff\1\16\1\uffff\1\12\1\11\2\uffff\1\17";
-    static final String DFA23_specialS =
-        "\15\uffff\1\0\34\uffff}>";
-    static final String[] DFA23_transitionS = {
-            "\2\22\2\uffff\1\22\22\uffff\1\22\3\uffff\1\6\2\uffff\1\15\1"+
-            "\2\1\3\1\12\1\17\1\4\1\16\1\11\1\13\12\7\3\uffff\1\1\1\uffff"+
-            "\1\5\1\uffff\4\14\1\10\25\14\1\uffff\1\20\2\uffff\1\23\1\uffff"+
-            "\4\14\1\10\25\14\105\uffff\27\21\1\uffff\37\21\1\uffff\u0208"+
-            "\21\160\uffff\16\21\1\uffff\u1c81\21\14\uffff\2\21\142\uffff"+
-            "\u0120\21\u0a70\uffff\u03f0\21\21\uffff\ua7ff\21\u2100\uffff"+
-            "\u04d0\21\40\uffff\u020e\21",
+    static final String DFA27_eotS =
+        "\7\uffff\1\30\1\35\3\uffff\1\35\5\uffff\1\32\1\uffff\1\35\1\51"+
+        "\1\30\1\35\1\uffff\1\35\1\uffff\1\41\1\35\1\uffff\1\35\1\32\2\uffff"+
+        "\1\51\1\44\1\uffff\1\46\1\uffff\1\51\2\uffff\1\35\1\40\2\uffff";
+    static final String DFA27_eofS =
+        "\56\uffff";
+    static final String DFA27_minS =
+        "\1\11\6\uffff\1\56\1\53\1\60\2\uffff\1\55\2\0\3\uffff\1\55\1\uffff"+
+        "\2\60\1\56\1\53\1\uffff\1\60\1\uffff\1\60\1\55\1\uffff\2\55\2\uffff"+
+        "\1\60\1\47\1\uffff\1\42\1\uffff\1\60\2\uffff\1\60\1\55\2\uffff";
+    static final String DFA27_maxS =
+        "\1\ufffd\6\uffff\2\ufffd\1\71\2\uffff\1\ufffd\2\uffff\3\uffff\1"+
+        "\ufffd\1\uffff\1\ufffd\1\145\2\ufffd\1\uffff\1\ufffd\1\uffff\1\71"+
+        "\1\ufffd\1\uffff\2\ufffd\2\uffff\1\145\1\47\1\uffff\1\42\1\uffff"+
+        "\1\145\2\uffff\2\ufffd\2\uffff";
+    static final String DFA27_acceptS =
+        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\3\uffff\1\13\1\14\3\uffff\1\22"+
+        "\1\23\1\24\1\uffff\1\26\4\uffff\1\7\1\uffff\1\25\2\uffff\1\10\2"+
+        "\uffff\1\15\1\27\2\uffff\1\16\1\uffff\1\17\1\uffff\1\12\1\11\2\uffff"+
+        "\1\20\1\21";
+    static final String DFA27_specialS =
+        "\15\uffff\1\1\1\0\37\uffff}>";
+    static final String[] DFA27_transitionS = {
+            "\2\23\2\uffff\1\23\22\uffff\1\23\1\uffff\1\16\1\uffff\1\6\2"+
+            "\uffff\1\15\1\2\1\3\1\12\1\20\1\4\1\17\1\11\1\13\12\7\3\uffff"+
+            "\1\1\1\uffff\1\5\1\uffff\4\14\1\10\25\14\1\uffff\1\21\2\uffff"+
+            "\1\24\1\uffff\4\14\1\10\25\14\105\uffff\27\22\1\uffff\37\22"+
+            "\1\uffff\u0208\22\160\uffff\16\22\1\uffff\u1c81\22\14\uffff"+
+            "\2\22\142\uffff\u0120\22\u0a70\uffff\u03f0\22\21\uffff\ua7ff"+
+            "\22\u2100\uffff\u04d0\22\40\uffff\u020e\22",
             "",
             "",
             "",
             "",
             "",
             "",
-            "\1\26\1\uffff\12\24\7\uffff\4\30\1\27\25\30\4\uffff\1\30\1"+
-            "\uffff\4\30\1\27\25\30\74\uffff\1\31\10\uffff\27\31\1\uffff"+
-            "\37\31\1\uffff\u0286\31\1\uffff\u1c81\31\14\uffff\2\31\61\uffff"+
-            "\2\31\57\uffff\u0120\31\u0a70\uffff\u03f0\31\21\uffff\ua7ff"+
-            "\31\u2100\uffff\u04d0\31\40\uffff\u020e\31",
-            "\1\36\1\uffff\1\35\1\34\1\uffff\12\33\7\uffff\32\37\4\uffff"+
-            "\1\37\1\uffff\32\37\74\uffff\1\40\10\uffff\27\40\1\uffff\37"+
-            "\40\1\uffff\u0286\40\1\uffff\u1c81\40\14\uffff\2\40\61\uffff"+
-            "\2\40\57\uffff\u0120\40\u0a70\uffff\u03f0\40\21\uffff\ua7ff"+
-            "\40\u2100\uffff\u04d0\40\40\uffff\u020e\40",
-            "\12\41",
+            "\1\25\1\uffff\12\26\7\uffff\4\31\1\27\25\31\4\uffff\1\31\1"+
+            "\uffff\4\31\1\27\25\31\74\uffff\1\32\10\uffff\27\32\1\uffff"+
+            "\37\32\1\uffff\u0286\32\1\uffff\u1c81\32\14\uffff\2\32\61\uffff"+
+            "\2\32\57\uffff\u0120\32\u0a70\uffff\u03f0\32\21\uffff\ua7ff"+
+            "\32\u2100\uffff\u04d0\32\40\uffff\u020e\32",
+            "\1\40\1\uffff\1\33\1\41\1\uffff\12\34\7\uffff\32\36\4\uffff"+
+            "\1\36\1\uffff\32\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37"+
+            "\37\1\uffff\u0286\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff"+
+            "\2\37\57\uffff\u0120\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff"+
+            "\37\u2100\uffff\u04d0\37\40\uffff\u020e\37",
+            "\12\42",
             "",
             "",
-            "\2\34\1\uffff\12\37\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
-            "\37\74\uffff\1\40\10\uffff\27\40\1\uffff\37\40\1\uffff\u0286"+
-            "\40\1\uffff\u1c81\40\14\uffff\2\40\61\uffff\2\40\57\uffff\u0120"+
-            "\40\u0a70\uffff\u03f0\40\21\uffff\ua7ff\40\u2100\uffff\u04d0"+
-            "\40\40\uffff\u020e\40",
-            "\12\43\1\uffff\2\43\1\uffff\31\43\1\42\uffd8\43",
+            "\2\41\1\uffff\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32"+
+            "\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
+            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
+            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
+            "\37\40\uffff\u020e\37",
+            "\12\44\1\uffff\2\44\1\uffff\31\44\1\43\uffd8\44",
+            "\12\46\1\uffff\2\46\1\uffff\24\46\1\45\uffdd\46",
             "",
             "",
             "",
-            "\2\34\1\uffff\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32"+
-            "\40\74\uffff\1\40\10\uffff\27\40\1\uffff\37\40\1\uffff\u0286"+
-            "\40\1\uffff\u1c81\40\14\uffff\2\40\61\uffff\2\40\57\uffff\u0120"+
-            "\40\u0a70\uffff\u03f0\40\21\uffff\ua7ff\40\u2100\uffff\u04d0"+
-            "\40\40\uffff\u020e\40",
+            "\2\41\1\uffff\12\37\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
+            "\37\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
+            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
+            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
+            "\37\40\uffff\u020e\37",
             "",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30\74\uffff\1"+
-            "\31\10\uffff\27\31\1\uffff\37\31\1\uffff\u0286\31\1\uffff\u1c81"+
-            "\31\14\uffff\2\31\61\uffff\2\31\57\uffff\u0120\31\u0a70\uffff"+
-            "\u03f0\31\21\uffff\ua7ff\31\u2100\uffff\u04d0\31\40\uffff\u020e"+
-            "\31",
-            "\1\26\1\uffff\12\24\7\uffff\4\30\1\27\25\30\4\uffff\1\30\1"+
-            "\uffff\4\30\1\27\25\30\74\uffff\1\31\10\uffff\27\31\1\uffff"+
-            "\37\31\1\uffff\u0286\31\1\uffff\u1c81\31\14\uffff\2\31\61\uffff"+
-            "\2\31\57\uffff\u0120\31\u0a70\uffff\u03f0\31\21\uffff\ua7ff"+
-            "\31\u2100\uffff\u04d0\31\40\uffff\u020e\31",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31\74\uffff\1"+
+            "\32\10\uffff\27\32\1\uffff\37\32\1\uffff\u0286\32\1\uffff\u1c81"+
+            "\32\14\uffff\2\32\61\uffff\2\32\57\uffff\u0120\32\u0a70\uffff"+
+            "\u03f0\32\21\uffff\ua7ff\32\u2100\uffff\u04d0\32\40\uffff\u020e"+
+            "\32",
+            "\12\47\13\uffff\1\50\37\uffff\1\50",
+            "\1\25\1\uffff\12\26\7\uffff\4\31\1\27\25\31\4\uffff\1\31\1"+
+            "\uffff\4\31\1\27\25\31\74\uffff\1\32\10\uffff\27\32\1\uffff"+
+            "\37\32\1\uffff\u0286\32\1\uffff\u1c81\32\14\uffff\2\32\61\uffff"+
+            "\2\32\57\uffff\u0120\32\u0a70\uffff\u03f0\32\21\uffff\ua7ff"+
+            "\32\u2100\uffff\u04d0\32\40\uffff\u020e\32",
+            "\1\50\1\uffff\1\50\2\uffff\12\52\7\uffff\32\31\4\uffff\1\31"+
+            "\1\uffff\32\31\74\uffff\1\32\10\uffff\27\32\1\uffff\37\32\1"+
+            "\uffff\u0286\32\1\uffff\u1c81\32\14\uffff\2\32\61\uffff\2\32"+
+            "\57\uffff\u0120\32\u0a70\uffff\u03f0\32\21\uffff\ua7ff\32\u2100"+
+            "\uffff\u04d0\32\40\uffff\u020e\32",
             "",
-            "\12\44\13\uffff\1\45\37\uffff\1\45",
-            "\1\45\1\uffff\1\45\2\uffff\12\47\7\uffff\32\30\4\uffff\1\30"+
-            "\1\uffff\32\30\74\uffff\1\31\10\uffff\27\31\1\uffff\37\31\1"+
-            "\uffff\u0286\31\1\uffff\u1c81\31\14\uffff\2\31\61\uffff\2\31"+
-            "\57\uffff\u0120\31\u0a70\uffff\u03f0\31\21\uffff\ua7ff\31\u2100"+
-            "\uffff\u04d0\31\40\uffff\u020e\31",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30\74\uffff\1"+
-            "\31\10\uffff\27\31\1\uffff\37\31\1\uffff\u0286\31\1\uffff\u1c81"+
-            "\31\14\uffff\2\31\61\uffff\2\31\57\uffff\u0120\31\u0a70\uffff"+
-            "\u03f0\31\21\uffff\ua7ff\31\u2100\uffff\u04d0\31\40\uffff\u020e"+
-            "\31",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31\74\uffff\1"+
+            "\32\10\uffff\27\32\1\uffff\37\32\1\uffff\u0286\32\1\uffff\u1c81"+
+            "\32\14\uffff\2\32\61\uffff\2\32\57\uffff\u0120\32\u0a70\uffff"+
+            "\u03f0\32\21\uffff\ua7ff\32\u2100\uffff\u04d0\32\40\uffff\u020e"+
+            "\32",
             "",
+            "\12\53",
+            "\2\41\1\uffff\12\34\7\uffff\32\36\4\uffff\1\36\1\uffff\32"+
+            "\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
+            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
+            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
+            "\37\40\uffff\u020e\37",
             "",
-            "\2\34\1\uffff\12\33\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
-            "\37\74\uffff\1\40\10\uffff\27\40\1\uffff\37\40\1\uffff\u0286"+
-            "\40\1\uffff\u1c81\40\14\uffff\2\40\61\uffff\2\40\57\uffff\u0120"+
-            "\40\u0a70\uffff\u03f0\40\21\uffff\ua7ff\40\u2100\uffff\u04d0"+
-            "\40\40\uffff\u020e\40",
-            "",
-            "\12\50",
-            "",
-            "\2\34\1\uffff\12\37\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
-            "\37\74\uffff\1\40\10\uffff\27\40\1\uffff\37\40\1\uffff\u0286"+
-            "\40\1\uffff\u1c81\40\14\uffff\2\40\61\uffff\2\40\57\uffff\u0120"+
-            "\40\u0a70\uffff\u03f0\40\21\uffff\ua7ff\40\u2100\uffff\u04d0"+
-            "\40\40\uffff\u020e\40",
-            "\2\34\1\uffff\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32"+
-            "\40\74\uffff\1\40\10\uffff\27\40\1\uffff\37\40\1\uffff\u0286"+
-            "\40\1\uffff\u1c81\40\14\uffff\2\40\61\uffff\2\40\57\uffff\u0120"+
-            "\40\u0a70\uffff\u03f0\40\21\uffff\ua7ff\40\u2100\uffff\u04d0"+
-            "\40\40\uffff\u020e\40",
-            "\12\41\13\uffff\1\45\37\uffff\1\45",
-            "\1\51",
-            "",
-            "\12\44\13\uffff\1\45\37\uffff\1\45",
+            "\2\41\1\uffff\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32"+
+            "\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
+            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
+            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
+            "\37\40\uffff\u020e\37",
+            "\2\41\1\uffff\12\37\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
+            "\37\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
+            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
+            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
+            "\37\40\uffff\u020e\37",
             "",
             "",
-            "\12\47\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30\74\uffff\1"+
-            "\31\10\uffff\27\31\1\uffff\37\31\1\uffff\u0286\31\1\uffff\u1c81"+
-            "\31\14\uffff\2\31\61\uffff\2\31\57\uffff\u0120\31\u0a70\uffff"+
-            "\u03f0\31\21\uffff\ua7ff\31\u2100\uffff\u04d0\31\40\uffff\u020e"+
-            "\31",
-            "\2\34\1\uffff\12\50\7\uffff\32\34\4\uffff\1\34\1\uffff\32"+
-            "\34\74\uffff\1\34\10\uffff\27\34\1\uffff\37\34\1\uffff\u0286"+
-            "\34\1\uffff\u1c81\34\14\uffff\2\34\61\uffff\2\34\57\uffff\u0120"+
-            "\34\u0a70\uffff\u03f0\34\21\uffff\ua7ff\34\u2100\uffff\u04d0"+
-            "\34\40\uffff\u020e\34",
+            "\12\42\13\uffff\1\50\37\uffff\1\50",
+            "\1\54",
+            "",
+            "\1\55",
+            "",
+            "\12\47\13\uffff\1\50\37\uffff\1\50",
+            "",
+            "",
+            "\12\52\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31\74\uffff\1"+
+            "\32\10\uffff\27\32\1\uffff\37\32\1\uffff\u0286\32\1\uffff\u1c81"+
+            "\32\14\uffff\2\32\61\uffff\2\32\57\uffff\u0120\32\u0a70\uffff"+
+            "\u03f0\32\21\uffff\ua7ff\32\u2100\uffff\u04d0\32\40\uffff\u020e"+
+            "\32",
+            "\2\41\1\uffff\12\53\7\uffff\32\41\4\uffff\1\41\1\uffff\32"+
+            "\41\74\uffff\1\41\10\uffff\27\41\1\uffff\37\41\1\uffff\u0286"+
+            "\41\1\uffff\u1c81\41\14\uffff\2\41\61\uffff\2\41\57\uffff\u0120"+
+            "\41\u0a70\uffff\u03f0\41\21\uffff\ua7ff\41\u2100\uffff\u04d0"+
+            "\41\40\uffff\u020e\41",
+            "",
             ""
     };
 
-    static final short[] DFA23_eot = DFA.unpackEncodedString(DFA23_eotS);
-    static final short[] DFA23_eof = DFA.unpackEncodedString(DFA23_eofS);
-    static final char[] DFA23_min = DFA.unpackEncodedStringToUnsignedChars(DFA23_minS);
-    static final char[] DFA23_max = DFA.unpackEncodedStringToUnsignedChars(DFA23_maxS);
-    static final short[] DFA23_accept = DFA.unpackEncodedString(DFA23_acceptS);
-    static final short[] DFA23_special = DFA.unpackEncodedString(DFA23_specialS);
-    static final short[][] DFA23_transition;
+    static final short[] DFA27_eot = DFA.unpackEncodedString(DFA27_eotS);
+    static final short[] DFA27_eof = DFA.unpackEncodedString(DFA27_eofS);
+    static final char[] DFA27_min = DFA.unpackEncodedStringToUnsignedChars(DFA27_minS);
+    static final char[] DFA27_max = DFA.unpackEncodedStringToUnsignedChars(DFA27_maxS);
+    static final short[] DFA27_accept = DFA.unpackEncodedString(DFA27_acceptS);
+    static final short[] DFA27_special = DFA.unpackEncodedString(DFA27_specialS);
+    static final short[][] DFA27_transition;
 
     static {
-        int numStates = DFA23_transitionS.length;
-        DFA23_transition = new short[numStates][];
+        int numStates = DFA27_transitionS.length;
+        DFA27_transition = new short[numStates][];
         for (int i=0; i<numStates; i++) {
-            DFA23_transition[i] = DFA.unpackEncodedString(DFA23_transitionS[i]);
+            DFA27_transition[i] = DFA.unpackEncodedString(DFA27_transitionS[i]);
         }
     }
 
-    class DFA23 extends DFA {
+    class DFA27 extends DFA {
 
-        public DFA23(BaseRecognizer recognizer) {
+        public DFA27(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 23;
-            this.eot = DFA23_eot;
-            this.eof = DFA23_eof;
-            this.min = DFA23_min;
-            this.max = DFA23_max;
-            this.accept = DFA23_accept;
-            this.special = DFA23_special;
-            this.transition = DFA23_transition;
+            this.decisionNumber = 27;
+            this.eot = DFA27_eot;
+            this.eof = DFA27_eof;
+            this.min = DFA27_min;
+            this.max = DFA27_max;
+            this.accept = DFA27_accept;
+            this.special = DFA27_special;
+            this.transition = DFA27_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__25 | T__26 | T__27 | T__28 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL_LONG1 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX );";
+            return "1:1: Tokens : ( T__27 | T__28 | T__29 | T__30 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA23_13 = input.LA(1);
+                        int LA27_14 = input.LA(1);
 
                         s = -1;
-                        if ( (LA23_13=='\'') ) {s = 34;}
+                        if ( (LA27_14=='\"') ) {s = 37;}
 
-                        else if ( ((LA23_13>='\u0000' && LA23_13<='\t')||(LA23_13>='\u000B' && LA23_13<='\f')||(LA23_13>='\u000E' && LA23_13<='&')||(LA23_13>='(' && LA23_13<='\uFFFF')) ) {s = 35;}
+                        else if ( ((LA27_14>='\u0000' && LA27_14<='\t')||(LA27_14>='\u000B' && LA27_14<='\f')||(LA27_14>='\u000E' && LA27_14<='!')||(LA27_14>='#' && LA27_14<='\uFFFF')) ) {s = 38;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA27_13 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA27_13=='\'') ) {s = 35;}
+
+                        else if ( ((LA27_13>='\u0000' && LA27_13<='\t')||(LA27_13>='\u000B' && LA27_13<='\f')||(LA27_13>='\u000E' && LA27_13<='&')||(LA27_13>='(' && LA27_13<='\uFFFF')) ) {s = 36;}
 
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 23, _s, input);
+                new NoViableAltException(getDescription(), 27, _s, input);
             error(nvae);
             throw nvae;
         }

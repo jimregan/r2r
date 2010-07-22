@@ -186,7 +186,10 @@ public class Mapping {
 		List<Argument> arguments = functionExecution.getArguments();
 		List<List<String>> realArguments = new ArrayList<List<String>>();
 		Function function = functionExecution.getFunction();
-
+  ///////////// Debug Code ->
+//		System.out.print(function.getURI() + "(");
+//		boolean notFirst = false;
+  ////////////
 		List<String> returnList = null;
 	  try {
 		for(Argument argument: arguments) {
@@ -194,6 +197,12 @@ public class Mapping {
 				ArrayList<String> arg = new ArrayList<String>();
 				arg.add(((ConstantArgument) argument).getValue());
 				realArguments.add(arg);
+  ///////////// Debug code ->
+//				if(notFirst)
+//					System.out.print(", ");
+//				notFirst = true;
+//				System.out.print(arg.get(0));
+  /////////////
 			}
 			else if(argument instanceof VariableArgument) {
 				String varName = ((VariableArgument) argument).getVariableName();
@@ -201,11 +210,30 @@ public class Mapping {
 				realArguments.add(Collections.unmodifiableList(varResults.getResults(varName)));
 			}
 			else if(argument instanceof FunctionExecution) {
+				////////////// Debug Code ->
+//				if(notFirst)
+//					System.out.print(", ");
+//				notFirst = true;
+				//////////////
 				realArguments.add(execFunction((FunctionExecution)argument, varResults, datatypeHint));
 			}
 		}
-	    
-		returnList = function.execute(realArguments, datatypeHint);
+  ////////////////// Debug code ->
+//		returnList = function.execute(realArguments, datatypeHint);
+//		if(returnList.size()>1) {
+//			System.out.print(" ) = [");
+//			boolean nF = false;
+//			for(String a: returnList) {
+//				if(nF)
+//					System.out.print(", ");
+//				nF=true;
+//				System.out.print(a);
+//			}
+//			System.out.print("]");
+//		}
+//		else
+//			System.out.print(" = " + returnList.get(0)+ ")");
+  //////////////////
 	  } catch(NumberFormatException e) {
 		  String msg = "Could not execute function <" + function.getURI() + "> correctly: " + e.toString();
 		  throw new FunctionExecutionException(msg, e);
@@ -227,6 +255,7 @@ public class Mapping {
 	
 			List<String> resultValues = null;
 			try {
+				System.out.println("");//TODO:REMOVE
 				resultValues = execFunction(funcExec, varResults, hint);
 			} catch(FunctionExecutionException fee) {
 				if(log.isDebugEnabled()) {
@@ -325,6 +354,8 @@ public class Mapping {
 
 		sb.append("SELECT ");
 		Set<String> varDependencies = computeQueryVariableDependencies();
+		if(varDependencies.size()==0)
+			sb.append(" ?SUBJ");
 		for(String var: varDependencies) {
 			sb.append(" ?" + var);
 		}
@@ -466,8 +497,6 @@ public class Mapping {
 	private void executeTargetPatterns(VariableResults varResults, Model out, Collection<String> termURIs) {
 		int group = getBlankNodeGroup();
 		for(TargetPattern targetPattern: targetPatterns) {
-			if(termURIs==null)
-				targetPattern.addTargetTriplesToModel(out, varResults, group, null);
 			for(String termURI: termURIs)
 				if(targetPattern.getClasses().contains(termURI) || targetPattern.getProperties().contains(termURI)) {
 					targetPattern.addTargetTriplesToModel(out, varResults, group, termURI);

@@ -16,12 +16,10 @@ public class VariableResults {
 	private Map<String, List<String>> variableValues;
 	private QuerySolution querySolution;
 	private Map<String, Resource> blankNodes = null;
-	private long time;
 	
 	VariableResults(QuerySolution qs) {
 		variableValues = new HashMap<String, List<String>>();
 		this.querySolution = qs;
-		time = System.nanoTime();
 	}
 	
 	public boolean addVariableResult(String varName, List<String> results) {
