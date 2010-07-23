@@ -218,8 +218,9 @@ public class Mapping {
 				realArguments.add(execFunction((FunctionExecution)argument, varResults, datatypeHint));
 			}
 		}
+		
+		returnList = function.execute(realArguments, datatypeHint);
   ////////////////// Debug code ->
-//		returnList = function.execute(realArguments, datatypeHint);
 //		if(returnList.size()>1) {
 //			System.out.print(" ) = [");
 //			boolean nF = false;
@@ -252,10 +253,9 @@ public class Mapping {
 			String hint = datatypeHints.get(resultVariableName);
 			if(hint==null)
 				hint = "";
-	
+
 			List<String> resultValues = null;
 			try {
-				System.out.println("");//TODO:REMOVE
 				resultValues = execFunction(funcExec, varResults, hint);
 			} catch(FunctionExecutionException fee) {
 				if(log.isDebugEnabled()) {

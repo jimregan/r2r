@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g 2010-07-22 03:04:37
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g 2010-07-23 15:15:37
 
   package de.fuberlin.wiwiss.r2r.parser;
 
@@ -135,15 +135,15 @@ public class SourcePatternLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g"; }
+    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g"; }
 
     // $ANTLR start "T__78"
     public final void mT__78() throws RecognitionException {
         try {
             int _type = T__78;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:26:7: ( '.' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:26:9: '.'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:26:7: ( '.' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:26:9: '.'
             {
             match('.'); 
 
@@ -162,8 +162,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__79;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:27:7: ( '{' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:27:9: '{'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:27:7: ( '{' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:27:9: '{'
             {
             match('{'); 
 
@@ -182,8 +182,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__80;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:28:7: ( '}' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:28:9: '}'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:28:7: ( '}' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:28:9: '}'
             {
             match('}'); 
 
@@ -202,8 +202,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__81;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:29:7: ( '(' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:29:9: '('
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:29:7: ( '(' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:29:9: '('
             {
             match('('); 
 
@@ -222,8 +222,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__82;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:30:7: ( ',' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:30:9: ','
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:30:7: ( ',' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:30:9: ','
             {
             match(','); 
 
@@ -242,8 +242,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__83;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:31:7: ( ')' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:31:9: ')'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:31:7: ( ')' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:31:9: ')'
             {
             match(')'); 
 
@@ -262,8 +262,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__84;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:32:7: ( ';' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:32:9: ';'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:32:7: ( ';' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:32:9: ';'
             {
             match(';'); 
 
@@ -282,8 +282,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__85;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:33:7: ( 'a' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:33:9: 'a'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:33:7: ( 'a' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:33:9: 'a'
             {
             match('a'); 
 
@@ -302,8 +302,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__86;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:34:7: ( '[' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:34:9: '['
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:34:7: ( '[' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:34:9: '['
             {
             match('['); 
 
@@ -322,8 +322,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__87;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:35:7: ( ']' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:35:9: ']'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:35:7: ( ']' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:35:9: ']'
             {
             match(']'); 
 
@@ -342,8 +342,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__88;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:36:7: ( '||' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:36:9: '||'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:36:7: ( '||' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:36:9: '||'
             {
             match("||"); 
 
@@ -363,8 +363,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:37:7: ( '&&' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:37:9: '&&'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:37:7: ( '&&' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:37:9: '&&'
             {
             match("&&"); 
 
@@ -384,8 +384,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__90;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:38:7: ( '=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:38:9: '='
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:38:7: ( '=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:38:9: '='
             {
             match('='); 
 
@@ -404,8 +404,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__91;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:39:7: ( '!=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:39:9: '!='
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:39:7: ( '!=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:39:9: '!='
             {
             match("!="); 
 
@@ -425,8 +425,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__92;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:40:7: ( '<' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:40:9: '<'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:40:7: ( '<' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:40:9: '<'
             {
             match('<'); 
 
@@ -445,8 +445,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__93;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:41:7: ( '>' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:41:9: '>'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:41:7: ( '>' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:41:9: '>'
             {
             match('>'); 
 
@@ -465,8 +465,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__94;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:42:7: ( '<=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:42:9: '<='
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:42:7: ( '<=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:42:9: '<='
             {
             match("<="); 
 
@@ -486,8 +486,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__95;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:43:7: ( '>=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:43:9: '>='
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:43:7: ( '>=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:43:9: '>='
             {
             match(">="); 
 
@@ -507,8 +507,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__96;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:44:7: ( '+' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:44:9: '+'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:44:7: ( '+' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:44:9: '+'
             {
             match('+'); 
 
@@ -527,8 +527,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__97;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:45:7: ( '-' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:45:9: '-'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:45:7: ( '-' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:45:9: '-'
             {
             match('-'); 
 
@@ -547,8 +547,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__98;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:46:7: ( '*' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:46:9: '*'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:46:7: ( '*' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:46:9: '*'
             {
             match('*'); 
 
@@ -567,8 +567,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__99;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:47:7: ( '/' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:47:9: '/'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:47:7: ( '/' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:47:9: '/'
             {
             match('/'); 
 
@@ -587,8 +587,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__100;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:48:8: ( '!' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:48:10: '!'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:48:8: ( '!' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:48:10: '!'
             {
             match('!'); 
 
@@ -607,8 +607,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = T__101;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:49:8: ( '^^' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:49:10: '^^'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:49:8: ( '^^' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:49:10: '^^'
             {
             match("^^"); 
 
@@ -628,8 +628,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = GRAPH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:388:7: ( G R A P H )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:388:9: G R A P H
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:388:7: ( G R A P H )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:388:9: G R A P H
             {
             mG(); 
             mR(); 
@@ -652,8 +652,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = STR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:389:5: ( S T R )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:389:7: S T R
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:389:5: ( S T R )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:389:7: S T R
             {
             mS(); 
             mT(); 
@@ -674,8 +674,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = ISURI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:390:7: ( I S U R I )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:390:9: I S U R I
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:390:7: ( I S U R I )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:390:9: I S U R I
             {
             mI(); 
             mS(); 
@@ -698,8 +698,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = OPTIONAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:391:10: ( O P T I O N A L )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:391:12: O P T I O N A L
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:391:10: ( O P T I O N A L )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:391:12: O P T I O N A L
             {
             mO(); 
             mP(); 
@@ -725,8 +725,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = LANG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:392:6: ( L A N G )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:392:8: L A N G
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:392:6: ( L A N G )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:392:8: L A N G
             {
             mL(); 
             mA(); 
@@ -748,8 +748,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = ISIRI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:393:7: ( I S I R I )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:393:9: I S I R I
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:393:7: ( I S I R I )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:393:9: I S I R I
             {
             mI(); 
             mS(); 
@@ -772,8 +772,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = UNION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:394:7: ( U N I O N )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:394:9: U N I O N
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:394:7: ( U N I O N )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:394:9: U N I O N
             {
             mU(); 
             mN(); 
@@ -796,8 +796,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = LANGMATCHES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:395:13: ( L A N G M A T C H E S )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:395:15: L A N G M A T C H E S
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:395:13: ( L A N G M A T C H E S )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:395:15: L A N G M A T C H E S
             {
             mL(); 
             mA(); 
@@ -826,8 +826,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = ISLITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:396:11: ( I S L I T E R A L )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:396:13: I S L I T E R A L
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:396:11: ( I S L I T E R A L )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:396:13: I S L I T E R A L
             {
             mI(); 
             mS(); 
@@ -854,8 +854,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = ISBLANK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:397:9: ( I S B L A N K )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:397:11: I S B L A N K
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:397:9: ( I S B L A N K )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:397:11: I S B L A N K
             {
             mI(); 
             mS(); 
@@ -880,8 +880,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = BOUND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:398:7: ( B O U N D )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:398:9: B O U N D
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:398:7: ( B O U N D )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:398:9: B O U N D
             {
             mB(); 
             mO(); 
@@ -904,8 +904,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = FILTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:399:8: ( F I L T E R )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:399:10: F I L T E R
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:399:8: ( F I L T E R )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:399:10: F I L T E R
             {
             mF(); 
             mI(); 
@@ -929,8 +929,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DATATYPE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:400:10: ( D A T A T Y P E )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:400:12: D A T A T Y P E
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:400:10: ( D A T A T Y P E )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:400:12: D A T A T Y P E
             {
             mD(); 
             mA(); 
@@ -956,8 +956,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = REGEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:401:7: ( R E G E X )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:401:9: R E G E X
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:401:7: ( R E G E X )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:401:9: R E G E X
             {
             mR(); 
             mE(); 
@@ -980,8 +980,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:402:6: ( T R U E )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:402:8: T R U E
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:402:6: ( T R U E )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:402:8: T R U E
             {
             mT(); 
             mR(); 
@@ -1003,8 +1003,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = SAMETERM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:403:10: ( S A M E T E R M )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:403:12: S A M E T E R M
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:403:10: ( S A M E T E R M )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:403:12: S A M E T E R M
             {
             mS(); 
             mA(); 
@@ -1030,8 +1030,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:404:7: ( F A L S E )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:404:9: F A L S E
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:404:7: ( F A L S E )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:404:9: F A L S E
             {
             mF(); 
             mA(); 
@@ -1052,8 +1052,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "A"
     public final void mA() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:406:11: ( ( 'a' | 'A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:406:13: ( 'a' | 'A' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:406:11: ( ( 'a' | 'A' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:406:13: ( 'a' | 'A' )
             {
             if ( input.LA(1)=='A'||input.LA(1)=='a' ) {
                 input.consume();
@@ -1076,8 +1076,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "B"
     public final void mB() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:407:11: ( ( 'b' | 'B' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:407:13: ( 'b' | 'B' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:407:11: ( ( 'b' | 'B' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:407:13: ( 'b' | 'B' )
             {
             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                 input.consume();
@@ -1100,8 +1100,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "C"
     public final void mC() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:408:11: ( ( 'c' | 'C' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:408:13: ( 'c' | 'C' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:408:11: ( ( 'c' | 'C' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:408:13: ( 'c' | 'C' )
             {
             if ( input.LA(1)=='C'||input.LA(1)=='c' ) {
                 input.consume();
@@ -1124,8 +1124,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "D"
     public final void mD() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:409:11: ( ( 'd' | 'D' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:409:13: ( 'd' | 'D' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:409:11: ( ( 'd' | 'D' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:409:13: ( 'd' | 'D' )
             {
             if ( input.LA(1)=='D'||input.LA(1)=='d' ) {
                 input.consume();
@@ -1148,8 +1148,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "E"
     public final void mE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:410:11: ( ( 'e' | 'E' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:410:13: ( 'e' | 'E' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:410:11: ( ( 'e' | 'E' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:410:13: ( 'e' | 'E' )
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -1172,8 +1172,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "F"
     public final void mF() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:411:11: ( ( 'f' | 'F' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:411:13: ( 'f' | 'F' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:411:11: ( ( 'f' | 'F' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:411:13: ( 'f' | 'F' )
             {
             if ( input.LA(1)=='F'||input.LA(1)=='f' ) {
                 input.consume();
@@ -1196,8 +1196,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "G"
     public final void mG() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:412:11: ( ( 'g' | 'G' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:412:13: ( 'g' | 'G' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:412:11: ( ( 'g' | 'G' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:412:13: ( 'g' | 'G' )
             {
             if ( input.LA(1)=='G'||input.LA(1)=='g' ) {
                 input.consume();
@@ -1220,8 +1220,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "H"
     public final void mH() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:413:11: ( ( 'h' | 'H' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:413:13: ( 'h' | 'H' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:413:11: ( ( 'h' | 'H' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:413:13: ( 'h' | 'H' )
             {
             if ( input.LA(1)=='H'||input.LA(1)=='h' ) {
                 input.consume();
@@ -1244,8 +1244,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "I"
     public final void mI() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:414:11: ( ( 'i' | 'I' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:414:13: ( 'i' | 'I' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:414:11: ( ( 'i' | 'I' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:414:13: ( 'i' | 'I' )
             {
             if ( input.LA(1)=='I'||input.LA(1)=='i' ) {
                 input.consume();
@@ -1268,8 +1268,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "J"
     public final void mJ() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:415:11: ( ( 'j' | 'J' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:415:13: ( 'j' | 'J' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:415:11: ( ( 'j' | 'J' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:415:13: ( 'j' | 'J' )
             {
             if ( input.LA(1)=='J'||input.LA(1)=='j' ) {
                 input.consume();
@@ -1292,8 +1292,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "K"
     public final void mK() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:416:11: ( ( 'k' | 'K' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:416:13: ( 'k' | 'K' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:416:11: ( ( 'k' | 'K' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:416:13: ( 'k' | 'K' )
             {
             if ( input.LA(1)=='K'||input.LA(1)=='k' ) {
                 input.consume();
@@ -1316,8 +1316,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "L"
     public final void mL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:417:11: ( ( 'l' | 'L' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:417:13: ( 'l' | 'L' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:417:11: ( ( 'l' | 'L' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:417:13: ( 'l' | 'L' )
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
@@ -1340,8 +1340,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "M"
     public final void mM() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:418:11: ( ( 'm' | 'M' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:418:13: ( 'm' | 'M' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:418:11: ( ( 'm' | 'M' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:418:13: ( 'm' | 'M' )
             {
             if ( input.LA(1)=='M'||input.LA(1)=='m' ) {
                 input.consume();
@@ -1364,8 +1364,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "N"
     public final void mN() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:419:11: ( ( 'n' | 'N' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:419:13: ( 'n' | 'N' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:419:11: ( ( 'n' | 'N' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:419:13: ( 'n' | 'N' )
             {
             if ( input.LA(1)=='N'||input.LA(1)=='n' ) {
                 input.consume();
@@ -1388,8 +1388,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "O"
     public final void mO() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:420:11: ( ( 'o' | 'O' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:420:13: ( 'o' | 'O' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:420:11: ( ( 'o' | 'O' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:420:13: ( 'o' | 'O' )
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -1412,8 +1412,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "P"
     public final void mP() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:421:11: ( ( 'p' | 'P' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:421:13: ( 'p' | 'P' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:421:11: ( ( 'p' | 'P' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:421:13: ( 'p' | 'P' )
             {
             if ( input.LA(1)=='P'||input.LA(1)=='p' ) {
                 input.consume();
@@ -1436,8 +1436,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "Q"
     public final void mQ() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:422:11: ( ( 'q' | 'Q' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:422:13: ( 'q' | 'Q' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:422:11: ( ( 'q' | 'Q' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:422:13: ( 'q' | 'Q' )
             {
             if ( input.LA(1)=='Q'||input.LA(1)=='q' ) {
                 input.consume();
@@ -1460,8 +1460,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "R"
     public final void mR() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:423:11: ( ( 'r' | 'R' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:423:13: ( 'r' | 'R' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:423:11: ( ( 'r' | 'R' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:423:13: ( 'r' | 'R' )
             {
             if ( input.LA(1)=='R'||input.LA(1)=='r' ) {
                 input.consume();
@@ -1484,8 +1484,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "S"
     public final void mS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:424:11: ( ( 's' | 'S' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:424:13: ( 's' | 'S' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:424:11: ( ( 's' | 'S' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:424:13: ( 's' | 'S' )
             {
             if ( input.LA(1)=='S'||input.LA(1)=='s' ) {
                 input.consume();
@@ -1508,8 +1508,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "T"
     public final void mT() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:425:11: ( ( 't' | 'T' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:425:13: ( 't' | 'T' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:425:11: ( ( 't' | 'T' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:425:13: ( 't' | 'T' )
             {
             if ( input.LA(1)=='T'||input.LA(1)=='t' ) {
                 input.consume();
@@ -1532,8 +1532,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "U"
     public final void mU() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:426:11: ( ( 'u' | 'U' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:426:13: ( 'u' | 'U' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:426:11: ( ( 'u' | 'U' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:426:13: ( 'u' | 'U' )
             {
             if ( input.LA(1)=='U'||input.LA(1)=='u' ) {
                 input.consume();
@@ -1556,8 +1556,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "V"
     public final void mV() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:427:11: ( ( 'v' | 'V' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:427:13: ( 'v' | 'V' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:427:11: ( ( 'v' | 'V' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:427:13: ( 'v' | 'V' )
             {
             if ( input.LA(1)=='V'||input.LA(1)=='v' ) {
                 input.consume();
@@ -1580,8 +1580,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "W"
     public final void mW() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:428:11: ( ( 'w' | 'W' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:428:13: ( 'w' | 'W' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:428:11: ( ( 'w' | 'W' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:428:13: ( 'w' | 'W' )
             {
             if ( input.LA(1)=='W'||input.LA(1)=='w' ) {
                 input.consume();
@@ -1604,8 +1604,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "X"
     public final void mX() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:429:11: ( ( 'x' | 'X' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:429:13: ( 'x' | 'X' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:429:11: ( ( 'x' | 'X' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:429:13: ( 'x' | 'X' )
             {
             if ( input.LA(1)=='X'||input.LA(1)=='x' ) {
                 input.consume();
@@ -1628,8 +1628,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "Y"
     public final void mY() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:430:11: ( ( 'y' | 'Y' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:430:13: ( 'y' | 'Y' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:430:11: ( ( 'y' | 'Y' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:430:13: ( 'y' | 'Y' )
             {
             if ( input.LA(1)=='Y'||input.LA(1)=='y' ) {
                 input.consume();
@@ -1652,8 +1652,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "Z"
     public final void mZ() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:431:11: ( ( 'z' | 'Z' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:431:13: ( 'z' | 'Z' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:431:11: ( ( 'z' | 'Z' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:431:13: ( 'z' | 'Z' )
             {
             if ( input.LA(1)=='Z'||input.LA(1)=='z' ) {
                 input.consume();
@@ -1678,11 +1678,11 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = IRI_REF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:437:3: ( '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:437:5: '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:437:3: ( '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:437:5: '<' (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )* '>'
             {
             match('<'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:437:9: (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:437:9: (~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' ) )*
             loop1:
             do {
                 int alt1=2;
@@ -1695,7 +1695,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:437:10: ~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:437:10: ~ ( '<' | '>' | '\"' | '{' | '}' | '|' | '^' | '`' | '\\\\' | '\\u0000' .. '\\u0020' )
             	    {
             	    if ( input.LA(1)=='!'||(input.LA(1)>='#' && input.LA(1)<=';')||input.LA(1)=='='||(input.LA(1)>='?' && input.LA(1)<='[')||input.LA(1)==']'||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='~' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1732,10 +1732,10 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = PNAME_NS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:441:3: ( ( PN_PREFIX )? ':' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:441:5: ( PN_PREFIX )? ':'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:441:3: ( ( PN_PREFIX )? ':' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:441:5: ( PN_PREFIX )? ':'
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:441:5: ( PN_PREFIX )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:441:5: ( PN_PREFIX )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1744,7 +1744,7 @@ public class SourcePatternLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:441:5: PN_PREFIX
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:441:5: PN_PREFIX
                     {
                     mPN_PREFIX(); 
 
@@ -1770,8 +1770,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = PNAME_LN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:445:3: ( PNAME_NS PN_LOCAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:445:5: PNAME_NS PN_LOCAL
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:445:3: ( PNAME_NS PN_LOCAL )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:445:5: PNAME_NS PN_LOCAL
             {
             mPNAME_NS(); 
             mPN_LOCAL(); 
@@ -1791,8 +1791,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = BLANK_NODE_LABEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:449:3: ( '_:' PN_LOCAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:449:5: '_:' PN_LOCAL
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:449:3: ( '_:' PN_LOCAL )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:449:5: '_:' PN_LOCAL
             {
             match("_:"); 
 
@@ -1813,8 +1813,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = VAR1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:453:3: ( '?' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:453:5: '?' VARNAME
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:453:3: ( '?' VARNAME )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:453:5: '?' VARNAME
             {
             match('?'); 
             mVARNAME(); 
@@ -1834,8 +1834,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = VAR2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:457:3: ( '$' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:457:5: '$' VARNAME
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:457:3: ( '$' VARNAME )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:457:5: '$' VARNAME
             {
             match('$'); 
             mVARNAME(); 
@@ -1855,11 +1855,11 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = LANGTAG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:461:3: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:461:5: '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:461:3: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )* )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:461:5: '@' ( 'a' .. 'z' | 'A' .. 'Z' )+ ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
             {
             match('@'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:461:9: ( 'a' .. 'z' | 'A' .. 'Z' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:461:9: ( 'a' .. 'z' | 'A' .. 'Z' )+
             int cnt3=0;
             loop3:
             do {
@@ -1873,7 +1873,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
             	    {
             	    if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
@@ -1897,7 +1897,7 @@ public class SourcePatternLexer extends Lexer {
                 cnt3++;
             } while (true);
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:461:32: ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:461:32: ( '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+ )*
             loop5:
             do {
                 int alt5=2;
@@ -1910,10 +1910,10 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt5) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:461:33: '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:461:33: '-' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
             	    {
             	    match('-'); 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:461:37: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:461:37: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )+
             	    int cnt4=0;
             	    loop4:
             	    do {
@@ -1927,7 +1927,7 @@ public class SourcePatternLexer extends Lexer {
 
             	        switch (alt4) {
             	    	case 1 :
-            	    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+            	    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
             	    	    {
             	    	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	    	        input.consume();
@@ -1976,10 +1976,10 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:465:3: ( ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:465:5: ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:465:3: ( ( '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:465:5: ( '0' .. '9' )+
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:465:5: ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:465:5: ( '0' .. '9' )+
             int cnt6=0;
             loop6:
             do {
@@ -1993,7 +1993,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:465:6: '0' .. '9'
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:465:6: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -2025,7 +2025,7 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -2043,9 +2043,9 @@ public class SourcePatternLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:5: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:5: ( '0' .. '9' )+
                     int cnt7=0;
                     loop7:
                     do {
@@ -2059,7 +2059,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:6: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2076,7 +2076,7 @@ public class SourcePatternLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:21: ( '0' .. '9' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:21: ( '0' .. '9' )*
                     loop8:
                     do {
                         int alt8=2;
@@ -2089,7 +2089,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:22: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2105,10 +2105,10 @@ public class SourcePatternLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:35: '.' ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:35: '.' ( '0' .. '9' )+
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:39: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:39: ( '0' .. '9' )+
                     int cnt9=0;
                     loop9:
                     do {
@@ -2122,7 +2122,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:469:40: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:469:40: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2156,14 +2156,14 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:473:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:473:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
             int alt15=3;
             alt15 = dfa15.predict(input);
             switch (alt15) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:473:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:473:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:473:5: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:473:5: ( '0' .. '9' )+
                     int cnt11=0;
                     loop11:
                     do {
@@ -2177,7 +2177,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:473:6: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:473:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2194,7 +2194,7 @@ public class SourcePatternLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:473:21: ( '0' .. '9' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:473:21: ( '0' .. '9' )*
                     loop12:
                     do {
                         int alt12=2;
@@ -2207,7 +2207,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:473:22: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:473:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2224,10 +2224,10 @@ public class SourcePatternLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:474:5: '.' ( '0' .. '9' )+ EXPONENT
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:474:5: '.' ( '0' .. '9' )+ EXPONENT
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:474:9: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:474:9: ( '0' .. '9' )+
                     int cnt13=0;
                     loop13:
                     do {
@@ -2241,7 +2241,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt13) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:474:10: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:474:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2262,9 +2262,9 @@ public class SourcePatternLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:475:5: ( '0' .. '9' )+ EXPONENT
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:475:5: ( '0' .. '9' )+ EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:475:5: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:475:5: ( '0' .. '9' )+
                     int cnt14=0;
                     loop14:
                     do {
@@ -2278,7 +2278,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt14) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:475:6: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:475:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2313,8 +2313,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = INTEGER_POSITIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:479:3: ( '+' INTEGER )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:479:5: '+' INTEGER
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:479:3: ( '+' INTEGER )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:479:5: '+' INTEGER
             {
             match('+'); 
             mINTEGER(); 
@@ -2334,8 +2334,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DECIMAL_POSITIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:483:3: ( '+' DECIMAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:483:5: '+' DECIMAL
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:483:3: ( '+' DECIMAL )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:483:5: '+' DECIMAL
             {
             match('+'); 
             mDECIMAL(); 
@@ -2355,8 +2355,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DOUBLE_POSITIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:487:3: ( '+' DOUBLE )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:487:5: '+' DOUBLE
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:487:3: ( '+' DOUBLE )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:487:5: '+' DOUBLE
             {
             match('+'); 
             mDOUBLE(); 
@@ -2376,8 +2376,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = INTEGER_NEGATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:491:3: ( '-' INTEGER )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:491:5: '-' INTEGER
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:491:3: ( '-' INTEGER )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:491:5: '-' INTEGER
             {
             match('-'); 
             mINTEGER(); 
@@ -2397,8 +2397,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DECIMAL_NEGATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:495:3: ( '-' DECIMAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:495:5: '-' DECIMAL
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:495:3: ( '-' DECIMAL )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:495:5: '-' DECIMAL
             {
             match('-'); 
             mDECIMAL(); 
@@ -2418,8 +2418,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = DOUBLE_NEGATIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:499:3: ( '-' DOUBLE )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:499:5: '-' DOUBLE
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:499:3: ( '-' DOUBLE )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:499:5: '-' DOUBLE
             {
             match('-'); 
             mDOUBLE(); 
@@ -2439,8 +2439,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = EXPONENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:503:3: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:503:5: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:503:3: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:503:5: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -2451,7 +2451,7 @@ public class SourcePatternLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:503:17: ( '+' | '-' )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:503:17: ( '+' | '-' )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -2460,7 +2460,7 @@ public class SourcePatternLexer extends Lexer {
             }
             switch (alt16) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
                     {
                     if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
                         input.consume();
@@ -2477,7 +2477,7 @@ public class SourcePatternLexer extends Lexer {
 
             }
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:503:30: ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:503:30: ( '0' .. '9' )+
             int cnt17=0;
             loop17:
             do {
@@ -2491,7 +2491,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:503:31: '0' .. '9'
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:503:31: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -2523,11 +2523,11 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = STRING_LITERAL1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:507:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:507:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:507:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:507:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
             {
             match('\''); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:507:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:507:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
             loop18:
             do {
                 int alt18=3;
@@ -2543,7 +2543,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:507:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:507:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2558,7 +2558,7 @@ public class SourcePatternLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:507:58: ECHAR
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:507:58: ECHAR
             	    {
             	    mECHAR(); 
 
@@ -2587,11 +2587,11 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = STRING_LITERAL2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:511:3: ( '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:511:5: '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:511:3: ( '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:511:5: '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"'
             {
             match('\"'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:511:9: (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:511:9: (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
             loop19:
             do {
                 int alt19=3;
@@ -2607,7 +2607,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt19) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:511:10: ~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:511:10: ~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2622,7 +2622,7 @@ public class SourcePatternLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:511:57: ECHAR
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:511:57: ECHAR
             	    {
             	    mECHAR(); 
 
@@ -2651,12 +2651,12 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = STRING_LITERAL_LONG1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
             {
             match("'''"); 
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
             loop22:
             do {
                 int alt22=2;
@@ -2687,9 +2687,9 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt22) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:15: ( '\\'' | '\\'\\'' )?
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:15: ( '\\'' | '\\'\\'' )?
             	    int alt20=3;
             	    int LA20_0 = input.LA(1);
 
@@ -2705,14 +2705,14 @@ public class SourcePatternLexer extends Lexer {
             	    }
             	    switch (alt20) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:17: '\\''
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:17: '\\''
             	            {
             	            match('\''); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:24: '\\'\\''
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:24: '\\'\\''
             	            {
             	            match("''"); 
 
@@ -2722,7 +2722,7 @@ public class SourcePatternLexer extends Lexer {
 
             	    }
 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    int alt21=2;
             	    int LA21_0 = input.LA(1);
 
@@ -2740,7 +2740,7 @@ public class SourcePatternLexer extends Lexer {
             	    }
             	    switch (alt21) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:34: ~ ( '\\'' | '\\\\' )
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:34: ~ ( '\\'' | '\\\\' )
             	            {
             	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	                input.consume();
@@ -2755,7 +2755,7 @@ public class SourcePatternLexer extends Lexer {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:515:51: ECHAR
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:515:51: ECHAR
             	            {
             	            mECHAR(); 
 
@@ -2791,12 +2791,12 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = STRING_LITERAL_LONG2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:3: ( '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:5: '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:3: ( '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:5: '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"'
             {
             match("\"\"\""); 
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:11: ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:11: ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )*
             loop25:
             do {
                 int alt25=2;
@@ -2827,9 +2827,9 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt25) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:12: ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:12: ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:12: ( '\"' | '\"\"' )?
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:12: ( '\"' | '\"\"' )?
             	    int alt23=3;
             	    int LA23_0 = input.LA(1);
 
@@ -2845,14 +2845,14 @@ public class SourcePatternLexer extends Lexer {
             	    }
             	    switch (alt23) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:14: '\"'
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:14: '\"'
             	            {
             	            match('\"'); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:20: '\"\"'
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:20: '\"\"'
             	            {
             	            match("\"\""); 
 
@@ -2862,7 +2862,7 @@ public class SourcePatternLexer extends Lexer {
 
             	    }
 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:27: (~ ( '\"' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:27: (~ ( '\"' | '\\\\' ) | ECHAR )
             	    int alt24=2;
             	    int LA24_0 = input.LA(1);
 
@@ -2880,7 +2880,7 @@ public class SourcePatternLexer extends Lexer {
             	    }
             	    switch (alt24) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:28: ~ ( '\"' | '\\\\' )
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:28: ~ ( '\"' | '\\\\' )
             	            {
             	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	                input.consume();
@@ -2895,7 +2895,7 @@ public class SourcePatternLexer extends Lexer {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:519:44: ECHAR
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:519:44: ECHAR
             	            {
             	            mECHAR(); 
 
@@ -2931,8 +2931,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = ECHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:523:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:523:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:523:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:523:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
             {
             match('\\'); 
             if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -2960,8 +2960,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:527:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:527:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:527:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:527:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -2989,8 +2989,8 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = VARNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:533:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:533:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:533:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:533:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -3001,7 +3001,7 @@ public class SourcePatternLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:533:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:533:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             loop26:
             do {
                 int alt26=2;
@@ -3014,7 +3014,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt26) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
             	    {
             	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
             	        input.consume();
@@ -3048,8 +3048,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "PN_CHARS_BASE"
     public final void mPN_CHARS_BASE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:537:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:537:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -3072,8 +3072,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "PN_CHARS_U"
     public final void mPN_CHARS_U() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:553:3: ( PN_CHARS_BASE | '_' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:553:3: ( PN_CHARS_BASE | '_' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -3098,11 +3098,11 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = PN_PREFIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:557:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:557:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:557:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:557:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             mPN_CHARS_BASE(); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:557:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:557:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -3111,9 +3111,9 @@ public class SourcePatternLexer extends Lexer {
             }
             switch (alt28) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:557:20: ( PN_CHARS | '.' )* PN_CHARS
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:557:20: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:557:20: ( PN_CHARS | '.' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:557:20: ( PN_CHARS | '.' )*
                     loop27:
                     do {
                         int alt27=2;
@@ -3135,7 +3135,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt27) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
                     	    {
                     	    if ( (input.LA(1)>='-' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                     	        input.consume();
@@ -3176,8 +3176,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "PN_CHARS"
     public final void mPN_CHARS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:561:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:561:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
             {
             if ( input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -3200,8 +3200,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "PN_LOCAL"
     public final void mPN_LOCAL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:570:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:570:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:570:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:570:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -3212,7 +3212,7 @@ public class SourcePatternLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:570:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:570:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -3221,9 +3221,9 @@ public class SourcePatternLexer extends Lexer {
             }
             switch (alt30) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:570:30: ( PN_CHARS | '.' )* PN_CHARS
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:570:30: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:570:30: ( PN_CHARS | '.' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:570:30: ( PN_CHARS | '.' )*
                     loop29:
                     do {
                         int alt29=2;
@@ -3245,7 +3245,7 @@ public class SourcePatternLexer extends Lexer {
 
                         switch (alt29) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:
                     	    {
                     	    if ( (input.LA(1)>='-' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                     	        input.consume();
@@ -3284,8 +3284,8 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR start "HEX"
     public final void mHEX() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:573:14: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:573:16: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:573:14: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:573:16: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -3310,11 +3310,11 @@ public class SourcePatternLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:574:9: ( '#' ( . )* ( '\\n' | '\\r' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:574:11: '#' ( . )* ( '\\n' | '\\r' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:574:9: ( '#' ( . )* ( '\\n' | '\\r' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:574:11: '#' ( . )* ( '\\n' | '\\r' )
             {
             match('#'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:574:15: ( . )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:574:15: ( . )*
             loop31:
             do {
                 int alt31=2;
@@ -3330,7 +3330,7 @@ public class SourcePatternLexer extends Lexer {
 
                 switch (alt31) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:574:15: .
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:574:15: .
             	    {
             	    matchAny(); 
 
@@ -3364,474 +3364,474 @@ public class SourcePatternLexer extends Lexer {
     // $ANTLR end "COMMENT"
 
     public void mTokens() throws RecognitionException {
-        // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:8: ( T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | GRAPH | STR | ISURI | OPTIONAL | LANG | ISIRI | UNION | LANGMATCHES | ISLITERAL | ISBLANK | BOUND | FILTER | DATATYPE | REGEX | TRUE | SAMETERM | FALSE | IRI_REF | PNAME_NS | PNAME_LN | BLANK_NODE_LABEL | VAR1 | VAR2 | LANGTAG | INTEGER | DECIMAL | DOUBLE | INTEGER_POSITIVE | DECIMAL_POSITIVE | DOUBLE_POSITIVE | INTEGER_NEGATIVE | DECIMAL_NEGATIVE | DOUBLE_NEGATIVE | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | ECHAR | WS | VARNAME | PN_PREFIX | COMMENT )
+        // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:8: ( T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | GRAPH | STR | ISURI | OPTIONAL | LANG | ISIRI | UNION | LANGMATCHES | ISLITERAL | ISBLANK | BOUND | FILTER | DATATYPE | REGEX | TRUE | SAMETERM | FALSE | IRI_REF | PNAME_NS | PNAME_LN | BLANK_NODE_LABEL | VAR1 | VAR2 | LANGTAG | INTEGER | DECIMAL | DOUBLE | INTEGER_POSITIVE | DECIMAL_POSITIVE | DOUBLE_POSITIVE | INTEGER_NEGATIVE | DECIMAL_NEGATIVE | DOUBLE_NEGATIVE | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | ECHAR | WS | VARNAME | PN_PREFIX | COMMENT )
         int alt32=67;
         alt32 = dfa32.predict(input);
         switch (alt32) {
             case 1 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:10: T__78
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:10: T__78
                 {
                 mT__78(); 
 
                 }
                 break;
             case 2 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:16: T__79
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:16: T__79
                 {
                 mT__79(); 
 
                 }
                 break;
             case 3 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:22: T__80
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:22: T__80
                 {
                 mT__80(); 
 
                 }
                 break;
             case 4 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:28: T__81
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:28: T__81
                 {
                 mT__81(); 
 
                 }
                 break;
             case 5 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:34: T__82
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:34: T__82
                 {
                 mT__82(); 
 
                 }
                 break;
             case 6 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:40: T__83
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:40: T__83
                 {
                 mT__83(); 
 
                 }
                 break;
             case 7 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:46: T__84
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:46: T__84
                 {
                 mT__84(); 
 
                 }
                 break;
             case 8 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:52: T__85
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:52: T__85
                 {
                 mT__85(); 
 
                 }
                 break;
             case 9 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:58: T__86
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:58: T__86
                 {
                 mT__86(); 
 
                 }
                 break;
             case 10 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:64: T__87
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:64: T__87
                 {
                 mT__87(); 
 
                 }
                 break;
             case 11 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:70: T__88
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:70: T__88
                 {
                 mT__88(); 
 
                 }
                 break;
             case 12 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:76: T__89
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:76: T__89
                 {
                 mT__89(); 
 
                 }
                 break;
             case 13 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:82: T__90
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:82: T__90
                 {
                 mT__90(); 
 
                 }
                 break;
             case 14 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:88: T__91
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:88: T__91
                 {
                 mT__91(); 
 
                 }
                 break;
             case 15 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:94: T__92
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:94: T__92
                 {
                 mT__92(); 
 
                 }
                 break;
             case 16 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:100: T__93
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:100: T__93
                 {
                 mT__93(); 
 
                 }
                 break;
             case 17 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:106: T__94
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:106: T__94
                 {
                 mT__94(); 
 
                 }
                 break;
             case 18 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:112: T__95
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:112: T__95
                 {
                 mT__95(); 
 
                 }
                 break;
             case 19 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:118: T__96
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:118: T__96
                 {
                 mT__96(); 
 
                 }
                 break;
             case 20 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:124: T__97
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:124: T__97
                 {
                 mT__97(); 
 
                 }
                 break;
             case 21 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:130: T__98
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:130: T__98
                 {
                 mT__98(); 
 
                 }
                 break;
             case 22 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:136: T__99
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:136: T__99
                 {
                 mT__99(); 
 
                 }
                 break;
             case 23 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:142: T__100
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:142: T__100
                 {
                 mT__100(); 
 
                 }
                 break;
             case 24 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:149: T__101
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:149: T__101
                 {
                 mT__101(); 
 
                 }
                 break;
             case 25 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:156: GRAPH
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:156: GRAPH
                 {
                 mGRAPH(); 
 
                 }
                 break;
             case 26 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:162: STR
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:162: STR
                 {
                 mSTR(); 
 
                 }
                 break;
             case 27 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:166: ISURI
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:166: ISURI
                 {
                 mISURI(); 
 
                 }
                 break;
             case 28 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:172: OPTIONAL
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:172: OPTIONAL
                 {
                 mOPTIONAL(); 
 
                 }
                 break;
             case 29 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:181: LANG
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:181: LANG
                 {
                 mLANG(); 
 
                 }
                 break;
             case 30 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:186: ISIRI
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:186: ISIRI
                 {
                 mISIRI(); 
 
                 }
                 break;
             case 31 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:192: UNION
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:192: UNION
                 {
                 mUNION(); 
 
                 }
                 break;
             case 32 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:198: LANGMATCHES
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:198: LANGMATCHES
                 {
                 mLANGMATCHES(); 
 
                 }
                 break;
             case 33 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:210: ISLITERAL
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:210: ISLITERAL
                 {
                 mISLITERAL(); 
 
                 }
                 break;
             case 34 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:220: ISBLANK
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:220: ISBLANK
                 {
                 mISBLANK(); 
 
                 }
                 break;
             case 35 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:228: BOUND
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:228: BOUND
                 {
                 mBOUND(); 
 
                 }
                 break;
             case 36 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:234: FILTER
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:234: FILTER
                 {
                 mFILTER(); 
 
                 }
                 break;
             case 37 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:241: DATATYPE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:241: DATATYPE
                 {
                 mDATATYPE(); 
 
                 }
                 break;
             case 38 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:250: REGEX
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:250: REGEX
                 {
                 mREGEX(); 
 
                 }
                 break;
             case 39 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:256: TRUE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:256: TRUE
                 {
                 mTRUE(); 
 
                 }
                 break;
             case 40 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:261: SAMETERM
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:261: SAMETERM
                 {
                 mSAMETERM(); 
 
                 }
                 break;
             case 41 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:270: FALSE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:270: FALSE
                 {
                 mFALSE(); 
 
                 }
                 break;
             case 42 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:276: IRI_REF
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:276: IRI_REF
                 {
                 mIRI_REF(); 
 
                 }
                 break;
             case 43 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:284: PNAME_NS
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:284: PNAME_NS
                 {
                 mPNAME_NS(); 
 
                 }
                 break;
             case 44 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:293: PNAME_LN
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:293: PNAME_LN
                 {
                 mPNAME_LN(); 
 
                 }
                 break;
             case 45 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:302: BLANK_NODE_LABEL
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:302: BLANK_NODE_LABEL
                 {
                 mBLANK_NODE_LABEL(); 
 
                 }
                 break;
             case 46 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:319: VAR1
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:319: VAR1
                 {
                 mVAR1(); 
 
                 }
                 break;
             case 47 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:324: VAR2
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:324: VAR2
                 {
                 mVAR2(); 
 
                 }
                 break;
             case 48 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:329: LANGTAG
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:329: LANGTAG
                 {
                 mLANGTAG(); 
 
                 }
                 break;
             case 49 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:337: INTEGER
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:337: INTEGER
                 {
                 mINTEGER(); 
 
                 }
                 break;
             case 50 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:345: DECIMAL
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:345: DECIMAL
                 {
                 mDECIMAL(); 
 
                 }
                 break;
             case 51 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:353: DOUBLE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:353: DOUBLE
                 {
                 mDOUBLE(); 
 
                 }
                 break;
             case 52 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:360: INTEGER_POSITIVE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:360: INTEGER_POSITIVE
                 {
                 mINTEGER_POSITIVE(); 
 
                 }
                 break;
             case 53 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:377: DECIMAL_POSITIVE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:377: DECIMAL_POSITIVE
                 {
                 mDECIMAL_POSITIVE(); 
 
                 }
                 break;
             case 54 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:394: DOUBLE_POSITIVE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:394: DOUBLE_POSITIVE
                 {
                 mDOUBLE_POSITIVE(); 
 
                 }
                 break;
             case 55 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:410: INTEGER_NEGATIVE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:410: INTEGER_NEGATIVE
                 {
                 mINTEGER_NEGATIVE(); 
 
                 }
                 break;
             case 56 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:427: DECIMAL_NEGATIVE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:427: DECIMAL_NEGATIVE
                 {
                 mDECIMAL_NEGATIVE(); 
 
                 }
                 break;
             case 57 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:444: DOUBLE_NEGATIVE
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:444: DOUBLE_NEGATIVE
                 {
                 mDOUBLE_NEGATIVE(); 
 
                 }
                 break;
             case 58 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:460: EXPONENT
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:460: EXPONENT
                 {
                 mEXPONENT(); 
 
                 }
                 break;
             case 59 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:469: STRING_LITERAL1
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:469: STRING_LITERAL1
                 {
                 mSTRING_LITERAL1(); 
 
                 }
                 break;
             case 60 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:485: STRING_LITERAL2
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:485: STRING_LITERAL2
                 {
                 mSTRING_LITERAL2(); 
 
                 }
                 break;
             case 61 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:501: STRING_LITERAL_LONG1
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:501: STRING_LITERAL_LONG1
                 {
                 mSTRING_LITERAL_LONG1(); 
 
                 }
                 break;
             case 62 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:522: STRING_LITERAL_LONG2
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:522: STRING_LITERAL_LONG2
                 {
                 mSTRING_LITERAL_LONG2(); 
 
                 }
                 break;
             case 63 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:543: ECHAR
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:543: ECHAR
                 {
                 mECHAR(); 
 
                 }
                 break;
             case 64 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:549: WS
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:549: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 65 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:552: VARNAME
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:552: VARNAME
                 {
                 mVARNAME(); 
 
                 }
                 break;
             case 66 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:560: PN_PREFIX
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:560: PN_PREFIX
                 {
                 mPN_PREFIX(); 
 
                 }
                 break;
             case 67 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\SourcePattern.g:1:570: COMMENT
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/SourcePattern.g:1:570: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -3899,46 +3899,46 @@ public class SourcePatternLexer extends Lexer {
         }
     }
     static final String DFA32_eotS =
-        "\1\uffff\1\57\6\uffff\1\60\5\uffff\1\65\1\67\1\72\1\75\1\100\3"+
-        "\uffff\14\101\1\122\1\101\3\uffff\1\125\1\101\5\uffff\1\136\2\uffff"+
-        "\1\101\1\uffff\1\137\2\uffff\1\140\4\uffff\1\142\2\uffff\1\147\3"+
-        "\uffff\15\101\1\137\1\121\5\uffff\1\125\1\136\1\101\1\132\1\uffff"+
-        "\1\134\5\uffff\1\177\2\uffff\1\177\1\uffff\1\u0081\1\uffff\1\u0081"+
-        "\2\101\1\u0084\15\101\1\121\1\136\1\135\2\uffff\1\177\1\uffff\1"+
-        "\u0081\1\uffff\2\101\1\uffff\5\101\1\u0099\6\101\1\u00a1\1\u00a2"+
-        "\2\101\1\u00a5\1\101\1\u00a7\1\101\1\uffff\1\101\1\u00aa\1\u00ab"+
-        "\1\101\1\u00ad\1\101\1\u00af\2\uffff\2\101\1\uffff\1\101\1\uffff"+
-        "\2\101\2\uffff\1\u00b5\1\uffff\1\101\1\uffff\2\101\1\u00b9\2\101"+
-        "\1\uffff\1\101\1\u00bd\1\101\1\uffff\1\u00bf\1\101\1\u00c1\1\uffff"+
-        "\1\u00c2\1\uffff\1\101\2\uffff\1\101\1\u00c5\1\uffff";
+        "\1\uffff\1\57\6\uffff\1\60\5\uffff\1\65\1\67\1\72\1\75\1\100\3\uffff"+
+        "\14\101\1\122\1\101\3\uffff\1\125\1\101\5\uffff\1\136\2\uffff\1"+
+        "\101\1\uffff\1\137\2\uffff\1\140\4\uffff\1\142\2\uffff\1\147\3\uffff"+
+        "\15\101\1\137\1\121\5\uffff\1\125\1\136\1\101\1\132\1\uffff\1\134"+
+        "\5\uffff\1\177\2\uffff\1\177\1\uffff\1\u0081\1\uffff\1\u0081\2\101"+
+        "\1\u0084\15\101\1\121\1\136\1\135\2\uffff\1\177\1\uffff\1\u0081"+
+        "\1\uffff\2\101\1\uffff\5\101\1\u0099\6\101\1\u00a1\1\u00a2\2\101"+
+        "\1\u00a5\1\101\1\u00a7\1\101\1\uffff\1\101\1\u00aa\1\u00ab\1\101"+
+        "\1\u00ad\1\101\1\u00af\2\uffff\2\101\1\uffff\1\101\1\uffff\2\101"+
+        "\2\uffff\1\u00b5\1\uffff\1\101\1\uffff\2\101\1\u00b9\2\101\1\uffff"+
+        "\1\101\1\u00bd\1\101\1\uffff\1\u00bf\1\101\1\u00c1\1\uffff\1\u00c2"+
+        "\1\uffff\1\101\2\uffff\1\101\1\u00c5\1\uffff";
     static final String DFA32_eofS =
         "\u00c6\uffff";
     static final String DFA32_minS =
-        "\1\11\1\60\6\uffff\1\55\5\uffff\1\75\1\41\1\75\2\56\3\uffff\13"+
-        "\55\1\53\1\60\1\72\3\uffff\1\56\1\55\2\0\3\uffff\1\60\2\uffff\3"+
-        "\55\2\uffff\1\41\4\uffff\1\56\1\60\1\uffff\1\56\1\60\2\uffff\17"+
-        "\55\5\uffff\1\56\1\60\1\53\1\47\1\uffff\1\42\5\uffff\1\60\2\uffff"+
-        "\1\60\1\uffff\1\60\1\uffff\1\60\21\55\2\60\2\uffff\1\60\1\uffff"+
-        "\1\60\1\uffff\2\55\1\uffff\24\55\1\uffff\7\55\2\uffff\2\55\1\uffff"+
+        "\1\11\1\60\6\uffff\1\55\5\uffff\1\75\1\41\1\75\2\56\3\uffff\13\55"+
+        "\1\53\1\60\1\72\3\uffff\1\56\1\55\2\0\3\uffff\1\60\2\uffff\3\55"+
+        "\2\uffff\1\41\4\uffff\1\56\1\60\1\uffff\1\56\1\60\2\uffff\17\55"+
+        "\5\uffff\1\56\1\60\1\53\1\47\1\uffff\1\42\5\uffff\1\60\2\uffff\1"+
+        "\60\1\uffff\1\60\1\uffff\1\60\21\55\2\60\2\uffff\1\60\1\uffff\1"+
+        "\60\1\uffff\2\55\1\uffff\24\55\1\uffff\7\55\2\uffff\2\55\1\uffff"+
         "\1\55\1\uffff\2\55\2\uffff\1\55\1\uffff\1\55\1\uffff\5\55\1\uffff"+
         "\3\55\1\uffff\3\55\1\uffff\1\55\1\uffff\1\55\2\uffff\2\55\1\uffff";
     static final String DFA32_maxS =
-        "\1\ufffd\1\71\6\uffff\1\ufffd\5\uffff\1\75\1\uffff\1\75\2\71\3"+
-        "\uffff\15\ufffd\1\72\3\uffff\2\ufffd\2\uffff\3\uffff\1\145\2\uffff"+
-        "\3\ufffd\2\uffff\1\uffff\4\uffff\1\145\1\71\1\uffff\1\145\1\71\2"+
-        "\uffff\17\ufffd\5\uffff\1\ufffd\1\145\1\71\1\47\1\uffff\1\42\5\uffff"+
-        "\1\145\2\uffff\1\145\1\uffff\1\145\1\uffff\1\145\21\ufffd\1\145"+
-        "\1\ufffd\2\uffff\1\145\1\uffff\1\145\1\uffff\2\ufffd\1\uffff\24"+
-        "\ufffd\1\uffff\7\ufffd\2\uffff\2\ufffd\1\uffff\1\ufffd\1\uffff\2"+
-        "\ufffd\2\uffff\1\ufffd\1\uffff\1\ufffd\1\uffff\5\ufffd\1\uffff\3"+
-        "\ufffd\1\uffff\3\ufffd\1\uffff\1\ufffd\1\uffff\1\ufffd\2\uffff\2"+
-        "\ufffd\1\uffff";
+        "\1\ufffd\1\71\6\uffff\1\ufffd\5\uffff\1\75\1\uffff\1\75\2\71\3\uffff"+
+        "\15\ufffd\1\72\3\uffff\2\ufffd\2\uffff\3\uffff\1\145\2\uffff\3\ufffd"+
+        "\2\uffff\1\uffff\4\uffff\1\145\1\71\1\uffff\1\145\1\71\2\uffff\17"+
+        "\ufffd\5\uffff\1\ufffd\1\145\1\71\1\47\1\uffff\1\42\5\uffff\1\145"+
+        "\2\uffff\1\145\1\uffff\1\145\1\uffff\1\145\21\ufffd\1\145\1\ufffd"+
+        "\2\uffff\1\145\1\uffff\1\145\1\uffff\2\ufffd\1\uffff\24\ufffd\1"+
+        "\uffff\7\ufffd\2\uffff\2\ufffd\1\uffff\1\ufffd\1\uffff\2\ufffd\2"+
+        "\uffff\1\ufffd\1\uffff\1\ufffd\1\uffff\5\ufffd\1\uffff\3\ufffd\1"+
+        "\uffff\3\ufffd\1\uffff\1\ufffd\1\uffff\1\ufffd\2\uffff\2\ufffd\1"+
+        "\uffff";
     static final String DFA32_acceptS =
-        "\2\uffff\1\2\1\3\1\4\1\5\1\6\1\7\1\uffff\1\11\1\12\1\13\1\14\1"+
-        "\15\5\uffff\1\25\1\26\1\30\16\uffff\1\56\1\57\1\60\4\uffff\1\77"+
-        "\1\100\1\103\1\uffff\1\1\1\10\3\uffff\1\16\1\27\1\uffff\1\17\1\52"+
-        "\1\22\1\20\2\uffff\1\23\2\uffff\1\24\1\101\17\uffff\1\72\1\53\1"+
-        "\54\1\55\1\61\4\uffff\1\73\1\uffff\1\74\1\63\1\62\1\102\1\21\1\uffff"+
+        "\2\uffff\1\2\1\3\1\4\1\5\1\6\1\7\1\uffff\1\11\1\12\1\13\1\14\1\15"+
+        "\5\uffff\1\25\1\26\1\30\16\uffff\1\56\1\57\1\60\4\uffff\1\77\1\100"+
+        "\1\103\1\uffff\1\1\1\10\3\uffff\1\16\1\27\1\uffff\1\17\1\52\1\22"+
+        "\1\20\2\uffff\1\23\2\uffff\1\24\1\101\17\uffff\1\72\1\53\1\54\1"+
+        "\55\1\61\4\uffff\1\73\1\uffff\1\74\1\63\1\62\1\102\1\21\1\uffff"+
         "\1\64\1\66\1\uffff\1\71\1\uffff\1\67\24\uffff\1\75\1\76\1\uffff"+
         "\1\65\1\uffff\1\70\2\uffff\1\32\24\uffff\1\35\7\uffff\1\47\1\31"+
         "\2\uffff\1\36\1\uffff\1\33\2\uffff\1\37\1\43\1\uffff\1\51\1\uffff"+
@@ -3983,50 +3983,48 @@ public class SourcePatternLexer extends Lexer {
             "",
             "",
             "",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\102\10\61\4"+
-            "\uffff\1\61\1\uffff\21\61\1\102\10\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\102\10\61\4\uffff"+
+            "\1\61\1\uffff\21\61\1\102\10\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\103\22\61\1\104\6"+
-            "\61\4\uffff\1\61\1\uffff\1\103\22\61\1\104\6\61\74\uffff\1\61"+
-            "\10\uffff\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81"+
-            "\61\14\uffff\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff"+
-            "\u03f0\61\21\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e"+
-            "\61",
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\103\22\61\1\104\6\61"+
+            "\4\uffff\1\61\1\uffff\1\103\22\61\1\104\6\61\74\uffff\1\61\10"+
+            "\uffff\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61"+
+            "\14\uffff\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0"+
+            "\61\21\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\22\61\1\105\7\61\4\uffff"+
             "\1\61\1\uffff\22\61\1\105\7\61\74\uffff\1\61\10\uffff\27\61"+
             "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
             "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\17\61\1\106\12\61\4"+
-            "\uffff\1\61\1\uffff\17\61\1\106\12\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\17\61\1\106\12\61\4\uffff"+
+            "\1\61\1\uffff\17\61\1\106\12\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\107\31\61\4\uffff"+
-            "\1\61\1\uffff\1\107\31\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\107\31\61\4\uffff\1"+
+            "\61\1\uffff\1\107\31\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
             "\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff"+
             "\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff"+
             "\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\110\14\61\4"+
-            "\uffff\1\61\1\uffff\15\61\1\110\14\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\110\14\61\4\uffff"+
+            "\1\61\1\uffff\15\61\1\110\14\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\16\61\1\111\13\61\4"+
-            "\uffff\1\61\1\uffff\16\61\1\111\13\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\16\61\1\111\13\61\4\uffff"+
+            "\1\61\1\uffff\16\61\1\111\13\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\113\7\61\1\112\21"+
-            "\61\4\uffff\1\61\1\uffff\1\113\7\61\1\112\21\61\74\uffff\1\61"+
-            "\10\uffff\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81"+
-            "\61\14\uffff\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff"+
-            "\u03f0\61\21\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e"+
-            "\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\114\31\61\4\uffff"+
-            "\1\61\1\uffff\1\114\31\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\113\7\61\1\112\21\61"+
+            "\4\uffff\1\61\1\uffff\1\113\7\61\1\112\21\61\74\uffff\1\61\10"+
+            "\uffff\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61"+
+            "\14\uffff\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0"+
+            "\61\21\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\114\31\61\4\uffff\1"+
+            "\61\1\uffff\1\114\31\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
             "\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff"+
             "\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff"+
             "\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4035,10 +4033,10 @@ public class SourcePatternLexer extends Lexer {
             "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
             "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\116\10\61\4"+
-            "\uffff\1\61\1\uffff\21\61\1\116\10\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\116\10\61\4\uffff"+
+            "\1\61\1\uffff\21\61\1\116\10\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "\1\121\1\uffff\1\117\1\62\1\uffff\12\120\1\42\6\uffff\32\61"+
             "\4\uffff\1\61\1\uffff\32\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
@@ -4102,20 +4100,20 @@ public class SourcePatternLexer extends Lexer {
             "\12\150",
             "",
             "",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\151\31\61\4\uffff"+
-            "\1\61\1\uffff\1\151\31\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\151\31\61\4\uffff\1"+
+            "\61\1\uffff\1\151\31\61\74\uffff\1\61\10\uffff\27\61\1\uffff"+
             "\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff"+
             "\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff"+
             "\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\14\61\1\152\15\61\4"+
-            "\uffff\1\61\1\uffff\14\61\1\152\15\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\14\61\1\152\15\61\4\uffff"+
+            "\1\61\1\uffff\14\61\1\152\15\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\153\10\61\4"+
-            "\uffff\1\61\1\uffff\21\61\1\153\10\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\153\10\61\4\uffff"+
+            "\1\61\1\uffff\21\61\1\153\10\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\1\61\1\156\6\61\1\155"+
             "\2\61\1\154\10\61\1\157\5\61\4\uffff\1\61\1\uffff\1\61\1\156"+
@@ -4128,30 +4126,30 @@ public class SourcePatternLexer extends Lexer {
             "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
             "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\161\14\61\4"+
-            "\uffff\1\61\1\uffff\15\61\1\161\14\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\161\14\61\4\uffff"+
+            "\1\61\1\uffff\15\61\1\161\14\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\162\21\61\4"+
-            "\uffff\1\61\1\uffff\10\61\1\162\21\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\162\21\61\4\uffff"+
+            "\1\61\1\uffff\10\61\1\162\21\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\24\61\1\163\5\61\4\uffff"+
             "\1\61\1\uffff\24\61\1\163\5\61\74\uffff\1\61\10\uffff\27\61"+
             "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
             "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\164\16\61\4"+
-            "\uffff\1\61\1\uffff\13\61\1\164\16\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\164\16\61\4\uffff"+
+            "\1\61\1\uffff\13\61\1\164\16\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\165\16\61\4"+
-            "\uffff\1\61\1\uffff\13\61\1\165\16\61\74\uffff\1\61\10\uffff"+
-            "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
-            "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\165\16\61\4\uffff"+
+            "\1\61\1\uffff\13\61\1\165\16\61\74\uffff\1\61\10\uffff\27\61"+
+            "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
+            "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\23\61\1\166\6\61\4\uffff"+
             "\1\61\1\uffff\23\61\1\166\6\61\74\uffff\1\61\10\uffff\27\61"+
@@ -4168,16 +4166,16 @@ public class SourcePatternLexer extends Lexer {
             "\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2"+
             "\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\171\1\42\6\uffff\32\63\4\uffff\1\63"+
-            "\1\uffff\32\63\74\uffff\1\63\10\uffff\27\63\1\uffff\37\63\1"+
-            "\uffff\u0286\63\1\uffff\u1c81\63\14\uffff\2\63\61\uffff\2\63"+
-            "\57\uffff\u0120\63\u0a70\uffff\u03f0\63\21\uffff\ua7ff\63\u2100"+
-            "\uffff\u04d0\63\40\uffff\u020e\63",
-            "\1\63\1\62\1\uffff\12\120\1\42\6\uffff\32\61\4\uffff\1\61"+
-            "\1\uffff\32\61\74\uffff\1\61\10\uffff\27\61\1\uffff\37\61\1"+
-            "\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61"+
-            "\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100"+
-            "\uffff\u04d0\61\40\uffff\u020e\61",
+            "\1\63\1\62\1\uffff\12\171\1\42\6\uffff\32\63\4\uffff\1\63\1"+
+            "\uffff\32\63\74\uffff\1\63\10\uffff\27\63\1\uffff\37\63\1\uffff"+
+            "\u0286\63\1\uffff\u1c81\63\14\uffff\2\63\61\uffff\2\63\57\uffff"+
+            "\u0120\63\u0a70\uffff\u03f0\63\21\uffff\ua7ff\63\u2100\uffff"+
+            "\u04d0\63\40\uffff\u020e\63",
+            "\1\63\1\62\1\uffff\12\120\1\42\6\uffff\32\61\4\uffff\1\61\1"+
+            "\uffff\32\61\74\uffff\1\61\10\uffff\27\61\1\uffff\37\61\1\uffff"+
+            "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
+            "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
+            "\u04d0\61\40\uffff\u020e\61",
             "",
             "",
             "",
@@ -4206,8 +4204,8 @@ public class SourcePatternLexer extends Lexer {
             "\12\u0080\13\uffff\1\145\37\uffff\1\145",
             "",
             "\12\150\13\uffff\1\145\37\uffff\1\145",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\17\61\1\u0082\12\61"+
-            "\4\uffff\1\61\1\uffff\17\61\1\u0082\12\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\17\61\1\u0082\12\61\4"+
+            "\uffff\1\61\1\uffff\17\61\1\u0082\12\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4221,28 +4219,28 @@ public class SourcePatternLexer extends Lexer {
             "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0085\21\61"+
-            "\4\uffff\1\61\1\uffff\10\61\1\u0085\21\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0085\21\61\4"+
+            "\uffff\1\61\1\uffff\10\61\1\u0085\21\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u0086\10\61"+
-            "\4\uffff\1\61\1\uffff\21\61\1\u0086\10\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u0086\10\61\4"+
+            "\uffff\1\61\1\uffff\21\61\1\u0086\10\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\u0087\16\61"+
-            "\4\uffff\1\61\1\uffff\13\61\1\u0087\16\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\u0087\16\61\4"+
+            "\uffff\1\61\1\uffff\13\61\1\u0087\16\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u0088\10\61"+
-            "\4\uffff\1\61\1\uffff\21\61\1\u0088\10\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u0088\10\61\4"+
+            "\uffff\1\61\1\uffff\21\61\1\u0088\10\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0089\21\61"+
-            "\4\uffff\1\61\1\uffff\10\61\1\u0089\21\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0089\21\61\4"+
+            "\uffff\1\61\1\uffff\10\61\1\u0089\21\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4251,13 +4249,13 @@ public class SourcePatternLexer extends Lexer {
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\16\61\1\u008b\13\61"+
-            "\4\uffff\1\61\1\uffff\16\61\1\u008b\13\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\16\61\1\u008b\13\61\4"+
+            "\uffff\1\61\1\uffff\16\61\1\u008b\13\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u008c\14\61"+
-            "\4\uffff\1\61\1\uffff\15\61\1\u008c\14\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u008c\14\61\4"+
+            "\uffff\1\61\1\uffff\15\61\1\u008c\14\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4286,11 +4284,11 @@ public class SourcePatternLexer extends Lexer {
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\171\1\42\6\uffff\32\63\4\uffff\1\63"+
-            "\1\uffff\32\63\74\uffff\1\63\10\uffff\27\63\1\uffff\37\63\1"+
-            "\uffff\u0286\63\1\uffff\u1c81\63\14\uffff\2\63\61\uffff\2\63"+
-            "\57\uffff\u0120\63\u0a70\uffff\u03f0\63\21\uffff\ua7ff\63\u2100"+
-            "\uffff\u04d0\63\40\uffff\u020e\63",
+            "\1\63\1\62\1\uffff\12\171\1\42\6\uffff\32\63\4\uffff\1\63\1"+
+            "\uffff\32\63\74\uffff\1\63\10\uffff\27\63\1\uffff\37\63\1\uffff"+
+            "\u0286\63\1\uffff\u1c81\63\14\uffff\2\63\61\uffff\2\63\57\uffff"+
+            "\u0120\63\u0a70\uffff\u03f0\63\21\uffff\ua7ff\63\u2100\uffff"+
+            "\u04d0\63\40\uffff\u020e\63",
             "\12\172\13\uffff\1\135\37\uffff\1\135",
             "\12\173\7\uffff\32\101\4\uffff\1\101\1\uffff\32\101\74\uffff"+
             "\1\101\10\uffff\27\101\1\uffff\37\101\1\uffff\u0286\101\1\uffff"+
@@ -4319,8 +4317,8 @@ public class SourcePatternLexer extends Lexer {
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0095\21\61"+
-            "\4\uffff\1\61\1\uffff\10\61\1\u0095\21\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0095\21\61\4"+
+            "\uffff\1\61\1\uffff\10\61\1\u0095\21\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4329,23 +4327,23 @@ public class SourcePatternLexer extends Lexer {
             "\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff"+
             "\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff"+
             "\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0097\21\61"+
-            "\4\uffff\1\61\1\uffff\10\61\1\u0097\21\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\10\61\1\u0097\21\61\4"+
+            "\uffff\1\61\1\uffff\10\61\1\u0097\21\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\16\61\1\u0098\13\61"+
-            "\4\uffff\1\61\1\uffff\16\61\1\u0098\13\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\16\61\1\u0098\13\61\4"+
+            "\uffff\1\61\1\uffff\16\61\1\u0098\13\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\14\61\1\u009a\15\61"+
-            "\4\uffff\1\61\1\uffff\14\61\1\u009a\15\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\14\61\1\u009a\15\61\4"+
+            "\uffff\1\61\1\uffff\14\61\1\u009a\15\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u009b\14\61"+
-            "\4\uffff\1\61\1\uffff\15\61\1\u009b\14\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u009b\14\61\4"+
+            "\uffff\1\61\1\uffff\15\61\1\u009b\14\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4399,8 +4397,8 @@ public class SourcePatternLexer extends Lexer {
             "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u00a6\14\61"+
-            "\4\uffff\1\61\1\uffff\15\61\1\u00a6\14\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u00a6\14\61\4"+
+            "\uffff\1\61\1\uffff\15\61\1\u00a6\14\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4409,8 +4407,8 @@ public class SourcePatternLexer extends Lexer {
             "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u00a8\14\61"+
-            "\4\uffff\1\61\1\uffff\15\61\1\u00a8\14\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\15\61\1\u00a8\14\61\4"+
+            "\uffff\1\61\1\uffff\15\61\1\u00a8\14\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4430,8 +4428,8 @@ public class SourcePatternLexer extends Lexer {
             "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u00ac\10\61"+
-            "\4\uffff\1\61\1\uffff\21\61\1\u00ac\10\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u00ac\10\61\4"+
+            "\uffff\1\61\1\uffff\21\61\1\u00ac\10\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4452,19 +4450,19 @@ public class SourcePatternLexer extends Lexer {
             "\u04d0\61\40\uffff\u020e\61",
             "",
             "",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u00b0\10\61"+
-            "\4\uffff\1\61\1\uffff\21\61\1\u00b0\10\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u00b0\10\61\4"+
+            "\uffff\1\61\1\uffff\21\61\1\u00b0\10\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u00b1\10\61"+
-            "\4\uffff\1\61\1\uffff\21\61\1\u00b1\10\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\21\61\1\u00b1\10\61\4"+
+            "\uffff\1\61\1\uffff\21\61\1\u00b1\10\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\12\61\1\u00b2\17\61"+
-            "\4\uffff\1\61\1\uffff\12\61\1\u00b2\17\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\12\61\1\u00b2\17\61\4"+
+            "\uffff\1\61\1\uffff\12\61\1\u00b2\17\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4487,14 +4485,14 @@ public class SourcePatternLexer extends Lexer {
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
             "",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\17\61\1\u00b6\12\61"+
-            "\4\uffff\1\61\1\uffff\17\61\1\u00b6\12\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\17\61\1\u00b6\12\61\4"+
+            "\uffff\1\61\1\uffff\17\61\1\u00b6\12\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
             "",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\14\61\1\u00b7\15\61"+
-            "\4\uffff\1\61\1\uffff\14\61\1\u00b7\15\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\14\61\1\u00b7\15\61\4"+
+            "\uffff\1\61\1\uffff\14\61\1\u00b7\15\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4508,8 +4506,8 @@ public class SourcePatternLexer extends Lexer {
             "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\u00ba\16\61"+
-            "\4\uffff\1\61\1\uffff\13\61\1\u00ba\16\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\u00ba\16\61\4"+
+            "\uffff\1\61\1\uffff\13\61\1\u00ba\16\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
@@ -4529,8 +4527,8 @@ public class SourcePatternLexer extends Lexer {
             "\u0286\61\1\uffff\u1c81\61\14\uffff\2\61\61\uffff\2\61\57\uffff"+
             "\u0120\61\u0a70\uffff\u03f0\61\21\uffff\ua7ff\61\u2100\uffff"+
             "\u04d0\61\40\uffff\u020e\61",
-            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\u00be\16\61"+
-            "\4\uffff\1\61\1\uffff\13\61\1\u00be\16\61\74\uffff\1\61\10\uffff"+
+            "\1\63\1\62\1\uffff\12\61\1\42\6\uffff\13\61\1\u00be\16\61\4"+
+            "\uffff\1\61\1\uffff\13\61\1\u00be\16\61\74\uffff\1\61\10\uffff"+
             "\27\61\1\uffff\37\61\1\uffff\u0286\61\1\uffff\u1c81\61\14\uffff"+
             "\2\61\61\uffff\2\61\57\uffff\u0120\61\u0a70\uffff\u03f0\61\21"+
             "\uffff\ua7ff\61\u2100\uffff\u04d0\61\40\uffff\u020e\61",
