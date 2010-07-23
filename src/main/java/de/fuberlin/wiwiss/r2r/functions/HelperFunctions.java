@@ -184,6 +184,15 @@ public class HelperFunctions {
 		return value;
 	}
 	
+	public static DataType pickMoreGeneralDataType(DataType dt1, DataType dt2) {
+		if(dt1==DataType.String || dt2==DataType.String)
+			return DataType.String;
+		else if(dt1==DataType.Integer && dt2==DataType.Integer)
+			return DataType.Integer;
+		else
+			return DataType.Double;
+	}
+	
 	// The data types the calculations are done, Integer is a BigInteger
 	public enum DataType {
 		Int, Long, Integer, Decimal, Double, String

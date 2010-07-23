@@ -43,6 +43,8 @@ public class BasicFunctionManager implements FunctionManager {
 		functions.put("integer", new IntegerFunctionFactory());
 		functions.put("length", new LengthFunctionFactory());
 		functions.put("replaceAll", new ReplaceAllFunctionFactory());
+		functions.put("booleanPick", new BooleanPickFunctionFactory());
+		functions.put("compare", new CompareFunctionFactory());
 		
 		// deprecated
 		functions.put("infixConcat", new JoinFunctionFactory());

@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g 2010-07-22 03:15:26
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g 2010-07-23 16:36:56
 
   package de.fuberlin.wiwiss.r2r.parser;
 
@@ -22,13 +22,22 @@ public class TransformationLexer extends Lexer {
     public static final int FUNCTIONNAME=10;
     public static final int VARNAME=18;
     public static final int T__30=30;
+    public static final int T__31=31;
+    public static final int T__32=32;
     public static final int WS=22;
-    public static final int PN_CHARS_BASE=23;
+    public static final int T__33=33;
+    public static final int T__34=34;
+    public static final int T__35=35;
     public static final int STRING_LITERAL_LONG2=17;
+    public static final int PN_CHARS_BASE=23;
+    public static final int T__36=36;
     public static final int DECIMAL=12;
+    public static final int T__37=37;
     public static final int VAR1=8;
+    public static final int T__38=38;
     public static final int VAR2=9;
     public static final int STRING_LITERAL_LONG1=16;
+    public static final int T__39=39;
     public static final int PN_PREFIX=25;
     public static final int STRING_LITERAL2=15;
     public static final int STRING_LITERAL1=14;
@@ -64,15 +73,15 @@ public class TransformationLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g"; }
+    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g"; }
 
     // $ANTLR start "T__27"
     public final void mT__27() throws RecognitionException {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:26:7: ( '=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:26:9: '='
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:26:7: ( '=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:26:9: '='
             {
             match('='); 
 
@@ -91,8 +100,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:27:7: ( '(' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:27:9: '('
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:27:7: ( '(' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:27:9: '('
             {
             match('('); 
 
@@ -111,8 +120,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:28:7: ( ')' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:28:9: ')'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:28:7: ( ')' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:28:9: ')'
             {
             match(')'); 
 
@@ -131,10 +140,10 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:29:7: ( ',' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:29:9: ','
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:29:7: ( '[' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:29:9: '['
             {
-            match(','); 
+            match('['); 
 
             }
 
@@ -146,13 +155,196 @@ public class TransformationLexer extends Lexer {
     }
     // $ANTLR end "T__30"
 
+    // $ANTLR start "T__31"
+    public final void mT__31() throws RecognitionException {
+        try {
+            int _type = T__31;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:30:7: ( '?' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:30:9: '?'
+            {
+            match('?'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__31"
+
+    // $ANTLR start "T__32"
+    public final void mT__32() throws RecognitionException {
+        try {
+            int _type = T__32;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:31:7: ( ':' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:31:9: ':'
+            {
+            match(':'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__32"
+
+    // $ANTLR start "T__33"
+    public final void mT__33() throws RecognitionException {
+        try {
+            int _type = T__33;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:32:7: ( ']' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:32:9: ']'
+            {
+            match(']'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__33"
+
+    // $ANTLR start "T__34"
+    public final void mT__34() throws RecognitionException {
+        try {
+            int _type = T__34;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:33:7: ( '>' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:33:9: '>'
+            {
+            match('>'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__34"
+
+    // $ANTLR start "T__35"
+    public final void mT__35() throws RecognitionException {
+        try {
+            int _type = T__35;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:34:7: ( '>=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:34:9: '>='
+            {
+            match(">="); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__35"
+
+    // $ANTLR start "T__36"
+    public final void mT__36() throws RecognitionException {
+        try {
+            int _type = T__36;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:35:7: ( '<' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:35:9: '<'
+            {
+            match('<'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__36"
+
+    // $ANTLR start "T__37"
+    public final void mT__37() throws RecognitionException {
+        try {
+            int _type = T__37;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:36:7: ( '<=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:36:9: '<='
+            {
+            match("<="); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__37"
+
+    // $ANTLR start "T__38"
+    public final void mT__38() throws RecognitionException {
+        try {
+            int _type = T__38;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:37:7: ( '!=' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:37:9: '!='
+            {
+            match("!="); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__38"
+
+    // $ANTLR start "T__39"
+    public final void mT__39() throws RecognitionException {
+        try {
+            int _type = T__39;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:38:7: ( ',' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:38:9: ','
+            {
+            match(','); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__39"
+
     // $ANTLR start "VAR1"
     public final void mVAR1() throws RecognitionException {
         try {
             int _type = VAR1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:217:3: ( '?' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:217:5: '?' VARNAME
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:237:3: ( '?' VARNAME )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:237:5: '?' VARNAME
             {
             match('?'); 
             mVARNAME(); 
@@ -172,8 +364,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = VAR2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:221:3: ( '$' VARNAME )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:221:5: '$' VARNAME
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:241:3: ( '$' VARNAME )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:241:5: '$' VARNAME
             {
             match('$'); 
             mVARNAME(); 
@@ -193,10 +385,10 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:3: ( ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:5: ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:245:3: ( ( '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:245:5: ( '0' .. '9' )+
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:5: ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:245:5: ( '0' .. '9' )+
             int cnt1=0;
             loop1:
             do {
@@ -210,7 +402,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:6: '0' .. '9'
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:245:6: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -242,10 +434,10 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = FUNCTIONNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:3: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:249:3: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:249:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
             {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:249:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -259,7 +451,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
             	    {
             	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
@@ -299,7 +491,7 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* | '.' ( '0' .. '9' )+ )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -317,9 +509,9 @@ public class TransformationLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )*
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:5: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:5: ( '0' .. '9' )+
                     int cnt3=0;
                     loop3:
                     do {
@@ -333,7 +525,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:6: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -350,7 +542,7 @@ public class TransformationLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:21: ( '0' .. '9' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:21: ( '0' .. '9' )*
                     loop4:
                     do {
                         int alt4=2;
@@ -363,7 +555,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:22: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -379,10 +571,10 @@ public class TransformationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:35: '.' ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:35: '.' ( '0' .. '9' )+
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:39: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:39: ( '0' .. '9' )+
                     int cnt5=0;
                     loop5:
                     do {
@@ -396,7 +588,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:233:40: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:253:40: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -430,14 +622,14 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:257:3: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT )
             int alt11=3;
             alt11 = dfa11.predict(input);
             switch (alt11) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:257:5: ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:5: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:257:5: ( '0' .. '9' )+
                     int cnt7=0;
                     loop7:
                     do {
@@ -451,7 +643,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:6: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:257:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -468,7 +660,7 @@ public class TransformationLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:21: ( '0' .. '9' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:257:21: ( '0' .. '9' )*
                     loop8:
                     do {
                         int alt8=2;
@@ -481,7 +673,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:237:22: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:257:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -498,10 +690,10 @@ public class TransformationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:238:5: '.' ( '0' .. '9' )+ EXPONENT
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:258:5: '.' ( '0' .. '9' )+ EXPONENT
                     {
                     match('.'); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:238:9: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:258:9: ( '0' .. '9' )+
                     int cnt9=0;
                     loop9:
                     do {
@@ -515,7 +707,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:238:10: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:258:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -536,9 +728,9 @@ public class TransformationLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:239:5: ( '0' .. '9' )+ EXPONENT
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:259:5: ( '0' .. '9' )+ EXPONENT
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:239:5: ( '0' .. '9' )+
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:259:5: ( '0' .. '9' )+
                     int cnt10=0;
                     loop10:
                     do {
@@ -552,7 +744,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:239:6: '0' .. '9'
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:259:6: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -587,8 +779,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = MULT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:243:3: ( '*' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:243:5: '*'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:263:3: ( '*' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:263:5: '*'
             {
             match('*'); 
 
@@ -607,8 +799,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:247:3: ( '/' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:247:5: '/'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:267:3: ( '/' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:267:5: '/'
             {
             match('/'); 
 
@@ -627,8 +819,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = EXPONENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:3: ( ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+ )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:5: ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:295:3: ( ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+ )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:295:5: ( 'e' | 'E' ) ( PLUS | MINUS )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -639,7 +831,7 @@ public class TransformationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:17: ( PLUS | MINUS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:295:17: ( PLUS | MINUS )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -648,7 +840,7 @@ public class TransformationLexer extends Lexer {
             }
             switch (alt12) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
                     {
                     if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
                         input.consume();
@@ -665,7 +857,7 @@ public class TransformationLexer extends Lexer {
 
             }
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:33: ( '0' .. '9' )+
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:295:33: ( '0' .. '9' )+
             int cnt13=0;
             loop13:
             do {
@@ -679,7 +871,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt13) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:275:34: '0' .. '9'
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:295:34: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -711,11 +903,11 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = STRING_LITERAL1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:299:3: ( '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\'' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:299:5: '\\'' (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\\''
             {
             match('\''); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:299:10: (~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
             loop14:
             do {
                 int alt14=3;
@@ -731,7 +923,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:299:11: ~ ( '\\u0027' | '\\u005c' | '\\u000A' | '\\u000D' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -746,7 +938,7 @@ public class TransformationLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:279:58: ECHAR
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:299:58: ECHAR
             	    {
             	    mECHAR(); 
 
@@ -775,11 +967,11 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = STRING_LITERAL2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:3: ( '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:5: '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:303:3: ( '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:303:5: '\"' (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )* '\"'
             {
             match('\"'); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:9: (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:303:9: (~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' ) | ECHAR )*
             loop15:
             do {
                 int alt15=3;
@@ -795,7 +987,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt15) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:10: ~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:303:10: ~ ( '\\u0022' | '\\u005c' | '\\u000A' | '\\u000D' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -810,7 +1002,7 @@ public class TransformationLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:283:57: ECHAR
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:303:57: ECHAR
             	    {
             	    mECHAR(); 
 
@@ -839,12 +1031,12 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = STRING_LITERAL_LONG1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:3: ( '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\'' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:5: '\\'\\'\\'' ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )* '\\'\\'\\''
             {
             match("'''"); 
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:14: ( ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR ) )*
             loop18:
             do {
                 int alt18=2;
@@ -875,9 +1067,9 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:15: ( '\\'' | '\\'\\'' )? (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:15: ( '\\'' | '\\'\\'' )?
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:15: ( '\\'' | '\\'\\'' )?
             	    int alt16=3;
             	    int LA16_0 = input.LA(1);
 
@@ -893,14 +1085,14 @@ public class TransformationLexer extends Lexer {
             	    }
             	    switch (alt16) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:17: '\\''
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:17: '\\''
             	            {
             	            match('\''); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:24: '\\'\\''
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:24: '\\'\\''
             	            {
             	            match("''"); 
 
@@ -910,7 +1102,7 @@ public class TransformationLexer extends Lexer {
 
             	    }
 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:33: (~ ( '\\'' | '\\\\' ) | ECHAR )
             	    int alt17=2;
             	    int LA17_0 = input.LA(1);
 
@@ -928,7 +1120,7 @@ public class TransformationLexer extends Lexer {
             	    }
             	    switch (alt17) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:34: ~ ( '\\'' | '\\\\' )
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:34: ~ ( '\\'' | '\\\\' )
             	            {
             	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	                input.consume();
@@ -943,7 +1135,7 @@ public class TransformationLexer extends Lexer {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:287:51: ECHAR
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:307:51: ECHAR
             	            {
             	            mECHAR(); 
 
@@ -979,12 +1171,12 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = STRING_LITERAL_LONG2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:3: ( '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:5: '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:3: ( '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:5: '\"\"\"' ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )* '\"\"\"'
             {
             match("\"\"\""); 
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:11: ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:11: ( ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR ) )*
             loop21:
             do {
                 int alt21=2;
@@ -1015,9 +1207,9 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt21) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:12: ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:12: ( '\"' | '\"\"' )? (~ ( '\"' | '\\\\' ) | ECHAR )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:12: ( '\"' | '\"\"' )?
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:12: ( '\"' | '\"\"' )?
             	    int alt19=3;
             	    int LA19_0 = input.LA(1);
 
@@ -1033,14 +1225,14 @@ public class TransformationLexer extends Lexer {
             	    }
             	    switch (alt19) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:14: '\"'
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:14: '\"'
             	            {
             	            match('\"'); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:20: '\"\"'
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:20: '\"\"'
             	            {
             	            match("\"\""); 
 
@@ -1050,7 +1242,7 @@ public class TransformationLexer extends Lexer {
 
             	    }
 
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:27: (~ ( '\"' | '\\\\' ) | ECHAR )
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:27: (~ ( '\"' | '\\\\' ) | ECHAR )
             	    int alt20=2;
             	    int LA20_0 = input.LA(1);
 
@@ -1068,7 +1260,7 @@ public class TransformationLexer extends Lexer {
             	    }
             	    switch (alt20) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:28: ~ ( '\"' | '\\\\' )
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:28: ~ ( '\"' | '\\\\' )
             	            {
             	            if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	                input.consume();
@@ -1083,7 +1275,7 @@ public class TransformationLexer extends Lexer {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:291:44: ECHAR
+            	            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:311:44: ECHAR
             	            {
             	            mECHAR(); 
 
@@ -1119,8 +1311,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:295:3: ( '-' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:295:5: '-'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:315:3: ( '-' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:315:5: '-'
             {
             match('-'); 
 
@@ -1139,8 +1331,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:299:3: ( '+' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:299:5: '+'
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:319:3: ( '+' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:319:5: '+'
             {
             match('+'); 
 
@@ -1159,8 +1351,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = ECHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:303:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:303:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:323:3: ( '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:323:5: '\\\\' ( 't' | 'b' | 'n' | 'r' | 'f' | '\\\\' | '\"' | '\\'' )
             {
             match('\\'); 
             if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1188,8 +1380,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = VARNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:307:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:307:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:327:3: ( ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )* )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:327:5: ( PN_CHARS_U | '0' .. '9' ) ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1200,7 +1392,7 @@ public class TransformationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:307:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:327:29: ( PN_CHARS_U | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )*
             loop22:
             do {
                 int alt22=2;
@@ -1213,7 +1405,7 @@ public class TransformationLexer extends Lexer {
 
                 switch (alt22) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+            	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
             	    {
             	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
             	        input.consume();
@@ -1249,8 +1441,8 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:311:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:311:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:331:3: ( ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' ) )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:331:5: ( '\\u0020' | '\\u0009' | '\\u000D' | '\\u000A' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1278,11 +1470,11 @@ public class TransformationLexer extends Lexer {
         try {
             int _type = PN_PREFIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:335:3: ( PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:335:5: PN_CHARS_BASE ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             mPN_CHARS_BASE(); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:335:19: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -1291,9 +1483,9 @@ public class TransformationLexer extends Lexer {
             }
             switch (alt24) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:20: ( PN_CHARS | '.' )* PN_CHARS
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:335:20: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:315:20: ( PN_CHARS | '.' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:335:20: ( PN_CHARS | '.' )*
                     loop23:
                     do {
                         int alt23=2;
@@ -1315,7 +1507,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt23) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
                     	    {
                     	    if ( (input.LA(1)>='-' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                     	        input.consume();
@@ -1356,8 +1548,8 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_CHARS_BASE"
     public final void mPN_CHARS_BASE() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:319:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:339:3: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u00C0' .. '\\u00D6' | '\\u00D8' .. '\\u00F6' | '\\u00F8' .. '\\u02FF' | '\\u0370' .. '\\u037D' | '\\u037F' .. '\\u1FFF' | '\\u200C' .. '\\u200D' | '\\u2070' .. '\\u218F' | '\\u2C00' .. '\\u2FEF' | '\\u3001' .. '\\uD7FF' | '\\uF900' .. '\\uFDCF' | '\\uFDF0' .. '\\uFFFD' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1380,8 +1572,8 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_CHARS_U"
     public final void mPN_CHARS_U() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:335:3: ( PN_CHARS_BASE | '_' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:355:3: ( PN_CHARS_BASE | '_' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1404,8 +1596,8 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_CHARS"
     public final void mPN_CHARS() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:339:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:359:3: ( PN_CHARS_U | '-' | '0' .. '9' | '\\u00B7' | '\\u0300' .. '\\u036F' | '\\u203F' .. '\\u2040' )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
             {
             if ( input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1428,8 +1620,8 @@ public class TransformationLexer extends Lexer {
     // $ANTLR start "PN_LOCAL"
     public final void mPN_LOCAL() throws RecognitionException {
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:368:3: ( ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )? )
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:368:5: ( PN_CHARS_U | '0' .. '9' ) ( ( PN_CHARS | '.' )* PN_CHARS )?
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u02FF')||(input.LA(1)>='\u0370' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                 input.consume();
@@ -1440,7 +1632,7 @@ public class TransformationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
+            // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:368:29: ( ( PN_CHARS | '.' )* PN_CHARS )?
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -1449,9 +1641,9 @@ public class TransformationLexer extends Lexer {
             }
             switch (alt26) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:30: ( PN_CHARS | '.' )* PN_CHARS
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:368:30: ( PN_CHARS | '.' )* PN_CHARS
                     {
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:348:30: ( PN_CHARS | '.' )*
+                    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:368:30: ( PN_CHARS | '.' )*
                     loop25:
                     do {
                         int alt25=2;
@@ -1473,7 +1665,7 @@ public class TransformationLexer extends Lexer {
 
                         switch (alt25) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+                    	    // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:
                     	    {
                     	    if ( (input.LA(1)>='-' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00B7'||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u037D')||(input.LA(1)>='\u037F' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u200C' && input.LA(1)<='\u200D')||(input.LA(1)>='\u203F' && input.LA(1)<='\u2040')||(input.LA(1)>='\u2070' && input.LA(1)<='\u218F')||(input.LA(1)>='\u2C00' && input.LA(1)<='\u2FEF')||(input.LA(1)>='\u3001' && input.LA(1)<='\uD7FF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFDCF')||(input.LA(1)>='\uFDF0' && input.LA(1)<='\uFFFD') ) {
                     	        input.consume();
@@ -1510,166 +1702,229 @@ public class TransformationLexer extends Lexer {
     // $ANTLR end "PN_LOCAL"
 
     public void mTokens() throws RecognitionException {
-        // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:8: ( T__27 | T__28 | T__29 | T__30 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX )
-        int alt27=23;
+        // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:8: ( T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX )
+        int alt27=32;
         alt27 = dfa27.predict(input);
         switch (alt27) {
             case 1 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:10: T__27
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:10: T__27
                 {
                 mT__27(); 
 
                 }
                 break;
             case 2 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:16: T__28
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:16: T__28
                 {
                 mT__28(); 
 
                 }
                 break;
             case 3 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:22: T__29
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:22: T__29
                 {
                 mT__29(); 
 
                 }
                 break;
             case 4 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:28: T__30
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:28: T__30
                 {
                 mT__30(); 
 
                 }
                 break;
             case 5 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:34: VAR1
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:34: T__31
+                {
+                mT__31(); 
+
+                }
+                break;
+            case 6 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:40: T__32
+                {
+                mT__32(); 
+
+                }
+                break;
+            case 7 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:46: T__33
+                {
+                mT__33(); 
+
+                }
+                break;
+            case 8 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:52: T__34
+                {
+                mT__34(); 
+
+                }
+                break;
+            case 9 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:58: T__35
+                {
+                mT__35(); 
+
+                }
+                break;
+            case 10 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:64: T__36
+                {
+                mT__36(); 
+
+                }
+                break;
+            case 11 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:70: T__37
+                {
+                mT__37(); 
+
+                }
+                break;
+            case 12 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:76: T__38
+                {
+                mT__38(); 
+
+                }
+                break;
+            case 13 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:82: T__39
+                {
+                mT__39(); 
+
+                }
+                break;
+            case 14 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:88: VAR1
                 {
                 mVAR1(); 
 
                 }
                 break;
-            case 6 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:39: VAR2
+            case 15 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:93: VAR2
                 {
                 mVAR2(); 
 
                 }
                 break;
-            case 7 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:44: INTEGER
+            case 16 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:98: INTEGER
                 {
                 mINTEGER(); 
 
                 }
                 break;
-            case 8 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:52: FUNCTIONNAME
+            case 17 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:106: FUNCTIONNAME
                 {
                 mFUNCTIONNAME(); 
 
                 }
                 break;
-            case 9 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:65: DECIMAL
+            case 18 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:119: DECIMAL
                 {
                 mDECIMAL(); 
 
                 }
                 break;
-            case 10 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:73: DOUBLE
+            case 19 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:127: DOUBLE
                 {
                 mDOUBLE(); 
 
                 }
                 break;
-            case 11 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:80: MULT
+            case 20 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:134: MULT
                 {
                 mMULT(); 
 
                 }
                 break;
-            case 12 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:85: DIV
+            case 21 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:139: DIV
                 {
                 mDIV(); 
 
                 }
                 break;
-            case 13 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:89: EXPONENT
+            case 22 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:143: EXPONENT
                 {
                 mEXPONENT(); 
 
                 }
                 break;
-            case 14 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:98: STRING_LITERAL1
+            case 23 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:152: STRING_LITERAL1
                 {
                 mSTRING_LITERAL1(); 
 
                 }
                 break;
-            case 15 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:114: STRING_LITERAL2
+            case 24 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:168: STRING_LITERAL2
                 {
                 mSTRING_LITERAL2(); 
 
                 }
                 break;
-            case 16 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:130: STRING_LITERAL_LONG1
+            case 25 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:184: STRING_LITERAL_LONG1
                 {
                 mSTRING_LITERAL_LONG1(); 
 
                 }
                 break;
-            case 17 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:151: STRING_LITERAL_LONG2
+            case 26 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:205: STRING_LITERAL_LONG2
                 {
                 mSTRING_LITERAL_LONG2(); 
 
                 }
                 break;
-            case 18 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:172: MINUS
+            case 27 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:226: MINUS
                 {
                 mMINUS(); 
 
                 }
                 break;
-            case 19 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:178: PLUS
+            case 28 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:232: PLUS
                 {
                 mPLUS(); 
 
                 }
                 break;
-            case 20 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:183: ECHAR
+            case 29 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:237: ECHAR
                 {
                 mECHAR(); 
 
                 }
                 break;
-            case 21 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:189: VARNAME
+            case 30 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:243: VARNAME
                 {
                 mVARNAME(); 
 
                 }
                 break;
-            case 22 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:197: WS
+            case 31 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:251: WS
                 {
                 mWS(); 
 
                 }
                 break;
-            case 23 :
-                // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:1:200: PN_PREFIX
+            case 32 :
+                // /home/andreas/code/mavenprojects/mapping/r2rApi/antlr-files/Transformation.g:1:254: PN_PREFIX
                 {
                 mPN_PREFIX(); 
 
@@ -1733,134 +1988,152 @@ public class TransformationLexer extends Lexer {
             this.transition = DFA11_transition;
         }
         public String getDescription() {
-            return "236:1: DOUBLE : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT );";
+            return "256:1: DOUBLE : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* EXPONENT | '.' ( '0' .. '9' )+ EXPONENT | ( '0' .. '9' )+ EXPONENT );";
         }
     }
     static final String DFA27_eotS =
-        "\7\uffff\1\30\1\35\3\uffff\1\35\5\uffff\1\32\1\uffff\1\35\1\51"+
-        "\1\30\1\35\1\uffff\1\35\1\uffff\1\41\1\35\1\uffff\1\35\1\32\2\uffff"+
-        "\1\51\1\44\1\uffff\1\46\1\uffff\1\51\2\uffff\1\35\1\40\2\uffff";
+        "\5\uffff\1\34\2\uffff\1\36\1\40\3\uffff\1\44\1\47\3\uffff\1\47\5"+
+        "\uffff\1\46\1\uffff\1\47\6\uffff\1\65\1\44\1\47\1\uffff\1\47\2\uffff"+
+        "\1\47\1\uffff\1\51\1\uffff\1\47\1\46\1\65\1\60\1\uffff\1\62\1\uffff"+
+        "\1\65\2\uffff\1\47\1\53\2\uffff";
     static final String DFA27_eofS =
-        "\56\uffff";
+        "\72\uffff";
     static final String DFA27_minS =
-        "\1\11\6\uffff\1\56\1\53\1\60\2\uffff\1\55\2\0\3\uffff\1\55\1\uffff"+
-        "\2\60\1\56\1\53\1\uffff\1\60\1\uffff\1\60\1\55\1\uffff\2\55\2\uffff"+
-        "\1\60\1\47\1\uffff\1\42\1\uffff\1\60\2\uffff\1\60\1\55\2\uffff";
+        "\1\11\4\uffff\1\60\2\uffff\2\75\3\uffff\1\56\1\53\1\60\2\uffff\1"+
+        "\55\2\0\3\uffff\1\55\1\uffff\1\60\6\uffff\1\60\1\56\1\53\1\uffff"+
+        "\1\60\2\uffff\1\55\1\uffff\1\60\1\uffff\2\55\1\60\1\47\1\uffff\1"+
+        "\42\1\uffff\1\60\2\uffff\1\60\1\55\2\uffff";
     static final String DFA27_maxS =
-        "\1\ufffd\6\uffff\2\ufffd\1\71\2\uffff\1\ufffd\2\uffff\3\uffff\1"+
-        "\ufffd\1\uffff\1\ufffd\1\145\2\ufffd\1\uffff\1\ufffd\1\uffff\1\71"+
-        "\1\ufffd\1\uffff\2\ufffd\2\uffff\1\145\1\47\1\uffff\1\42\1\uffff"+
-        "\1\145\2\uffff\2\ufffd\2\uffff";
+        "\1\ufffd\4\uffff\1\ufffd\2\uffff\2\75\3\uffff\2\ufffd\1\71\2\uffff"+
+        "\1\ufffd\2\uffff\3\uffff\1\ufffd\1\uffff\1\ufffd\6\uffff\1\145\2"+
+        "\ufffd\1\uffff\1\ufffd\2\uffff\1\ufffd\1\uffff\1\71\1\uffff\2\ufffd"+
+        "\1\145\1\47\1\uffff\1\42\1\uffff\1\145\2\uffff\2\ufffd\2\uffff";
     static final String DFA27_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\3\uffff\1\13\1\14\3\uffff\1\22"+
-        "\1\23\1\24\1\uffff\1\26\4\uffff\1\7\1\uffff\1\25\2\uffff\1\10\2"+
-        "\uffff\1\15\1\27\2\uffff\1\16\1\uffff\1\17\1\uffff\1\12\1\11\2\uffff"+
-        "\1\20\1\21";
+        "\1\uffff\1\1\1\2\1\3\1\4\1\uffff\1\6\1\7\2\uffff\1\14\1\15\1\17"+
+        "\3\uffff\1\24\1\25\3\uffff\1\33\1\34\1\35\1\uffff\1\37\1\uffff\1"+
+        "\16\1\5\1\11\1\10\1\13\1\12\3\uffff\1\20\1\uffff\1\36\1\21\1\uffff"+
+        "\1\40\1\uffff\1\26\4\uffff\1\27\1\uffff\1\30\1\uffff\1\23\1\22\2"+
+        "\uffff\1\31\1\32";
     static final String DFA27_specialS =
-        "\15\uffff\1\1\1\0\37\uffff}>";
+        "\23\uffff\1\1\1\0\45\uffff}>";
     static final String[] DFA27_transitionS = {
-            "\2\23\2\uffff\1\23\22\uffff\1\23\1\uffff\1\16\1\uffff\1\6\2"+
-            "\uffff\1\15\1\2\1\3\1\12\1\20\1\4\1\17\1\11\1\13\12\7\3\uffff"+
-            "\1\1\1\uffff\1\5\1\uffff\4\14\1\10\25\14\1\uffff\1\21\2\uffff"+
-            "\1\24\1\uffff\4\14\1\10\25\14\105\uffff\27\22\1\uffff\37\22"+
-            "\1\uffff\u0208\22\160\uffff\16\22\1\uffff\u1c81\22\14\uffff"+
-            "\2\22\142\uffff\u0120\22\u0a70\uffff\u03f0\22\21\uffff\ua7ff"+
-            "\22\u2100\uffff\u04d0\22\40\uffff\u020e\22",
+            "\2\31\2\uffff\1\31\22\uffff\1\31\1\12\1\24\1\uffff\1\14\2\uffff"+
+            "\1\23\1\2\1\3\1\20\1\26\1\13\1\25\1\17\1\21\12\15\1\6\1\uffff"+
+            "\1\11\1\1\1\10\1\5\1\uffff\4\22\1\16\25\22\1\4\1\27\1\7\1\uffff"+
+            "\1\32\1\uffff\4\22\1\16\25\22\105\uffff\27\30\1\uffff\37\30"+
+            "\1\uffff\u0208\30\160\uffff\16\30\1\uffff\u1c81\30\14\uffff"+
+            "\2\30\142\uffff\u0120\30\u0a70\uffff\u03f0\30\21\uffff\ua7ff"+
+            "\30\u2100\uffff\u04d0\30\40\uffff\u020e\30",
+            "",
+            "",
+            "",
+            "",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33\105\uffff\27"+
+            "\33\1\uffff\37\33\1\uffff\u0208\33\160\uffff\16\33\1\uffff\u1c81"+
+            "\33\14\uffff\2\33\142\uffff\u0120\33\u0a70\uffff\u03f0\33\21"+
+            "\uffff\ua7ff\33\u2100\uffff\u04d0\33\40\uffff\u020e\33",
+            "",
+            "",
+            "\1\35",
+            "\1\37",
+            "",
+            "",
+            "",
+            "\1\41\1\uffff\12\42\7\uffff\4\45\1\43\25\45\4\uffff\1\45\1"+
+            "\uffff\4\45\1\43\25\45\74\uffff\1\46\10\uffff\27\46\1\uffff"+
+            "\37\46\1\uffff\u0286\46\1\uffff\u1c81\46\14\uffff\2\46\61\uffff"+
+            "\2\46\57\uffff\u0120\46\u0a70\uffff\u03f0\46\21\uffff\ua7ff"+
+            "\46\u2100\uffff\u04d0\46\40\uffff\u020e\46",
+            "\1\53\1\uffff\1\52\1\51\1\uffff\12\50\7\uffff\32\54\4\uffff"+
+            "\1\54\1\uffff\32\54\74\uffff\1\55\10\uffff\27\55\1\uffff\37"+
+            "\55\1\uffff\u0286\55\1\uffff\u1c81\55\14\uffff\2\55\61\uffff"+
+            "\2\55\57\uffff\u0120\55\u0a70\uffff\u03f0\55\21\uffff\ua7ff"+
+            "\55\u2100\uffff\u04d0\55\40\uffff\u020e\55",
+            "\12\56",
+            "",
+            "",
+            "\2\51\1\uffff\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54"+
+            "\74\uffff\1\55\10\uffff\27\55\1\uffff\37\55\1\uffff\u0286\55"+
+            "\1\uffff\u1c81\55\14\uffff\2\55\61\uffff\2\55\57\uffff\u0120"+
+            "\55\u0a70\uffff\u03f0\55\21\uffff\ua7ff\55\u2100\uffff\u04d0"+
+            "\55\40\uffff\u020e\55",
+            "\12\60\1\uffff\2\60\1\uffff\31\60\1\57\uffd8\60",
+            "\12\62\1\uffff\2\62\1\uffff\24\62\1\61\uffdd\62",
+            "",
+            "",
+            "",
+            "\2\51\1\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
+            "\74\uffff\1\55\10\uffff\27\55\1\uffff\37\55\1\uffff\u0286\55"+
+            "\1\uffff\u1c81\55\14\uffff\2\55\61\uffff\2\55\57\uffff\u0120"+
+            "\55\u0a70\uffff\u03f0\55\21\uffff\ua7ff\55\u2100\uffff\u04d0"+
+            "\55\40\uffff\u020e\55",
+            "",
+            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45\74\uffff\1"+
+            "\46\10\uffff\27\46\1\uffff\37\46\1\uffff\u0286\46\1\uffff\u1c81"+
+            "\46\14\uffff\2\46\61\uffff\2\46\57\uffff\u0120\46\u0a70\uffff"+
+            "\u03f0\46\21\uffff\ua7ff\46\u2100\uffff\u04d0\46\40\uffff\u020e"+
+            "\46",
             "",
             "",
             "",
             "",
             "",
             "",
-            "\1\25\1\uffff\12\26\7\uffff\4\31\1\27\25\31\4\uffff\1\31\1"+
-            "\uffff\4\31\1\27\25\31\74\uffff\1\32\10\uffff\27\32\1\uffff"+
-            "\37\32\1\uffff\u0286\32\1\uffff\u1c81\32\14\uffff\2\32\61\uffff"+
-            "\2\32\57\uffff\u0120\32\u0a70\uffff\u03f0\32\21\uffff\ua7ff"+
-            "\32\u2100\uffff\u04d0\32\40\uffff\u020e\32",
-            "\1\40\1\uffff\1\33\1\41\1\uffff\12\34\7\uffff\32\36\4\uffff"+
-            "\1\36\1\uffff\32\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37"+
-            "\37\1\uffff\u0286\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff"+
-            "\2\37\57\uffff\u0120\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff"+
-            "\37\u2100\uffff\u04d0\37\40\uffff\u020e\37",
-            "\12\42",
+            "\12\63\13\uffff\1\64\37\uffff\1\64",
+            "\1\41\1\uffff\12\42\7\uffff\4\45\1\43\25\45\4\uffff\1\45\1"+
+            "\uffff\4\45\1\43\25\45\74\uffff\1\46\10\uffff\27\46\1\uffff"+
+            "\37\46\1\uffff\u0286\46\1\uffff\u1c81\46\14\uffff\2\46\61\uffff"+
+            "\2\46\57\uffff\u0120\46\u0a70\uffff\u03f0\46\21\uffff\ua7ff"+
+            "\46\u2100\uffff\u04d0\46\40\uffff\u020e\46",
+            "\1\64\1\uffff\1\64\2\uffff\12\66\7\uffff\32\45\4\uffff\1\45"+
+            "\1\uffff\32\45\74\uffff\1\46\10\uffff\27\46\1\uffff\37\46\1"+
+            "\uffff\u0286\46\1\uffff\u1c81\46\14\uffff\2\46\61\uffff\2\46"+
+            "\57\uffff\u0120\46\u0a70\uffff\u03f0\46\21\uffff\ua7ff\46\u2100"+
+            "\uffff\u04d0\46\40\uffff\u020e\46",
+            "",
+            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45\74\uffff\1"+
+            "\46\10\uffff\27\46\1\uffff\37\46\1\uffff\u0286\46\1\uffff\u1c81"+
+            "\46\14\uffff\2\46\61\uffff\2\46\57\uffff\u0120\46\u0a70\uffff"+
+            "\u03f0\46\21\uffff\ua7ff\46\u2100\uffff\u04d0\46\40\uffff\u020e"+
+            "\46",
             "",
             "",
-            "\2\41\1\uffff\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32"+
-            "\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
-            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
-            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
-            "\37\40\uffff\u020e\37",
-            "\12\44\1\uffff\2\44\1\uffff\31\44\1\43\uffd8\44",
-            "\12\46\1\uffff\2\46\1\uffff\24\46\1\45\uffdd\46",
+            "\2\51\1\uffff\12\50\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54"+
+            "\74\uffff\1\55\10\uffff\27\55\1\uffff\37\55\1\uffff\u0286\55"+
+            "\1\uffff\u1c81\55\14\uffff\2\55\61\uffff\2\55\57\uffff\u0120"+
+            "\55\u0a70\uffff\u03f0\55\21\uffff\ua7ff\55\u2100\uffff\u04d0"+
+            "\55\40\uffff\u020e\55",
+            "",
+            "\12\67",
+            "",
+            "\2\51\1\uffff\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54"+
+            "\74\uffff\1\55\10\uffff\27\55\1\uffff\37\55\1\uffff\u0286\55"+
+            "\1\uffff\u1c81\55\14\uffff\2\55\61\uffff\2\55\57\uffff\u0120"+
+            "\55\u0a70\uffff\u03f0\55\21\uffff\ua7ff\55\u2100\uffff\u04d0"+
+            "\55\40\uffff\u020e\55",
+            "\2\51\1\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
+            "\74\uffff\1\55\10\uffff\27\55\1\uffff\37\55\1\uffff\u0286\55"+
+            "\1\uffff\u1c81\55\14\uffff\2\55\61\uffff\2\55\57\uffff\u0120"+
+            "\55\u0a70\uffff\u03f0\55\21\uffff\ua7ff\55\u2100\uffff\u04d0"+
+            "\55\40\uffff\u020e\55",
+            "\12\56\13\uffff\1\64\37\uffff\1\64",
+            "\1\70",
+            "",
+            "\1\71",
+            "",
+            "\12\63\13\uffff\1\64\37\uffff\1\64",
             "",
             "",
-            "",
-            "\2\41\1\uffff\12\37\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
-            "\37\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
-            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
-            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
-            "\37\40\uffff\u020e\37",
-            "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31\74\uffff\1"+
-            "\32\10\uffff\27\32\1\uffff\37\32\1\uffff\u0286\32\1\uffff\u1c81"+
-            "\32\14\uffff\2\32\61\uffff\2\32\57\uffff\u0120\32\u0a70\uffff"+
-            "\u03f0\32\21\uffff\ua7ff\32\u2100\uffff\u04d0\32\40\uffff\u020e"+
-            "\32",
-            "\12\47\13\uffff\1\50\37\uffff\1\50",
-            "\1\25\1\uffff\12\26\7\uffff\4\31\1\27\25\31\4\uffff\1\31\1"+
-            "\uffff\4\31\1\27\25\31\74\uffff\1\32\10\uffff\27\32\1\uffff"+
-            "\37\32\1\uffff\u0286\32\1\uffff\u1c81\32\14\uffff\2\32\61\uffff"+
-            "\2\32\57\uffff\u0120\32\u0a70\uffff\u03f0\32\21\uffff\ua7ff"+
-            "\32\u2100\uffff\u04d0\32\40\uffff\u020e\32",
-            "\1\50\1\uffff\1\50\2\uffff\12\52\7\uffff\32\31\4\uffff\1\31"+
-            "\1\uffff\32\31\74\uffff\1\32\10\uffff\27\32\1\uffff\37\32\1"+
-            "\uffff\u0286\32\1\uffff\u1c81\32\14\uffff\2\32\61\uffff\2\32"+
-            "\57\uffff\u0120\32\u0a70\uffff\u03f0\32\21\uffff\ua7ff\32\u2100"+
-            "\uffff\u04d0\32\40\uffff\u020e\32",
-            "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31\74\uffff\1"+
-            "\32\10\uffff\27\32\1\uffff\37\32\1\uffff\u0286\32\1\uffff\u1c81"+
-            "\32\14\uffff\2\32\61\uffff\2\32\57\uffff\u0120\32\u0a70\uffff"+
-            "\u03f0\32\21\uffff\ua7ff\32\u2100\uffff\u04d0\32\40\uffff\u020e"+
-            "\32",
-            "",
-            "\12\53",
-            "\2\41\1\uffff\12\34\7\uffff\32\36\4\uffff\1\36\1\uffff\32"+
-            "\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
-            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
-            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
-            "\37\40\uffff\u020e\37",
-            "",
-            "\2\41\1\uffff\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32"+
-            "\36\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
-            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
-            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
-            "\37\40\uffff\u020e\37",
-            "\2\41\1\uffff\12\37\7\uffff\32\37\4\uffff\1\37\1\uffff\32"+
-            "\37\74\uffff\1\37\10\uffff\27\37\1\uffff\37\37\1\uffff\u0286"+
-            "\37\1\uffff\u1c81\37\14\uffff\2\37\61\uffff\2\37\57\uffff\u0120"+
-            "\37\u0a70\uffff\u03f0\37\21\uffff\ua7ff\37\u2100\uffff\u04d0"+
-            "\37\40\uffff\u020e\37",
-            "",
-            "",
-            "\12\42\13\uffff\1\50\37\uffff\1\50",
-            "\1\54",
-            "",
-            "\1\55",
-            "",
-            "\12\47\13\uffff\1\50\37\uffff\1\50",
-            "",
-            "",
-            "\12\52\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31\74\uffff\1"+
-            "\32\10\uffff\27\32\1\uffff\37\32\1\uffff\u0286\32\1\uffff\u1c81"+
-            "\32\14\uffff\2\32\61\uffff\2\32\57\uffff\u0120\32\u0a70\uffff"+
-            "\u03f0\32\21\uffff\ua7ff\32\u2100\uffff\u04d0\32\40\uffff\u020e"+
-            "\32",
-            "\2\41\1\uffff\12\53\7\uffff\32\41\4\uffff\1\41\1\uffff\32"+
-            "\41\74\uffff\1\41\10\uffff\27\41\1\uffff\37\41\1\uffff\u0286"+
-            "\41\1\uffff\u1c81\41\14\uffff\2\41\61\uffff\2\41\57\uffff\u0120"+
-            "\41\u0a70\uffff\u03f0\41\21\uffff\ua7ff\41\u2100\uffff\u04d0"+
-            "\41\40\uffff\u020e\41",
+            "\12\66\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45\74\uffff\1"+
+            "\46\10\uffff\27\46\1\uffff\37\46\1\uffff\u0286\46\1\uffff\u1c81"+
+            "\46\14\uffff\2\46\61\uffff\2\46\57\uffff\u0120\46\u0a70\uffff"+
+            "\u03f0\46\21\uffff\ua7ff\46\u2100\uffff\u04d0\46\40\uffff\u020e"+
+            "\46",
+            "\2\51\1\uffff\12\67\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51"+
+            "\74\uffff\1\51\10\uffff\27\51\1\uffff\37\51\1\uffff\u0286\51"+
+            "\1\uffff\u1c81\51\14\uffff\2\51\61\uffff\2\51\57\uffff\u0120"+
+            "\51\u0a70\uffff\u03f0\51\21\uffff\ua7ff\51\u2100\uffff\u04d0"+
+            "\51\40\uffff\u020e\51",
             "",
             ""
     };
@@ -1895,29 +2168,29 @@ public class TransformationLexer extends Lexer {
             this.transition = DFA27_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__27 | T__28 | T__29 | T__30 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX );";
+            return "1:1: Tokens : ( T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | VAR1 | VAR2 | INTEGER | FUNCTIONNAME | DECIMAL | DOUBLE | MULT | DIV | EXPONENT | STRING_LITERAL1 | STRING_LITERAL2 | STRING_LITERAL_LONG1 | STRING_LITERAL_LONG2 | MINUS | PLUS | ECHAR | VARNAME | WS | PN_PREFIX );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA27_14 = input.LA(1);
+                        int LA27_20 = input.LA(1);
 
                         s = -1;
-                        if ( (LA27_14=='\"') ) {s = 37;}
+                        if ( (LA27_20=='\"') ) {s = 49;}
 
-                        else if ( ((LA27_14>='\u0000' && LA27_14<='\t')||(LA27_14>='\u000B' && LA27_14<='\f')||(LA27_14>='\u000E' && LA27_14<='!')||(LA27_14>='#' && LA27_14<='\uFFFF')) ) {s = 38;}
+                        else if ( ((LA27_20>='\u0000' && LA27_20<='\t')||(LA27_20>='\u000B' && LA27_20<='\f')||(LA27_20>='\u000E' && LA27_20<='!')||(LA27_20>='#' && LA27_20<='\uFFFF')) ) {s = 50;}
 
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA27_13 = input.LA(1);
+                        int LA27_19 = input.LA(1);
 
                         s = -1;
-                        if ( (LA27_13=='\'') ) {s = 35;}
+                        if ( (LA27_19=='\'') ) {s = 47;}
 
-                        else if ( ((LA27_13>='\u0000' && LA27_13<='\t')||(LA27_13>='\u000B' && LA27_13<='\f')||(LA27_13>='\u000E' && LA27_13<='&')||(LA27_13>='(' && LA27_13<='\uFFFF')) ) {s = 36;}
+                        else if ( ((LA27_19>='\u0000' && LA27_19<='\t')||(LA27_19>='\u000B' && LA27_19<='\f')||(LA27_19>='\u000E' && LA27_19<='&')||(LA27_19>='(' && LA27_19<='\uFFFF')) ) {s = 48;}
 
                         if ( s>=0 ) return s;
                         break;
