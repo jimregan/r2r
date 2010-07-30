@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
 
+import org.antlr.runtime.RecognitionException;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.logging.Log;
 
@@ -105,19 +106,35 @@ public class Mapping {
 			if(error.length()>0) {
 				if(log.isDebugEnabled())
 					log.debug("Errors found in Mapping <" + mapping.getUri() + ">: " + error);
+				if(Config.rethrowActivated())
+					throw new R2RException("Errors found in Mapping <" + mapping.getUri() + ">: " + error);
 				return null;
 			}
 		} catch(ParseException e) {
 			if(log.isDebugEnabled())
 				log.debug("Could not create mapping with URI <" + uri + ">: ParseException: " + e.getMessage());
-			return null;
+			if(Config.rethrowActivated())
+				throw new R2RException(e);
+			else
+				return null;
+		} catch(RecognitionException e) {
+			if(log.isDebugEnabled())
+				log.debug("Could not create mapping with URI <" + uri + ">: " + e.getMessage());
+			if(Config.rethrowActivated())
+				throw new R2RException(e);
+			else
+				return null;
 		} catch(IllegalArgumentException e) {
 			if(log.isDebugEnabled())
 				log.debug("Could not create mapping with URI <" + uri + ">: " + e.getMessage());
-			return null;
+			if(Config.rethrowActivated())
+				throw new R2RException(e);
+			else
+				return null;
 		}
 		if(log.isTraceEnabled())
 			log.trace("Sucessfully created mapping <" + uri + ">");
+;
 		return mapping;
 	}
 	
@@ -136,6 +153,7 @@ public class Mapping {
 		return createMapping(uri, parentUri, prefixDefinitions, targetPatterns, transformations, conjunctiveCombineSourcePatterns(sourcePatterns), isClassMapping, functionImports, functionManager);
 	}
 	
+	
 	private static String conjunctiveCombineSourcePatterns(List<String> sourcePatterns) {
 		StringBuilder sb = new StringBuilder();
 		for(String sourcePattern: sourcePatterns) {
@@ -146,7 +164,7 @@ public class Mapping {
 		return sb.toString();
 	}
 	
-	private void addTransformation(String transformation, FunctionManager functionManager) {
+	private void addTransformation(String transformation, FunctionManager functionManager) throws RecognitionException {
 		FunctionExecution funcExec = FunctionExecution.parseTransformation(transformation, functionManager, functionMapper);
 		variableDependenciesOfTransformations.addAll(funcExec.getVariableDependencies());
 		transformationGeneratedVariables.add(funcExec.getVariableName());
@@ -156,7 +174,7 @@ public class Mapping {
 	private void addFunctionMapping(String importString) {
 		String[] mapping = importString.split("=", 2);
 		if(mapping.length>1)
-		functionMapper.setMapping(mapping[0].trim(), mapping[1].trim());
+			functionMapper.setMapping(mapping[0].trim(), mapping[1].trim());
 	}
 	
 	private void addPrefixDefinitions(String prefixDefs) {
@@ -169,7 +187,7 @@ public class Mapping {
 		}
 	}
 	
-	private void addTargetPattern(String targetPattern) {
+	private void addTargetPattern(String targetPattern)  throws RecognitionException {
 		TargetPattern tp = TargetPattern.parseTargetPattern(targetPattern, prefixMapper);
 		tp.setMapping(this);
 		datatypeHints.putAll(tp.getHints());
@@ -177,7 +195,7 @@ public class Mapping {
 		targetPatterns.add(tp);
 	}
 	
-	private void addSourcePattern(String sourcePattern) {
+	private void addSourcePattern(String sourcePattern) throws RecognitionException {
 		this.sourcePattern = SourcePattern.parseSourcePattern(sourcePattern, prefixMapper);
 	}
 	
@@ -262,6 +280,8 @@ public class Mapping {
 					String msg = "Mapping <" + getUri() + ">: Function for variable ?" + resultVariableName + " interrupted with an exception: " + fee.getMessage();
 					log.debug(msg);
 				}
+				if(Config.rethrowActivated())
+					throw fee;
 				// Create an empty list, so target pattern using these function results just generate no triples
 				resultValues = new ArrayList<String>();
 			}
@@ -514,9 +534,9 @@ public class Mapping {
 		
 		//parent mapping dependency
 		if(this.parentMapping!=null) {
-			Property classMappingRef = model.createProperty(R2R.classMappingRef);
+			Property mappingRef = model.createProperty(R2R.mappingRef);
 			Resource parentMap = model.createResource(this.parentMapping);
-			mapping.addProperty(classMappingRef, parentMap);
+			mapping.addProperty(mappingRef, parentMap);
 		}
 		
 		createMapsToMetaData(model, mapping, mapsToClass, mapsToProperty);

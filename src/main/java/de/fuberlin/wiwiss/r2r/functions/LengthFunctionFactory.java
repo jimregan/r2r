@@ -16,7 +16,7 @@ public class LengthFunctionFactory implements FunctionFactory {
 			return function;
 		}
 
-		private class LengthFunction implements Function {
+		private static class LengthFunction implements Function {
 
 			public String getURI() {
 				return "length";

@@ -49,6 +49,8 @@ public class LoadingFunctionManager implements FunctionManager {
 				} catch(MalformedURLException e) {
 					if(log.isDebugEnabled())
 						log.debug("TransformationFunction <" + URI + "> could not be loaded: " + e.toString());
+					if(Config.rethrowActivated())
+						throw new R2RException("TransformationFunction <" + URI + "> could not be loaded: " + e.toString(), e);
 					return null;
 				}
 			}

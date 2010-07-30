@@ -40,6 +40,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	// load FunctionManager as defined in r2r.properties
 	private FunctionManager loadFunctionManager(Source source) {
 		String fm = Config.getProperty("r2r.FunctionManager", "de.fuberlin.wiwiss.r2r.BasicFunctionManager");
+		String error = null;
+		Exception exception;
 		try {
 			Class<?> fmclass = Class.forName(fm);
 			boolean constructorWithSource = false;
@@ -59,21 +61,22 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			else
 				return (FunctionManager)c.newInstance();
 		} catch (InstantiationException e) {
-			if(log.isDebugEnabled())
-				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+			exception = e;
 		} catch (IllegalAccessException e) {
-			if(log.isDebugEnabled())
-				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+			exception = e;
 		} catch (ClassNotFoundException e) {
-			if(log.isDebugEnabled())
-				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+			exception = e;
 		} catch (IllegalArgumentException e) {
-			if(log.isDebugEnabled())
-				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+			exception = e;
 		} catch (InvocationTargetException e) {
-			if(log.isDebugEnabled())
-				log.debug("Could not load Function Manager: " + fm + ". Cause: " +e);
+			exception = e;
 		}
+		error = "Could not load Function Manager: " + fm + ". Cause: " + exception;
+		if(log.isDebugEnabled())
+			log.debug(error);
+		if(Config.rethrowActivated())
+			throw new R2RException(error, exception);
+		
 		return null;
 	}
 	
@@ -316,7 +319,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	}
 	
 	private String getReferencedClassMappingUriQuery(String mappingUri) {
-		return "Select ?classref where { <" + mappingUri + "> <" + R2R.classMappingRef + "> ?classref }"; 
+		return "Select ?classref where { <" + mappingUri + "> <" + R2R.mappingRef + "> ?classref }"; 
 	}
 	
 	private static class MappingData {
@@ -431,12 +434,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		}
 		properties.add(property);
 	}
-	
-	private Map<String, Collection<String>> createRestriction(String mappingUri, String propertyUri) {
-		Map<String, Collection<String>> m = new HashMap<String, Collection<String>>();
-		addRestrictionToMap(mappingUri, propertyUri, m);
-		return m;
-	}
+
 	
 	private void addRestrictionToMap(String mappingUri, String propertyUri, Map<String, Collection<String>> resMap) {
 		Collection<String> restrictions = resMap.get(mappingUri);
@@ -459,40 +457,10 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		}
 		return mappings;
 	}
-	
-	/*
-	 * Fetches all parent mappings of the specified mapping
-	 */
-	private Set<String> findAllParentMappingsOfMapping(String mappingUri) {
-		Set<String> parentMappings = new HashSet<String>();
-		String currentMapping = mappingUri;
-		
-		while(currentMapping!=null) {
-			String query = "Select ?mapping where { <" + currentMapping + "> <" + R2R.classMappingRef + "> ?mapping }";
-			ResultSet rs = source.executeSelectQuery(query);
-			if(!rs.hasNext())
-				return parentMappings;
-			else {
-				currentMapping = rs.next().get("mapping").toString();
-				parentMappings.add(currentMapping);
-			}
-		}
-		return parentMappings;
-	}
+
 	
 
-	/*
-	 * Returns the property mappings that are defined in one of the given class mappings
-	 */
-	private List<String> findMappingsForTargetPropertyInClassContext(Collection<String> potentialMappings, Set<String> classMappings) {
-		List<String> propertyMappings = new ArrayList<String>();
-		for(String potMap: potentialMappings) {
-			if(checkForMappingContainment(potMap, classMappings))
-				propertyMappings.add(potMap);
-		}
-		return propertyMappings;
-	}
-	
+
 	/*
 	 * Checks if the property mapping is associated with one of the class mappings or a subclass of one of them.
 	 */
@@ -513,49 +481,9 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 //		return false;
 //	}
 	
-	/*
-	 * Returns the mapping URIs that lead to one of the class mappings of the second argument
-	 * else it returns null
-	 */
-	private List<String> getClassMappingChainForPropertyMapping(String propertyMapping, Set<String> classMappings) {
-		String currentMapping = propertyMapping;
-		List<String> mappings = new ArrayList<String>();
-	
-		while(currentMapping!=null) {
-			String query = "Select ?mapping where { <" + currentMapping + "> <" + R2R.classMappingRef + "> ?mapping }";
-			ResultSet rs = source.executeSelectQuery(query);
-			if(!rs.hasNext())
-				return null;
-			else {
-				currentMapping = rs.next().get("mapping").toString();
-
-				if(classMappings.contains(currentMapping)) {//TODO acyclic check
-					return mappings;
-				}
-				mappings.add(currentMapping);
-			}
-		}
-		return null;
-	}
 
 	
-	/*
-	 * Checks if the property mapping is associated with one of the given class mappings
-	 */
-	private boolean checkForMappingContainment(String propertyMapping, Set<String> classMappings) {
-		String query = "Select ?mapping where { <" + propertyMapping + "> <" + R2R.classMappingRef + "> ?mapping }";
-		ResultSet rs = source.executeSelectQuery(query);
-		if(rs.hasNext()) {
-			String classMapping = rs.next().get("mapping").toString();
-			if(classMappings.contains(classMapping))
-				return true;
-			else
-				return false;
-		}
-		else
-			return false;
-	}
-	
+
 	public ResultSet executeSelectQuery(String query) {
 		return source.executeSelectQuery(query);
 	}
