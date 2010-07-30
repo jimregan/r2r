@@ -237,24 +237,22 @@ public class TargetPattern {
 		return subjects;
 	}
  
-	public static TargetPattern parseTargetPattern(String targetPattern, PrefixMapper prefixMapper) {
+	public static TargetPattern parseTargetPattern(String targetPattern, PrefixMapper prefixMapper) throws RecognitionException{
 		CharStream stream =	new ANTLRStringStream(targetPattern);
 		TargetPatternLexer lexer = new TargetPatternLexer(stream);
 		TokenStream tokenStream = new CommonTokenStream(lexer);
 		TargetPatternParser parser = new TargetPatternParser(tokenStream);
 		parser.setPrefixMapper(prefixMapper);
 		TargetPattern tp = null;
-		try {
-			targetPattern_return retVal = parser.targetPattern();
-			tp = retVal.pattern;
-			tp.hints = retVal.hints;
-			tp.variableDependencies = retVal.variableDependencies;
-			tp.classes = retVal.classes;
-			tp.properties = retVal.properties;
-		} catch (RecognitionException e) {
-			System.err.println(e.getMessage());
-			return null;
-		}
+
+		// Parse and set fields
+		targetPattern_return retVal = parser.targetPattern();
+		tp = retVal.pattern;
+		tp.hints = retVal.hints;
+		tp.variableDependencies = retVal.variableDependencies;
+		tp.classes = retVal.classes;
+		tp.properties = retVal.properties;
+
 		return tp;
 	}
 

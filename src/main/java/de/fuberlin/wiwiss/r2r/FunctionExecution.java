@@ -35,7 +35,7 @@ public class FunctionExecution implements Argument{
 		return function;
 	}
 	
-	public static FunctionExecution parseTransformation(String transformation, FunctionManager functionManager, FunctionMapper functionMapper) {
+	public static FunctionExecution parseTransformation(String transformation, FunctionManager functionManager, FunctionMapper functionMapper) throws RecognitionException{
 		CharStream stream =	new ANTLRStringStream(transformation);
 		TransformationLexer lexer = new TransformationLexer(stream);
 		TokenStream tokenStream = new CommonTokenStream(lexer);
@@ -43,15 +43,12 @@ public class FunctionExecution implements Argument{
 		parser.setFunctionManager(functionManager);
 		parser.setFunctionMapping(functionMapper);
 		FunctionExecution fe = null;
-		try {	
-			TransformationParser.transform_return tr = parser.transform();
-			fe = tr.funcExec;
-			fe.variableName = tr.variable;
-			fe.variableDependencies = Collections.unmodifiableSet(tr.variableDependencies);
-		} catch (RecognitionException e) {
-			System.err.println(e.getMessage());
-			return null;
-		}
+	
+		TransformationParser.transform_return tr = parser.transform();
+		fe = tr.funcExec;
+		fe.variableName = tr.variable;
+		fe.variableDependencies = Collections.unmodifiableSet(tr.variableDependencies);
+
 		return fe;
 	}
 

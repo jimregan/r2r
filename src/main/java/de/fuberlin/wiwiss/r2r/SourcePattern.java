@@ -37,24 +37,22 @@ public class SourcePattern {
 
 	private SourcePattern() {}
 
-	public static SourcePattern parseSourcePattern(String sourcePattern, PrefixMapper prefixMapper) {
+	public static SourcePattern parseSourcePattern(String sourcePattern, PrefixMapper prefixMapper) throws RecognitionException{
 		CharStream stream =	new ANTLRStringStream(sourcePattern);
 		SourcePatternLexer lexer = new SourcePatternLexer(stream);
 		TokenStream tokenStream = new CommonTokenStream(lexer);
 		SourcePatternParser parser = new SourcePatternParser(tokenStream);
 		parser.setPrefixMapper(prefixMapper);
 		SourcePattern sp = new SourcePattern();
-		try {
-			SourcePatternParser.sourcePattern_return returnValues = parser.sourcePattern();
-			sp.prefixDefinitions = returnValues.usedPrefixes;
-			sp.queryBody = sourcePattern;
-			sp.classes = returnValues.classes;
-			sp.properties = returnValues.properties;
-			sp.maxVarLength = returnValues.maxVarLength;
-			sp.variablesInPattern = returnValues.vars;
-		} catch (RecognitionException e) {
-			throw new ParseException(e.getMessage());
-		}
+
+		SourcePatternParser.sourcePattern_return returnValues = parser.sourcePattern();
+		sp.prefixDefinitions = returnValues.usedPrefixes;
+		sp.queryBody = sourcePattern;
+		sp.classes = returnValues.classes;
+		sp.properties = returnValues.properties;
+		sp.maxVarLength = returnValues.maxVarLength;
+		sp.variablesInPattern = returnValues.vars;
+
 		return sp;
 	}
 	

@@ -30,4 +30,8 @@ public class Config {
 		String value = getProperty(key);
 		return value!=null ? value : defaultValue; 
 	}
+	
+	static public boolean rethrowActivated() {
+		return getProperty("r2r.ExceptionHandling.rethrow", "false").equalsIgnoreCase("true");
+	}
 }

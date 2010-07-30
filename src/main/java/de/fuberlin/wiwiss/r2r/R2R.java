@@ -19,7 +19,7 @@ public class R2R {
 	public final static String partOfMappingCollection = R2R + "partOfMappingCollection";
 	public final static String sourcePattern = R2R + "sourcePattern";
 	public final static String targetPattern = R2R + "targetPattern";
-	public final static String classMappingRef = R2R + "classMappingRef";
+	public final static String mappingRef = R2R + "mappingRef";
 	public final static String transformation = R2R + "transformation";
 	public final static String targetProperty = R2R + "targetEntity";
 	public final static String prefixDefinitions = R2R + "prefixDefinitions";
