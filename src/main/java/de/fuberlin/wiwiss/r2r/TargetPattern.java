@@ -225,8 +225,15 @@ public class TargetPattern {
 	
 	private List<Resource> convertIRIStringsToResources(List<String> iriStrings, Model model) {
 		List<Resource> resources = new ArrayList<Resource>();
-		for(String iri: iriStrings)
-			resources.add(model.createResource(iri));
+		for(String iri: iriStrings) {
+			Resource r;
+			if (iri.startsWith(Mapping.blankNodePrefix)) {
+				r = model.createResource(new AnonId(iri.substring(Mapping.blankNodePrefix.length())));
+			} else {
+				r = model.createResource(iri);
+			}
+			resources.add(r);
+		}
 		return resources;
 	}
 	
