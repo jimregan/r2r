@@ -47,6 +47,8 @@ public class Mapping {
 	private boolean classMapping;
 	private static Log log = LogFactory.getLog(Mapping.class);
 	
+	public final static String blankNodePrefix = "anon\\";
+	
 	public boolean isClassMapping() {
 		return classMapping;
 	}
@@ -334,6 +336,8 @@ public class Mapping {
 				if(node.isLiteral()) {
 					Literal lit = (Literal) node;
 					resList.add(lit.getLexicalForm());
+				} else if (node.isAnon()) {
+					resList.add(blankNodePrefix + node.toString());
 				} else {
 					resList.add(node.toString());
 				}
