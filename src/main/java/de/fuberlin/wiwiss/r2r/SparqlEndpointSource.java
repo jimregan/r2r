@@ -1,7 +1,7 @@
 package de.fuberlin.wiwiss.r2r;
 
+import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 
 import java.util.ArrayList;
@@ -50,15 +50,21 @@ public class SparqlEndpointSource implements Source {
 		defaultGraphs.add(defaultGraph);
 	}
 	
-	public ResultSet executeSelectQuery(String query) {
-		return QueryExecutionFactory.sparqlService(sparqlEndpointURI, query, defaultGraphs, namedGraphs).execSelect();
+	public QueryExecution executeQuery(String query) {
+		return QueryExecutionFactory.sparqlService(sparqlEndpointURI, query, defaultGraphs, namedGraphs);
 	}
 
 	public Model executeDescribeQuery(String query) {
-		return QueryExecutionFactory.sparqlService(sparqlEndpointURI, query, defaultGraphs, namedGraphs).execDescribe();
+		QueryExecution qe = QueryExecutionFactory.sparqlService(sparqlEndpointURI, query, defaultGraphs, namedGraphs);
+		Model model = qe.execDescribe();
+		qe.close();
+		return model;
 	}
 
 	public Model executeConstructQuery(String query) {
-		return QueryExecutionFactory.sparqlService(sparqlEndpointURI, query, defaultGraphs, namedGraphs).execConstruct();
+		QueryExecution qe = QueryExecutionFactory.sparqlService(sparqlEndpointURI, query, defaultGraphs, namedGraphs);
+		Model model = qe.execConstruct();
+		qe.close();
+		return model;
 	}
 }

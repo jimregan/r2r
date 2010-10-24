@@ -1,5 +1,6 @@
 package de.fuberlin.wiwiss.r2r;
 
+import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -24,15 +25,21 @@ public class FileOrURISource implements Source {
 		model = fileManager.loadModel(fileOrURI);
 	}
 	
-	public ResultSet executeSelectQuery(String query) {
-		return QueryExecutionFactory.create(query, model).execSelect();
+	public QueryExecution executeQuery(String query) {
+		return QueryExecutionFactory.create(query, model);
 	}
 
 	public Model executeDescribeQuery(String query) {
-		return QueryExecutionFactory.create(query, model).execDescribe();
+		QueryExecution qe = QueryExecutionFactory.create(query, model);
+		Model model = qe.execDescribe();
+		qe.close();
+		return model;
 	}
 
 	public Model executeConstructQuery(String query) {
-		return QueryExecutionFactory.create(query, model).execConstruct();
+		QueryExecution qe = QueryExecutionFactory.create(query, model);
+		Model model = qe.execConstruct();
+		qe.close();
+		return model;
 	}
 }

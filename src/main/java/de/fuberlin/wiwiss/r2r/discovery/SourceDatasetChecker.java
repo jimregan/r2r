@@ -3,6 +3,8 @@ package de.fuberlin.wiwiss.r2r.discovery;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+import com.hp.hpl.jena.query.QueryExecution;
+
 import de.fuberlin.wiwiss.r2r.Source;
 
 public class SourceDatasetChecker implements DatasetChecker {
@@ -19,7 +21,9 @@ public class SourceDatasetChecker implements DatasetChecker {
 		if(existent==null) {
 			StringBuilder query = new StringBuilder();
 			query.append("SELECT ?element WHERE { ?s a <").append(uri).append("> } LIMIT 1");
-			existent = source.executeSelectQuery(query.toString()).hasNext();
+			QueryExecution qe = source.executeQuery(query.toString());
+			existent = qe.execSelect().hasNext();
+			qe.close();
 		}
 		return existent;
 	}
@@ -29,7 +33,9 @@ public class SourceDatasetChecker implements DatasetChecker {
 		if(existent==null) {
 			StringBuilder query = new StringBuilder();
 			query.append("SELECT ?element WHERE { ?s <").append(uri).append("> ?o} LIMIT 1");
-			existent = source.executeSelectQuery(query.toString()).hasNext();
+			QueryExecution qe = source.executeQuery(query.toString());
+			existent = qe.execSelect().hasNext();
+			qe.close();
 		}
 		return existent;
 	}
