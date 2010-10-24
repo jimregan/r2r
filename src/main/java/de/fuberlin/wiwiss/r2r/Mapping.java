@@ -320,7 +320,8 @@ public class Mapping {
 		else
 			query = buildQueryWithContext(mappingRestrictions);
 
-		resultSet = in.executeSelectQuery(query);
+		QueryExecution qe = in.executeQuery(query);
+		resultSet = qe.execSelect();
 		
 		while(resultSet.hasNext()) {
 			QuerySolution solution = resultSet.next();
@@ -345,6 +346,7 @@ public class Mapping {
 				executeTargetPatterns(varResults, outputModel, termURIs);
 		}
 		out.write(outputModel);
+		qe.close();
 		
 		return results;
 	}

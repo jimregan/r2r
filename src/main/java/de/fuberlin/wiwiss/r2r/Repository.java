@@ -13,6 +13,7 @@ import java.util.HashSet;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.logging.Log;
 
+import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Literal;
@@ -183,7 +184,13 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	
 	private List<String> getMappingResources() {
 		String query = "select distinct ?s where { ?s <" + R2R.targetPattern + "> ?o }";
-		return listMappingResourcesFromResultSet(source.executeSelectQuery(query));
+		QueryExecution qe = source.executeQuery(query);
+		try {
+			return listMappingResourcesFromResultSet(qe.execSelect());
+		}
+		finally {
+			qe.close();
+		}
 	}
 	
 	private List<String> getPropertyValues(ResultSet resultSet) {
@@ -298,7 +305,13 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	}
 	
 	private List<String> getPropertyValuesForResource(String resourceURI, String property) {
-		return getPropertyValues(source.executeSelectQuery(getPropertyValuesQuery(property, resourceURI)));
+		QueryExecution qe = source.executeQuery(getPropertyValuesQuery(property, resourceURI));
+		try {
+			return getPropertyValues(qe.execSelect());
+		}
+		finally {
+			qe.close();
+		}
 	}
 	
 	//Check if the type of the resource is a class mapping
@@ -311,11 +324,16 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	}
 	
 	private String getReferencedClassMappingUri(String mappingUri) {
-		ResultSet resultSet = source.executeSelectQuery(getReferencedClassMappingUriQuery(mappingUri));
-		if(resultSet.hasNext())
-			return resultSet.next().get("classref").toString();
-		else
-			return null;
+		QueryExecution qe = source.executeQuery(getReferencedClassMappingUriQuery(mappingUri));
+		ResultSet resultSet = qe.execSelect();
+		try {
+			if(resultSet.hasNext())
+				return resultSet.next().get("classref").toString();
+			else
+				return null;
+		} finally {
+			qe.close();
+		}
 	}
 	
 	private String getReferencedClassMappingUriQuery(String mappingUri) {
@@ -450,11 +468,13 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 	 */
 	public Set<String> getMappingsOfTargetElement(String uri) {
 		String query = "Select ?mapping where { ?mapping <" + R2R.mapsTo + "> <" + uri + "> }";
-		ResultSet resultset = source.executeSelectQuery(query);
+		QueryExecution qe = source.executeQuery(query);
+		ResultSet resultset = qe.execSelect();
 		Set<String> mappings = new HashSet<String>();
 		while(resultset.hasNext()) {
 			mappings.add(resultset.next().get("mapping").toString());
 		}
+		qe.close();
 		return mappings;
 	}
 
@@ -469,13 +489,19 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 //		
 //		while(currentMapping!=null) {
 //			String query = "Select ?mapping where { <" + currentMapping + "> <" + R2R.classMappingRef + "> ?mapping }";
-//			ResultSet rs = source.executeSelectQuery(query);
-//			if(!rs.hasNext())
-//				return false;
-//			else {
-//				currentMapping = rs.next().get("mapping").toString();
-//				if(classMappings.contains(currentMapping))
-//					return true;
+//			QueryExecution qe = source.executeQuery(query);
+//			ResultSet rs = qe.execSelect();
+//			try {
+//				if(!rs.hasNext())
+//					return false;
+//				else {
+//					currentMapping = rs.next().get("mapping").toString();
+//					if(classMappings.contains(currentMapping))
+//						return true;
+//				}
+//			}
+//			finally {
+//				qe.close();
 //			}
 //		}
 //		return false;
@@ -484,8 +510,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 
 	
 
-	public ResultSet executeSelectQuery(String query) {
-		return source.executeSelectQuery(query);
+	public QueryExecution executeQuery(String query) {
+		return source.executeQuery(query);
 	}
 
 	public Model executeDescribeQuery(String query) {
@@ -554,7 +580,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		String query = "Select ?e1 ?e2 WHERE {" +
 			"?e1 <" + OWL.equivalentProperty.getURI() + "> ?e2" +
 			"}";
-		ResultSet rs = source.executeSelectQuery(query);
+		QueryExecution qe = source.executeQuery(query);
+		ResultSet rs = qe.execSelect();
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode e1 = qs.get("e1");
@@ -568,13 +595,15 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				addR2RMapping(uri, e2Pattern, e1Pattern, R2R.PropertyMapping, outputModel, true);
 			}
 		}
+		qe.close();
 	}
 	
 	private static void importAndConvertEquivalentClassMappings(Source source, Model outputModel, StringGenerator uriGenerator) {
 		String query = "Select ?e1 ?e2 WHERE {" +
 		"?e1 <" + OWL.equivalentClass.getURI() + "> ?e2" +
 		"}";
-		ResultSet rs = source.executeSelectQuery(query);
+		QueryExecution qe = source.executeQuery(query);
+		ResultSet rs = qe.execSelect();
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode e1 = qs.get("e1");
@@ -588,13 +617,15 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				addR2RMapping(uri, e2Pattern, e1Pattern, R2R.ClassMapping, outputModel, true);
 			}
 		}
+		qe.close();
 	}
 	
 	private static void importAndConvertSubClassOfMappings(Source source, Model outputModel, StringGenerator uriGenerator) {
 		String query = "Select ?from ?to WHERE {" +
 			"?from <" + RDFS.subClassOf.getURI() + "> ?to" +
 			"}";
-		ResultSet rs = source.executeSelectQuery(query);
+		QueryExecution qe = source.executeQuery(query);
+		ResultSet rs = qe.execSelect();
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode from = qs.get("from");
@@ -606,13 +637,15 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				addR2RMapping(uri, sourcePattern, targetPattern, R2R.ClassMapping, outputModel, false);
 			}
 		}
+		qe.close();
 	}
 	
 	private static void importAndConvertSubPropertyOfMappings(Source source, Model outputModel, StringGenerator uriGenerator) {
 		String query = "Select ?from ?to WHERE {" +
 			"?from <" + RDFS.subPropertyOf.getURI() + "> ?to" +
 			"}";
-		ResultSet rs = source.executeSelectQuery(query);
+		QueryExecution qe = source.executeQuery(query);
+		ResultSet rs = qe.execSelect();
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode from = qs.get("from");
@@ -624,6 +657,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 				addR2RMapping(uri, sourcePattern, targetPattern, R2R.PropertyMapping, outputModel, false);
 			}
 		}
+		qe.close();
 	}
 	
 	private static void addR2RMapping(String uri, String sourcePattern, String targetPattern, String mappingClass, Model outputModel, boolean equivalenceMapping) {
@@ -642,7 +676,8 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		Map<String, Set<String>> metadata = new HashMap<String, Set<String>>();
 		StringBuilder query = new StringBuilder();
 		query.append("SELECT ?property ?value WHERE { <").append(mappingURI).append("> ?property ?value }");
-		ResultSet rs = source.executeSelectQuery(query.toString());
+		QueryExecution qe = source.executeQuery(query.toString());
+		ResultSet rs = qe.execSelect();
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode valueNode = qs.get("value");
@@ -654,6 +689,7 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 			if(value!=null)
 				insertMetaData(metadata, qs.getResource("property").getURI(), value);
 		}
+		qe.close();
 		return metadata;
 	}
 

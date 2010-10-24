@@ -1,6 +1,6 @@
 package de.fuberlin.wiwiss.r2r;
 
-import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.rdf.model.Model;
 
 /**
@@ -12,9 +12,9 @@ public interface Source {
 	/**
 	 * Execute a query against this Source object
 	 * @param query SPARQL query
-	 * @return Jena ResultSet
+	 * @return Jena QueryExecution
 	 */
-	public ResultSet executeSelectQuery(String query);
+	public QueryExecution executeQuery(String query);
 	
 	public Model executeDescribeQuery(String query);
 	

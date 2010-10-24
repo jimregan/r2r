@@ -25,7 +25,13 @@ public class NGSourceManager implements SourceManager {
 	public List<SourceDescription> getSourceDescriptions() {
 		String query = "SELECT distinct ?g ?voidURI where { GRAPH ?g { ?s ?p ?o } " +
 						"OPTIONAL { GRAPH <" + voidGraph + ">  { ?g <" + DCTerms.isPartOf.getURI() + "> ?voidURI }}";
-		return parseSourceDescriptions(sourceRepository.executeSelectQuery(query));
+		QueryExecution qe = sourceRepository.executeQuery(query);
+		try {
+			return parseSourceDescriptions(qe.execSelect());
+		}
+		finally {
+			qe.close();
+		}
 	}
 	
 	private List<SourceDescription> parseSourceDescriptions(ResultSet rs) {

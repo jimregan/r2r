@@ -16,6 +16,7 @@ import de.fuberlin.wiwiss.r2r.R2R;
 import de.fuberlin.wiwiss.r2r.TargetPattern;
 import de.fuberlin.wiwiss.r2r.TargetVocabulary;
 
+import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.query.ResultSet;
@@ -81,10 +82,13 @@ public class MiniParsers {
 		
 		// Get class restrictions
 		String query = "Select ?cr where { ?s <" + R2R.classRestriction + "> ?cr }";
-		ResultSet rs = QueryExecutionFactory.create(query, vocabDefModel).execSelect();
+		QueryExecution qe = QueryExecutionFactory.create(query, vocabDefModel);
+		ResultSet rs = qe.execSelect();
 
 		while(rs.hasNext())
 			classRestrictions.add(rs.next().get("cr").toString());
+		
+		qe.close();
 		
 		// Get class restrictions that should also be mapped
 		query = "Select ?cr where { ?s <" + R2R.classRestrictionAndTarget + "> ?cr }";
