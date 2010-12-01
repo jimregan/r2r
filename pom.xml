@@ -4,7 +4,7 @@
   <groupId>de.fuberlin.wiwiss.r2r</groupId>
   <artifactId>r2rApi</artifactId>
   <packaging>jar</packaging>
-  <version>0.2</version>
+  <version>0.2.2</version>
   <name>r2rApi</name>
   <url>http://r2r.sourceforge.net/</url>
 
@@ -139,4 +139,19 @@
       </plugin>
     </plugins>
   </build>
+  	<distributionManagement>
+		<repository>
+			<id>mes-releases</id>
+			<name>MES Release Repository</name>
+			<url>scpexe://projects.mediaeventservices.com/repositories/maven2/releases
+			</url>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>mes-snapshots</id>
+			<name>MES Snapshot Repository</name>
+			<url>scpexe://projects.mediaeventservices.com/repositories/maven2/snapshots
+			</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
