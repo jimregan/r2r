@@ -55,6 +55,10 @@ public class LoadingFunctionManager implements FunctionManager {
 				}
 			}
 		}
+		FunctionFactory factory = functions.get(URI);
+		if (factory instanceof MultiFunctionFactory) {
+			return ((MultiFunctionFactory) factory).getInstance(URI);
+		}
 		return functions.get(URI).getInstance();
 	}
 

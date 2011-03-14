@@ -24,4 +24,12 @@ public class IterativeRegexToListFunctionTest {
 		assertEquals(5, result.size());
 		assertEquals("1", result.get(0));
 	}
+
+	@Test
+	public void regex2() {
+		List<List<String>> argumentList = Helper.getArgumentLists("\"(.+?)\"", "\"1\", \"2\", \"3\", \"4\", \"5\"");
+		List<String> result = itRegexToList.execute(argumentList, null);
+		assertEquals(5, result.size());
+		assertEquals("1", result.get(0));
+	}
 }

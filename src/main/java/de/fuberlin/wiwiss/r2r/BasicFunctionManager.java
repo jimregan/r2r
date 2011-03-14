@@ -1,6 +1,7 @@
 package de.fuberlin.wiwiss.r2r;
 
 import de.fuberlin.wiwiss.r2r.functions.*;
+import de.fuberlin.wiwiss.r2r.functions.xpath.XPathFunctionFactory;
 
 import java.net.MalformedURLException;
 import java.util.*;
@@ -8,17 +9,18 @@ import java.util.*;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-
 /**
- * An implementation of FunctionManager that has all built-in functions registered.
+ * An implementation of FunctionManager that has all built-in functions
+ * registered.
+ * 
  * @author andreas
- *
+ * 
  */
 public class BasicFunctionManager implements FunctionManager {
 	private static Log log = LogFactory.getLog(BasicFunctionManager.class);
 	private Map<String, FunctionFactory> functions = new HashMap<String, FunctionFactory>();
 	private FunctionFactoryLoader ffLoader = null;
-	
+
 	/**
 	 * Only register built-in functions, not able to load external functions
 	 */
@@ -47,11 +49,17 @@ public class BasicFunctionManager implements FunctionManager {
 		functions.put("compare", new CompareFunctionFactory());
 		functions.put("itRegexToList", new IterateRegexToListFunctionFactory());
 		
+		// Xpath functions
+		XPathFunctionFactory xpFunctionFactory = new XPathFunctionFactory();
+		for(Function function : xpFunctionFactory.listFunctions()) {
+			functions.put(function.getURI(), xpFunctionFactory);
+		}
+
 		// deprecated
 		functions.put("infixConcat", new JoinFunctionFactory());
 		functions.put("infixListConcat", new ListJoinFunctionFactory());
 	}
-	
+
 	public synchronized boolean containsFunctionByUri(String URI) {
 		return functions.containsKey(URI);
 	}
@@ -62,12 +70,17 @@ public class BasicFunctionManager implements FunctionManager {
 	}
 
 	public synchronized Function getFunctionByUri(String URI) {
-		if(!functions.containsKey(URI))
+		if (!functions.containsKey(URI))
 			return null;
+		FunctionFactory factory = functions.get(URI);
+		if (factory instanceof MultiFunctionFactory) {
+			return ((MultiFunctionFactory) factory).getInstance(URI);
+		}
 		return functions.get(URI).getInstance();
 	}
 
-	public boolean registerFunctionFactory(String uri, FunctionFactory functionFactory) {
+	public boolean registerFunctionFactory(String uri,
+			FunctionFactory functionFactory) {
 		// Cannot register new functions in this FunctionManager
 		return false;
 	}
