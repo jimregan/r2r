@@ -378,7 +378,7 @@
 			            label: "Remove",
 					})
 					.click(function() {
-						var dialog = $("<div class=\"r2redit-dialog\" title=\"Remove mapping\">\
+						var dialog = $("<div class=\"r2redit-dialog\" title=\"Remove Mapping\">\
 										<p>\
 										<span class=\"ui-icon ui-icon-alert\"></span>\
 										Are you sure?" + (base.parentMapping ? "" : " This will also remove all related property mappings.") + "\
@@ -453,6 +453,7 @@
 					},
 					padding: 3, 
 					textAlign: 'left',
+					fontSize: '12px',
 					tip: true, // Give it a speech bubble tip with automatic corner detection
 					name: 'cream' // Style it according to the preset 'cream' style
 				}
