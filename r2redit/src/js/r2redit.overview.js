@@ -265,11 +265,11 @@
 										<table id=\"mappings\" class=\"r2redit-mappingTable\">\
 										<thead class=\"ui-widget-header\">\
 											<tr>\
-												<th></th>\
-												<th>Name</th>\
-												<th>Source</th>\
-												<th>Target</th>\
-												<th>Edit</th>\
+												<th class=\"r2redit-mappingTableAction\"></th>\
+												<th class=\"r2redit-mappingTableProperty r2redit-mappingTableName\">Name</th>\
+												<th class=\"r2redit-mappingTableProperty\">Source</th>\
+												<th class=\"r2redit-mappingTableProperty\">Target</th>\
+												<th class=\"r2redit-mappingTableAction\">Edit</th>\
 											</tr>\
 											<tbody class=\"ui-widget-content\">\
 											</tbody>\
