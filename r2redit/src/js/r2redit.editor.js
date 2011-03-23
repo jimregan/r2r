@@ -378,6 +378,7 @@
 			            label: "Remove",
 					})
 					.click(function() {
+						var dialogOpened = false;
 						var dialog = $("<div class=\"r2redit-dialog\" title=\"Remove Mapping\">\
 										<p>\
 										<span class=\"ui-icon ui-icon-alert\"></span>\
@@ -411,7 +412,7 @@
 								}
 							}
 						});
-						var dialogOpened = true;
+						dialogOpened = true;
 						$.r2rUI.fixJQueryUIDialogButtons(dialog);
 					})
 				)
@@ -467,8 +468,12 @@
 				if (base.parentMapping) {
 					new $.r2rTreeViewType($.rdf.resource("r2r:PropertyMapping", { namespaces: basePrefixStore.databank.namespaces })).addToTreeView(base.treeview);
 					new $.r2rTreeViewMappingRef(base.parentMapping).addToTreeView(base.treeview);
+					/* Add mandatory source pattern */
+					new $.r2rTreeViewSourcePattern($.r2rUtils.createStringLiteral("")).addToTreeView(base.treeview);					
 				} else {
 					new $.r2rTreeViewType($.rdf.resource("r2r:ClassMapping", { namespaces: basePrefixStore.databank.namespaces })).addToTreeView(base.treeview);
+					/* Add mandatory source pattern */
+					new $.r2rTreeViewSourcePattern($.r2rUtils.createStringLiteral("")).addToTreeView(base.treeview);					
 				}
 				base.editor.find("#r2redit-mappingName").val("(please provide a name)");
 				return;
