@@ -126,6 +126,16 @@
 			}
 			return resultObj;
 		},
+		/**
+		 * Creates an R2R prefix definition from a JavaScript object (inverse of parsePrefixDefinitions)
+		 */
+		constructPrefixDefinitions: function (obj) {
+			var prefixDefinitions = "";
+			$.each(obj, function(key, value) {
+				prefixDefinitions += key + ": <" + value + "> .\n";
+			});
+			return prefixDefinitions;
+		},
 		createStringLiteral: function(str) {
 			return $.rdf.literal('"' + str.replace(/"/g, '\\"') + '"');
 		}

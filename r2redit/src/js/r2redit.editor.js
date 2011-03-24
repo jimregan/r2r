@@ -172,7 +172,7 @@
 				return label;
 			},
 			getEditor: function() {
-				return new $.r2rStringEditor(this);
+				return new $.r2rPrefixEditor(this);
 			}
 		}, {
 			getProperty: function() {
@@ -198,7 +198,7 @@
 				return (this.obj !== undefined ? this.obj.value : '(error)');
 			},
 			getEditor: function() {
-				return new $.r2rStringEditor(this);
+				return new $.r2rSourcePatternEditor(this);
 			}
 		}, {
 			getProperty: function() {
@@ -224,7 +224,7 @@
 				return (this.obj !== undefined ? this.obj.value : '(error)');
 			},
 			getEditor: function() {
-				return new $.r2rStringEditor(this);
+				return new $.r2rTargetPatternEditor(this);
 			}
 		}, {
 			getProperty: function() {
@@ -331,7 +331,7 @@
 			base.treeTab = $("<div id=\"tree\">\
 					<div id=\"r2redit-controlbar\" class=\"ui-widget-content ui-corner-all\">\
 					</div>\
-					<input type=\"text\" id=\"r2redit-mappingName\" title=\"Please enter a full or prefixed URI\">\
+					<input type=\"text\" id=\"r2redit-mappingName\" class=\"r2redit-hoverInput\" title=\"Please enter a full or prefixed URI\">\
 				</div>")
 				.appendTo(base.tabs);
 				
@@ -583,8 +583,8 @@
 				.append(this.fieldSet);
 			this.dialogOptions = {
 				autoOpen: true,
-				height: 300,
 				width: 350,
+				height: 300,
 				modal: true,
 				buttons: {
 					Save: function() {
@@ -630,22 +630,144 @@
 	});
 	
     /** 
+	 * Prefix Definitions editor
+	 */
+	$.r2rPrefixEditor = $.inherit(
+		$.r2rValueEditor,
+		{
+			initUI: function() {
+				var base = this;
+				this.__base();
+				$.extend(this.dialogOptions, {
+					width: 510,
+					height: 200,
+					dialogClass: "r2redit-editor-prefix-dialog"
+				});
+				$.each($.r2rUtils.parsePrefixDefinitions(this.obj.getUnderlyingObject().value), function(prefix, uri) {
+					base.addLine(prefix, uri);
+				});
+				base.addLine();
+			},
+			save: function() {
+				var prefixes = {};
+				this.fieldSet.find(".r2redit-editor-prefix-dialog-line").each(function(key, line) {
+					line = $(line);
+					var prefix = line.find(".r2redit-editor-prefix-dialog-prefix").val();
+					if (prefix != "(new)") {
+						prefixes[prefix] = line.find(".r2redit-editor-prefix-dialog-uri").val();
+					}
+				});
+				this.obj.setUnderlyingObject($.r2rUtils.createStringLiteral($.r2rUtils.constructPrefixDefinitions(prefixes)));
+				this.obj.refresh();
+			},
+			addLine: function(prefix, uri) {
+				var base = this;
+				if (prefix == null) {
+					prefix = "(new)";
+					uri = "";
+				}
+				var line = $("<div class=\"r2redit-editor-prefix-dialog-line\">\
+								<input type=\"text\" class=\"r2redit-editor-prefix-dialog-prefix r2redit-hoverInput\" value=\"" + prefix + "\"/>\
+								<input type=\"text\" class=\"r2redit-editor-prefix-dialog-uri r2redit-input\" value=\"" + uri + "\"/>\
+								<div class=\"r2redit-editor-prefix-dialog-remove ui-icon-minus-small-circle\"></div>\
+								</div>")
+					.appendTo(this.fieldSet);
+				line.find(".r2redit-editor-prefix-dialog-prefix").focus(function() {
+					if ($(this).val() == "(new)") {
+						$(this)
+							.select()
+							.data("new", true);
+					}
+				}).change(function() {
+					if ($(this).data("new")) {
+						base.addLine();
+						$(this).data("new", false);
+					}
+				});
+				line.find(".ui-icon-minus-small-circle").click(function() {
+					if ($(this).siblings(".r2redit-editor-prefix-dialog-prefix").val() != "(new)") {
+						line.remove();
+					}
+				});
+			},
+			removeLine: function() {
+			},
+		}
+	);
+	
+	/** 
 	 * Basic string editor
 	 */
 	$.r2rStringEditor = $.inherit(
 		$.r2rValueEditor,
 		{
 			initUI: function() {
-				this.valueField = $("<textarea></textarea>").val(this.obj.getUnderlyingObject().value)
+				var value = (this.obj.getUnderlyingObject().value != "" ? this.obj.getUnderlyingObject().value : this.getDefaultValue());
+				this.valueField = $("<textarea></textarea>").val(value)
 					.appendTo(this.fieldSet);
+				var description = this.getDescription();
+				if (description) {
+					$("<div class=\"r2redit-editor-description ui-widget-header ui-corner-all\">" + description + "</div>").appendTo(this.dialog);
+				}
 			},
 			save: function() {
 				this.obj.setUnderlyingObject($.r2rUtils.createStringLiteral(this.valueField.val()));
 				this.obj.refresh();
+			},
+			getDescription: function() {
+			},
+			getDefaultValue: function() {
+				return "";
 			}
 		}
 	);
 	
+    /** 
+	 * Source pattern editor
+	 */
+	$.r2rSourcePatternEditor = $.inherit(
+		$.r2rStringEditor,
+		{
+			initUI: function() {
+				$.extend(this.dialogOptions, {
+					width: 500,
+					height: 365,
+				});
+				
+				this.__base();
+			},
+			getDescription: function() {
+				return "<a class=\"r2redit-editor-helplink\" href=\"http://www4.wiwiss.fu-berlin.de/bizer/r2r/spec/#sourcepattern\" target=\"_blank\"></a>A Source Pattern expresses the structure of the source vocabulary terms.<br/>All of the SPARQL syntax that is valid in a WHERE-clause is allowed here, with the restriciton that properties must be explicit URIs. Also, in order to make it unambiguous which variable in the source pattern corresponds to the mapped resources, the variable ?SUBJ has to be used.";
+			},
+			getDefaultValue: function() {
+				return "?SUBJ rdf:type ns:Class";
+			}
+		}
+	);
+	
+    /** 
+	 * Traget pattern editor
+	 */
+	$.r2rTargetPatternEditor = $.inherit(
+		$.r2rStringEditor,
+		{
+			initUI: function() {
+				$.extend(this.dialogOptions, {
+					width: 500,
+					height: 315,
+				});
+				
+				this.__base();
+			},
+			getDescription: function() {
+				return "<a class=\"r2redit-editor-helplink\" href=\"http://www4.wiwiss.fu-berlin.de/bizer/r2r/spec/#targetpattern\" target=\"_blank\"></a>A target pattern contains target triples that are constructed by using constants, variables of the source pattern or of tranformation patterns.";
+			},
+			getDefaultValue: function() {
+				return "?SUBJ ns:prop ?var";
+			}
+		}
+	);
+
     /** 
 	 * Transformation editor
 	 */
@@ -711,7 +833,7 @@
 						var regexp = new RegExp(searchField.val(), "i");
 						functionList.find("option").each(function(key, option) {
 							var option = $(option);
-							if (option.attr("value").search(regexp) != -1) {
+							if (option.attr("value").search(regexp) != -1 || allFunctions[option.attr("value")].description.search(regexp) != -1) {
 								option.show();
 							} else {
 								option.hide();
