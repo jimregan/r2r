@@ -195,3 +195,57 @@
 .r2redit-mappingTable thead th {
 	padding: 1px 10px;
 }
+
+/* Editor */
+
+.r2redit-editor-transformation-dialog fieldset, .r2redit-editor-transformation-dialog .r2redit-editor-transformation-reference {
+	width: 48%;
+	height: 250px;
+	padding: 0;
+}
+
+.r2redit-editor-transformation-dialog fieldset {
+	margin-top: 5px;
+	float: left;
+}
+
+.r2redit-editor-transformation-dialog .r2redit-editor-transformation-reference {
+	margin-top: 5px;
+	float: right;
+}
+
+.r2redit-editor-transformation-dialog textarea {
+	height: 100%;
+	margin: 0;
+}
+
+#r2redit-editor-transformation-functions {
+	width: 100%;
+	height: 130px;
+	padding-left: 3px;
+}
+
+#r2redit-editor-transformation-search {
+	width: 100%;
+	background: url(../images/magnifier.png) no-repeat 4px 50%;
+	height: 24px;
+}
+
+#r2redit-editor-transformation-search input {
+	position: relative;
+	left: 25px;
+	top: 2px;
+	width: 250px;
+	border: none;
+}
+
+#r2redit-editor-transformation-description {
+	height: 85px;
+	padding: 4px;
+	font-weight: normal;
+	overflow: auto;
+}
+
+.placeholder {
+	color: #bbbbbb;
+}

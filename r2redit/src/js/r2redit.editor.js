@@ -19,6 +19,8 @@
  */
 (function($){
 	var treeViewTypes = [];
+	var functionReference = null;
+	var allFunctions = [];
 	
 	/** 
 	 * Represents an R2R tree object
@@ -248,7 +250,7 @@
 				return (this.obj !== undefined ? this.obj.value : '(error)');
 			},
 			getEditor: function() {
-				return new $.r2rStringEditor(this);
+				return new $.r2rTransformationEditor(this);
 			}
 		}, {
 			getProperty: function() {
@@ -264,6 +266,7 @@
 	 * @param rdfStore An rdfQuery store containing the mapping definitions
 	 * @param mapping The URI of the mapping to edit, or null to create a new mapping
 	 * @param parentMapping When creating a new property mapping, specifies the parent class mapping
+	 * @param basePath	Base path to R2Redit
 	 * @param onComplete Callback to invoke when editing has finished, adhering to the following interface:
 	 * 	function(mapping, originalMapping, rdfRepresentation)
 	 *		@param mapping The URI of the mapping that was edited
@@ -271,19 +274,42 @@
 	 *		@param rdfRepresentation An rdfStore containing the RDF representation of the mapping. If the item was removed, the value is null.
 	 * 		@param action One of "save", "remove", "cancel"
 	 */
-	$.r2rEditorMappingEditor = function(container, rdfStore, mapping, parentMapping, onComplete) {
+	$.r2rEditorMappingEditor = function(container, rdfStore, mapping, parentMapping, basePath, onComplete) {
 		var base = this;
 		base.container = container;
 		base.rdfStore = rdfStore;
 		base.rdfRepresentation = $.rdf();
 		base.mapping = base.originalMapping = mapping;
 		base.parentMapping = parentMapping;
+		base.basePath = basePath;
 		base.onComplete = onComplete;
 		
 		base.init = function() {
 			base.initUI();
 			base.importData();
+			base.loadReference();
 		};
+		
+		base.loadReference = function() {
+			if (functionReference) {
+				return;
+			}
+			/*
+			 * Just do this in the background without interrupting the user
+			 * - the reference is easily loaded by the time he
+			 * could reach the transformations dialog
+			 */
+			$.ajax({
+				url: base.basePath + "json/transformations.json",
+				dataType:'json',
+				success: function(data) {
+					functionReference = data;
+		   		},
+		        error: function(jqXHR, textStatus, err) {
+					$.r2rUI.showError("Unable to function reference", err);        	
+		        }
+			});
+		}
 		
 		base.initUI = function() {
 			/* Main chrome */
@@ -549,15 +575,13 @@
 		
 		show: function(onSave) {
 			var base = this;
-			var dialogOpened = false;
-			var dialog = $("<div></div>")
+			this.form = $("<form></form>");
+			this.fieldSet = $("<fieldset></fieldset>").appendTo(this.form);
+			this.dialog = $("<div></div>")
 				.addClass("r2redit-dialog")
 				.attr("title", this.obj.getTooltip())
-				.append($("<form></form>")
-					.append($("<fieldset></fieldset>")
-						.append(this.getFields()))
-				);
-			dialog.dialog({
+				.append(this.fieldSet);
+			this.dialogOptions = {
 				autoOpen: true,
 				height: 300,
 				width: 350,
@@ -588,29 +612,118 @@
 				},
 				close: function() {
 				}
-			});
+			};
+			this.initUI();
+			var dialogOpened = false;
+			this.dialog.dialog(this.dialogOptions);
 			var dialogOpened = true;
-			$.r2rUI.fixJQueryUIDialogButtons(dialog);
+			$.r2rUI.fixJQueryUIDialogButtons(this.dialog);
 		},
 		
 		/**
 		 * Override to add fields to edit form
 		 */
-		getFields: function() {
+		initUI: function() {
 		},
 		save: function() {
 		}
 	});
 	
     /** 
-	 * Represents a string editor
+	 * Basic string editor
 	 */
 	$.r2rStringEditor = $.inherit(
 		$.r2rValueEditor,
 		{
-			getFields: function() {
-				this.valueField = $("<textarea></textarea>").val(this.obj.getUnderlyingObject().value);
-				return $("<label for=\"textfield\">String value</label>").append(this.valueField);
+			initUI: function() {
+				this.valueField = $("<textarea></textarea>").val(this.obj.getUnderlyingObject().value)
+					.appendTo(this.fieldSet);
+			},
+			save: function() {
+				this.obj.setUnderlyingObject($.r2rUtils.createStringLiteral(this.valueField.val()));
+				this.obj.refresh();
+			}
+		}
+	);
+	
+    /** 
+	 * Transformation editor
+	 */
+	$.r2rTransformationEditor = $.inherit(
+		$.r2rValueEditor,
+		{
+			initUI: function() {
+				var valueField = this.valueField = $("<textarea></textarea>").val(this.obj.getUnderlyingObject().value)
+									.appendTo(this.fieldSet);
+				var reference = $("<div class=\"r2redit-editor-transformation-reference\">\
+									<div id=\"r2redit-editor-transformation-search\" class=\"ui-widget ui-widget-content ui-corner-top\">\
+										<input type=\"text\" id=\"r2redit-editor-transformation-searchfield\" placeholder=\"Search\"/>\
+									</div>\
+									<select size=\"10\" id=\"r2redit-editor-transformation-functions\">\
+									</select>\
+									<div id=\"r2redit-editor-transformation-description\" class=\"ui-widget-header ui-corner-bottom\"></div>\
+									</div>").appendTo(this.dialog);
+				/* Function list */
+				var functionList = reference.find("#r2redit-editor-transformation-functions");
+				$.each(functionReference, function(group, functions) {
+					var optGroup = $("<optgroup></optgroup")
+									.attr("label", group)
+									.appendTo(functionList);
+					$.each(functions, function(functionName, options) {
+						allFunctions[functionName] = options;
+						$.each($.isArray(options.arguments) ? options.arguments : [ options.arguments ], function(index, arguments) {
+							var syntax = (functionName == "_length" ? "length" : functionName) + "(" + arguments + ")";
+							$("<option>" + syntax + "</option>")
+								.attr("value", functionName)
+								.dblclick(function() {
+									valueField.insertAtCaret(syntax);
+								})
+								.appendTo(optGroup);
+						});
+					});
+				});
+				functionList
+					.scrollTop(0)
+					.change(function() {
+						var description = reference.find("#r2redit-editor-transformation-description");
+						var f = allFunctions[functionList.val()];
+						if (f) {
+							var usage = "";
+							var functionName = (functionList.val() == "_length" ? "length" : functionList.val());
+							$.each($.isArray(f.arguments) ? f.arguments : [ f.arguments ], function(index, arguments) {
+								usage += "<b>" + functionName + "</b>(" + f.arguments + ")<br/>";
+							});
+							usage += "<br/>" + f.description;
+							if (f.note) {
+								usage += "<br/><em>Note: " + f.note + "</em>";
+							}
+							description.html(usage);
+						} else {
+							description.html("");
+						}
+					});
+
+				/* Search */
+				var searchField = reference.find('#r2redit-editor-transformation-searchfield');
+				searchField
+					.placeholder()
+					.keyup(function() {
+						var regexp = new RegExp(searchField.val(), "i");
+						functionList.find("option").each(function(key, option) {
+							var option = $(option);
+							if (option.attr("value").search(regexp) != -1) {
+								option.show();
+							} else {
+								option.hide();
+							}
+						});
+					});
+
+				$.extend(this.dialogOptions, {
+					width: 800,
+					height: 340,
+					dialogClass: "r2redit-editor-transformation-dialog"
+				});
 			},
 			save: function() {
 				this.obj.setUnderlyingObject($.r2rUtils.createStringLiteral(this.valueField.val()));
