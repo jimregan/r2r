@@ -116,17 +116,17 @@
 			"description": "Rounds to the nearest number with no fractional part.",
 			"returnsList": false
 		},
-		"xpath_round-half-to-even": {
+		"xpath_round_half_to_even": {
 			"arguments": "x",
 			"description": "Takes a number and a precision and returns a number rounded to the given precision. If the fractional part is exactly half, the result is the number whose least significant digit is even.",
 			"returnsList": false
 		},
-		"xpath_codepoints-to-string": {
+		"xpath_codepoints_to_string": {
 			"arguments": "cp1, ...",
 			"description": "Creates an xs:string from a sequence of Unicode code points.",
 			"returnsList": false
 		},
-		"xpath_string-to-codepoints": {
+		"xpath_string_to_codepoints": {
 			"arguments": "str",
 			"description": "Returns the sequence of Unicode code points that constitute an xs:string.",
 			"returnsList": true
@@ -136,7 +136,7 @@
 			"description": "Returns -1, 0, or 1, depending on whether the value of the first argument is respectively less than, equal to, or greater than the value of the second argument, according to the rules of the collation that is used.",
 			"returnsList": false
 		},
-		"xpath_codepoint-equal": {
+		"xpath_codepoint_equal": {
 			"arguments": "s1, s2",
 			"description": "Returns true if the two arguments are equal using the Unicode code point collation.",
 			"returnsList": false
@@ -146,7 +146,7 @@
 			"description": "Concatenates two or more arguments to a string.",
 			"returnsList": false
 		},
-		"xpath_string-join": {
+		"xpath_string_join": {
 			"arguments": ["(s1, ...)", "(s1, ...), separator"],
 			"description": "Returns the string produced by concatenating a sequence of strings using an optional separator.",
 			"returnsList": false
@@ -156,28 +156,28 @@
 			"description": "Returns the string located at a specified place within an argument string.",
 			"returnsList": false
 		},
-		"xpath_string-length": {
+		"xpath_string_length": {
 			"arguments": "s",
 			"description": "Returns the length of the argument.",
 			"returnsList": false
 		},
-		"xpath_normalize-space": {
+		"xpath_normalize_space": {
 			"arguments": "s",
 			"description": "Returns the whitespace-normalized value of the argument.",
 			"returnsList": false
 		},
-		"xpath_normalize-unicode": {
+		"xpath_normalize_unicode": {
 			"arguments": ["s", "s, norm"],
 			"description": "Returns the normalized value of the first argument in the normalization form specified by the second (optional) argument.",
 			"note": "Implemented normalization forms are NFC (default), NFD, NFKC and NFKD.",
 			"returnsList": false
 		},
-		"xpath_upper-case": {
+		"xpath_upper_case": {
 			"arguments": "s",
 			"description": "Returns the upper-cased value of the argument.",
 			"returnsList": false
 		},
-		"xpath_lower-case": {
+		"xpath_lower_case": {
 			"arguments": "s",
 			"description": "Returns the lower-cased value of the argument.",
 			"returnsList": false
@@ -187,16 +187,16 @@
 			"description": "Returns the first string argument with occurrences of characters contained in the second argument replaced by the character at the corresponding position in the third argument.",
 			"returnsList": false
 		},
-		"xpath_encode-for-uri": {
+		"xpath_encode_for_uri": {
 			"arguments": "s",
 			"description": "Returns the string argument with certain characters escaped to enable the resulting string to be used as a path segment in a URI.",
 			"returnsList": false
 		},
-		"xpath_iri-to-uri": {
+		"xpath_iri_to_uri": {
 			"arguments": "s",
 			"description": "Returns the string argument with certain characters escaped to enable the resulting string to be used as (part of) a URI.",
 			"returnsList": false
-		},		"xpath_escape-html-uri": {
+		},		"xpath_escape_html_uri": {
 			"arguments": "s",
 			"description": "Returns the string argument with certain characters escaped in the manner that html user agents handle attribute values that expect URIs.",
 			"note": "This is not working correctly to the specification. Try to avoid the function.",
@@ -207,21 +207,21 @@
 			"description": "Indicates whether one string contains another string.",
 			"note": "Other than in the XPath function, a collation must not be specified.",
 			"returnsList": false
-		},		"xpath_starts-with": {
+		},		"xpath_starts_with": {
 			"arguments": "s, c",
 			"description": "Indicates whether the value of one string begins with another string.",
 			"note": "Other than in the XPath function, a collation must not be specified.",			"returnsList": false
-		},		"xpath_ends-with": {
+		},		"xpath_ends_with": {
 			"arguments": "s, c",
 			"description": "Indicates whether the value of one string ends with another string.",
 			"note": "Other than in the XPath function, a collation must not be specified.",			"returnsList": false
-		},		"xpath_substring-before": {
+		},		"xpath_substring_before": {
 			"arguments": "s, c",
 			"description": "Returns the string that precedes in that string another string.",
 			"note": "Other than in the XPath function, a collation must not be specified.",
 			"returnsList": false
 		},
-		"xpath_substring-after": {
+		"xpath_substring_after": {
 			"arguments": "s, c",
 			"description": "Returns the string that follow in that string another string.",
 			"note": "Other than in the XPath function, a collation must not be specified.",			"returnsList": false
