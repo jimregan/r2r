@@ -24,6 +24,7 @@
 	 * @param container	jQuery element to host the table / editor
 	 * @param options
 	 * 		sourceUrl	URL to load mapping from
+	 *		basePath	Base path to R2Redit
 	 * 		rdfSource	RDF/XML or TTL source (as an alternative to specifying sourceURL)
 	 * 		title		Editor title to use
 	 * 		onCommit	Callback handler to save mapping
@@ -68,7 +69,7 @@
 		 */
 		base.startFromData = function(rdfSource) {
 			base.rdfStore = $.r2rUtils.loadRDF(rdfSource);
-			base.mappingTable = new $.r2rEditorMappingTable(base.container, base.options.title, base.rdfStore, base.onCommit);
+			base.mappingTable = new $.r2rEditorMappingTable(base.container, base.options, base.rdfStore, base.onCommit);
 		};
 		
 		base.onCommit = function(rdfStore) {

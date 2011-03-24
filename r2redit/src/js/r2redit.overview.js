@@ -244,14 +244,17 @@
 	/**
 	 * Generates an overview table for a given mapping from source
 	 * @param container	jQuery element to host the table / editor
-	 * @param title Editor title to use
+	 * @param options
+	 *		title Editor title to use
+	 *		basePath	Base path to R2Redit
 	 * @param rdfStore rdfQuery object containing the mappings
 	 * @param onCommit	function(rdfStore)
 	 */
-	$.r2rEditorMappingTable = function(container, title, rdfStore, onCommit) {
+	$.r2rEditorMappingTable = function(container, options, rdfStore, onCommit) {
 		var base = this;
 		base.container = container;
-		base.title = title;
+		base.title = options.title;
+		base.basePath = options.basePath;
 		base.rdfStore = rdfStore;
 		base.onCommit = onCommit;
 		
@@ -260,7 +263,7 @@
 		 */
 		base.init = function() {
 			base.mappingTable = $("<div>\
-										<h1>" + title + "</h1>\
+										<h1>" + base.title + "</h1>\
 										<div class=\"ui-tabs ui-widget ui-widget-content ui-corner-all\">\
 										<table id=\"mappings\" class=\"r2redit-mappingTable\">\
 										<thead class=\"ui-widget-header\">\
@@ -362,7 +365,7 @@
 		 */
 		base.edit = function(mapping, parentMapping) {
 			base.mappingTable.hide();
-			base.editor = $.r2rEditorMappingEditor(base.container, base.rdfStore, mapping, parentMapping, base.onEditComplete);
+			base.editor = $.r2rEditorMappingEditor(base.container, base.rdfStore, mapping, parentMapping, base.basePath, base.onEditComplete);
 		};
 		
 		/**

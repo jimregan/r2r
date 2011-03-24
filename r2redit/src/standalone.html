@@ -23,6 +23,7 @@
 <script type="text/javascript" src="lib/jquery.qtip-1.0.0-rc3.min.js"></script>
 <script type="text/javascript" src="lib/jquery.treeview.js"></script>
 <script type="text/javascript" src="lib/jquery.treeview.edit.js"></script>
+<script type="text/javascript" src="lib/jquery.placeholder.js"></script>
 <script type="text/javascript" src="js/r2redit.util.js"></script>
 <script type="text/javascript" src="js/r2redit.env.js"></script>
 <script type="text/javascript" src="js/r2redit.ui.js"></script>
@@ -63,6 +64,7 @@ body {
 			title: "All mappings for data source PharmGKB",
 			sourceUrl: url,
 			serialize: true,
+			basePath: "",
 			onCommit: function(data) {
 				$("#result").text(data);
 			}
