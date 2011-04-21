@@ -27,7 +27,7 @@ import de.fuberlin.wiwiss.r2r.MultiFunctionFactory;
 
 public class XPathFunctionFactory extends MultiFunctionFactory {
 
-	private static final String XPATH_PREFIX = "xpath_";
+	private static final String XPATH_PREFIX = "xpath:";
 	
 	private static Logger log = LoggerFactory
 			.getLogger(XPathFunctionFactory.class);
@@ -56,7 +56,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class CodepointsToStringFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "codepoints_to_string";
+			return XPATH_PREFIX + "codepoints-to-string";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -80,7 +80,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class StringToCodepointsFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "string_to_codepoints";
+			return XPATH_PREFIX + "string-to-codepoints";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -124,7 +124,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class CodepointEqualFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "codepoint_equal";
+			return XPATH_PREFIX + "codepoint-equal";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -160,7 +160,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class StringJoinFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "string_join";
+			return XPATH_PREFIX + "string-join";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -237,7 +237,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class StringLengthFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "string_length";
+			return XPATH_PREFIX + "string-length";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -256,7 +256,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class NormalizeSpaceFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "normalize_space";
+			return XPATH_PREFIX + "normalize-space";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -277,7 +277,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class NormalizeUnicodeFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "normalize_unicode";
+			return XPATH_PREFIX + "normalize-unicode";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -310,7 +310,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class UpperCaseFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "upper_case";
+			return XPATH_PREFIX + "upper-case";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -325,7 +325,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class LowerCaseFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "lower_case";
+			return XPATH_PREFIX + "lower-case";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -382,7 +382,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class EncodeForUriFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "encode_for_uri";
+			return XPATH_PREFIX + "encode-for-uri";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -420,7 +420,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class EscapeHtmlUriFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "escape_html_uri";
+			return XPATH_PREFIX + "escape-html-uri";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -464,7 +464,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class StartsWithFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "starts_with";
+			return XPATH_PREFIX + "starts-with";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -480,7 +480,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class EndsWithFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "ends_with";
+			return XPATH_PREFIX + "ends-with";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -496,7 +496,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class SubstringBeforeFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "substring_before";
+			return XPATH_PREFIX + "substring-before";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -517,7 +517,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class SubstringAfterFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "substring_after";
+			return XPATH_PREFIX + "substring-after";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
@@ -661,7 +661,7 @@ public class XPathFunctionFactory extends MultiFunctionFactory {
 	protected static class RoundHalfToEvenFunction implements Function {
 
 		public String getURI() {
-			return XPATH_PREFIX + "round_half_to_even";
+			return XPATH_PREFIX + "round-half-to-even";
 		}
 
 		public List<String> execute(List<List<String>> arguments, String hint) {
