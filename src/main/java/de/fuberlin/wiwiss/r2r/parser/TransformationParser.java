@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g 2010-07-24 23:51:52
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g 2011-04-21 18:37:58
 
   package de.fuberlin.wiwiss.r2r.parser;
   
@@ -17,27 +17,28 @@ import java.util.ArrayList;
 
 public class TransformationParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "PLUS", "MINUS", "MULT", "DIV", "VAR1", "VAR2", "FUNCTIONNAME", "INTEGER", "DECIMAL", "DOUBLE", "STRING_LITERAL1", "STRING_LITERAL2", "STRING_LITERAL_LONG1", "STRING_LITERAL_LONG2", "VARNAME", "EXPONENT", "ECHAR", "PN_CHARS_U", "WS", "PN_CHARS_BASE", "PN_CHARS", "PN_PREFIX", "PN_LOCAL", "'='", "'('", "')'", "'['", "'?'", "':'", "']'", "'>'", "'>='", "'<'", "'<='", "'!='", "','"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "PLUS", "MINUS", "MULT", "DIV", "VAR1", "VAR2", "FUNCTIONNAME", "INTEGER", "DECIMAL", "DOUBLE", "STRING_LITERAL1", "STRING_LITERAL2", "STRING_LITERAL_LONG1", "STRING_LITERAL_LONG2", "VARNAME", "ALPHA", "EXPONENT", "ECHAR", "PN_CHARS_U", "WS", "PN_CHARS_BASE", "PN_CHARS", "PN_PREFIX", "PN_LOCAL", "'='", "'('", "')'", "'['", "'?'", "':'", "']'", "'>'", "'>='", "'<'", "'<='", "'!='", "','"
     };
     public static final int INTEGER=11;
-    public static final int EXPONENT=19;
+    public static final int T__40=40;
+    public static final int EXPONENT=20;
     public static final int T__29=29;
     public static final int T__28=28;
-    public static final int T__27=27;
-    public static final int PN_LOCAL=26;
+    public static final int PN_LOCAL=27;
     public static final int MINUS=5;
     public static final int MULT=6;
     public static final int EOF=-1;
-    public static final int ECHAR=20;
+    public static final int ECHAR=21;
+    public static final int ALPHA=19;
     public static final int FUNCTIONNAME=10;
     public static final int VARNAME=18;
     public static final int T__30=30;
     public static final int T__31=31;
     public static final int T__32=32;
-    public static final int WS=22;
+    public static final int WS=23;
     public static final int T__33=33;
     public static final int T__34=34;
-    public static final int PN_CHARS_BASE=23;
+    public static final int PN_CHARS_BASE=24;
     public static final int STRING_LITERAL_LONG2=17;
     public static final int T__35=35;
     public static final int DECIMAL=12;
@@ -48,12 +49,12 @@ public class TransformationParser extends Parser {
     public static final int VAR2=9;
     public static final int T__38=38;
     public static final int T__39=39;
-    public static final int PN_PREFIX=25;
+    public static final int PN_PREFIX=26;
     public static final int STRING_LITERAL2=15;
     public static final int STRING_LITERAL1=14;
-    public static final int PN_CHARS=24;
+    public static final int PN_CHARS=25;
     public static final int DOUBLE=13;
-    public static final int PN_CHARS_U=21;
+    public static final int PN_CHARS_U=22;
     public static final int PLUS=4;
     public static final int DIV=7;
 
@@ -71,7 +72,7 @@ public class TransformationParser extends Parser {
         
 
     public String[] getTokenNames() { return TransformationParser.tokenNames; }
-    public String getGrammarFileName() { return "D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g"; }
+    public String getGrammarFileName() { return "/home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g"; }
 
 
       FunctionManager funcManager;
@@ -121,7 +122,7 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "transform"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:79:1: transform returns [String variable, FunctionExecution funcExec, Set<String> variableDependencies] : v= variable '=' expression EOF ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:79:1: transform returns [String variable, FunctionExecution funcExec, Set<String> variableDependencies] : v= variable '=' expression EOF ;
     public final TransformationParser.transform_return transform() throws RecognitionException {
         TransformationParser.transform_return retval = new TransformationParser.transform_return();
         retval.start = input.LT(1);
@@ -132,15 +133,15 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:80:3: (v= variable '=' expression EOF )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:80:5: v= variable '=' expression EOF
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:80:3: (v= variable '=' expression EOF )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:80:5: v= variable '=' expression EOF
             {
             pushFollow(FOLLOW_variable_in_transform62);
             v=variable();
 
             state._fsp--;
 
-            match(input,27,FOLLOW_27_in_transform64); 
+            match(input,28,FOLLOW_28_in_transform64); 
             pushFollow(FOLLOW_expression_in_transform66);
             expression1=expression();
 
@@ -176,7 +177,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "expression"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:95:1: expression returns [Argument value] : m= mult ( ( PLUS | MINUS ) m= mult )* ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:95:1: expression returns [Argument value] : m= mult ( ( PLUS | MINUS ) m= mult )* ;
     public final Argument expression() throws RecognitionException {
         Argument value = null;
 
@@ -184,8 +185,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:96:3: (m= mult ( ( PLUS | MINUS ) m= mult )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:96:5: m= mult ( ( PLUS | MINUS ) m= mult )*
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:96:3: (m= mult ( ( PLUS | MINUS ) m= mult )* )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:96:5: m= mult ( ( PLUS | MINUS ) m= mult )*
             {
             pushFollow(FOLLOW_mult_in_expression94);
             m=mult();
@@ -193,7 +194,7 @@ public class TransformationParser extends Parser {
             state._fsp--;
 
              value = m; String operation = null;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:97:4: ( ( PLUS | MINUS ) m= mult )*
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:97:4: ( ( PLUS | MINUS ) m= mult )*
             loop2:
             do {
                 int alt2=2;
@@ -206,9 +207,9 @@ public class TransformationParser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:97:5: ( PLUS | MINUS ) m= mult
+            	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:97:5: ( PLUS | MINUS ) m= mult
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:97:5: ( PLUS | MINUS )
+            	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:97:5: ( PLUS | MINUS )
             	    int alt1=2;
             	    int LA1_0 = input.LA(1);
 
@@ -226,7 +227,7 @@ public class TransformationParser extends Parser {
             	    }
             	    switch (alt1) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:97:7: PLUS
+            	            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:97:7: PLUS
             	            {
             	            match(input,PLUS,FOLLOW_PLUS_in_expression104); 
             	            operation = "add"; 
@@ -234,7 +235,7 @@ public class TransformationParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:98:7: MINUS
+            	            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:98:7: MINUS
             	            {
             	            match(input,MINUS,FOLLOW_MINUS_in_expression114); 
             	            operation = "subtract"; 
@@ -277,7 +278,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "mult"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:105:1: mult returns [Argument value] : u= unary ( ( MULT | DIV ) u= unary )* ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:105:1: mult returns [Argument value] : u= unary ( ( MULT | DIV ) u= unary )* ;
     public final Argument mult() throws RecognitionException {
         Argument value = null;
 
@@ -285,8 +286,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:106:3: (u= unary ( ( MULT | DIV ) u= unary )* )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:106:5: u= unary ( ( MULT | DIV ) u= unary )*
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:106:3: (u= unary ( ( MULT | DIV ) u= unary )* )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:106:5: u= unary ( ( MULT | DIV ) u= unary )*
             {
             pushFollow(FOLLOW_unary_in_mult159);
             u=unary();
@@ -294,7 +295,7 @@ public class TransformationParser extends Parser {
             state._fsp--;
 
              value = u; String operation = null;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:107:4: ( ( MULT | DIV ) u= unary )*
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:107:4: ( ( MULT | DIV ) u= unary )*
             loop4:
             do {
                 int alt4=2;
@@ -307,9 +308,9 @@ public class TransformationParser extends Parser {
 
                 switch (alt4) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:107:5: ( MULT | DIV ) u= unary
+            	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:107:5: ( MULT | DIV ) u= unary
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:107:5: ( MULT | DIV )
+            	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:107:5: ( MULT | DIV )
             	    int alt3=2;
             	    int LA3_0 = input.LA(1);
 
@@ -327,7 +328,7 @@ public class TransformationParser extends Parser {
             	    }
             	    switch (alt3) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:107:7: MULT
+            	            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:107:7: MULT
             	            {
             	            match(input,MULT,FOLLOW_MULT_in_mult169); 
             	             operation = "multiply"; 
@@ -335,7 +336,7 @@ public class TransformationParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:108:7: DIV
+            	            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:108:7: DIV
             	            {
             	            match(input,DIV,FOLLOW_DIV_in_mult181); 
             	             operation = "divide"; 
@@ -378,7 +379,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "unary"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:115:1: unary returns [Argument value] : ( ( MINUS | PLUS ) )* term ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:115:1: unary returns [Argument value] : ( ( MINUS | PLUS ) )* term ;
     public final Argument unary() throws RecognitionException {
         Argument value = null;
 
@@ -386,11 +387,11 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:116:3: ( ( ( MINUS | PLUS ) )* term )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:116:5: ( ( MINUS | PLUS ) )* term
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:116:3: ( ( ( MINUS | PLUS ) )* term )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:116:5: ( ( MINUS | PLUS ) )* term
             {
             boolean negative = false;
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:117:3: ( ( MINUS | PLUS ) )*
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:117:3: ( ( MINUS | PLUS ) )*
             loop6:
             do {
                 int alt6=2;
@@ -403,9 +404,9 @@ public class TransformationParser extends Parser {
 
                 switch (alt6) {
             	case 1 :
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:117:5: ( MINUS | PLUS )
+            	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:117:5: ( MINUS | PLUS )
             	    {
-            	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:117:5: ( MINUS | PLUS )
+            	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:117:5: ( MINUS | PLUS )
             	    int alt5=2;
             	    int LA5_0 = input.LA(1);
 
@@ -423,7 +424,7 @@ public class TransformationParser extends Parser {
             	    }
             	    switch (alt5) {
             	        case 1 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:117:6: MINUS
+            	            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:117:6: MINUS
             	            {
             	            match(input,MINUS,FOLLOW_MINUS_in_unary228); 
             	             negative = !negative; 
@@ -431,7 +432,7 @@ public class TransformationParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:118:5: PLUS
+            	            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:118:5: PLUS
             	            {
             	            match(input,PLUS,FOLLOW_PLUS_in_unary236); 
 
@@ -475,7 +476,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "term"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:126:1: term returns [Argument value] : ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' | conditional );
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:126:1: term returns [Argument value] : ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' | conditional );
     public final Argument term() throws RecognitionException {
         Argument value = null;
 
@@ -497,7 +498,7 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:127:3: ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' | conditional )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:127:3: ( function | variable | integer | decimal | doubleVal | string | '(' expression ')' | conditional )
             int alt7=8;
             switch ( input.LA(1) ) {
             case FUNCTIONNAME:
@@ -534,12 +535,12 @@ public class TransformationParser extends Parser {
                 alt7=6;
                 }
                 break;
-            case 28:
+            case 29:
                 {
                 alt7=7;
                 }
                 break;
-            case 30:
+            case 31:
                 {
                 alt7=8;
                 }
@@ -553,7 +554,7 @@ public class TransformationParser extends Parser {
 
             switch (alt7) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:127:5: function
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:127:5: function
                     {
                     pushFollow(FOLLOW_function_in_term265);
                     function3=function();
@@ -565,7 +566,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:128:5: variable
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:128:5: variable
                     {
                     pushFollow(FOLLOW_variable_in_term273);
                     variable4=variable();
@@ -580,7 +581,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:133:5: integer
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:133:5: integer
                     {
                     pushFollow(FOLLOW_integer_in_term285);
                     integer5=integer();
@@ -592,7 +593,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:134:5: decimal
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:134:5: decimal
                     {
                     pushFollow(FOLLOW_decimal_in_term293);
                     decimal6=decimal();
@@ -604,7 +605,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:135:5: doubleVal
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:135:5: doubleVal
                     {
                     pushFollow(FOLLOW_doubleVal_in_term301);
                     doubleVal7=doubleVal();
@@ -616,7 +617,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:136:5: string
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:136:5: string
                     {
                     pushFollow(FOLLOW_string_in_term309);
                     string8=string();
@@ -630,21 +631,21 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:140:5: '(' expression ')'
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:140:5: '(' expression ')'
                     {
-                    match(input,28,FOLLOW_28_in_term321); 
+                    match(input,29,FOLLOW_29_in_term321); 
                     pushFollow(FOLLOW_expression_in_term323);
                     expression9=expression();
 
                     state._fsp--;
 
-                    match(input,29,FOLLOW_29_in_term325); 
+                    match(input,30,FOLLOW_30_in_term325); 
                      value = expression9; 
 
                     }
                     break;
                 case 8 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:141:5: conditional
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:141:5: conditional
                     {
                     pushFollow(FOLLOW_conditional_in_term333);
                     conditional10=conditional();
@@ -670,7 +671,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "conditional"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:144:1: conditional returns [Argument value] : '[' leftEx= expression comp= comparisonOp rightEx= expression '?' trueEx= expression ':' falseEx= expression ']' ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:144:1: conditional returns [Argument value] : '[' leftEx= expression comp= comparisonOp rightEx= expression '?' trueEx= expression ':' falseEx= expression ']' ;
     public final Argument conditional() throws RecognitionException {
         Argument value = null;
 
@@ -686,10 +687,10 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:145:3: ( '[' leftEx= expression comp= comparisonOp rightEx= expression '?' trueEx= expression ':' falseEx= expression ']' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:145:6: '[' leftEx= expression comp= comparisonOp rightEx= expression '?' trueEx= expression ':' falseEx= expression ']'
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:145:3: ( '[' leftEx= expression comp= comparisonOp rightEx= expression '?' trueEx= expression ':' falseEx= expression ']' )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:145:6: '[' leftEx= expression comp= comparisonOp rightEx= expression '?' trueEx= expression ':' falseEx= expression ']'
             {
-            match(input,30,FOLLOW_30_in_conditional355); 
+            match(input,31,FOLLOW_31_in_conditional355); 
             pushFollow(FOLLOW_expression_in_conditional359);
             leftEx=expression();
 
@@ -705,19 +706,19 @@ public class TransformationParser extends Parser {
 
             state._fsp--;
 
-            match(input,31,FOLLOW_31_in_conditional369); 
+            match(input,32,FOLLOW_32_in_conditional369); 
             pushFollow(FOLLOW_expression_in_conditional373);
             trueEx=expression();
 
             state._fsp--;
 
-            match(input,32,FOLLOW_32_in_conditional375); 
+            match(input,33,FOLLOW_33_in_conditional375); 
             pushFollow(FOLLOW_expression_in_conditional379);
             falseEx=expression();
 
             state._fsp--;
 
-            match(input,33,FOLLOW_33_in_conditional381); 
+            match(input,34,FOLLOW_34_in_conditional381); 
 
               // Create the comparison argument
                 Argument compOpArg = new ConstantArgument(ConstantType.STRING, (comp!=null?input.toString(comp.start,comp.stop):null));
@@ -747,16 +748,16 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "comparisonOp"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:158:1: comparisonOp returns [Argument value] : ( '>' | '>=' | '=' | '<' | '<=' | '!=' );
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:158:1: comparisonOp returns [Argument value] : ( '>' | '>=' | '=' | '<' | '<=' | '!=' );
     public final TransformationParser.comparisonOp_return comparisonOp() throws RecognitionException {
         TransformationParser.comparisonOp_return retval = new TransformationParser.comparisonOp_return();
         retval.start = input.LT(1);
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:159:3: ( '>' | '>=' | '=' | '<' | '<=' | '!=' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:159:3: ( '>' | '>=' | '=' | '<' | '<=' | '!=' )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:
             {
-            if ( input.LA(1)==27||(input.LA(1)>=34 && input.LA(1)<=38) ) {
+            if ( input.LA(1)==28||(input.LA(1)>=35 && input.LA(1)<=39) ) {
                 input.consume();
                 state.errorRecovery=false;
             }
@@ -785,7 +786,7 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "variable"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:163:1: variable : (v= VAR1 | v= VAR2 );
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:163:1: variable : (v= VAR1 | v= VAR2 );
     public final TransformationParser.variable_return variable() throws RecognitionException {
         TransformationParser.variable_return retval = new TransformationParser.variable_return();
         retval.start = input.LT(1);
@@ -793,7 +794,7 @@ public class TransformationParser extends Parser {
         Token v=null;
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:164:3: (v= VAR1 | v= VAR2 )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:164:3: (v= VAR1 | v= VAR2 )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -811,7 +812,7 @@ public class TransformationParser extends Parser {
             }
             switch (alt8) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:164:5: v= VAR1
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:164:5: v= VAR1
                     {
                     v=(Token)match(input,VAR1,FOLLOW_VAR1_in_variable445); 
 
@@ -826,7 +827,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:173:5: v= VAR2
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:173:5: v= VAR2
                     {
                     v=(Token)match(input,VAR2,FOLLOW_VAR2_in_variable459); 
 
@@ -857,7 +858,7 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "function"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:184:1: function returns [FunctionExecution funcExec] : FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:184:1: function returns [FunctionExecution funcExec] : FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' ;
     public final FunctionExecution function() throws RecognitionException {
         FunctionExecution funcExec = null;
 
@@ -866,8 +867,8 @@ public class TransformationParser extends Parser {
 
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:185:3: ( FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:185:5: FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')'
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:185:3: ( FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')' )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:185:5: FUNCTIONNAME '(' (a= expression ( ',' a= expression )* )? ')'
             {
             FUNCTIONNAME11=(Token)match(input,FUNCTIONNAME,FOLLOW_FUNCTIONNAME_in_function484); 
              
@@ -878,17 +879,17 @@ public class TransformationParser extends Parser {
                   if(function==null)
                     throw new ParseException("Function Manager could not find/load Function <" + uri + ">");
                 
-            match(input,28,FOLLOW_28_in_function496); 
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:195:8: (a= expression ( ',' a= expression )* )?
+            match(input,29,FOLLOW_29_in_function496); 
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:195:8: (a= expression ( ',' a= expression )* )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
-            if ( ((LA10_0>=PLUS && LA10_0<=MINUS)||(LA10_0>=VAR1 && LA10_0<=STRING_LITERAL_LONG2)||LA10_0==28||LA10_0==30) ) {
+            if ( ((LA10_0>=PLUS && LA10_0<=MINUS)||(LA10_0>=VAR1 && LA10_0<=STRING_LITERAL_LONG2)||LA10_0==29||LA10_0==31) ) {
                 alt10=1;
             }
             switch (alt10) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:195:9: a= expression ( ',' a= expression )*
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:195:9: a= expression ( ',' a= expression )*
                     {
                     pushFollow(FOLLOW_expression_in_function509);
                     a=expression();
@@ -896,22 +897,22 @@ public class TransformationParser extends Parser {
                     state._fsp--;
 
                      arguments.add(a); 
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:196:11: ( ',' a= expression )*
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:196:11: ( ',' a= expression )*
                     loop9:
                     do {
                         int alt9=2;
                         int LA9_0 = input.LA(1);
 
-                        if ( (LA9_0==39) ) {
+                        if ( (LA9_0==40) ) {
                             alt9=1;
                         }
 
 
                         switch (alt9) {
                     	case 1 :
-                    	    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:196:12: ',' a= expression
+                    	    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:196:12: ',' a= expression
                     	    {
-                    	    match(input,39,FOLLOW_39_in_function524); 
+                    	    match(input,40,FOLLOW_40_in_function524); 
                     	    pushFollow(FOLLOW_expression_in_function528);
                     	    a=expression();
 
@@ -933,7 +934,7 @@ public class TransformationParser extends Parser {
 
             }
 
-            match(input,29,FOLLOW_29_in_function548); 
+            match(input,30,FOLLOW_30_in_function548); 
              funcExec = new FunctionExecution(function, Collections.unmodifiableList(arguments));
 
             }
@@ -953,14 +954,14 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "integer"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:213:1: integer : INTEGER ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:213:1: integer : INTEGER ;
     public final TransformationParser.integer_return integer() throws RecognitionException {
         TransformationParser.integer_return retval = new TransformationParser.integer_return();
         retval.start = input.LT(1);
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:214:3: ( INTEGER )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:214:5: INTEGER
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:214:3: ( INTEGER )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:214:5: INTEGER
             {
             match(input,INTEGER,FOLLOW_INTEGER_in_integer577); 
 
@@ -983,14 +984,14 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "decimal"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:217:1: decimal : DECIMAL ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:217:1: decimal : DECIMAL ;
     public final TransformationParser.decimal_return decimal() throws RecognitionException {
         TransformationParser.decimal_return retval = new TransformationParser.decimal_return();
         retval.start = input.LT(1);
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:218:3: ( DECIMAL )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:218:5: DECIMAL
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:218:3: ( DECIMAL )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:218:5: DECIMAL
             {
             match(input,DECIMAL,FOLLOW_DECIMAL_in_decimal591); 
 
@@ -1013,14 +1014,14 @@ public class TransformationParser extends Parser {
     };
 
     // $ANTLR start "doubleVal"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:221:1: doubleVal : DOUBLE ;
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:221:1: doubleVal : DOUBLE ;
     public final TransformationParser.doubleVal_return doubleVal() throws RecognitionException {
         TransformationParser.doubleVal_return retval = new TransformationParser.doubleVal_return();
         retval.start = input.LT(1);
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:222:3: ( DOUBLE )
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:222:5: DOUBLE
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:222:3: ( DOUBLE )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:222:5: DOUBLE
             {
             match(input,DOUBLE,FOLLOW_DOUBLE_in_doubleVal606); 
 
@@ -1041,14 +1042,14 @@ public class TransformationParser extends Parser {
 
 
     // $ANTLR start "string"
-    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:225:2: string returns [String value] : (s= STRING_LITERAL1 | s= STRING_LITERAL2 | s= STRING_LITERAL_LONG1 | s= STRING_LITERAL_LONG2 );
+    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:225:2: string returns [String value] : (s= STRING_LITERAL1 | s= STRING_LITERAL2 | s= STRING_LITERAL_LONG1 | s= STRING_LITERAL_LONG2 );
     public final String string() throws RecognitionException {
         String value = null;
 
         Token s=null;
 
         try {
-            // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:226:4: (s= STRING_LITERAL1 | s= STRING_LITERAL2 | s= STRING_LITERAL_LONG1 | s= STRING_LITERAL_LONG2 )
+            // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:226:4: (s= STRING_LITERAL1 | s= STRING_LITERAL2 | s= STRING_LITERAL_LONG1 | s= STRING_LITERAL_LONG2 )
             int alt11=4;
             switch ( input.LA(1) ) {
             case STRING_LITERAL1:
@@ -1080,7 +1081,7 @@ public class TransformationParser extends Parser {
 
             switch (alt11) {
                 case 1 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:226:6: s= STRING_LITERAL1
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:226:6: s= STRING_LITERAL1
                     {
                     s=(Token)match(input,STRING_LITERAL1,FOLLOW_STRING_LITERAL1_in_string627); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(1, temp.length() - 1); 
@@ -1088,7 +1089,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:227:6: s= STRING_LITERAL2
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:227:6: s= STRING_LITERAL2
                     {
                     s=(Token)match(input,STRING_LITERAL2,FOLLOW_STRING_LITERAL2_in_string638); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(1, temp.length() - 1); 
@@ -1096,7 +1097,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:228:6: s= STRING_LITERAL_LONG1
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:228:6: s= STRING_LITERAL_LONG1
                     {
                     s=(Token)match(input,STRING_LITERAL_LONG1,FOLLOW_STRING_LITERAL_LONG1_in_string649); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(3, temp.length() - 3); 
@@ -1104,7 +1105,7 @@ public class TransformationParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // D:\\code\\DA\\dev\\mapping\\trunk\\r2rApi\\antlr-files\\Transformation.g:229:6: s= STRING_LITERAL_LONG2
+                    // /home/andreas/code/mavenprojects/mapping/SourceForger2rApi/r2r/antlr-files/Transformation.g:229:6: s= STRING_LITERAL_LONG2
                     {
                     s=(Token)match(input,STRING_LITERAL_LONG2,FOLLOW_STRING_LITERAL_LONG2_in_string660); 
                      String temp = (s!=null?s.getText():null); value = temp.substring(3, temp.length() - 3); 
@@ -1129,20 +1130,20 @@ public class TransformationParser extends Parser {
 
  
 
-    public static final BitSet FOLLOW_variable_in_transform62 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_transform64 = new BitSet(new long[]{0x000000005003FF30L});
+    public static final BitSet FOLLOW_variable_in_transform62 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_transform64 = new BitSet(new long[]{0x00000000A003FF30L});
     public static final BitSet FOLLOW_expression_in_transform66 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_transform68 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_mult_in_expression94 = new BitSet(new long[]{0x0000000000000032L});
-    public static final BitSet FOLLOW_PLUS_in_expression104 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_MINUS_in_expression114 = new BitSet(new long[]{0x000000005003FF30L});
+    public static final BitSet FOLLOW_PLUS_in_expression104 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_MINUS_in_expression114 = new BitSet(new long[]{0x00000000A003FF30L});
     public static final BitSet FOLLOW_mult_in_expression126 = new BitSet(new long[]{0x0000000000000032L});
     public static final BitSet FOLLOW_unary_in_mult159 = new BitSet(new long[]{0x00000000000000C2L});
-    public static final BitSet FOLLOW_MULT_in_mult169 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_DIV_in_mult181 = new BitSet(new long[]{0x000000005003FF30L});
+    public static final BitSet FOLLOW_MULT_in_mult169 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_DIV_in_mult181 = new BitSet(new long[]{0x00000000A003FF30L});
     public static final BitSet FOLLOW_unary_in_mult193 = new BitSet(new long[]{0x00000000000000C2L});
-    public static final BitSet FOLLOW_MINUS_in_unary228 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_PLUS_in_unary236 = new BitSet(new long[]{0x000000005003FF30L});
+    public static final BitSet FOLLOW_MINUS_in_unary228 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_PLUS_in_unary236 = new BitSet(new long[]{0x00000000A003FF30L});
     public static final BitSet FOLLOW_term_in_unary244 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_function_in_term265 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_variable_in_term273 = new BitSet(new long[]{0x0000000000000002L});
@@ -1150,28 +1151,28 @@ public class TransformationParser extends Parser {
     public static final BitSet FOLLOW_decimal_in_term293 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_doubleVal_in_term301 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_string_in_term309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_term321 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_expression_in_term323 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_term325 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_term321 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_expression_in_term323 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_30_in_term325 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_conditional_in_term333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_conditional355 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_expression_in_conditional359 = new BitSet(new long[]{0x0000007C08000000L});
-    public static final BitSet FOLLOW_comparisonOp_in_conditional363 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_expression_in_conditional367 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_31_in_conditional369 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_expression_in_conditional373 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_32_in_conditional375 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_expression_in_conditional379 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_conditional381 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_conditional355 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_expression_in_conditional359 = new BitSet(new long[]{0x000000F810000000L});
+    public static final BitSet FOLLOW_comparisonOp_in_conditional363 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_expression_in_conditional367 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_conditional369 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_expression_in_conditional373 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_33_in_conditional375 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_expression_in_conditional379 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_conditional381 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_set_in_comparisonOp0 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_VAR1_in_variable445 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_VAR2_in_variable459 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_FUNCTIONNAME_in_function484 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_28_in_function496 = new BitSet(new long[]{0x000000007003FF30L});
-    public static final BitSet FOLLOW_expression_in_function509 = new BitSet(new long[]{0x0000008020000000L});
-    public static final BitSet FOLLOW_39_in_function524 = new BitSet(new long[]{0x000000005003FF30L});
-    public static final BitSet FOLLOW_expression_in_function528 = new BitSet(new long[]{0x0000008020000000L});
-    public static final BitSet FOLLOW_29_in_function548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_FUNCTIONNAME_in_function484 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_function496 = new BitSet(new long[]{0x00000000E003FF30L});
+    public static final BitSet FOLLOW_expression_in_function509 = new BitSet(new long[]{0x0000010040000000L});
+    public static final BitSet FOLLOW_40_in_function524 = new BitSet(new long[]{0x00000000A003FF30L});
+    public static final BitSet FOLLOW_expression_in_function528 = new BitSet(new long[]{0x0000010040000000L});
+    public static final BitSet FOLLOW_30_in_function548 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_INTEGER_in_integer577 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_DECIMAL_in_decimal591 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_DOUBLE_in_doubleVal606 = new BitSet(new long[]{0x0000000000000002L});
