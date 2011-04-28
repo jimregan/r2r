@@ -443,7 +443,7 @@ STRING_LITERAL1
   ;
   
 STRING_LITERAL2
-  : '"' (~('\u0027' | '\u005c' | '\u000A' | '\u000D') | ECHAR)* '"'
+  : '"' (~('\u0022' | '\u005c' | '\u000A' | '\u000D') | ECHAR)* '"'
   ;
 
 STRING_LITERAL_LONG1
