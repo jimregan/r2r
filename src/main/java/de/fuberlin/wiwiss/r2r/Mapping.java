@@ -57,9 +57,7 @@ public class Mapping {
 		return uri;
 	}
 	
-	private Mapping() {}
-	
-	private Mapping(String uri) {
+	protected Mapping(String uri) {
 		targetPatterns = new ArrayList<TargetPattern>();
 		variableDependenciesOfTargetPatterns = new HashSet<String>();
 		variableDependenciesOfTransformations = new HashSet<String>();
@@ -355,7 +353,7 @@ public class Mapping {
 		return results;
 	}
 	
-	private Set<String> computeQueryVariableDependencies() {
+	protected Set<String> computeQueryVariableDependencies() {
 		Set<String> varDependencies = new HashSet<String>();
 		varDependencies.addAll(variableDependenciesOfTargetPatterns);
 		varDependencies.addAll(variableDependenciesOfTransformations);
