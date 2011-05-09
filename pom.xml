@@ -4,7 +4,7 @@
 	<groupId>de.fuberlin.wiwiss.r2r</groupId>
 	<artifactId>r2rApi</artifactId>
 	<packaging>jar</packaging>
-	<version>0.2.2</version>
+	<version>0.2.3-SNAPSHOT</version>
 	<name>r2rApi</name>
 	<url>http://r2r.sourceforge.net/</url>
 
