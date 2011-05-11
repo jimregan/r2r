@@ -244,12 +244,13 @@ public class TargetPattern {
 		return subjects;
 	}
  
-	public static TargetPattern parseTargetPattern(String targetPattern, PrefixMapper prefixMapper) throws RecognitionException{
+	public static TargetPattern parseTargetPattern(String targetPattern, PrefixMapper prefixMapper, Set<String> generatedVars) throws RecognitionException{
 		CharStream stream =	new ANTLRStringStream(targetPattern);
 		TargetPatternLexer lexer = new TargetPatternLexer(stream);
 		TokenStream tokenStream = new CommonTokenStream(lexer);
 		TargetPatternParser parser = new TargetPatternParser(tokenStream);
 		parser.setPrefixMapper(prefixMapper);
+		parser.setGeneratedVariables(generatedVars);
 		TargetPattern tp = null;
 
 		// Parse and set fields

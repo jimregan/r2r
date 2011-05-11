@@ -2,6 +2,7 @@ package de.fuberlin.wiwiss.r2r;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /*
  * This class stores the type and value of an element (subject, predicate or object) of a triple.
@@ -24,12 +25,16 @@ public class TripleElement {
 		else
 			this.values.add(null);
 	}
-
+	
 	public Type getType() {
 		return type;
 	}
 
 	public String getValue(int index) {
 		return values.get(index);
+	}
+	
+	public List<String> getValues() {
+		return Collections.unmodifiableList(values);
 	}
 }

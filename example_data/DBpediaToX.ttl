@@ -607,7 +607,7 @@
       a r2r:Mapping ;
       r2r:prefixDefinitions "linkedmdb: <http://data.linkedmdb.org/resource/movie/> . fb: <http://rdf.freebase.com/ns/>" ;
       r2r:sourcePattern "?SUBJ linkedmdb:runtime ?runtime" ;
-      r2r:targetPattern "?SUBJ fb:film.film.runtime ?<generatedURI> fb:film.film_cut.runtime ?'runtime'^^xsd:float" ;
+      r2r:targetPattern "?SUBJ fb:film.film.runtime ?generatedURI fb:film.film_cut.runtime ?'runtime'^^xsd:float" ;
       r2r:transformation "?generatedURI = concat(?SUBJ, 'Runtime')" ;
       dc:creator <http://www4.wiwiss.fu-berlin.de/is-group/resource/persons/Person30> ;
       dc:date "2010-06-22"^^xsd:date ;

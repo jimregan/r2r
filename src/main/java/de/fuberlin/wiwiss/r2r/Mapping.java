@@ -37,6 +37,10 @@ public class Mapping {
 	private Set<String> variableDependenciesOfTransformations;
 	private Set<String> transformationGeneratedVariables;
 	private Map<String, String> datatypeHints;
+	public Map<String, String> getDatatypeHints() {
+  	return datatypeHints;
+  }
+
 	private SourcePattern sourcePattern;
 	private String uri;
 	public SourcePattern getSourcePattern() {
@@ -57,7 +61,7 @@ public class Mapping {
 		return uri;
 	}
 	
-	protected Mapping(String uri) {
+	private Mapping(String uri) {
 		targetPatterns = new ArrayList<TargetPattern>();
 		variableDependenciesOfTargetPatterns = new HashSet<String>();
 		variableDependenciesOfTransformations = new HashSet<String>();
@@ -86,17 +90,18 @@ public class Mapping {
 		Mapping mapping = new Mapping(uri);
 		mapping.parentMapping = parentUri;
 		try {
+			// This is used by the source/target pattern
 			for(String prefixDef: prefixDefinitions)
 				mapping.addPrefixDefinitions(prefixDef);
-			
+			// This is used by the transformation patterns
 			for(String functionImport: functionImports)
 				mapping.addFunctionMapping(functionImport);
+			// Transformation must be processed before target patterns (generated variables must be known)
+			for(String transformation: transformations)
+				mapping.addTransformation(transformation, functionManager);
 			
 			for(String targetPattern: targetPatterns)
 				mapping.addTargetPattern(targetPattern);
-			
-			for(String transformation: transformations)
-				mapping.addTransformation(transformation, functionManager);
 			
 			mapping.addSourcePattern(sourcePattern);
 			
@@ -188,7 +193,7 @@ public class Mapping {
 	}
 	
 	private void addTargetPattern(String targetPattern)  throws RecognitionException {
-		TargetPattern tp = TargetPattern.parseTargetPattern(targetPattern, prefixMapper);
+		TargetPattern tp = TargetPattern.parseTargetPattern(targetPattern, prefixMapper, transformationGeneratedVariables);
 		tp.setMapping(this);
 		datatypeHints.putAll(tp.getHints());
 		variableDependenciesOfTargetPatterns.addAll(tp.getVariableDependencies());
@@ -200,7 +205,7 @@ public class Mapping {
 	}
 	
 	// Execute a function, resolve all arguments first
-	private List<String> execFunction(FunctionExecution functionExecution, VariableResults varResults, String datatypeHint) {
+	public List<String> execFunction(FunctionExecution functionExecution, VariableResults varResults, String datatypeHint) {
 		List<Argument> arguments = functionExecution.getArguments();
 		List<List<String>> realArguments = new ArrayList<List<String>>();
 		Function function = functionExecution.getFunction();
@@ -353,7 +358,7 @@ public class Mapping {
 		return results;
 	}
 	
-	protected Set<String> computeQueryVariableDependencies() {
+	public Set<String> computeQueryVariableDependencies() {
 		Set<String> varDependencies = new HashSet<String>();
 		varDependencies.addAll(variableDependenciesOfTargetPatterns);
 		varDependencies.addAll(variableDependenciesOfTransformations);
@@ -580,6 +585,18 @@ public class Mapping {
 		insertMappingMetaDataIntoJenaModel(model);
 		return model;
 	}
+
+	public List<TargetPattern> getTargetPatterns() {
+  	return targetPatterns;
+  }
+
+	public List<FunctionExecution> getFunctions() {
+  	return functions;
+  }
+
+	public PrefixMapper getPrefixMapper() {
+  	return prefixMapper;
+  }
 	
 //	public Model getJenaModelWithExtendedMappingMetaData() {
 //		Model model = getJenaModelWithMappingMetaData();
