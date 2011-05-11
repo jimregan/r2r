@@ -24,6 +24,7 @@ options {
 
 @members {
   PrefixMapper prefixMapper;
+  Set<String> generatedVariables;
   Set<String> variables = new HashSet<String>();
   Set<String> props = new HashSet<String>();
   Set<String> cls = new HashSet<String>();
@@ -31,6 +32,10 @@ options {
   
   public void setPrefixMapper(PrefixMapper pm) {
     prefixMapper = pm;
+  }
+  
+  public void setGeneratedVariables(Set<String> variableNames) {
+    generatedVariables = variableNames;
   }
   
   public void recover(IntStream input, RecognitionException re) {
@@ -90,6 +95,8 @@ tripleOrPath returns [List<Triple> value]
                        }
       (s=subject v=verb {
                           TripleElement oElement = $s.value;
+                          if(oElement.getType()==TripleElement.Type.VARIABLE && generatedVariables.contains(oElement.getValue(0)))
+                            oElement = new TripleElement(TripleElement.Type.IRIVARIABLE, oElement.getValue(0));
                           triples.add(new Triple(sElement, vElement, oElement, vElement.getValue(0), null));
                           sElement = oElement;
                           vElement = $v.value;
