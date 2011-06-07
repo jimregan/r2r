@@ -32,6 +32,6 @@ public class Config {
 	}
 	
 	static public boolean rethrowActivated() {
-		return getProperty("r2r.ExceptionHandling.rethrow", "false").equalsIgnoreCase("true");
+		return getProperty("r2r.ExceptionHandling.rethrow", "true").equalsIgnoreCase("true");
 	}
 }

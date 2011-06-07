@@ -48,6 +48,7 @@ public class BasicFunctionManager implements FunctionManager {
 		functions.put("booleanPick", new BooleanPickFunctionFactory());
 		functions.put("compare", new CompareFunctionFactory());
 		functions.put("itRegexToList", new IterateRegexToListFunctionFactory());
+        functions.put(("strlen"), new StringLengthFunctionFactory());
 		
 		// Xpath functions
 		XPathFunctionFactory xpFunctionFactory = new XPathFunctionFactory();

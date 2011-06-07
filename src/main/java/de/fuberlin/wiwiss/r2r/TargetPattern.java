@@ -10,6 +10,7 @@ import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.TokenStream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import java.util.Collections;
 
 import de.fuberlin.wiwiss.r2r.functions.HelperFunctions;
 import de.fuberlin.wiwiss.r2r.parser.*;
@@ -40,7 +41,7 @@ public class TargetPattern {
 	private Mapping mapping = null;
 	
 	public Set<String> getVariableDependencies() {
-		return variableDependencies;
+		return Collections.unmodifiableSet(variableDependencies);
 	}
 
 	public TargetPattern(List<Triple> path) {
@@ -50,6 +51,10 @@ public class TargetPattern {
 	public void setMapping(Mapping mapping) {
 		this.mapping = mapping;
 	}
+	
+	public List<Triple> getPath() {
+  	return Collections.unmodifiableList(path);
+  }
 
 	/*
 	 * Generate all triples given the variable results of the query and transformations
@@ -265,14 +270,14 @@ public class TargetPattern {
 	}
 
 	public Map<String, String> getHints() {
-		return hints;
+		return Collections.unmodifiableMap(hints);
 	}
 
 	public Set<String> getClasses() {
-		return classes;
+		return Collections.unmodifiableSet(classes);
 	}
 
 	public Set<String> getProperties() {
-		return properties;
+		return Collections.unmodifiableSet(properties);
 	}
 }
