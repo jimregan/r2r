@@ -10,6 +10,10 @@ public class PrefixMapper {
 		map = new HashMap<String, String>();
 	}
 	
+	public synchronized void addPrefixes(PrefixMapper otherPrefixMapper) {
+		map.putAll(otherPrefixMapper.map);
+	}
+	
 	public synchronized void registerPrefix(String prefix, String namespace) {
 		map.put(prefix, namespace);
 	}
