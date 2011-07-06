@@ -156,6 +156,22 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		}
 		return mappings;
 	}
+
+    public Map<String, String> validateMappings() {
+        Map<String, String> erroneousMappings = new HashMap<String, String>();
+        List<String> resources = getMappingResources();
+
+        for(String resURI: resources) {
+            try {
+                Mapping mapping = getMappingOfUri(resURI);
+                if(mapping==null)
+                    erroneousMappings.put(resURI, "Unknown Error");
+            } catch(R2RException e) {
+                erroneousMappings.put(resURI, e.getMessage());
+            }
+        }
+        return erroneousMappings;
+    }
 	
 	/**
 	 * create a Repository object that includes the meta data of this Repository 
