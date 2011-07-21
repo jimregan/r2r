@@ -754,7 +754,7 @@
 			initUI: function() {
 				$.extend(this.dialogOptions, {
 					width: 500,
-					height: 315,
+					height: 320,
 				});
 				
 				this.__base();
