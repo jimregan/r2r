@@ -17,10 +17,12 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
+
 /*
- * A Triple of a TargetPattern 
- */
-public class Triple {
+* A Triple of a TargetPattern
+*/
+public class Triple implements Serializable {
 	private TripleElement subject;
 	private TripleElement verb;
 	private TripleElement object;

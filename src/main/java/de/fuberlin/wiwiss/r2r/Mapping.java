@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Collections;
 import java.util.Collection;
@@ -44,7 +45,7 @@ import de.fuberlin.wiwiss.r2r.parser.ParseException;
  * @author andreas
  *
  */
-public class Mapping {
+public class Mapping implements Serializable {
 	private List<TargetPattern> targetPatterns;
 	private List<FunctionExecution> functions;
 	private PrefixMapper prefixMapper;

@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r.functions;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
 

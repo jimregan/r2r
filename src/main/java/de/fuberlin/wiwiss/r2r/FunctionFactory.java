@@ -17,11 +17,13 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
+
 /**
  * A Factory Interface for Function creation.
  * @author andreas
  *
  */
-public interface FunctionFactory {
+public interface FunctionFactory extends Serializable {
 	public Function getInstance();
 }

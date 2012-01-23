@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,7 +25,7 @@ import java.util.Collections;
 /*
  * This class stores the type and value of an element (subject, predicate or object) of a triple.
  */
-public class TripleElement {
+public class TripleElement implements Serializable {
 	private Type type;
 	private List<String> values;
 	

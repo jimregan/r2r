@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import org.antlr.runtime.ANTLRStringStream;
@@ -28,7 +29,7 @@ import org.antlr.runtime.TokenStream;
 
 import de.fuberlin.wiwiss.r2r.parser.*;
 
-public class SourcePattern {
+public class SourcePattern implements Serializable {
 	private Set<String> prefixDefinitions;
 	private String queryBody;
 	private Set<String> classes;

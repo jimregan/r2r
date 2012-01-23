@@ -17,6 +17,8 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
-public interface Argument {
+import java.io.Serializable;
+
+public interface Argument extends Serializable {
 
 }

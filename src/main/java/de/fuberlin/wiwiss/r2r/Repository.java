@@ -17,6 +17,8 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.OutputStream;
+import java.io.Writer;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -733,4 +735,32 @@ public class Repository implements MappingRepository, MetadataRepository, Source
 		values.add(value);
 		metaData.put(property, values);
 	}
+
+    public boolean exportRepositoryData(Writer out, String serializationFormat) {
+        if(isExportableRepository()) {
+            ((ExportableSource) source).exportMappings(out, serializationFormat);
+            return true; }
+        else
+            return false;
+    }
+
+    public boolean exportRepositoryData(OutputStream out, String serializationFormat) {
+        if(isExportableRepository()) {
+            ((ExportableSource) source).exportMappings(out, serializationFormat);
+            return true; }
+        else
+            return false;
+    }
+
+    public boolean exportRepositoryData(Writer out) {
+        return exportRepositoryData(out, "N-TRIPLE");
+    }
+
+    public boolean exportRepositoryData(OutputStream out) {
+        return exportRepositoryData(out, "N-TRIPLE");
+    }
+
+    public boolean isExportableRepository() {
+        return source instanceof ExportableSource;
+    }
 }
