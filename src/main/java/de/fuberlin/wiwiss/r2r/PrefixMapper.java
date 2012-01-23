@@ -17,10 +17,11 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PrefixMapper {
+public class PrefixMapper implements Serializable {
 	private Map<String, String> map;
 	
 	public PrefixMapper() {

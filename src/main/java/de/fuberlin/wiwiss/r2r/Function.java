@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -24,7 +25,7 @@ import java.util.List;
  * @author andreas
  *
  */
-public interface Function {
+public interface Function extends Serializable {
 	/**
 	 * Executes the function on a list of arguments, each represented by a list of Strings. 
 	 * @param arguments

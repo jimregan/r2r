@@ -27,6 +27,8 @@ import com.hp.hpl.jena.util.FileManager;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.Writer;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -35,7 +37,7 @@ import java.net.URISyntaxException;
  * @author andreas
  *
  */
-public class FileOrURISource implements Source {
+public class FileOrURISource implements ExportableSource {
 
 	private Model model;
 	
@@ -84,4 +86,20 @@ public class FileOrURISource implements Source {
 		qe.close();
 		return model;
 	}
+
+    public void exportMappings(Writer out, String serializationFormat) {
+        model.write(out, serializationFormat);
+    }
+
+    public void exportMappings(OutputStream out, String serializationFormat) {
+        model.write(out, serializationFormat);
+    }
+
+    public void exportMappings(Writer out) {
+        model.write(out, "N-TRIPLE");
+    }
+
+    public void exportMappings(OutputStream out) {
+        model.write(out, "N-TRIPLE");
+    }
 }

@@ -22,12 +22,15 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 
+import java.io.OutputStream;
+import java.io.Writer;
+
 /**
  * Implementation of the Source interface which wraps a Jena Model.
  * @author andreas
  *
  */
-public class JenaModelSource implements Source {
+public class JenaModelSource implements ExportableSource {
 	private Model model;
 
 	/**
@@ -55,4 +58,20 @@ public class JenaModelSource implements Source {
 		qe.close();
 		return model;
 	}
+
+    public void exportMappings(Writer out, String serializationFormat) {
+        model.write(out, serializationFormat);
+    }
+
+    public void exportMappings(OutputStream out, String serializationFormat) {
+        model.write(out, serializationFormat);
+    }
+
+    public void exportMappings(Writer out) {
+        model.write(out, "N-TRIPLE");
+    }
+
+    public void exportMappings(OutputStream out) {
+        model.write(out, "N-TRIPLE");
+    }
 }

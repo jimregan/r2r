@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -29,7 +30,7 @@ import org.antlr.runtime.TokenStream;
 
 import de.fuberlin.wiwiss.r2r.parser.*;
 
-public class FunctionExecution implements Argument{
+public class FunctionExecution implements Argument, Serializable {
 	private List<Argument> arguments;
 	private Function function;
 	private String variableName = null;

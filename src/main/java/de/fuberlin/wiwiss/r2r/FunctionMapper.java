@@ -17,13 +17,14 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.Map;
 import java.util.HashMap;
 
 /*
  * FunctionMapping objects handle information concerning function name to function URI mapping.
  */
-public class FunctionMapper {
+public class FunctionMapper implements Serializable{
 	Map<String, String> mappings = new HashMap<String, String>();
 	
 	public void setMapping(String functionName, String functionURI) {

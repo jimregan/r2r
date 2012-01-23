@@ -17,6 +17,7 @@
  */
 package de.fuberlin.wiwiss.r2r;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -48,7 +49,7 @@ import java.util.Map;
  * @author andreas
  *
  */
-public class TargetPattern {
+public class TargetPattern implements Serializable {
 	private List<Triple> path;
 	private Set<String> variableDependencies;
 	private Set<String> classes;
