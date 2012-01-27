@@ -36,7 +36,10 @@ public class Sha1sumFunctionFactory implements FunctionFactory {
 			List<String> resultList = new ArrayList<String>();
 			String value = arguments.get(0).get(0);
             try {
-                resultList.add(new BigInteger(1, MessageDigest.getInstance("SHA1").digest(value.getBytes())).toString(16));
+                String hash = new BigInteger(1, MessageDigest.getInstance("SHA1").digest(value.getBytes())).toString(16);
+                if(hash.length()<40)
+                    hash = "0" + hash;
+                resultList.add(hash);
             } catch (NoSuchAlgorithmException e) {
                 e.printStackTrace();
             }
