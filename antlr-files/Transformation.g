@@ -8,6 +8,7 @@ options {
   package de.fuberlin.wiwiss.r2r.parser;
   
   import de.fuberlin.wiwiss.r2r.*;
+  import  de.fuberlin.wiwiss.r2r.utils.StringUtils;
   import java.util.List;
   import java.util.ArrayList;
   import java.util.Set;
@@ -223,10 +224,10 @@ doubleVal
   ;
 
  string returns [String value]
-   : s=STRING_LITERAL1 { String temp = $s.text; $value = temp.substring(1, temp.length() - 1); }
-   | s=STRING_LITERAL2 { String temp = $s.text; $value = temp.substring(1, temp.length() - 1); }
-   | s=STRING_LITERAL_LONG1 { String temp = $s.text; $value = temp.substring(3, temp.length() - 3); }
-   | s=STRING_LITERAL_LONG2 { String temp = $s.text; $value = temp.substring(3, temp.length() - 3); }
+   : s=STRING_LITERAL1 { String temp = $s.text; $value = StringUtils.unescapeString(temp.substring(1, temp.length() - 1)); }
+   | s=STRING_LITERAL2 { String temp = $s.text; $value = StringUtils.unescapeString(temp.substring(1, temp.length() - 1)); }
+   | s=STRING_LITERAL_LONG1 { String temp = $s.text; $value = StringUtils.unescapeString(temp.substring(3, temp.length() - 3)); }
+   | s=STRING_LITERAL_LONG2 { String temp = $s.text; $value = StringUtils.unescapeString(temp.substring(3, temp.length() - 3)); }
    ;
     
 //TOKENS
