@@ -59,9 +59,11 @@ public class FileOrURISource implements ExportableSource {
         model = ModelFactory.createDefaultModel();
         if(file.isDirectory()) {
             for(File mappingFile: file.listFiles()) {
-                FileManager fileManager = FileManager.get();
-		        Model mappingFileModel = fileManager.loadModel(mappingFile.getCanonicalPath());
-                model.add(mappingFileModel);
+                if(!mappingFile.isHidden()) {
+                    FileManager fileManager = FileManager.get();
+                    Model mappingFileModel = fileManager.loadModel(mappingFile.getCanonicalPath());
+                    model.add(mappingFileModel);
+                }
             }
         } else {
             FileManager fileManager = FileManager.get();
