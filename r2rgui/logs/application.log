@@ -1,0 +1,12 @@
+2013-02-14 22:30:38,960 - [INFO] - from play in main 
+Listening for HTTP on port 9000...
+
+2013-02-14 22:30:55,383 - [INFO] - from play in play-akka.actor.default-dispatcher-1 
+Application started (Dev)
+
+2013-02-14 22:32:59,541 - [INFO] - from controllers.Api$ in play-akka.actor.actions-dispatcher-4 
+Updated mapping file
+
+2013-02-14 22:33:03,255 - [INFO] - from controllers.Api$ in play-akka.actor.actions-dispatcher-4 
+Updated mapping file
+

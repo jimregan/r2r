@@ -1,0 +1,58 @@
+@* A dialog to specify SPARQL input sources. *@
+@()
+
+<div class="dialog">
+  <form action="api/sparqlInput">
+    <table border="0">
+      <tr>
+        <td>Endpoint URI</td>
+        <td>
+          <input type="text" name="endpointUri" size="40" list="endpoints" value="" />
+          <!-- We add some examples for the user -->
+          <datalist id="endpoints">
+            <option value="http://localhost:8890/sparql">
+            <option value="http://localhost:8080/openrdf-sesame/repositories/test">
+            <option value="http://dbpedia.org/sparql">
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td>Graph</td>
+        <td>
+          <input type="text" name="inputGraph" size="40"/>
+        </td>
+      </tr>
+      <tr>
+        <td>SPARQL Pattern</td>
+        <td>
+          <input type="text" name="sparqlPattern" list="patterns" size="40"/>
+          <!-- We add some examples for the user -->
+          <datalist id="patterns">
+            <option value="?s a <http://xmlns.com/foaf/0.1/Person>">
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td align="right">
+          <input type="submit" value="Ok">
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<script>
+  /** Initializes the dialog. */
+  $(function() {
+    $('.dialog').dialog({
+      autoOpen: true,
+      width: 600,
+      modal: true,
+      close: function(event, ui){
+        $(this).dialog("destroy");
+        $(this).remove();
+      }
+    });
+  });
+</script>

@@ -1,0 +1,63 @@
+@* A file selection dialog.
+ *
+ * @param path The path to which the selected file will be uploaded to.
+ *@
+@(path: String)
+
+<div class="dialog">
+  <table border="0">
+    <tr>
+      <td>File</td>
+      <td>
+        <form enctype="multipart/form-data">
+          <input name="file" type="file" size="40"/>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="right"><button onclick='submit()'>Ok</button></td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  /** Initializes the dialog. */
+  $(function() {
+    $('.dialog').dialog({
+      autoOpen: true,
+      width: 500,
+      modal: true,
+      close: function(event, ui){
+        $(this).dialog("destroy");
+        $(this).remove();
+      }
+    });
+  });
+
+  /** Submits the dialog form and uploads the selected file. */
+  function submit() {
+    var file = $("input[name='file']").val();
+    var formData = new FormData($('form')[0]);
+
+    $.ajax({
+      type: 'PUT',
+      url: '@path',
+      xhr: function() {
+        myXhr = $.ajaxSettings.xhr();
+        return myXhr;
+      },
+      data: formData,
+      cache: false,
+      contentType: false,
+      processData: false,
+      success: function(data) {
+        $('.dialog').dialog('close');
+        window.location.reload();
+      },
+      error: function(request) {
+        alert(request.responseText);
+      }
+    });
+  }
+</script>

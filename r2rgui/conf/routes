@@ -1,0 +1,18 @@
+# Main page
+GET     /                           controllers.Application.index
+
+# Dialogs
+GET     /dialogs/sparqlInput        controllers.Dialogs.sparqlInputDialog
+GET     /dialogs/fileInput          controllers.Dialogs.fileInputDialog
+GET     /dialogs/mapping            controllers.Dialogs.mappingDialog
+GET     /dialogs/sparqlOutput       controllers.Dialogs.sparqlOutputDialog
+
+# API
+GET     /api/sparqlInput            controllers.Api.sparqlInput(endpointUri, inputGraph, sparqlPattern)
+PUT     /api/fileInput              controllers.Api.fileInput
+PUT     /api/mapping                controllers.Api.mapping
+GET     /api/executeToSparql        controllers.Api.executeToSparql(endpointUri)
+GET     /api/executeToFile          controllers.Api.executeToFile
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
