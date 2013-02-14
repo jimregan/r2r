@@ -1,0 +1,47 @@
+@* A dialog to specify SPARQL outputs. *@
+@()
+
+<div class="dialog">
+  <form action="api/execute">
+    <table border="0">
+      <tr>
+        <td>Endpoint URI</td>
+        <td>
+          <input type="text" name="endpointUri" size="40" list="endpoints" value="" />
+          <!-- We add some examples for the user -->
+          <datalist id="endpoints">
+            <option value="http://localhost:8890/sparql">
+            <option value="http://localhost:8080/openrdf-sesame/repositories/test">
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td>Graph</td>
+        <td>
+          <input type="text" name="outputGraph" size="40"/>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td align="right">
+          <input type="submit" value="Ok">
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<script>
+  /** Initializes the dialog. */
+  $(function() {
+    $('.dialog').dialog({
+      autoOpen: true,
+      width: 600,
+      modal: true,
+      close: function(event, ui){
+        $(this).dialog("destroy");
+        $(this).remove();
+      }
+    });
+  });
+</script>

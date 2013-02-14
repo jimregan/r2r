@@ -1,0 +1,17 @@
+@* A text area that displays a file.
+ *
+ * @param id The id of the text area
+ * @param path The file which should be displayed.
+ * @param readonly Determines if this text area is readonly
+ *@
+@(id: String, file: String, readonly: Boolean)
+
+<textarea id="@id" style="width:100%" rows="20" @if(readonly) { readonly="true" } >@{
+    if(new java.io.File(file).exists()) {
+      val source = scala.io.Source.fromFile(file)
+      val text = source.getLines.take(1000).mkString("\n")
+      source.close()
+      text
+    } else
+      "No file specified."
+}</textarea>

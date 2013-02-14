@@ -1,0 +1,47 @@
+@()
+
+@main() {
+
+  <h1>R2R Framework</h1>
+
+  <p>
+  Data is represented on the <a href="http://esw.w3.org/SweoIG/TaskForces/CommunityProjects/LinkingOpenData">Web of Linked Data</a> using terms from a wide range of different vocabularies.
+  The <a href="http://r2r.wbsg.de">R2R Framework</a> translates Web data that is represented using terms from different vocabularies into a single target vocabulary.
+  Vocabulary mappings are expressed using the <a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/r2r/spec/">R2R Mapping Language</a>.
+  The language provides for simple transformations as well as for more complex structural transformations and property value transformations such as normalizing different units of measurement or complex string manipulations.
+  </p>
+
+  <div id="buttons">
+    <button onclick="showDialog('dialogs/sparqlInput')">Load from store</button>
+    <button onclick="showDialog('dialogs/fileInput')">Load from file</button>
+    <button onclick="showDialog('dialogs/mapping')">Select Mapping</button>
+    <button onclick="updateMapping(); showDialog('dialogs/sparqlOutput')" >Execute to store</button>
+    <button onclick="updateMapping(); window.open('/executeToFile')" >Execute to file</button>
+    <button onclick="window.open('http://r2r.wbsg.de', '_blank')" >Help</button>
+  </div>
+
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Input</a></li>
+      <li><a href="#tabs-2">Mapping</a></li>
+      <li><a href="#tabs-3">Output</a></li>
+    </ul>
+    <div id="tabs-1">
+      @fileView(id = "input", file = FilePaths.inputFile, readonly = true)
+    </div>
+    <div id="tabs-2">
+      @fileView(id = "mapping", file = FilePaths.mappingFile, readonly = false)
+    </div>
+    <div id="tabs-3">
+      @fileView(id = "output", file = FilePaths.outputFile, readonly = true)
+    </div>
+  </div>
+
+  <!-- p>This work was supported in part by the EU FP7 project <a target="_blank" href="http://lod2.eu/">LOD2 - Creating Knowledge out of Interlinked Data</a> (Grant No. 257943).</p -->
+
+  <script>
+    $(function() {
+      $( "#tabs" ).tabs();
+    });
+  </script>
+}

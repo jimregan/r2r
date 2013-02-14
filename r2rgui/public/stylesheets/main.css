@@ -1,0 +1,14 @@
+#buttons
+{
+  padding-top: 20px;
+  border-top: solid 1px #d7d6d6;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #d7d6d6;
+}
+
+#tabs
+{
+  width: 95%;
+  height: 100%;
+  margin-top: 20px;
+}
