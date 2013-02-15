@@ -1,4 +1,24 @@
-This is your new Play 2.0 application
-=====================================
+R2R Graphical User Interface
+----------------------------
 
-This file will be packaged with your application, when using `play dist`.
+Introduction:
+
+The R2R Graphical User Interface is a web application that provides a graphical
+user interface to the R2R Framework and allows the user to execute vocabulary
+mappings on data sources that are either located in a triple store or in RDF
+dumps. The main features of the R2R Graphical User Interface are:
+
+- The user may select input data from a SPARQL endpoint as well as from RDF dumps.
+- Mappings can be loaded from files and edited in a text-based editor.
+- On executing mappings, the translated RDF data can be written to SPARQL/Update endpoints or written to RDF dumps.
+
+Requirements:
+
+- JDK 6 or later
+- Play Framework (http://www.playframework.com)
+
+Running the R2R Graphical User Interface:
+
+- navigate to this directory
+- execute 'play run'
+- Navigate in your browser to http://localhost:9000
