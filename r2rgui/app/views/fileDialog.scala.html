@@ -1,15 +1,21 @@
 @* A file selection dialog.
  *
  * @param path The path to which the selected file will be uploaded to.
+ *
+ * @param message The message which is displayed for supported source and mapping files respectively
+ *
  *@
-@(path: String)
+@(path: String, message: String)
 
 <div class="dialog">
   <table border="0">
     <tr>
         <td colspan="2">
-            Supported formats are N-Quads and N-Triples!
+               @message
         </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
     </tr>
     <tr>
       <td>File</td>
