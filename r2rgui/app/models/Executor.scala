@@ -2,17 +2,13 @@ package models
 
 import java.io._
 import java.util.Properties
-import ldif.config.{COMPLETE, OutputConfig, IntegrationConfig, SchedulerConfig}
-import xml.{XML, Elem}
-import java.util.logging.Logger
+import ldif.config.{COMPLETE, OutputConfig, IntegrationConfig}
 import ldif.util._
-import ldif.local.{IntegrationJob, Scheduler}
-import org.apache.commons.io.FileUtils
-import ldif.local.scheduler.{SparqlConfig, SparqlImportJob}
+import ldif.local.IntegrationJob
+import ldif.local.scheduler.SparqlImportJob
 import java.net.URI
 import ldif.local.scheduler.SparqlConfig
-import ldif.local.scheduler.SparqlConfig
-import ldif.output.{SparqlWriter, NQUADS, SerializingQuadWriter, RDFSyntax}
+import ldif.output.{SparqlWriter, NQUADS, SerializingQuadWriter}
 
 object Executor {
 
@@ -40,17 +36,16 @@ object Executor {
   }
 
   def execute(endpointUri: String) {
-    val fileOutput = new SerializingQuadWriter(FilePaths.outputFile, NQUADS)
-    val sparqlOutput = new SparqlWriter(endpointUri)
-    val outputs = (Some(fileOutput), COMPLETE) :: Nil
+    val output = if(endpointUri.isEmpty) new SerializingQuadWriter(new File(FilePaths.outputFile).getAbsolutePath, NQUADS) else new SparqlWriter(endpointUri)
+    val outputs = (Some(output), COMPLETE) :: Nil
 
     val config = IntegrationConfig(sources = Seq(FilePaths.inputDir),
-                                   linkSpecDir = null,
-                                   mappingDir = new File(FilePaths.mappingDir),
-                                   sieveSpecDir = null,
-                                   outputs = new OutputConfig(outputs),
-                                   properties = integrationProperties,
-                                   runSchedule = "onStartup")
+      linkSpecDir = null,
+      mappingDir = new File(FilePaths.mappingDir),
+      sieveSpecDir = null,
+      outputs = new OutputConfig(outputs),
+      properties = integrationProperties,
+      runSchedule = "onStartup")
 
     val integrator = IntegrationJob(config, debugMode = false)
     integrator.runIntegration

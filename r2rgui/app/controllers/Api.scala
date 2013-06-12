@@ -22,8 +22,11 @@ object Api extends Controller {
   def fileInput = Action { implicit request => {
     for(data <- request.body.asMultipartFormData;
         file <- data.files) {
-      Files.copy(file.ref.file.toPath, Paths.get(FilePaths.inputFile), StandardCopyOption.REPLACE_EXISTING)
-      log.info("Updated input file")
+      if(!file.filename.matches("^.*\\.ttl$")){
+        Files.copy(file.ref.file.toPath, Paths.get(FilePaths.inputFile), StandardCopyOption.REPLACE_EXISTING)
+        log.info("Updated input file")
+      }
+      else log.info("It's ttl! Did not update input file")
     }
     Ok
   }}
@@ -56,6 +59,7 @@ object Api extends Controller {
   }
 
   def executeToFile() = Action {
+    new File(FilePaths.outputFile).createNewFile()
     log.info("Execution started")
     Executor.execute("")
     log.info("Execution finished")
