@@ -36,7 +36,7 @@ object Executor {
   }
 
   def execute(endpointUri: String) {
-    val output = if(endpointUri.isEmpty) new SerializingQuadWriter(new File(FilePaths.outputFile).getAbsolutePath, NQUADS) else new SparqlWriter(endpointUri)
+    val output = if(endpointUri.isEmpty) new SerializingQuadWriter(new File(FilePaths.outputFile).getAbsolutePath, NQUADS) else new SparqlWriter(endpointUri, None, "1.1", true, "update")
     val outputs = (Some(output), COMPLETE) :: Nil
 
     val config = IntegrationConfig(sources = Seq(FilePaths.inputDir),

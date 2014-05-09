@@ -15,7 +15,7 @@ dumps. The main features of the R2R Graphical User Interface are:
 Requirements:
 
 - JDK 6 or later
-- Play Framework 2.0.4 (for best user experience, but also works well with 2.0.2 and 2.0.3 versions) -> Download @ http://www.playframework.com
+- Play Framework 2.2.1 -> Download @ http://www.playframework.com
 
 Running the R2R Graphical User Interface:
 
