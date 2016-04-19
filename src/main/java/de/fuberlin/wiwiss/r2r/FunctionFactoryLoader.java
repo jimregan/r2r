@@ -85,9 +85,15 @@ public class FunctionFactoryLoader {
 			
 			// Now try the original code location
 			it = funcRes.listProperties(model.getProperty(R2R.codeLocation));
-			if(it.hasNext())
-				codeLocation = it.next().getString();
-			else {
+			if(it.hasNext()) {
+				Statement stmt = it.next();
+				RDFNode node = stmt.getObject();
+				if(node.isResource()) {
+					codeLocation = ((Resource) node).getURI();
+				} else {
+					codeLocation = ((Literal) node).getString();
+				}
+			} else {
 				if(log.isDebugEnabled())
 					log.debug("External Function <" + URI +"> could not be loaded from class path and did not specify any further code location!");
 				return null;
