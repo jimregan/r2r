@@ -57,7 +57,7 @@ public class LoadingFunctionManager implements FunctionManager {
 					FunctionFactory ff = ffLoader.getFunctionFactory(URI);
 					if(ff!=null) {
 						synchronized (functions) {
-							if(functions.containsKey(URI))
+							if(!functions.containsKey(URI))
 								functions.put(URI, ff);
 						}
 					}
